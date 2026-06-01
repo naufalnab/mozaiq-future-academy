@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+*.log
+
+# Internal working notes (not for publishing)
+critics.txt
+docs/research.md
+docs/feedback-*.txt
