@@ -2097,13 +2097,12 @@ h2 {
     }
 
     .wa-float {
-        width: auto;
+        width: 52px;
         height: 52px;
         bottom: 16px;
         right: 16px;
-        gap: 9px;
-        border-radius: 999px;
-        padding: 0 17px;
+        border-radius: 50%;
+        padding: 0;
     }
 
     .wa-float .icon {
@@ -2112,7 +2111,7 @@ h2 {
     }
 
     .wa-float-label {
-        display: inline;
+        display: none;
     }
 
     .hero-microcopy {
