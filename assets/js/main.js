@@ -29,7 +29,11 @@ var currentLang = "id";
         translatable.forEach(function (el) {
             // Skip elements whose label is managed dynamically elsewhere.
             if (el.hasAttribute("data-dynamic-label")) return;
-            el.innerHTML = el.getAttribute(toEnglish ? "data-en" : "data-id");
+            var html = el.getAttribute(toEnglish ? "data-en" : "data-id");
+            if (el.matches(".faq-item summary") && html.indexOf("faq-icon") === -1) {
+                html += '<i data-lucide="plus" class="icon faq-icon" aria-hidden="true"></i>';
+            }
+            el.innerHTML = html;
         });
 
         document.documentElement.setAttribute("lang", toEnglish ? "en" : "id");
@@ -138,6 +142,36 @@ var currentLang = "id";
         document.addEventListener("langchange", updateMoreLabel);
         updateMoreLabel();
     }
+})();
+
+// Documentation gallery "show more" expansion.
+(function () {
+    var gallery = document.querySelector(".asset-gallery");
+    var moreBtn = document.getElementById("asset-more-btn");
+    if (!gallery || !moreBtn) return;
+
+    var expanded = false;
+
+    function updateMoreLabel() {
+        var labelSpan = moreBtn.querySelector("span");
+        var en = currentLang === "en";
+        var key = expanded
+            ? (en ? "data-less-en" : "data-less")
+            : (en ? "data-more-en" : "data-more");
+        if (labelSpan) labelSpan.textContent = moreBtn.getAttribute(key);
+    }
+
+    var labelSpan = moreBtn.querySelector("span");
+    if (labelSpan) labelSpan.setAttribute("data-dynamic-label", "true");
+
+    moreBtn.addEventListener("click", function () {
+        expanded = !expanded;
+        gallery.classList.toggle("show-all", expanded);
+        updateMoreLabel();
+    });
+
+    document.addEventListener("langchange", updateMoreLabel);
+    updateMoreLabel();
 })();
 
 // Hide the floating WhatsApp button while the footer is visible so it never
