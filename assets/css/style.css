@@ -94,12 +94,19 @@ button {
     width: 50px;
     height: 50px;
     border-radius: 12px;
-    background: linear-gradient(140deg, var(--purple-soft), var(--purple-dark));
+    overflow: hidden;
+    background: var(--ink-deep);
     color: #ffffff;
     font-size: 15px;
     font-weight: 800;
     letter-spacing: 0.03em;
     box-shadow: 0 10px 22px rgba(109, 40, 217, 0.4), inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+
+.brand-mark img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .brand-text {
@@ -379,13 +386,66 @@ button {
 .hero-inner {
     position: relative;
     z-index: 1;
-    max-width: 880px;
+    display: grid;
+    grid-template-columns: minmax(0, 0.95fr) minmax(360px, 0.75fr);
+    align-items: center;
+    gap: 46px;
+    min-width: 0;
+    max-width: var(--container);
+}
+
+.hero-inner > :not(.hero-media) {
+    grid-column: 1;
+    min-width: 0;
+}
+
+.hero-media {
+    position: relative;
+    grid-column: 2;
+    grid-row: 1 / span 7;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 28px 70px rgba(0, 0, 0, 0.34);
+}
+
+.hero-media::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 58%, rgba(18, 15, 36, 0.62));
+    pointer-events: none;
+}
+
+.hero-media img {
+    width: 100%;
+    height: 100%;
+    min-height: 430px;
+    object-fit: cover;
+}
+
+.hero-media-badge {
+    position: absolute;
+    right: 18px;
+    bottom: 18px;
+    z-index: 1;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.92);
+    color: var(--purple-dark);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    padding: 8px 14px;
+    text-transform: uppercase;
 }
 
 .eyebrow {
     display: inline-flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
+    max-width: 100%;
     margin-bottom: 22px;
     padding: 8px 16px;
     border: 1px solid rgba(255, 255, 255, 0.18);
@@ -410,7 +470,7 @@ h1 {
     font-size: clamp(36px, 5.4vw, 62px);
     line-height: 1.07;
     font-weight: 800;
-    letter-spacing: -0.015em;
+    letter-spacing: 0;
 }
 
 h1 span {
@@ -528,7 +588,7 @@ h2 {
     font-size: clamp(28px, 3.4vw, 42px);
     line-height: 1.16;
     font-weight: 800;
-    letter-spacing: -0.01em;
+    letter-spacing: 0;
 }
 
 .section-copy {
@@ -825,6 +885,25 @@ h2 {
     height: 26px;
 }
 
+.program-media {
+    margin: 0;
+    overflow: hidden;
+    aspect-ratio: 3 / 2;
+    border-radius: 12px;
+    background: var(--soft);
+}
+
+.program-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 260ms ease;
+}
+
+.program-card:hover .program-media img {
+    transform: scale(1.04);
+}
+
 .program-card h3 {
     margin: 4px 0 0;
     font-size: 22px;
@@ -933,6 +1012,68 @@ h2 {
 .tag-creative {
     background: var(--soft-purple);
     color: var(--purple-dark);
+}
+
+/* Asset gallery */
+.asset-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.asset-card {
+    position: relative;
+    min-width: 0;
+    margin: 0;
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    background: var(--soft);
+    box-shadow: 0 1px 0 rgba(28, 18, 60, 0.03);
+}
+
+.asset-card-featured {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.asset-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 260ms ease;
+}
+
+.asset-card::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 0;
+    height: 48%;
+    background: linear-gradient(180deg, transparent, rgba(20, 18, 31, 0.72));
+    pointer-events: none;
+}
+
+.asset-card:hover img {
+    transform: scale(1.04);
+}
+
+.asset-card figcaption {
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    z-index: 1;
+    width: fit-content;
+    max-width: calc(100% - 24px);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.92);
+    color: var(--ink-deep);
+    font-size: 12.5px;
+    font-weight: 800;
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+    padding: 7px 11px;
 }
 
 /* Packages */
@@ -1485,6 +1626,10 @@ h2 {
     .program-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
+    .asset-gallery {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
 }
 
 @media (max-width: 860px) {
@@ -1502,6 +1647,30 @@ h2 {
 
     .hero-stats {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hero {
+        padding: 82px 0 86px;
+    }
+
+    .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .hero-inner > :not(.hero-media),
+    .hero-media {
+        grid-column: auto;
+    }
+
+    .hero-media {
+        grid-row: auto;
+        max-width: 720px;
+    }
+
+    .hero-media img {
+        min-height: 0;
+        aspect-ratio: 3 / 2;
     }
 
     .section-head {
@@ -1533,8 +1702,31 @@ h2 {
         font-size: 16.5px;
     }
 
+    .nav {
+        min-height: 72px;
+        gap: 12px;
+    }
+
+    .brand {
+        gap: 10px;
+    }
+
+    .brand-mark {
+        width: 46px;
+        height: 46px;
+    }
+
+    .brand-text strong {
+        font-size: 14px;
+    }
+
     .brand-sub {
         display: none;
+    }
+
+    .nav-toggle {
+        width: 42px;
+        height: 42px;
     }
 
     .problem-grid,
@@ -1550,6 +1742,10 @@ h2 {
 
     .program-grid {
         grid-template-columns: 1fr;
+    }
+
+    .asset-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     /* Show only featured programs on mobile until expanded */
@@ -1572,6 +1768,11 @@ h2 {
     .program-more .button {
         width: 100%;
         min-width: 0;
+    }
+
+    .asset-card-featured {
+        grid-column: span 1;
+        grid-row: span 1;
     }
 
     .social-grid {
@@ -1607,6 +1808,10 @@ h2 {
     }
 
     .division-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .asset-gallery {
         grid-template-columns: 1fr;
     }
 }
