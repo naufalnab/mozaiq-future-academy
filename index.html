@@ -14,10 +14,9 @@
         content="Bukan sekadar vendor ekskul. Kami membantu sekolah membangun ekosistem program yang profesional, bernilai, dan siap dikembangkan.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="id_ID">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
-        rel="stylesheet">
+    <link rel="preload" as="image" href="assets/images/hero/12-eskul-1200.webp"
+        imagesrcset="assets/images/hero/12-eskul-720.webp 720w, assets/images/hero/12-eskul-1200.webp 1200w"
+        imagesizes="(max-width: 860px) calc(100vw - 40px), 600px" media="(min-width: 681px)" type="image/webp">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
@@ -29,7 +28,7 @@
         <div class="container nav" aria-label="Navigasi utama">
             <a class="brand" href="#home" aria-label="Mozaiq Future Academy beranda">
                 <span class="brand-mark" aria-hidden="true">
-                    <img src="assets/images/logo-mozaiq-future-academy.png" alt="" width="1254" height="1254">
+                    <img src="assets/images/brand/logo-128.webp" alt="" width="128" height="128" decoding="async">
                 </span>
                 <span class="brand-text">
                     <strong>MOZAIQ FUTURE ACADEMY</strong>
@@ -132,8 +131,14 @@
                 <a class="hero-media" href="assets/images/12-eskul.png" target="_blank" rel="noopener"
                     aria-label="Buka dokumentasi 12 program Mozaiq Future Academy">
                     <span class="hero-media-frame">
-                        <img src="assets/images/12-eskul.png"
-                            alt="Kolase 12 program ekstrakurikuler Mozaiq Future Academy" width="1536" height="1024">
+                        <picture>
+                            <source media="(min-width: 681px)" type="image/webp"
+                                srcset="assets/images/hero/12-eskul-720.webp 720w, assets/images/hero/12-eskul-1200.webp 1200w"
+                                sizes="(max-width: 860px) calc(100vw - 40px), 600px">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+                                alt="Kolase 12 program ekstrakurikuler Mozaiq Future Academy" width="1536" height="1024"
+                                loading="eager" decoding="async" fetchpriority="high">
+                        </picture>
                     </span>
                     <div class="hero-media-tags" aria-label="Keunggulan program">
                         <span data-en="12 Programs">12 Program</span>
@@ -482,7 +487,7 @@
                     </p>
                 </div>
 
-                <div class="program-filter" role="tablist" aria-label="Filter program">
+                <div class="program-filter" aria-label="Filter program">
                     <button class="filter-chip is-active" data-filter="all" type="button" data-en="All">Semua</button>
                     <button class="filter-chip" data-filter="sports" type="button" data-en="Sports">Olahraga</button>
                     <button class="filter-chip" data-filter="technology" type="button" data-en="Technology">Teknologi</button>
@@ -498,9 +503,9 @@
                             <span class="tag tag-sports" data-en="Sports">Olahraga</span>
                         </div>
                         <figure class="program-media">
-                            <img src="assets/images/badminton-001.png"
+                            <img src="assets/images/programs/badminton-001.webp"
                                 alt="Siswa berlatih badminton di program Mozaiq Future Academy" width="1774"
-                                height="887" loading="lazy">
+                                height="887" loading="lazy" decoding="async">
                         </figure>
                         <h3>Badminton</h3>
                         <p class="program-tagline" data-en="Speed • Reflex • Champion Mentality">Kecepatan • Refleks •
@@ -527,9 +532,9 @@
                             <span class="tag tag-sports" data-en="Sports">Olahraga</span>
                         </div>
                         <figure class="program-media">
-                            <img src="assets/images/renang-001.png"
+                            <img src="assets/images/programs/renang-001.webp"
                                 alt="Siswa berenang dalam program renang Mozaiq Future Academy" width="1942"
-                                height="809" loading="lazy">
+                                height="809" loading="lazy" decoding="async">
                         </figure>
                         <h3 data-en="Swimming">Renang</h3>
                         <p class="program-tagline" data-en="Life Skill • Survival • Elite Fitness">Keterampilan Hidup •
@@ -557,9 +562,9 @@
                             <span class="tag tag-sports" data-en="Sports">Olahraga</span>
                         </div>
                         <figure class="program-media">
-                            <img src="assets/images/archery-001.png"
+                            <img src="assets/images/programs/archery-001.webp"
                                 alt="Siswa berlatih panahan dengan target di program Mozaiq Future Academy"
-                                width="1942" height="809" loading="lazy">
+                                width="1942" height="809" loading="lazy" decoding="async">
                         </figure>
                         <h3 data-en="Archery">Panahan</h3>
                         <p class="program-tagline" data-en="Precision • Focus • Discipline • Prestige">Presisi • Fokus •
@@ -586,9 +591,9 @@
                             <span class="tag tag-sports" data-en="Sports">Olahraga</span>
                         </div>
                         <figure class="program-media">
-                            <img src="assets/images/pingpong-001.png"
+                            <img src="assets/images/programs/pingpong-001.webp"
                                 alt="Siswa berlatih tenis meja di program Mozaiq Future Academy" width="1535"
-                                height="1024" loading="lazy">
+                                height="1024" loading="lazy" decoding="async">
                         </figure>
                         <h3 data-en="Table Tennis">Tenis Meja</h3>
                         <p class="program-tagline" data-en="Precision • Brain Speed • Reflex">Presisi • Kecepatan Otak •
@@ -616,9 +621,9 @@
                             <span class="tag tag-business" data-en="Business">Bisnis</span>
                         </div>
                         <figure class="program-media">
-                            <img src="assets/images/AI-001.png"
+                            <img src="assets/images/programs/AI-001.webp"
                                 alt="Siswa belajar AI Business Academy dengan tampilan teknologi kecerdasan buatan"
-                                width="1536" height="1024" loading="lazy">
+                                width="1536" height="1024" loading="lazy" decoding="async">
                         </figure>
                         <h3>AI Business Academy</h3>
                         <p class="program-tagline" data-en="Artificial Intelligence • Creativity • Innovation">Kecerdasan
@@ -646,9 +651,9 @@
                             <span class="tag tag-tech" data-en="Technology">Teknologi</span>
                         </div>
                         <figure class="program-media">
-                            <img src="assets/images/drone-001.png"
+                            <img src="assets/images/programs/drone-001.webp"
                                 alt="Siswa mengoperasikan drone dalam program Drone Academy" width="1536"
-                                height="1024" loading="lazy">
+                                height="1024" loading="lazy" decoding="async">
                         </figure>
                         <h3>Drone Academy</h3>
                         <p class="program-tagline" data-en="Innovation • STEM • Aviation • Future Skills">Inovasi • STEM •
@@ -676,9 +681,9 @@
                             <span class="tag tag-sports" data-en="Sports">Olahraga</span>
                         </div>
                         <figure class="program-media">
-                            <img src="assets/images/pickle-ball-001.png"
+                            <img src="assets/images/programs/pickle-ball-001.webp"
                                 alt="Siswa bermain pickleball di lapangan program Mozaiq Future Academy"
-                                width="1942" height="809" loading="lazy">
+                                width="1942" height="809" loading="lazy" decoding="async">
                         </figure>
                         <h3>Pickleball</h3>
                         <p class="program-tagline" data-en="Modern • Fun • Inclusive • Global Trend">Modern • Seru •
@@ -706,9 +711,9 @@
                             <span class="tag tag-sports" data-en="Sports">Olahraga</span>
                         </div>
                         <figure class="program-media">
-                            <img src="assets/images/padel-001.png"
+                            <img src="assets/images/programs/padel-001.webp"
                                 alt="Siswa bermain padel di lapangan program Mozaiq Future Academy" width="1536"
-                                height="1024" loading="lazy">
+                                height="1024" loading="lazy" decoding="async">
                         </figure>
                         <h3>Padel</h3>
                         <p class="program-tagline" data-en="Prestige • Premium • Global Exposure">Prestise • Premium •
@@ -736,9 +741,9 @@
                             <span class="tag tag-sports" data-en="Sports">Olahraga</span>
                         </div>
                         <figure class="program-media">
-                            <img src="assets/images/floor-ball-001.png"
+                            <img src="assets/images/programs/floor-ball-001.webp"
                                 alt="Siswa bermain floorball dalam program Mozaiq Future Academy" width="1942"
-                                height="809" loading="lazy">
+                                height="809" loading="lazy" decoding="async">
                         </figure>
                         <h3>Floorball</h3>
                         <p class="program-tagline" data-en="Teamwork • Speed • Energy • Leadership">Kerja Sama •
@@ -766,9 +771,9 @@
                             <span class="tag tag-tactical" data-en="Tactical">Taktis</span>
                         </div>
                         <figure class="program-media">
-                            <img src="assets/images/airsoft-001.png"
+                            <img src="assets/images/programs/airsoft-001.webp"
                                 alt="Tim siswa mengikuti latihan Airsoft Leadership dengan perlengkapan taktis"
-                                width="1536" height="1024" loading="lazy">
+                                width="1536" height="1024" loading="lazy" decoding="async">
                         </figure>
                         <h3>Airsoft Leadership</h3>
                         <p class="program-tagline" data-en="Strategy • Discipline • Tactical Teamwork">Strategi •
@@ -796,9 +801,9 @@
                             <span class="tag tag-business" data-en="Business">Bisnis</span>
                         </div>
                         <figure class="program-media">
-                            <img src="assets/images/affiliate-001.png"
+                            <img src="assets/images/programs/affiliate-001.webp"
                                 alt="Siswa belajar Affiliate Business menggunakan laptop" width="1536" height="1024"
-                                loading="lazy">
+                                loading="lazy" decoding="async">
                         </figure>
                         <h3>Affiliate Business</h3>
                         <p class="program-tagline" data-en="Digital Sales • Communication • Entrepreneur">Penjualan
@@ -826,9 +831,9 @@
                             <span class="tag tag-creative" data-en="Creative">Kreatif</span>
                         </div>
                         <figure class="program-media">
-                            <img src="assets/images/sulap-001.png"
+                            <img src="assets/images/programs/sulap-001.webp"
                                 alt="Siswa tampil dalam Magic School Academy dengan kartu sulap" width="1536"
-                                height="1024" loading="lazy">
+                                height="1024" loading="lazy" decoding="async">
                         </figure>
                         <h3>Magic School Academy</h3>
                         <p class="program-tagline" data-en="Showmanship • Confidence • Creativity">Pertunjukan • Percaya
@@ -890,54 +895,54 @@
                 <div class="asset-gallery" aria-label="Galeri fasilitas dan peralatan Mozaiq Future Academy">
                     <figure class="asset-card asset-card-featured">
                         <img src="assets/images/gallery/seragam-001.webp" alt="Seragam Mozaiq Future Academy tampak depan"
-                            width="1536" height="1024" loading="eager" decoding="async">
+                            width="1536" height="1024" loading="lazy" decoding="async">
                         <figcaption data-en="School branding asset">Aset branding sekolah</figcaption>
                     </figure>
                     <figure class="asset-card">
                         <img src="assets/images/gallery/seragam-002.webp" alt="Seragam program Mozaiq Future Academy"
-                            width="1536" height="1024" loading="eager" decoding="async">
+                            width="1536" height="1024" loading="lazy" decoding="async">
                         <figcaption data-en="Program campaign visual">Visual kampanye program</figcaption>
                     </figure>
                     <figure class="asset-card">
                         <img src="assets/images/gallery/digital-business-001.webp"
                             alt="Aktivitas pembelajaran digital business Mozaiq Future Academy" width="1536"
-                            height="1024" loading="eager" decoding="async">
+                            height="1024" loading="lazy" decoding="async">
                         <figcaption data-en="Digital program setup">Setup program digital</figcaption>
                     </figure>
                     <figure class="asset-card">
                         <img src="assets/images/gallery/badminton-alat-001.webp"
                             alt="Peralatan badminton untuk program Mozaiq Future Academy" width="1536" height="1024"
-                            loading="eager" decoding="async">
+                            loading="lazy" decoding="async">
                         <figcaption data-en="Equipment readiness">Kesiapan peralatan</figcaption>
                     </figure>
                     <figure class="asset-card">
                         <img src="assets/images/gallery/renang-alat-001.webp"
                             alt="Peralatan renang untuk program Mozaiq Future Academy" width="1536" height="1024"
-                            loading="eager" decoding="async">
+                            loading="lazy" decoding="async">
                         <figcaption data-en="Parent update ready">Siap update orang tua</figcaption>
                     </figure>
                     <figure class="asset-card">
                         <img src="assets/images/gallery/renang-fasilitas-001.webp"
                             alt="Fasilitas renang untuk program Mozaiq Future Academy" width="1536" height="1024"
-                            loading="eager" decoding="async">
+                            loading="lazy" decoding="async">
                         <figcaption data-en="School facility reference">Referensi fasilitas sekolah</figcaption>
                     </figure>
                     <figure class="asset-card">
                         <img src="assets/images/gallery/archer-alat-001.webp"
                             alt="Peralatan panahan untuk program Mozaiq Future Academy" width="1536" height="1024"
-                            loading="eager" decoding="async">
+                            loading="lazy" decoding="async">
                         <figcaption data-en="Activity kit">Kit aktivitas</figcaption>
                     </figure>
                     <figure class="asset-card">
                         <img src="assets/images/gallery/archer-fasilitas-001.webp"
                             alt="Fasilitas panahan untuk program Mozaiq Future Academy" width="1536" height="1024"
-                            loading="eager" decoding="async">
+                            loading="lazy" decoding="async">
                         <figcaption data-en="Program facility visual">Visual fasilitas program</figcaption>
                     </figure>
                     <figure class="asset-card">
                         <img src="assets/images/gallery/pingpong-fasilitas-001.webp"
                             alt="Fasilitas tenis meja untuk program Mozaiq Future Academy" width="1536" height="1024"
-                            loading="eager" decoding="async">
+                            loading="lazy" decoding="async">
                         <figcaption data-en="Social media ready">Siap media sosial sekolah</figcaption>
                     </figure>
                     <figure class="asset-card asset-extra">
@@ -1002,7 +1007,7 @@
                     </figure>
                     <figure class="asset-card asset-extra">
                         <img src="assets/images/gallery/ai-alat-001.webp"
-                            alt="Perangkat belajar AI Business Academy" width="1536" height="1024" loading="lazy">
+                            alt="Perangkat belajar AI Business Academy" width="1536" height="1024" loading="lazy" decoding="async">
                         <figcaption data-en="AI learning tools">Alat belajar AI</figcaption>
                     </figure>
                     <figure class="asset-card asset-extra">
@@ -1020,7 +1025,7 @@
                     <figure class="asset-card asset-extra">
                         <img src="assets/images/gallery/airsoft-fasilitas-001.webp"
                             alt="Fasilitas latihan Airsoft Leadership Mozaiq Future Academy" width="1536"
-                            height="1024" loading="lazy">
+                            height="1024" loading="lazy" decoding="async">
                         <figcaption data-en="Controlled activity setup">Setup aktivitas terkontrol</figcaption>
                     </figure>
                     <figure class="asset-card asset-extra">
@@ -1306,7 +1311,8 @@
         <div class="container footer-inner">
             <div class="footer-brand">
                 <span class="brand-mark" aria-hidden="true">
-                    <img src="assets/images/logo-mozaiq-future-academy.png" alt="" width="1254" height="1254">
+                    <img src="assets/images/brand/logo-128.webp" alt="" width="128" height="128" loading="lazy" decoding="async"
+                        decoding="async">
                 </span>
                 <div class="footer-brand-text">
                     <strong>MOZAIQ FUTURE ACADEMY</strong>
@@ -1352,9 +1358,9 @@
         <span class="wa-float-label" data-en="Discuss Partnership">Diskusi Kemitraan</span>
     </a>
 
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/motion.js"></script>
+    <script src="assets/js/icons.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/motion.js" defer></script>
 </body>
 
 </html>
