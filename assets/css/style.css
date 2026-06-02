@@ -70,6 +70,27 @@ button {
     color: #ffffff;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(14px);
+    transition: background 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.site-header.is-scrolled {
+    background: rgba(20, 18, 31, 0.97);
+    border-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 18px 50px rgba(18, 15, 36, 0.22);
+}
+
+.motion-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--purple-soft), var(--gold));
+    box-shadow: 0 0 22px rgba(217, 164, 65, 0.35);
+    pointer-events: none;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
 }
 
 .nav {
@@ -459,6 +480,11 @@ button {
     height: 100%;
     min-height: 500px;
     object-fit: cover;
+}
+
+.motion-enhanced .hero-media img {
+    transform: translate3d(0, var(--hero-image-shift, 0px), 0) scale(1.04);
+    will-change: transform;
 }
 
 .hero-media-tags {
@@ -2115,5 +2141,50 @@ h2 {
 @media (max-width: 360px) {
     .asset-gallery {
         grid-template-columns: 1fr;
+    }
+}
+
+.motion-enhanced [data-motion-reveal="true"] {
+    will-change: transform, opacity, filter;
+}
+
+.motion-enhanced .button,
+.motion-enhanced .nav-cta,
+.motion-enhanced .mobile-cta,
+.motion-enhanced .social-link,
+.motion-enhanced .footer-social a,
+.motion-enhanced .wa-float,
+.motion-enhanced .nav-toggle,
+.motion-enhanced .lang-switch button {
+    will-change: transform;
+}
+
+.motion-enhanced .section-head,
+.motion-enhanced .hero-heading,
+.motion-enhanced .hero-copy,
+.motion-enhanced .hero-media {
+    backface-visibility: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.001ms !important;
+    }
+
+    .motion-progress {
+        display: none;
+    }
+
+    .motion-enhanced .hero-media img {
+        transform: none;
     }
 }
