@@ -1,0 +1,863 @@
+1. Kesan pertama: sudah premium, tapi belum sepenuhnya “meyakinkan sekolah”
+
+Kesan pertama halaman ini sudah cukup kuat: warna ungu gelap memberi kesan modern, teknologi, futuristik, dan cukup premium. Logo Mozaiq juga membantu memberi identitas yang serius. Secara umum, ini tidak terlihat seperti website abal-abal.
+
+Masalahnya, untuk audiens sekolah, terutama kepala sekolah, yayasan, atau koordinator ekstrakurikuler, halaman ini harus menjawab 3 pertanyaan dengan sangat cepat:
+
+Apa ini?
+Program ekstrakurikuler siap jalan untuk sekolah.
+
+Kenapa sekolah butuh ini?
+Karena banyak sekolah punya ekskul, tapi belum punya sistem, dokumentasi, kurikulum visual, dan program masa depan yang terstruktur.
+
+Kenapa harus percaya Mozaiq?
+Karena ada kurikulum, visual documentation, pilihan program, safety, sistem partnership, dan bukti implementasi.
+
+Halamanmu sudah punya semua bahan itu, tapi urutannya masih terasa seperti “menampilkan semua aset” bukan “membangun keyakinan secara bertahap”. Ini penting, karena pembeli B2B sekolah biasanya tidak hanya beli karena tampilannya keren. Mereka butuh rasa aman: “Apakah ini aman untuk anak?”, “Apakah ini bisa dijalankan tanpa merepotkan sekolah?”, “Apakah orang tua akan suka?”, “Apakah dokumentasinya bisa meningkatkan citra sekolah?”, “Apakah biayanya masuk akal?”
+
+2. Hero section: bagus secara visual, tapi copy masih bisa dibuat lebih tajam
+
+Hero versi Indonesia:
+
+Ekstrakurikuler Premium Siap Jalan untuk Sekolah Masa Depan.
+
+Hero versi English:
+
+Premium, Ready-To-Run Extracurricular Programs for Future-Ready Schools.
+
+Ini sudah cukup bagus. Tapi masih terasa agak generik. “Sekolah masa depan” dan “future-ready schools” terdengar bagus, tapi belum langsung menunjukkan hasil konkret. Untuk audiens sekolah, headline yang lebih kuat sebaiknya menggabungkan program + sistem + citra sekolah + kemudahan implementasi.
+
+Alternatif Indonesia yang lebih tajam:
+
+Program Ekstrakurikuler Premium yang Siap Dijalankan, Didokumentasikan, dan Dikembangkan untuk Sekolah Modern.
+
+Atau lebih pendek:
+
+Ekskul Premium Siap Jalan untuk Meningkatkan Daya Tarik Sekolah.
+
+Atau lebih B2B:
+
+Kami Bantu Sekolah Menjalankan Ekskul Premium dengan Kurikulum, Pelatih, Sistem, dan Dokumentasi Visual.
+
+Versi English:
+
+Ready-to-Run Premium Extracurricular Programs with Curriculum, Coaches, Visual Documentation, and School Partnership Support.
+
+Atau lebih ringkas:
+
+Premium Extracurricular Programs Built to Strengthen Your School’s Value.
+
+Menurutku headline sekarang sudah “keren”, tapi belum cukup “menjual”. Ia terdengar seperti tagline brand, bukan janji bisnis. Untuk sekolah, janji bisnisnya adalah: program siap jalan, minim repot, terlihat bagus di mata orang tua, dan punya dokumentasi.
+
+3. Hero visual: menarik, tapi grid gambar terlalu kecil dan kurang punya fokus
+
+Di desktop, gambar kolase di kanan hero terlihat menarik, tapi ukurannya agak kecil. Padahal visual dokumentasi adalah salah satu kekuatan utama halaman ini. Kalau memang dokumentasi visual adalah pembeda besar, hero harus lebih berani menampilkan gambar.
+
+Masalahnya sekarang: hero copy di kiri dominan, visual di kanan mendukung, tetapi belum terasa “wow”. Kolase terlihat seperti thumbnail gallery, bukan bukti premium.
+
+Saran:
+
+Buat visual hero lebih besar, misalnya 40–45% lebar section. Pilih satu image utama yang paling kuat, lalu 3–4 thumbnail kecil di sekelilingnya. Jangan terlalu banyak gambar kecil. Satu gambar besar lebih mudah memancing emosi daripada 12 gambar kecil.
+
+Contoh struktur visual hero:
+
+Gambar utama: anak/siswa sedang aktivitas ekskul paling premium.
+Overlay kecil: “12 Programs”, “50+ Visual Assets”, “K–12 Ready”, “Documentation Included”.
+Thumbnail kecil: Swimming, Archery, Robotics, Futsal.
+
+Saat ini visual hero sudah cukup rapi, tapi belum cukup “menggigit”.
+
+4. Statistik di hero: bagus, tapi angka perlu dibuat lebih credible
+
+Di bawah hero ada angka seperti 12 programs, 50+ visual assets, 30+ something, K–12. Ini bagus karena memberi kesan konkret. Masalahnya, beberapa angka terlihat sebagai dekorasi, bukan bukti.
+
+Kalau pakai angka, sebaiknya jelas:
+
+12 Program Ekskul
+50+ Template Dokumentasi Visual
+30+ Aktivitas Siap Implementasi
+K–12 Format Sekolah
+
+Jika dalam English:
+
+12 Programs
+50+ Visual Documentation Assets
+30+ Activity Concepts
+K–12 Ready
+
+Jangan terlalu singkat sampai orang tidak paham maksudnya. Di desktop mungkin masih terbaca, tapi di mobile statistiknya menjadi terlalu sempit dan kurang kuat.
+
+Saran khusus mobile: jadikan statistik 2 kolom, bukan card kecil bertumpuk yang terlalu tipis. Beri label yang jelas, bukan hanya angka besar.
+
+5. Section “Banyak sekolah punya ekstrakurikuler…” sangat bagus secara konsep
+
+Ini salah satu section terbaik secara positioning. Kalimat:
+
+Banyak sekolah punya ekstrakurikuler, tapi belum punya sistem.
+
+Ini sangat kuat. Ini langsung menyerang pain point. Bukan sekadar “kami punya program”, tapi “kami menyelesaikan masalah operasional sekolah”.
+
+Namun layout card-nya masih terlalu datar. Empat card pain point terlihat rapi, tapi kurang emosional. Masalah sekolah seharusnya terasa lebih nyata.
+
+Contoh copy yang lebih tajam:
+
+Ekskul berjalan, tapi sulit dinilai kualitasnya.
+Program ada, tetapi tidak punya standar aktivitas, dokumentasi, dan perkembangan siswa.
+
+Dokumentasi sering tercecer.
+Foto, video, laporan, dan testimoni tidak tersusun menjadi aset promosi sekolah.
+
+Program bergantung pada individu.
+Jika pelatih berubah, kualitas dan arah program ikut berubah.
+
+Orang tua sulit melihat progres anak.
+Aktivitas berjalan, tetapi dampaknya tidak terlihat jelas dari luar.
+
+Ini lebih tajam daripada hanya menyebut masalah umum. Sekolah akan merasa, “iya ini masalah kami.”
+
+6. Section “Bukan Sekadar Vendor Ekskul” adalah positioning yang bagus, tapi perlu diperkuat
+
+Kalimat ini bagus:
+
+Bukan Sekadar Vendor Ekskul. Kami Membantu Sekolah Membangun Sistem.
+
+Ini sangat cocok. Kamu tidak ingin terlihat sebagai penyedia pelatih renang/panahan biasa. Kamu ingin terlihat sebagai partner sistem ekstrakurikuler.
+
+Tapi bagian ini perlu dibuat lebih premium secara copy. Saat ini terasa masih “menjelaskan”, belum “mengangkat nilai”.
+
+Saran headline:
+
+Bukan Vendor Ekskul. Kami Partner Pengembangan Program Sekolah.
+
+Atau:
+
+Dari Ekskul Biasa Menjadi Sistem Program yang Terukur dan Bernilai Promosi.
+
+Empat card di bawahnya bisa dibagi menjadi:
+
+Kurikulum Aktivitas
+Setiap program punya arah, level, dan capaian.
+
+Pelaksanaan Terstruktur
+Sekolah tidak perlu membangun sistem dari nol.
+
+Dokumentasi Visual
+Aktivitas ekskul menjadi aset komunikasi sekolah.
+
+Evaluasi & Pengembangan
+Program bisa ditingkatkan berdasarkan kebutuhan sekolah.
+
+Masalah terbesar section ini: secara visual terlalu mirip dengan section sebelumnya. Banyak section memakai pola “judul kiri, paragraf kanan, card-card bawah”. Ini rapi, tapi jika terlalu sering, halaman terasa monoton.
+
+Saran: untuk section ini, buat layout lebih editorial. Misalnya kiri ada diagram “Vendor Ekskul vs Partnership System”, kanan ada poin pembeda. Ini akan lebih kuat.
+
+7. Section “Empat langkah sederhana” sudah jelas, tapi masih terlalu aman
+
+Empat langkah: mapping, development, implementation, documentation/iteration. Ini baik. Tapi copy-nya bisa lebih “school-friendly”.
+
+Saat sekolah membaca, mereka ingin tahu: “Apa yang akan terjadi jika kami bekerja sama?” Maka step harus terasa praktis.
+
+Contoh Indonesia:
+
+1. Pemetaan Kebutuhan Sekolah
+Kami memahami jenjang siswa, fasilitas, jadwal, dan target sekolah.
+
+2. Pemilihan Program
+Sekolah memilih program yang paling sesuai dengan karakter siswa dan positioning sekolah.
+
+3. Implementasi Ekskul
+Program dijalankan dengan format yang rapi, terjadwal, dan mudah dipantau.
+
+4. Dokumentasi & Evaluasi
+Aktivitas dikemas menjadi dokumentasi visual dan bahan komunikasi kepada orang tua.
+
+Untuk English:
+
+1. School Needs Mapping
+We understand your student levels, facilities, schedule, and school goals.
+
+2. Program Selection
+The school chooses programs that fit its students and positioning.
+
+3. Program Implementation
+Activities are delivered in a structured, scheduled, and trackable format.
+
+4. Documentation & Review
+Sessions are documented visually and reviewed for improvement.
+
+Yang sekarang sudah bagus, tapi masih bisa lebih “langsung kebayang”.
+
+8. Section “Five divisions” bagus, tapi icon/card terlalu kecil efeknya
+
+Five divisions / Lima divisi adalah ide yang sangat bagus karena menunjukkan bahwa Mozaiq bukan hanya punya 1–2 aktivitas, tapi punya ekosistem.
+
+Namun secara visual, section ini agak kurang nendang. Card kecil-kecil dengan icon kecil terasa seperti informasi pendukung, padahal ini salah satu kekuatan brand.
+
+Saran:
+
+Buat section ini lebih visual. Misalnya 5 divisi dibuat sebagai horizontal tabs atau cards yang lebih besar:
+
+Sport & Movement
+Swimming, Archery, Futsal, Airsoft, etc.
+
+Creative & Media
+Photography, content, documentation, design.
+
+STEM & Future Skills
+Coding, robotics, AI, digital literacy.
+
+Leadership & Character
+Teamwork, confidence, discipline, communication.
+
+Event & Showcase
+Performance, competition, exhibition, school branding.
+
+Kalau di Indonesia:
+
+Olahraga & Ketangkasan
+Kreatif & Media
+STEM & Future Skills
+Karakter & Kepemimpinan
+Event, Showcase & Dokumentasi
+
+Dengan begitu, sekolah melihat ini bukan sekadar daftar program, tapi ekosistem pengembangan siswa.
+
+9. Section 12 Program: kuat, tapi terlalu berat secara visual
+
+Ini section paling informatif, tapi juga paling berisiko melelahkan.
+
+Kelebihannya:
+
+Program terlihat banyak.
+Ada gambar.
+Ada harga.
+Ada kategori.
+Membuktikan bahwa Mozaiq punya paket nyata.
+
+Masalahnya:
+
+Card terlalu banyak dalam satu alur panjang.
+Semua card punya bobot visual yang hampir sama.
+Mata pembaca sulit menentukan mana yang paling penting.
+Di mobile, section ini menjadi sangat panjang dan bisa membuat user lelah sebelum sampai pricing/CTA.
+
+Untuk desktop, 12 card masih oke. Untuk mobile, terlalu panjang. Orang harus scroll banyak sekali hanya untuk melewati program.
+
+Saran paling penting: di mobile, tampilkan 6 program dulu, lalu tombol:
+
+Lihat Semua Program
+
+Atau gunakan kategori/tab:
+
+Sports | Creative | Future Skills | Leadership
+
+Di desktop, card 3 kolom bagus. Di mobile, sebaiknya card dibuat lebih compact. Saat ini setiap card terasa panjang, karena gambar besar + teks + detail + harga + tombol. Untuk mobile, bisa dibuat:
+
+Gambar
+Nama program
+1 kalimat manfaat
+Harga mulai
+Tombol detail kecil
+
+Jangan semua informasi ditampilkan di mobile. Mobile harus memancing klik, bukan memuat brosur penuh.
+
+10. Program cards: perlu hierarchy harga dan value yang lebih tajam
+
+Card program terlihat cukup rapi, tapi copy di dalamnya masih tampak seperti katalog. Untuk menjual ke sekolah, jangan hanya tampilkan nama program dan harga. Tampilkan alasan sekolah perlu program itu.
+
+Misalnya:
+
+Archery
+Melatih fokus, kontrol diri, koordinasi, dan disiplin siswa.
+
+Swimming
+Membangun keberanian, keselamatan air, dan kebugaran dasar.
+
+Robotics
+Memperkenalkan problem solving, logika, dan engineering thinking.
+
+Photography
+Membantu siswa belajar visual storytelling dan dokumentasi kegiatan.
+
+Public Speaking
+Melatih keberanian, komunikasi, dan kepercayaan diri.
+
+Jadi bukan hanya “program apa”, tapi “manfaat pendidikan apa”.
+
+Karena audiensmu sekolah, manfaat edukatif harus lebih dominan daripada vibe keren.
+
+11. Dokumentasi visual: sangat kuat, tapi butuh kurasi dan spacing lebih baik
+
+Section dokumentasi visual adalah salah satu selling point terbesar. Galeri ini membuktikan bahwa Mozaiq serius, punya aset, dan bisa membantu sekolah terlihat aktif.
+
+Namun masalahnya: jumlah gambar terlalu banyak ditampilkan sekaligus. Di desktop masih lumayan, tapi di mobile section ini menjadi sangat panjang dan agak melelahkan. Selain itu, beberapa gambar sangat gelap dan detailnya kurang langsung terbaca pada ukuran kecil.
+
+Saran:
+
+Kurangi tampilan awal menjadi 8–12 gambar terbaik saja. Sisanya masuk tombol:
+
+Lihat Dokumentasi Lengkap
+
+Atau buat galeri berdasarkan kategori:
+
+Program Poster
+Activity Documentation
+Parent Communication
+Social Media Assets
+Event Recap
+
+Sekarang galeri terasa seperti “semua aset ditumpahkan”. Akan lebih premium jika dikurasi. Brand premium tidak selalu menunjukkan banyak; brand premium menunjukkan yang terbaik.
+
+Untuk caption, gunakan label yang lebih strategis. Jangan hanya nama aktivitas. Bisa tambahkan:
+
+Parent Update Ready
+Social Media Ready
+School Branding Asset
+Program Campaign Visual
+
+Dalam versi Indonesia:
+
+Siap untuk Update Orang Tua
+Siap untuk Media Sosial Sekolah
+Aset Branding Sekolah
+Dokumentasi Program
+
+Ini akan membuat dokumentasi terlihat bukan sekadar gambar, tapi aset komunikasi.
+
+12. Pricing section: sudah bagus, tapi paket belum cukup mudah dibandingkan
+
+Pricing section dengan Basic, Premium, Ultimate sudah tepat. Namun dari screenshot, isi tiap paket terlihat agak padat dan beda tinggi. Secara psikologis, paket tengah “Premium” sudah ditonjolkan dengan warna ungu, ini bagus. Tapi masih bisa dibuat lebih tajam.
+
+Masalah pricing saat ini:
+
+Perbandingan antar paket belum langsung terbaca.
+Paket Basic, Premium, Ultimate perlu perbedaan value yang lebih jelas.
+CTA di tiap paket sebaiknya lebih spesifik.
+Ada risiko harga terlihat tinggi jika manfaatnya belum cukup dikunci sebelumnya.
+
+Saran struktur:
+
+Basic
+Untuk sekolah yang ingin mulai dengan 1–2 program ekskul terstruktur.
+
+Premium
+Untuk sekolah yang ingin program berjalan rapi, terdokumentasi, dan siap dikomunikasikan ke orang tua.
+
+Ultimate
+Untuk sekolah yang ingin membangun ekosistem ekskul lengkap sebagai bagian dari branding sekolah.
+
+CTA:
+
+Basic: Konsultasi Paket Basic
+Premium: Diskusi Paket Premium
+Ultimate: Bangun Program Sekolah
+
+Jangan semua CTA sama. CTA yang lebih spesifik terasa lebih personal.
+
+Tambahkan juga kalimat kecil sebelum pricing:
+
+Harga dapat disesuaikan berdasarkan jumlah siswa, frekuensi pertemuan, lokasi sekolah, dan kebutuhan dokumentasi.
+
+Ini penting agar sekolah tidak langsung takut pada angka.
+
+13. Child safety section bagus, tapi seharusnya lebih kuat dan lebih awal
+
+“Child safety is our first priority” sangat penting. Untuk sekolah dan orang tua, safety bukan tambahan. Safety adalah syarat utama.
+
+Masalahnya section ini muncul cukup bawah, setelah program, galeri, dan pricing. Menurutku safety perlu lebih menonjol, bahkan bisa muncul sebelum program atau minimal setelah “How It Works”.
+
+Saran tambahkan satu section singkat:
+
+Aman untuk Siswa, Mudah untuk Sekolah
+
+Pelatih/mentor mengikuti standar pendampingan anak.
+Aktivitas disesuaikan dengan usia dan level siswa.
+Sekolah dapat menentukan batasan, jadwal, dan format kegiatan.
+Dokumentasi dilakukan dengan persetujuan dan kebijakan sekolah.
+Komunikasi program dibuat rapi dan profesional.
+
+Untuk English:
+
+Safe for Students, Easy for Schools
+
+Age-appropriate activities.
+Structured supervision.
+School-approved documentation.
+Clear communication flow.
+Flexible implementation format.
+
+Ini bisa sangat meningkatkan trust.
+
+14. FAQ section terlalu sederhana untuk keputusan B2B
+
+FAQ saat ini bagus sebagai penutup, tapi pertanyaannya masih kurang “decision-driven”. Untuk sekolah, FAQ harus menjawab keberatan pembelian.
+
+Tambahkan pertanyaan seperti:
+
+Apakah program bisa disesuaikan dengan fasilitas sekolah?
+Ya, program dapat disesuaikan dengan lokasi, fasilitas, usia siswa, dan tujuan sekolah.
+
+Apakah sekolah harus menyediakan alat?
+Tergantung program. Beberapa program dapat menggunakan fasilitas sekolah, beberapa membutuhkan perlengkapan tambahan.
+
+Apakah bisa dimulai dengan trial class?
+Ya, sekolah dapat memulai dari sesi pengenalan/trial sebelum mengambil program reguler.
+
+Apakah dokumentasi visual sudah termasuk?
+Tergantung paket. Dokumentasi dapat disediakan sebagai bagian dari program partnership.
+
+Apakah program cocok untuk TK, SD, SMP, SMA?
+Program dapat disesuaikan berdasarkan jenjang dan level kesiapan siswa.
+
+Bagaimana sistem pembayaran dan kerja samanya?
+Dapat disesuaikan berdasarkan jumlah siswa, durasi, frekuensi, dan jenis program.
+
+FAQ harus menjadi tempat menghapus keraguan, bukan hanya formalitas.
+
+15. CTA akhir sudah bagus, tapi bisa dibuat lebih meyakinkan
+
+CTA akhir:
+
+Ingin tahu program mana yang paling cocok untuk sekolah Anda?
+
+Ini bagus. Tapi card CTA bisa dibuat lebih kuat dengan menjelaskan proses setelah klik.
+
+Misalnya:
+
+Diskusi 15–30 menit untuk memetakan kebutuhan sekolah Anda.
+Kami akan membantu memilih program yang paling sesuai berdasarkan jenjang siswa, fasilitas sekolah, jadwal, dan target pengembangan.
+
+Checklist:
+
+Pilih program yang cocok
+Estimasi biaya
+Format trial class
+Skema partnership
+Kebutuhan dokumentasi
+
+CTA button:
+
+Jadwalkan Diskusi Kemitraan
+
+Versi English:
+
+Book a 15–30 minute discussion to map the right programs for your school.
+We’ll help you choose suitable programs based on student level, school facilities, schedule, and partnership goals.
+
+CTA:
+
+Schedule Partnership Discussion
+
+Saat ini CTA sudah oke, tapi bisa lebih konkret.
+
+16. Mobile version: masalah utama ada di panjang halaman dan kepadatan
+
+Mobile kamu secara visual sudah cukup rapi, tapi masih terasa terlalu panjang. Ini masalah besar. Pengunjung mobile mungkin tidak akan membaca semua. Mereka akan scan cepat.
+
+Masalah utama mobile:
+
+Hero terlalu padat.
+Program section terlalu panjang.
+Galeri dokumentasi terlalu panjang.
+Pricing muncul setelah user sudah cukup lelah.
+Card-card banyak yang terlihat mirip.
+Header/menu mengambil banyak ruang saat terbuka.
+Beberapa teks kecil kurang nyaman dibaca.
+
+Solusi mobile:
+
+Di mobile, jangan tampilkan semua konten seperti desktop. Buat versi ringkas:
+
+Urutan mobile yang lebih efektif:
+
+Hero
+Pain point sekolah
+CTA awal
+Program unggulan, tampilkan 6 saja
+How it works
+Dokumentasi, tampilkan 8 gambar terbaik
+Pricing
+Safety
+FAQ
+CTA akhir
+
+CTA awal setelah pain point penting. Jangan tunggu sampai bawah sekali.
+
+Tambahkan tombol sticky kecil di bawah mobile:
+
+Diskusi Kemitraan
+
+Ini bisa meningkatkan konversi.
+
+17. Menu mobile: rapi tapi terlalu besar dan terasa kosong
+
+Menu mobile yang terbuka terlihat clean, tapi sangat besar. Jarak antar menu terlalu jauh. Secara estetika oke, tapi secara fungsi agak boros ruang.
+
+Masalahnya:
+
+Menu item terlalu besar dan terlalu jauh.
+Area kosong sangat banyak.
+Tombol bahasa dan CTA terlalu besar, terutama CTA.
+Header logo + brand cukup besar, sehingga menu terasa berat.
+Icon hamburger dalam kotak besar terlihat premium, tapi agak terlalu dominan.
+
+Saran:
+
+Kurangi vertical spacing antar item sekitar 20–30%. Menu masih bisa besar, tapi jangan terlalu longgar.
+
+Ukuran menu item sekarang terasa seperti display heading. Untuk mobile nav, cukup 22–26px, bukan terlalu besar.
+
+Tombol CTA di menu bisa full width, tapi tinggi jangan terlalu besar. Sekarang terlalu “gemuk”. Buat tinggi 52–56px saja.
+
+Language switcher ID/EN sudah bagus, tapi saat active EN terlihat ada outline biru/putih yang agak mengganggu. Mungkin efek focus state browser. Perlu hilangkan default outline atau custom focus yang lebih halus. Outline aksesibilitas penting, tapi style-nya harus sesuai brand. Jangan sampai terlihat seperti bug.
+
+Saran focus state:
+
+Gunakan ring ungu muda transparan.
+Jangan pakai outline biru default.
+Pastikan active state ID/EN jelas tapi tidak norak.
+18. Brand identity: nama dan logo kuat, tapi sub-brand belum dijelaskan
+
+“MOZAIQ FUTURE ACADEMY” terdengar bagus. Tapi user baru mungkin bertanya: ini bagian dari Mozaiq Sport Center? Mozaiq apa? Academy apa? Kenapa Future Academy?
+
+Sebaiknya di hero ada microcopy:
+
+by Mozaiq Sport Center / Mozaiq Group jika memang ada induknya.
+
+Atau:
+
+A school partnership program by Mozaiq Future Academy
+
+Kalau targetnya sekolah, brand lineage membantu trust. Kalau Mozaiq sudah punya reputasi olahraga, manfaatkan itu.
+
+19. Bahasa Indonesia dan English: English cukup bagus, tapi beberapa bagian terasa terjemahan langsung
+
+Versi English secara umum oke. Namun beberapa frasa masih terasa seperti direct translation.
+
+Contoh:
+
+Many schools have extracurriculars, but not yet a system.
+Ini bisa diperhalus:
+
+Many schools offer extracurricular activities, but few have a structured system behind them.
+
+More than an extracurricular vendor. We help schools build a system.
+Lebih natural:
+
+More than an extracurricular vendor — we help schools build a complete program system.
+
+Everything schools usually ask before partnering.
+Ini cukup baik, tapi bisa lebih natural:
+
+Common questions schools ask before partnering with us.
+
+Flexible. Profitable. Scalable.
+Kata “profitable” agak sensitif untuk konteks sekolah. Sekolah mungkin tidak ingin merasa program anak-anak dibuat “profitable”. Untuk B2B memang profit penting, tapi diksi ini bisa diganti dengan yang lebih edukatif dan aman.
+
+Alternatif:
+Flexible. Sustainable. Scalable.
+
+Atau:
+Flexible. Structured. Scalable.
+
+Untuk Indonesia, “Menguntungkan” juga agak rawan. Lebih baik:
+
+Fleksibel. Berkelanjutan. Berkembang.
+
+Atau:
+
+Fleksibel. Terstruktur. Mudah Dikembangkan.
+
+Karena sekolah biasanya lebih nyaman dengan kata “berkelanjutan” daripada “menguntungkan”.
+
+20. Masalah terbesar: halaman belum cukup menonjolkan “hasil untuk sekolah”
+
+Sekarang halaman banyak menampilkan:
+
+program,
+sistem,
+dokumentasi,
+harga.
+
+Tapi belum cukup menampilkan “hasil akhir” untuk sekolah.
+
+Hasil akhir yang perlu ditonjolkan:
+
+Sekolah terlihat lebih aktif dan modern.
+Orang tua melihat kegiatan anak dengan lebih jelas.
+Ekskul menjadi bagian dari branding sekolah.
+Tim sekolah tidak perlu membangun sistem dari nol.
+Program bisa dipilih sesuai jenjang dan fasilitas.
+Dokumentasi bisa dipakai untuk promosi, laporan, dan komunikasi.
+
+Tambahkan section khusus:
+
+Apa yang Sekolah Dapatkan?
+
+Isi:
+
+Program ekskul siap jalan
+Kurikulum aktivitas
+Mentor/pelatih
+Dokumentasi visual
+Materi promosi program
+Sistem evaluasi sederhana
+Opsi trial class
+Partnership fleksibel
+
+Ini akan membuat value lebih konkret.
+
+21. Perlu satu section “Untuk siapa program ini?”
+
+Ini penting untuk membantu calon sekolah merasa cocok.
+
+Contoh:
+
+Cocok untuk sekolah yang ingin:
+
+menambah pilihan ekskul premium,
+meningkatkan daya tarik di mata orang tua,
+memiliki dokumentasi kegiatan yang rapi,
+menyediakan program future skills,
+menjalankan ekskul tanpa membangun sistem dari nol,
+membuat program yang bisa dikembangkan setiap semester.
+
+Versi English:
+
+Ideal for schools that want to:
+
+offer more premium extracurricular options,
+strengthen parent-facing communication,
+document student activities professionally,
+introduce future-ready skills,
+run programs without building everything from scratch,
+scale extracurricular offerings over time.
+
+Ini sangat membantu konversi.
+
+22. Visual style: sudah konsisten, tapi terlalu banyak ungu pucat di background section
+
+Warna ungu muda/putih pada section body membuat halaman terasa bersih. Tapi karena banyak section menggunakan background hampir sama, transisi antar section kurang dramatis. Hero sangat kuat, lalu body menjadi sangat soft dan repetitif.
+
+Saran:
+
+Gunakan alternating section background dengan lebih jelas.
+Beberapa section penting seperti “Bukan Sekadar Vendor” atau “Dokumentasi Visual” bisa diberi background putih bersih.
+Pricing bisa diberi background ungu sangat muda atau gradient halus.
+Safety bisa diberi background dark/premium agar terasa serius.
+
+Dengan begitu halaman tidak terasa seperti satu halaman panjang yang datar.
+
+23. Card design: rapi, tapi terlalu seragam
+
+Banyak card menggunakan gaya yang mirip: putih, shadow halus, icon kecil, teks. Ini membuat halaman konsisten, tapi juga membuat semua informasi terasa setara. Padahal tidak semua informasi sama penting.
+
+Saran:
+
+Pain point card bisa lebih tajam dengan icon merah/orange.
+Benefit card bisa pakai icon ungu.
+Step card bisa pakai angka besar.
+Program card bisa pakai gambar dominan.
+Safety card bisa pakai checkmark/secure icon.
+Pricing card punya hierarchy kuat.
+
+Sekarang diferensiasi antar jenis card belum cukup kuat.
+
+24. Hierarki CTA perlu diperbaiki
+
+CTA utama ada di hero dan menu. Bagus. Tapi setelah itu, halaman panjang sekali sebelum CTA berikutnya terasa kuat.
+
+Saran taruh CTA ringan setelah section pain point:
+
+Ingin lihat program yang cocok untuk sekolah Anda?
+Diskusi Kemitraan Sekolah
+
+Setelah section program:
+
+Bingung memilih program? Kami bantu mapping kebutuhan sekolah.
+
+Setelah pricing:
+
+Mulai dari trial class atau diskusi paket reguler.
+
+CTA tidak harus selalu besar. Tapi user harus selalu punya jalan keluar.
+
+25. Trust element masih kurang
+
+Halaman ini terlihat premium, tapi trust element belum maksimal. Untuk sekolah, trust itu sangat penting.
+
+Tambahkan:
+
+Sudah dipercaya oleh:
+Kalau belum banyak sekolah, jangan klaim berlebihan. Bisa pakai:
+
+Program dapat disesuaikan untuk:
+
+TK/PAUD
+SD
+SMP
+SMA
+International school
+Islamic school
+Sports academy
+Community program
+
+Tambahkan juga:
+
+Foto aktivitas nyata jika ada.
+Testimoni singkat jika ada.
+Nama pelatih/mentor utama jika relevan.
+“Trial class available”.
+“Custom proposal available”.
+“School partnership format”.
+
+Kalau belum punya testimoni, jangan pakai testimoni palsu. Lebih baik pakai “Partnership format available”.
+
+26. Saran struktur ulang halaman yang lebih kuat
+
+Menurutku struktur halaman yang lebih konversi:
+
+Hero
+Headline, subheadline, CTA, visual program, statistik.
+Problem
+Banyak sekolah punya ekskul, tapi belum punya sistem.
+Outcome
+Apa yang sekolah dapatkan dari Mozaiq.
+Why Mozaiq
+Bukan vendor, tapi partner sistem.
+Program Divisions
+5 divisi besar.
+Featured Programs
+Tampilkan 6–12 program, dengan filter/tab.
+How It Works
+4 langkah kerja.
+Visual Documentation
+Tampilkan kurasi aset terbaik.
+Safety & School Readiness
+Aman, terstruktur, sesuai jenjang.
+Pricing / Partnership Packages
+Basic, Premium, Ultimate.
+FAQ
+CTA final
+
+Urutan sekarang sebenarnya sudah mendekati, tapi “outcome” dan “trust/safety” perlu dinaikkan.
+
+27. Kritik khusus versi desktop
+
+Desktop terlihat cukup profesional. Spacing besar, layout lebar, dan grid bekerja baik. Tapi ada 3 hal yang perlu diperbaiki:
+
+Pertama, beberapa section terlalu kecil secara visual dibanding hero. Hero sangat kuat, lalu section setelahnya terasa seperti slide presentasi kecil.
+
+Kedua, program card 3 kolom bagus, tapi informasi di dalam card agak kecil. Jika targetnya kepala sekolah usia 35–55 tahun, teks kecil bisa mengurangi kenyamanan baca.
+
+Ketiga, dokumentasi visual grid terlihat impressive, tapi tidak semua gambar terbaca. Kurasi lebih penting daripada kuantitas.
+
+28. Kritik khusus versi mobile
+
+Mobile sudah rapi, tapi terasa sangat panjang. Ini kritik paling penting. Jangan samakan strategi desktop dan mobile.
+
+Di mobile, user tidak akan menikmati semua 12 program + semua dokumentasi visual + pricing + FAQ dengan sabar. Mereka akan scroll cepat. Maka tiap section harus lebih ringkas.
+
+Saran mobile:
+
+Hero lebih pendek.
+Statistik 2 kolom.
+Pain point maksimal 4 card.
+Program tampil 6 dulu.
+Dokumentasi tampil 8 gambar dulu.
+Pricing langsung setelah program, jangan terlalu bawah.
+CTA sticky.
+Accordion untuk FAQ sudah cocok.
+Menu mobile dipadatkan.
+
+Kalau mobile tetap sepanjang ini, conversion bisa turun walaupun desainnya bagus.
+
+29. Catatan tentang gambar program
+
+Gambar-gambar program terlihat modern, tapi sebagian sangat “gelap” dan high contrast. Ini cocok untuk vibe futuristik, tapi untuk sekolah dan anak-anak, perlu keseimbangan. Jangan sampai terlalu terlihat seperti event game/club malam/futuristik dewasa.
+
+Untuk program anak sekolah, visual harus tetap:
+
+aman,
+edukatif,
+aktif,
+profesional,
+menyenangkan,
+family-friendly.
+
+Beberapa gambar futuristik gelap bisa dipertahankan, tapi campur dengan visual yang lebih terang, bersih, dan human-centered. Terutama untuk swimming, archery, robotics, public speaking, dan creative media.
+
+30. Copy yang menurutku harus segera diganti/diperbaiki
+
+Beberapa frasa yang perlu diperhatikan:
+
+“Profitable” / “Menguntungkan”
+Ganti menjadi “Sustainable” / “Berkelanjutan”. Untuk sekolah, kata profitable bisa terasa terlalu komersial.
+
+“Ready-to-run”
+Bagus, tapi jelaskan ready-to-run itu termasuk apa: curriculum, coaches, documentation, implementation flow.
+
+“Future-ready schools”
+Bagus sebagai vibe, tapi jangan terlalu sering. Perlu hasil konkret.
+
+“Visual documentation from uniforms to training equipment”
+Bagus, tapi mungkin terlalu sempit. Lebih kuat:
+“Visual documentation for program promotion, parent communication, and school branding.”
+
+“Child safety is our first priority”
+Bagus, tapi perlu dibuat lebih konkret dengan standard/procedure.
+
+31. Saran copy hero final versi Indonesia
+
+Kamu bisa coba ini:
+
+Ekskul Premium Siap Jalan untuk Meningkatkan Daya Tarik Sekolah
+
+Subheadline:
+
+Mozaiq Future Academy membantu sekolah menjalankan program ekstrakurikuler terstruktur, lengkap dengan pilihan program, pelatih, dokumentasi visual, dan sistem kemitraan yang fleksibel.
+
+CTA:
+Diskusi Kemitraan Sekolah
+Lihat Program
+
+Microcopy:
+Cocok untuk sekolah yang ingin menambah program unggulan tanpa membangun sistem dari nol.
+
+32. Saran copy hero final versi English
+
+Premium Extracurricular Programs Built to Strengthen Your School’s Value
+
+Subheadline:
+
+Mozaiq Future Academy helps schools run structured extracurricular programs with ready-to-use program options, coaches, visual documentation, and flexible partnership models.
+
+CTA:
+Discuss School Partnership
+View Programs
+
+Microcopy:
+Ideal for schools that want premium activities without building the system from scratch.
+
+33. Saran section baru yang sebaiknya ditambahkan
+
+Tambahkan section setelah pain point:
+
+Apa yang Sekolah Dapatkan?
+
+Program Siap Jalan
+Sekolah tidak perlu merancang semuanya dari nol.
+
+Kurikulum Aktivitas
+Setiap program memiliki arah, level, dan capaian.
+
+Pelatih & Pendampingan
+Kegiatan dijalankan dengan format yang terstruktur.
+
+Dokumentasi Visual
+Aktivitas menjadi aset komunikasi untuk orang tua dan promosi sekolah.
+
+Paket Fleksibel
+Bisa dimulai dari trial class, program reguler, atau partnership penuh.
+
+Ini akan membuat value jauh lebih jelas.
