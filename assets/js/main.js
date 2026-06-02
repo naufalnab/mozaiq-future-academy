@@ -174,20 +174,48 @@ var currentLang = "id";
     updateMoreLabel();
 })();
 
-// Hide the floating WhatsApp button while the footer is visible so it never
-// covers the copyright/contact area on mobile.
+// Hide the floating WhatsApp button where it could cover important content.
 (function () {
     var waFloat = document.querySelector(".wa-float");
     var footer = document.querySelector(".site-footer");
+    var hero = document.querySelector(".hero");
     if (!waFloat || !footer || !("IntersectionObserver" in window)) return;
 
-    var observer = new IntersectionObserver(function (entries) {
+    var mobileQuery = window.matchMedia("(max-width: 680px)");
+    var hidden = {
+        footer: false,
+        hero: false
+    };
+
+    function syncVisibility() {
+        waFloat.classList.toggle("is-hidden", hidden.footer || (hidden.hero && mobileQuery.matches));
+    }
+
+    var footerObserver = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
-            waFloat.classList.toggle("is-hidden", entry.isIntersecting);
+            hidden.footer = entry.isIntersecting;
+            syncVisibility();
         });
     }, { threshold: 0.05 });
 
-    observer.observe(footer);
+    footerObserver.observe(footer);
+
+    if (hero) {
+        var heroObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                hidden.hero = entry.isIntersecting;
+                syncVisibility();
+            });
+        }, { threshold: 0.05 });
+
+        heroObserver.observe(hero);
+    }
+
+    if (mobileQuery.addEventListener) {
+        mobileQuery.addEventListener("change", syncVisibility);
+    }
+
+    syncVisibility();
 })();
 
 // Scrollspy: highlight the nav link for the section currently in view.
