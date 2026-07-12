@@ -230,7 +230,6 @@ body.is-registration-locked .page-shell { pointer-events: none; user-select: non
 }
 .header-tools { display: flex; align-items: center; gap: 8px; }
 
-/* Compact hero */
 main {
     min-height: 0;
     flex: 1 1 auto;
@@ -238,40 +237,6 @@ main {
     flex-direction: column;
 }
 
-.ot-hero {
-    position: relative;
-    isolation: isolate;
-    flex: 0 0 96px;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    color: #fff;
-    background: linear-gradient(115deg, #17112d 0%, #2b1d51 58%, #4c1d95 100%);
-}
-.ot-hero::before,
-.ot-hero::after {
-    position: absolute;
-    z-index: -1;
-    content: "";
-    border-radius: 50%;
-    pointer-events: none;
-}
-.ot-hero::before {
-    width: 230px;
-    height: 230px;
-    top: -170px;
-    right: 5%;
-    background: rgba(196, 181, 253, .18);
-}
-.ot-hero::after {
-    width: 170px;
-    height: 170px;
-    right: 34%;
-    bottom: -145px;
-    background: rgba(217, 164, 65, .14);
-}
-.hero-content { position: relative; }
-.eyebrow,
 .section-kicker {
     margin: 0;
     color: #c4b5fd;
@@ -280,39 +245,6 @@ main {
     letter-spacing: .14em;
     line-height: 1.2;
     text-transform: uppercase;
-}
-.eyebrow span { color: var(--gold); }
-.hero-content h1 {
-    max-width: 720px;
-    margin: 5px 0 3px;
-    font-size: clamp(20px, 5.8vw, 31px);
-    font-weight: 780;
-    letter-spacing: -.045em;
-    line-height: 1.05;
-}
-.hero-lead {
-    max-width: 245px;
-    margin: 0;
-    color: rgba(255, 255, 255, .76);
-    font-size: 11px;
-    line-height: 1.35;
-}
-.program-count {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: baseline;
-    gap: 5px;
-    color: rgba(255, 255, 255, .72);
-    font-size: 9px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-.program-count strong {
-    color: #f6d68f;
-    font-size: 22px;
-    line-height: 1;
 }
 
 /* Six-card grid */
@@ -676,9 +608,6 @@ main {
 
 @media (min-width: 761px) {
     .container { width: calc(100% - 48px); }
-    .ot-hero { flex-basis: 116px; }
-    .hero-content h1 { font-size: 34px; }
-    .hero-lead { max-width: 420px; font-size: 13px; }
     .section-heading h2 { font-size: 19px; }
     .section-hint { font-size: 11px; }
     .program-card-body { padding: 10px 12px; }
@@ -713,7 +642,6 @@ main {
 
 @media (max-width: 360px) {
     .container { width: calc(100% - 24px); }
-    .hero-content h1 { font-size: 19px; }
     .program-section { padding-top: 7px; }
     .program-card-body { padding-left: 8px; padding-right: 8px; }
     .program-title { font-size: 11px; }
