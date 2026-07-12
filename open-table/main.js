@@ -148,8 +148,8 @@
             "modal.remove": "Remove from selection",
             "modal.whatsapp": "Ask via WhatsApp",
             "modal.examplesKicker": "FEATURED WORK",
-            "modal.examplesTitle": "See student work examples",
-            "modal.watchExample": "Student work example {count}",
+            "modal.examplesTitle": "See examples",
+            "modal.watchExample": "example {count}",
             "modal.showAllExamples": "View all {count} examples",
             "modal.hideAllExamples": "Hide extra examples"
         },
@@ -1038,6 +1038,9 @@
         section.hidden = false;
         featuredVideoGrid.innerHTML = works.slice(0, 1).map(function (url, index) {
             var label = t("modal.watchExample").replace("{count}", String(index + 1).padStart(2, "0"));
+            if (url === "https://youtu.be/Jx7dhu8TVrU") {
+                return "<div class=\"video-embed-card\"><div class=\"video-embed-wrap\"><iframe class=\"video-embed\" src=\"https://www.youtube.com/embed/Jx7dhu8TVrU?rel=0&amp;modestbranding=1\" title=\"" + label + "\" loading=\"lazy\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe></div><div class=\"video-card-copy\"><strong>" + label + "</strong></div></div>";
+            }
             var featuredClass = index === 0 ? " is-featured" : "";
             return "<a class=\"video-example-card" + featuredClass + "\" href=\"" + url + "\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"" + label + "\"><span class=\"video-preview\"><span class=\"video-play\">▶</span><span class=\"video-platform\">YouTube Short</span></span><span class=\"video-card-copy\"><strong>" + label + "</strong><span aria-hidden=\"true\">↗</span></span></a>";
         }).join("");
