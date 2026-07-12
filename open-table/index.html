@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="id">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Open Table SD Elyon | Mozaiq Future Academy</title>
+    <title>SD Elyon Open Table | Mozaiq Future Academy</title>
     <meta name="description"
-        content="Temukan enam pilihan ekstrakurikuler Mozaiq Future Academy untuk siswa SD Elyon Christian School.">
+        content="Explore six extracurricular programs from Mozaiq Future Academy for SD Elyon Christian School students.">
     <meta name="theme-color" content="#17112d">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
     <link rel="stylesheet" href="./style.css">
@@ -17,29 +17,33 @@
         <div class="gate-backdrop" aria-hidden="true"></div>
         <section class="gate-dialog" role="dialog" aria-modal="true" aria-labelledby="gate-title">
             <div class="gate-header">
-                <p class="section-kicker">SEBELUM MEMILIH PROGRAM</p>
-                <h1 id="gate-title">Kenalan dulu dengan kami</h1>
-                <p>Isi data singkat berikut agar tim Mozaiq dapat membantu menghubungi Bapak/Ibu setelah open table.</p>
-                <div class="gate-fields" aria-label="Data yang perlu diisi">
-                    <span>Nama orang tua</span><span>Nama siswa</span><span>Kelas</span><span>Minat ekskul</span>
+                <div class="language-switch gate-language-switch" role="group" aria-label="Choose language">
+                    <button type="button" data-lang="en" class="is-active" aria-pressed="true">EN</button>
+                    <button type="button" data-lang="id" aria-pressed="false">ID</button>
+                </div>
+                <p class="section-kicker" data-i18n="gate.kicker">BEFORE CHOOSING A PROGRAM</p>
+                <h1 id="gate-title" data-i18n="gate.title">Get to know us first</h1>
+                <p data-i18n="gate.intro">Fill in the short form below so the Mozaiq team can follow up after the open table.</p>
+                <div class="gate-fields" data-i18n-aria="gate.fieldsLabel" aria-label="Information needed">
+                    <span data-i18n="gate.parent">Parent name</span><span data-i18n="gate.student">Student name</span><span data-i18n="gate.grade">Grade</span><span data-i18n="gate.interest">Program interest</span>
                 </div>
             </div>
             <div class="google-form-frame-wrap">
                 <iframe class="google-form-frame"
                     src="https://docs.google.com/forms/d/e/1FAIpQLSdyNjKzO0I3S2v2_9lr2nJbqTVwl-eyh_yHu5xx1GF--1_1MA/viewform?embedded=true"
-                    title="Formulir data orang tua dan pilihan ekstrakurikuler" loading="eager"></iframe>
+                    data-i18n-title="gate.formTitle" title="Parent information and extracurricular preferences form" loading="eager"></iframe>
             </div>
             <div class="gate-footer">
                 <label class="gate-confirm">
                     <input id="registration-confirm" type="checkbox">
-                    <span>Saya sudah mengisi dan mengirim Google Form.</span>
+                    <span data-i18n="gate.confirm">I have completed and submitted the Google Form.</span>
                 </label>
                 <button class="gate-submit" id="registration-submit" type="button" disabled>
-                    Lanjut ke pilihan ekskul
+                    <span data-i18n="gate.continue">Continue to program choices</span>
                     <i data-lucide="chevron-down" class="icon gate-submit-icon" aria-hidden="true"></i>
                 </button>
-                <p class="gate-note">Data tersimpan di Google Form Mozaiq Future Academy. Form saat ini juga meminta nomor WhatsApp agar tim dapat menghubungi Bapak/Ibu.</p>
-                <a class="gate-fallback" href="https://docs.google.com/forms/d/e/1FAIpQLSdyNjKzO0I3S2v2_9lr2nJbqTVwl-eyh_yHu5xx1GF--1_1MA/viewform?usp=publish-editor" target="_blank" rel="noopener">Buka Google Form di tab baru</a>
+                <p class="gate-note" data-i18n="gate.note">Your information is saved in the Mozaiq Future Academy Google Form. The form also asks for a WhatsApp number so our team can contact you.</p>
+                <a class="gate-fallback" data-i18n="gate.fallback" href="https://docs.google.com/forms/d/e/1FAIpQLSdyNjKzO0I3S2v2_9lr2nJbqTVwl-eyh_yHu5xx1GF--1_1MA/viewform?usp=publish-editor" target="_blank" rel="noopener">Open the Google Form in a new tab</a>
             </div>
         </section>
     </div>
@@ -47,7 +51,7 @@
     <div class="page-shell">
         <header class="open-table-header">
             <div class="container header-inner">
-                <a class="brand" href="../index.html" aria-label="Kembali ke website Mozaiq Future Academy">
+                <a class="brand" href="../index.html" data-i18n-aria="brand.aria" aria-label="Back to Mozaiq Future Academy website">
                     <span class="brand-mark">
                         <img src="../assets/images/brand/logo-128.webp" alt="" width="128" height="128">
                     </span>
@@ -56,135 +60,149 @@
                         <span>Future Academy</span>
                     </span>
                 </a>
-                <span class="header-context">Open Table</span>
+                <div class="header-tools">
+                    <span class="header-context" data-i18n="header.context">Open Table</span>
+                    <div class="language-switch" role="group" aria-label="Choose language">
+                        <button type="button" data-lang="en" class="is-active" aria-pressed="true">EN</button>
+                        <button type="button" data-lang="id" aria-pressed="false">ID</button>
+                    </div>
+                </div>
             </div>
         </header>
 
         <main>
+            <section class="ot-hero" aria-labelledby="hero-title">
+                <div class="container hero-content">
+                    <p class="eyebrow" data-i18n="hero.eyebrow">OPEN TABLE <span aria-hidden="true">•</span> SD ELYON</p>
+                    <h1 id="hero-title" data-i18n="hero.title">Find an extracurricular program that makes your child excited to learn</h1>
+                    <p class="hero-lead" data-i18n="hero.lead">Choose one of 6 programs and explore the activities.</p>
+                    <div class="program-count"><strong>6</strong><span data-i18n="hero.count">Programs to Explore</span></div>
+                </div>
+            </section>
 
             <section class="program-section" id="pilih-program" aria-labelledby="program-title">
                 <div class="container program-section-inner">
                     <div class="section-heading">
                         <div>
-                            <p class="section-kicker">PILIH MINAT ANAK</p>
-                            <h2 id="program-title">Program untuk dijelajahi</h2>
+                            <p class="section-kicker" data-i18n="program.kicker">CHOOSE A PROGRAM</p>
+                            <h2 id="program-title" data-i18n="program.title">Explore the programs</h2>
                         </div>
-                        <p class="section-hint">Tekan kartu untuk melihat detail.</p>
+                        <p class="section-hint" data-i18n="program.hint">Tap a card to view details.</p>
                     </div>
 
-                    <div class="program-grid" aria-label="Enam program ekstrakurikuler">
-                        <button class="program-card" type="button" data-program="archery" aria-label="Lihat detail Archery">
+                    <div class="program-grid" data-i18n-aria="program.gridLabel" aria-label="Six extracurricular programs">
+                        <button class="program-card" type="button" data-program="archery" data-i18n-aria="card.archery.aria" aria-label="View Archery details">
                             <span class="program-image-wrap">
                                 <img class="program-image" src="../assets/images/programs/archery-001.webp"
-                                    alt="Siswa berlatih panahan dalam program Archery Mozaiq" width="760" height="317" fetchpriority="high">
+                                    data-i18n-alt="card.archery.alt" alt="Students practicing archery in the Mozaiq Archery program" width="760" height="317" fetchpriority="high">
                                 <span class="program-number">01</span>
                             </span>
                             <span class="program-card-body">
-                                <span class="program-category category-sport">OLAHRAGA</span>
-                                <strong class="program-title">Archery</strong>
-                                <span class="program-tagline">Focus <i aria-hidden="true">•</i> Discipline</span>
-                                <span class="program-detail-link">Lihat detail <span aria-hidden="true">→</span></span>
+                                <span class="program-category category-sport" data-i18n="card.archery.category">SPORTS</span>
+                                <strong class="program-title" data-i18n="card.archery.name">Archery</strong>
+                                <span class="program-tagline" data-i18n="card.archery.tagline">Focus <i aria-hidden="true">•</i> Discipline</span>
+                                <span class="program-detail-link" data-i18n="card.detail">View details <span aria-hidden="true">→</span></span>
                             </span>
                         </button>
 
-                        <button class="program-card" type="button" data-program="floorball" aria-label="Lihat detail Floorball">
+                        <button class="program-card" type="button" data-program="floorball" data-i18n-aria="card.floorball.aria" aria-label="View Floorball details">
                             <span class="program-image-wrap">
                                 <img class="program-image" src="../assets/images/programs/floor-ball-001.webp"
-                                    alt="Siswa bermain floorball dalam program Floorball Mozaiq" width="760" height="317" loading="eager">
+                                    data-i18n-alt="card.floorball.alt" alt="Students playing floorball in the Mozaiq Floorball program" width="760" height="317" loading="eager">
                                 <span class="program-number">02</span>
                             </span>
                             <span class="program-card-body">
-                                <span class="program-category category-sport">OLAHRAGA</span>
-                                <strong class="program-title">Floorball</strong>
-                                <span class="program-tagline">Play <i aria-hidden="true">•</i> Teamwork</span>
-                                <span class="program-detail-link">Lihat detail <span aria-hidden="true">→</span></span>
+                                <span class="program-category category-sport" data-i18n="card.floorball.category">SPORTS</span>
+                                <strong class="program-title" data-i18n="card.floorball.name">Floorball</strong>
+                                <span class="program-tagline" data-i18n="card.floorball.tagline">Play <i aria-hidden="true">•</i> Teamwork</span>
+                                <span class="program-detail-link" data-i18n="card.detail">View details <span aria-hidden="true">→</span></span>
                             </span>
                         </button>
 
-                        <button class="program-card" type="button" data-program="ai" aria-label="Lihat detail AI Creative Media">
+                        <button class="program-card" type="button" data-program="ai" data-i18n-aria="card.ai.aria" aria-label="View AI Creative Media details">
                             <span class="program-image-wrap">
                                 <img class="program-image" src="../assets/images/programs/AI-001.webp"
-                                    alt="Siswa belajar kecerdasan buatan dalam program AI Creative Media" width="760" height="507" loading="eager">
+                                    data-i18n-alt="card.ai.alt" alt="Students learning artificial intelligence in the AI Creative Media program" width="760" height="507" loading="eager">
                                 <span class="program-number">03</span>
                             </span>
                             <span class="program-card-body">
-                                <span class="program-category category-tech">TEKNOLOGI</span>
-                                <strong class="program-title">AI Creative Media</strong>
-                                <span class="program-tagline">Create <i aria-hidden="true">•</i> Imagine</span>
-                                <span class="program-detail-link">Lihat detail <span aria-hidden="true">→</span></span>
+                                <span class="program-category category-tech" data-i18n="card.ai.category">TECHNOLOGY</span>
+                                <strong class="program-title" data-i18n="card.ai.name">AI Creative Media</strong>
+                                <span class="program-tagline" data-i18n="card.ai.tagline">Create <i aria-hidden="true">•</i> Imagine</span>
+                                <span class="program-detail-link" data-i18n="card.detail">View details <span aria-hidden="true">→</span></span>
                             </span>
                         </button>
 
-                        <button class="program-card" type="button" data-program="affiliate" aria-label="Lihat detail Affiliate Business">
+                        <button class="program-card" type="button" data-program="affiliate" data-i18n-aria="card.affiliate.aria" aria-label="View Affiliate Business details">
                             <span class="program-image-wrap">
                                 <img class="program-image" src="../assets/images/programs/affiliate-001.webp"
-                                    alt="Siswa belajar bisnis digital dalam program Affiliate Business" width="760" height="507" loading="eager">
+                                    data-i18n-alt="card.affiliate.alt" alt="Students learning digital business in the Affiliate Business program" width="760" height="507" loading="eager">
                                 <span class="program-number">04</span>
                             </span>
                             <span class="program-card-body">
-                                <span class="program-category category-business">BISNIS DIGITAL</span>
-                                <strong class="program-title">Affiliate Business</strong>
-                                <span class="program-tagline">Create <i aria-hidden="true">•</i> Communicate</span>
-                                <span class="program-detail-link">Lihat detail <span aria-hidden="true">→</span></span>
+                                <span class="program-category category-business" data-i18n="card.affiliate.category">DIGITAL BUSINESS</span>
+                                <strong class="program-title" data-i18n="card.affiliate.name">Affiliate Business</strong>
+                                <span class="program-tagline" data-i18n="card.affiliate.tagline">Create <i aria-hidden="true">•</i> Communicate</span>
+                                <span class="program-detail-link" data-i18n="card.detail">View details <span aria-hidden="true">→</span></span>
                             </span>
                         </button>
 
-                        <button class="program-card" type="button" data-program="drone" aria-label="Lihat detail Drone Academy">
+                        <button class="program-card" type="button" data-program="drone" data-i18n-aria="card.drone.aria" aria-label="View Drone Academy details">
                             <span class="program-image-wrap">
                                 <img class="program-image" src="../assets/images/programs/drone-001.webp"
-                                    alt="Siswa mengoperasikan drone dalam program Drone Academy" width="760" height="507" loading="eager">
+                                    data-i18n-alt="card.drone.alt" alt="Students operating a drone in the Drone Academy program" width="760" height="507" loading="eager">
                                 <span class="program-number">05</span>
                             </span>
                             <span class="program-card-body">
-                                <span class="program-category category-tech">TEKNOLOGI</span>
-                                <strong class="program-title">Drone Academy</strong>
-                                <span class="program-tagline">Fly <i aria-hidden="true">•</i> Innovate</span>
-                                <span class="program-detail-link">Lihat detail <span aria-hidden="true">→</span></span>
+                                <span class="program-category category-tech" data-i18n="card.drone.category">TECHNOLOGY</span>
+                                <strong class="program-title" data-i18n="card.drone.name">Drone Academy</strong>
+                                <span class="program-tagline" data-i18n="card.drone.tagline">Fly <i aria-hidden="true">•</i> Innovate</span>
+                                <span class="program-detail-link" data-i18n="card.detail">View details <span aria-hidden="true">→</span></span>
                             </span>
                         </button>
 
-                        <button class="program-card" type="button" data-program="magic" aria-label="Lihat detail Magic Class">
+                        <button class="program-card" type="button" data-program="magic" data-i18n-aria="card.magic.aria" aria-label="View Magic Class details">
                             <span class="program-image-wrap">
                                 <img class="program-image" src="../assets/images/programs/sulap-001.webp"
-                                    alt="Perlengkapan dan pertunjukan sulap dalam program Magic Class" width="760" height="507" loading="eager">
+                                    data-i18n-alt="card.magic.alt" alt="Magic props and performance from the Magic Class program" width="760" height="507" loading="eager">
                                 <span class="program-number">06</span>
                             </span>
                             <span class="program-card-body">
-                                <span class="program-category category-creative">KREATIF</span>
-                                <strong class="program-title">Magic Class</strong>
-                                <span class="program-tagline">Create <i aria-hidden="true">•</i> Perform</span>
-                                <span class="program-detail-link">Lihat detail <span aria-hidden="true">→</span></span>
+                                <span class="program-category category-creative" data-i18n="card.magic.category">CREATIVE</span>
+                                <strong class="program-title" data-i18n="card.magic.name">Magic Class</strong>
+                                <span class="program-tagline" data-i18n="card.magic.tagline">Create <i aria-hidden="true">•</i> Perform</span>
+                                <span class="program-detail-link" data-i18n="card.detail">View details <span aria-hidden="true">→</span></span>
                             </span>
                         </button>
                     </div>
                 </div>
             </section>
 
-            <section class="selection-bar" aria-live="polite" aria-label="Pilihan program">
+            <section class="selection-bar" aria-live="polite" data-i18n-aria="selection.label" aria-label="Program selection">
                 <div class="selection-status">
                     <span class="selection-badge" aria-hidden="true">✓</span>
                     <span>
-                        <strong id="selected-count">Belum ada pilihan</strong>
-                        <small id="selected-names">Pilih kartu untuk menambahkan program.</small>
+                        <strong id="selected-count">No program selected</strong>
+                        <small id="selected-names">Tap a card to add a program.</small>
                     </span>
                 </div>
                 <a class="whatsapp-button is-disabled" id="whatsapp-cta" href="#" aria-disabled="true">
                     <i data-lucide="message-circle" class="icon" aria-hidden="true"></i>
-                    <span>Kirim via WhatsApp</span>
+                    <span data-i18n="selection.whatsapp">Send via WhatsApp</span>
                 </a>
             </section>
         </main>
 
         <footer class="open-table-footer">
             <span>MOZAIQ FUTURE ACADEMY</span>
-            <span>SD Elyon Christian School</span>
+            <span data-i18n="footer.school">SD Elyon Christian School</span>
         </footer>
     </div>
 
     <div class="modal" id="syllabus-modal" hidden>
         <div class="modal-backdrop" data-close-modal></div>
         <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-            <button class="modal-close" type="button" aria-label="Tutup detail program" data-close-modal>
+            <button class="modal-close" type="button" data-i18n-aria="modal.close" aria-label="Close program details" data-close-modal>
                 <i data-lucide="plus" class="icon" aria-hidden="true"></i>
             </button>
             <div class="modal-visual">
@@ -198,18 +216,18 @@
             </div>
             <div class="modal-content-grid">
                 <section class="modal-info-block">
-                    <h3><i data-lucide="target" class="icon" aria-hidden="true"></i> Yang dikembangkan</h3>
+                    <h3><i data-lucide="target" class="icon" aria-hidden="true"></i> <span data-i18n="modal.outcomes">What your child develops</span></h3>
                     <ul id="modal-outcomes"></ul>
                 </section>
                 <section class="modal-info-block">
-                    <h3><i data-lucide="trophy" class="icon" aria-hidden="true"></i> Nilai utama</h3>
+                    <h3><i data-lucide="trophy" class="icon" aria-hidden="true"></i> <span data-i18n="modal.values">Core values</span></h3>
                     <ul id="modal-values"></ul>
                 </section>
             </div>
             <section class="session-section">
                 <div class="session-heading">
-                    <div><p class="section-kicker">ROADMAP BELAJAR</p><h3>Perjalanan 16 sesi</h3></div>
-                    <span class="session-duration">1 sesi / minggu</span>
+                    <div><p class="section-kicker" data-i18n="modal.roadmap">LEARNING ROADMAP</p><h3 data-i18n="modal.sessionsTitle">A 16-session journey</h3></div>
+                    <span class="session-duration" data-i18n="modal.sessionDuration">1 session / week</span>
                 </div>
                 <div class="session-list" id="modal-sessions"></div>
             </section>
@@ -217,11 +235,11 @@
             <div class="modal-actions">
                 <button class="select-program-button" id="modal-select" type="button" aria-pressed="false">
                     <i data-lucide="check" class="icon" aria-hidden="true"></i>
-                    <span>Pilih Program</span>
+                    <span data-i18n="modal.select">Choose Program</span>
                 </button>
                 <a class="whatsapp-button modal-cta" id="modal-whatsapp" href="#" target="_blank" rel="noopener">
                     <i data-lucide="message-circle" class="icon" aria-hidden="true"></i>
-                    <span>Tanya via WhatsApp</span>
+                    <span data-i18n="modal.whatsapp">Ask via WhatsApp</span>
                 </a>
             </div>
         </div>

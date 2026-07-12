@@ -61,7 +61,7 @@ button { border: 0; }
     background: #fff;
     box-shadow: 0 30px 100px rgba(15, 8, 34, .4);
 }
-.gate-header { padding: 24px 28px 17px; }
+.gate-header { position: relative; padding: 24px 28px 17px; }
 .gate-header h1 {
     margin: 7px 0 7px;
     color: var(--ink);
@@ -129,6 +129,43 @@ button { border: 0; }
 body.is-registration-locked { overflow: hidden; }
 body.is-registration-locked .page-shell { pointer-events: none; user-select: none; }
 
+.language-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    padding: 2px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 7px;
+    background: rgba(255, 255, 255, .08);
+}
+.language-switch button {
+    min-width: 25px;
+    min-height: 21px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, .62);
+    background: transparent;
+    font-size: 8px;
+    font-weight: 850;
+    letter-spacing: .04em;
+    line-height: 1;
+    cursor: pointer;
+}
+.language-switch button:hover,
+.language-switch button:focus-visible { color: #fff; outline: none; }
+.language-switch button.is-active { color: var(--purple-deep); background: #fff; }
+.gate-language-switch {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    border-color: var(--line);
+    background: #f7f3ff;
+}
+.gate-language-switch button { color: var(--muted); }
+.gate-language-switch button:hover,
+.gate-language-switch button:focus-visible { color: var(--purple); }
+.gate-language-switch button.is-active { color: #fff; background: var(--purple); }
+
 /* The QR landing view is intentionally locked to the first viewport. */
 .open-table-page,
 .page-shell {
@@ -191,6 +228,7 @@ body.is-registration-locked .page-shell { pointer-events: none; user-select: non
     letter-spacing: .1em;
     text-transform: uppercase;
 }
+.header-tools { display: flex; align-items: center; gap: 8px; }
 
 /* Compact hero */
 main {
