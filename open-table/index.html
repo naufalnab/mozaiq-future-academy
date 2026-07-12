@@ -6,44 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Open Table SD Elyon | Mozaiq Future Academy</title>
     <meta name="description"
-        content="Pilih ekskul pilihan untuk siswa SD Elyon Christian School bersama Mozaiq Future Academy: Archery, Floorball, AI, Affiliate, Drone, dan Magic.">
-    <meta name="theme-color" content="#161127">
+        content="Temukan enam pilihan ekstrakurikuler Mozaiq Future Academy untuk siswa SD Elyon Christian School.">
+    <meta name="theme-color" content="#17112d">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
-    <div class="registration-gate" id="registration-gate">
-        <div class="gate-backdrop" aria-hidden="true"></div>
-        <section class="gate-dialog" role="dialog" aria-modal="true" aria-labelledby="gate-title">
-            <div class="gate-header">
-                <p class="section-kicker">SEBELUM MEMILIH PROGRAM</p>
-                <h1 id="gate-title">Kenalan dulu dengan kami</h1>
-                <p>Isi data singkat berikut agar tim Mozaiq dapat membantu menghubungi Bapak/Ibu setelah open table.</p>
-                <div class="gate-fields" aria-label="Data yang perlu diisi">
-                    <span>Nama orang tua</span><span>Nama siswa</span><span>Kelas</span><span>Minat ekskul</span>
-                </div>
-            </div>
-            <div class="google-form-frame-wrap">
-                <iframe class="google-form-frame"
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSdyNjKzO0I3S2v2_9lr2nJbqTVwl-eyh_yHu5xx1GF--1_1MA/viewform?embedded=true"
-                    title="Formulir data orang tua dan pilihan ekstrakurikuler" loading="eager"></iframe>
-            </div>
-            <div class="gate-footer">
-                <label class="gate-confirm">
-                    <input id="registration-confirm" type="checkbox">
-                    <span>Saya sudah mengisi dan mengirim Google Form.</span>
-                </label>
-                <button class="gate-submit" id="registration-submit" type="button" disabled>
-                    Lanjut ke pilihan ekskul
-                    <i data-lucide="chevron-down" class="icon gate-submit-icon" aria-hidden="true"></i>
-                </button>
-                <p class="gate-note">Data tersimpan di Google Form Mozaiq Future Academy. Form saat ini juga meminta nomor WhatsApp agar tim dapat menghubungi Bapak/Ibu.</p>
-                <a class="gate-fallback" href="https://docs.google.com/forms/d/e/1FAIpQLSdyNjKzO0I3S2v2_9lr2nJbqTVwl-eyh_yHu5xx1GF--1_1MA/viewform?usp=publish-editor" target="_blank" rel="noopener">Buka Google Form di tab baru</a>
-            </div>
-        </section>
-    </div>
-
+<body class="open-table-page">
     <div class="page-shell">
         <header class="open-table-header">
             <div class="container header-inner">
@@ -52,222 +21,154 @@
                         <img src="../assets/images/brand/logo-128.webp" alt="" width="128" height="128">
                     </span>
                     <span class="brand-copy">
-                        <strong>MOZAIQ FUTURE ACADEMY</strong>
-                        <span>Open Table SD Elyon</span>
+                        <strong>MOZAIQ</strong>
+                        <span>Future Academy</span>
                     </span>
                 </a>
-                <a class="header-link" href="../index.html">
-                    <i data-lucide="chevron-down" class="icon icon-back" aria-hidden="true"></i>
-                    <span>Website utama</span>
-                </a>
+                <span class="header-context">Open Table</span>
             </div>
         </header>
 
         <main>
-            <section class="ot-hero">
-                <div class="container hero-grid">
-                    <div class="hero-copy">
-                        <p class="eyebrow">OPEN TABLE <span aria-hidden="true">•</span> SD ELYON CHRISTIAN SCHOOL</p>
-                        <h1>Temukan ekskul yang membuat anak <span>antusias belajar.</span></h1>
-                        <p class="hero-lead">Enam pilihan program yang dirancang untuk menumbuhkan fokus, kreativitas,
-                            keberanian, teamwork, dan keterampilan masa depan—dengan kurikulum yang siap dijalankan.</p>
-                        <div class="hero-highlights" aria-label="Keunggulan program">
-                            <span><i data-lucide="clipboard-list" class="icon" aria-hidden="true"></i> Kurikulum 16 sesi</span>
-                            <span><i data-lucide="users-round" class="icon" aria-hidden="true"></i> Ramah usia sekolah</span>
-                            <span><i data-lucide="shield-check" class="icon" aria-hidden="true"></i> Terstruktur &amp; aman</span>
-                        </div>
-                    </div>
-
-                    <aside class="how-card" aria-labelledby="how-title">
-                        <div class="how-card-icon"><i data-lucide="layout-grid" class="icon" aria-hidden="true"></i></div>
-                        <p class="card-kicker">CARA MEMILIH</p>
-                        <h2 id="how-title">Tiga langkah sederhana</h2>
-                        <ol class="how-list">
-                            <li><span>01</span><strong>Pilih program</strong><small>Boleh memilih lebih dari satu.</small></li>
-                            <li><span>02</span><strong>Kirim pilihan</strong><small>Terhubung langsung ke WhatsApp.</small></li>
-                            <li><span>03</span><strong>Kami hubungi</strong><small>Untuk info jadwal dan trial class.</small></li>
-                        </ol>
-                    </aside>
+            <section class="ot-hero" aria-labelledby="hero-title">
+                <div class="container hero-content">
+                    <p class="eyebrow">OPEN TABLE <span aria-hidden="true">•</span> SD ELYON</p>
+                    <h1 id="hero-title">Temukan Ekskul yang Membuat Anak Antusias Belajar</h1>
+                    <p class="hero-lead">Pilih salah satu dari 6 program dan lihat detail kegiatannya.</p>
+                    <div class="program-count"><strong>6</strong><span>Program Pilihan</span></div>
                 </div>
             </section>
 
             <section class="program-section" id="pilih-program" aria-labelledby="program-title">
-                <div class="container">
+                <div class="container program-section-inner">
                     <div class="section-heading">
                         <div>
                             <p class="section-kicker">PILIH MINAT ANAK</p>
-                            <h2 id="program-title">Enam program untuk dijelajahi</h2>
+                            <h2 id="program-title">Program untuk dijelajahi</h2>
                         </div>
-                        <p>Tekan <strong>“Pilih program ini”</strong> pada ekskul yang ingin diketahui lebih lanjut.
-                            Buka <strong>“Lihat silabus”</strong> untuk melihat perjalanan belajar selama satu program.</p>
+                        <p class="section-hint">Tekan kartu untuk melihat detail.</p>
                     </div>
 
-                    <div class="selection-bar" aria-live="polite">
-                        <div class="selection-status">
-                            <span class="selection-badge">✓</span>
-                            <span><strong id="selected-count">Belum ada program dipilih</strong><small id="selected-names">Pilih satu atau beberapa program di bawah.</small></span>
-                        </div>
-                        <a class="whatsapp-button is-disabled" id="whatsapp-cta" href="#" aria-disabled="true">
-                            <i data-lucide="message-circle" class="icon" aria-hidden="true"></i>
-                            <span>Kirim pilihan via WhatsApp</span>
-                        </a>
-                    </div>
-
-                    <div class="program-grid">
-                        <article class="program-card" data-program="archery">
-                            <div class="program-image-wrap">
+                    <div class="program-grid" aria-label="Enam program ekstrakurikuler">
+                        <button class="program-card" type="button" data-program="archery" aria-label="Lihat detail Archery">
+                            <span class="program-image-wrap">
                                 <img class="program-image" src="../assets/images/programs/archery-001.webp"
-                                    alt="Siswa berlatih panahan dalam program Archery Mozaiq" width="760" height="317" loading="eager">
+                                    alt="Siswa berlatih panahan dalam program Archery Mozaiq" width="760" height="317" fetchpriority="high">
                                 <span class="program-number">01</span>
-                            </div>
-                            <div class="program-card-body">
-                                <div class="program-topline"><span class="program-category category-sport">OLAHRAGA</span><i data-lucide="target" class="program-icon" aria-hidden="true"></i></div>
-                                <h3>Archery</h3>
-                                <p class="program-tagline">Focus <span>•</span> Discipline <span>•</span> Confidence</p>
-                                <p class="program-description">Belajar panahan dengan aman sambil melatih fokus, koordinasi mata-tangan, keseimbangan, disiplin, dan kepercayaan diri.</p>
-                                <ul class="program-meta"><li>Grade 1–2</li><li>Usia 6–8 tahun</li><li>16 sesi</li></ul>
-                                <div class="program-actions">
-                                    <button class="select-button" type="button" aria-pressed="false"><span class="select-check" aria-hidden="true">✓</span><span>Pilih program ini</span></button>
-                                    <button class="details-button" type="button" data-details="archery">Lihat silabus <i data-lucide="trending-up" class="icon" aria-hidden="true"></i></button>
-                                </div>
-                            </div>
-                        </article>
+                            </span>
+                            <span class="program-card-body">
+                                <span class="program-category category-sport">OLAHRAGA</span>
+                                <strong class="program-title">Archery</strong>
+                                <span class="program-tagline">Focus <i aria-hidden="true">•</i> Discipline</span>
+                                <span class="program-detail-link">Lihat detail <span aria-hidden="true">→</span></span>
+                            </span>
+                        </button>
 
-                        <article class="program-card" data-program="floorball">
-                            <div class="program-image-wrap">
+                        <button class="program-card" type="button" data-program="floorball" aria-label="Lihat detail Floorball">
+                            <span class="program-image-wrap">
                                 <img class="program-image" src="../assets/images/programs/floor-ball-001.webp"
-                                    alt="Siswa bermain floorball dalam program Floorball Mozaiq" width="760" height="317" loading="lazy">
+                                    alt="Siswa bermain floorball dalam program Floorball Mozaiq" width="760" height="317" loading="eager">
                                 <span class="program-number">02</span>
-                            </div>
-                            <div class="program-card-body">
-                                <div class="program-topline"><span class="program-category category-sport">OLAHRAGA</span><i data-lucide="users" class="program-icon" aria-hidden="true"></i></div>
-                                <h3>Floorball</h3>
-                                <p class="program-tagline">Play <span>•</span> Learn <span>•</span> Grow</p>
-                                <p class="program-description">Olahraga tim yang menyenangkan untuk melatih motorik, koordinasi, kelincahan, teamwork, decision making, dan sportivitas.</p>
-                                <ul class="program-meta"><li>Grade 1–2</li><li>Usia 6–8 tahun</li><li>16 sesi</li></ul>
-                                <div class="program-actions">
-                                    <button class="select-button" type="button" aria-pressed="false"><span class="select-check" aria-hidden="true">✓</span><span>Pilih program ini</span></button>
-                                    <button class="details-button" type="button" data-details="floorball">Lihat silabus <i data-lucide="trending-up" class="icon" aria-hidden="true"></i></button>
-                                </div>
-                            </div>
-                        </article>
+                            </span>
+                            <span class="program-card-body">
+                                <span class="program-category category-sport">OLAHRAGA</span>
+                                <strong class="program-title">Floorball</strong>
+                                <span class="program-tagline">Play <i aria-hidden="true">•</i> Teamwork</span>
+                                <span class="program-detail-link">Lihat detail <span aria-hidden="true">→</span></span>
+                            </span>
+                        </button>
 
-                        <article class="program-card" data-program="ai">
-                            <div class="program-image-wrap">
+                        <button class="program-card" type="button" data-program="ai" aria-label="Lihat detail AI Creative Media">
+                            <span class="program-image-wrap">
                                 <img class="program-image" src="../assets/images/programs/AI-001.webp"
-                                    alt="Siswa belajar kecerdasan buatan dalam program AI Academy Mozaiq" width="760" height="507" loading="lazy">
+                                    alt="Siswa belajar kecerdasan buatan dalam program AI Creative Media" width="760" height="507" loading="eager">
                                 <span class="program-number">03</span>
-                            </div>
-                            <div class="program-card-body">
-                                <div class="program-topline"><span class="program-category category-tech">TEKNOLOGI</span><i data-lucide="brain-circuit" class="program-icon" aria-hidden="true"></i></div>
-                                <h3>AI Creative Media</h3>
-                                <p class="program-tagline">Create with AI <span>•</span> Not Replace by AI</p>
-                                <p class="program-description">Mengubah ide menjadi storytelling, voice over, visual, dan video pendek berbantuan AI melalui workflow kreatif yang terstruktur dan etis.</p>
-                                <ul class="program-meta"><li>Grade 4–6</li><li>16 sesi</li><li>Video 9:16</li></ul>
-                                <div class="program-actions">
-                                    <button class="select-button" type="button" aria-pressed="false"><span class="select-check" aria-hidden="true">✓</span><span>Pilih program ini</span></button>
-                                    <button class="details-button" type="button" data-details="ai">Lihat silabus <i data-lucide="trending-up" class="icon" aria-hidden="true"></i></button>
-                                </div>
-                            </div>
-                        </article>
+                            </span>
+                            <span class="program-card-body">
+                                <span class="program-category category-tech">TEKNOLOGI</span>
+                                <strong class="program-title">AI Creative Media</strong>
+                                <span class="program-tagline">Create <i aria-hidden="true">•</i> Imagine</span>
+                                <span class="program-detail-link">Lihat detail <span aria-hidden="true">→</span></span>
+                            </span>
+                        </button>
 
-                        <article class="program-card" data-program="affiliate">
-                            <div class="program-image-wrap">
+                        <button class="program-card" type="button" data-program="affiliate" aria-label="Lihat detail Affiliate Business">
+                            <span class="program-image-wrap">
                                 <img class="program-image" src="../assets/images/programs/affiliate-001.webp"
-                                    alt="Siswa belajar bisnis digital dalam program Affiliate Business Academy Mozaiq" width="760" height="507" loading="lazy">
+                                    alt="Siswa belajar bisnis digital dalam program Affiliate Business" width="760" height="507" loading="eager">
                                 <span class="program-number">04</span>
-                            </div>
-                            <div class="program-card-body">
-                                <div class="program-topline"><span class="program-category category-business">BISNIS DIGITAL</span><i data-lucide="line-chart" class="program-icon" aria-hidden="true"></i></div>
-                                <h3>Affiliate Business</h3>
-                                <p class="program-tagline">Young Digital Entrepreneur</p>
-                                <p class="program-description">Simulasi kewirausahaan digital yang mengajarkan content creation, komunikasi, personal branding, promosi beretika, dan literasi finansial.</p>
-                                <ul class="program-meta"><li>Grade 5–6</li><li>16 sesi</li><li>Proyek simulasi</li></ul>
-                                <div class="program-actions">
-                                    <button class="select-button" type="button" aria-pressed="false"><span class="select-check" aria-hidden="true">✓</span><span>Pilih program ini</span></button>
-                                    <button class="details-button" type="button" data-details="affiliate">Lihat silabus <i data-lucide="trending-up" class="icon" aria-hidden="true"></i></button>
-                                </div>
-                            </div>
-                        </article>
+                            </span>
+                            <span class="program-card-body">
+                                <span class="program-category category-business">BISNIS DIGITAL</span>
+                                <strong class="program-title">Affiliate Business</strong>
+                                <span class="program-tagline">Create <i aria-hidden="true">•</i> Communicate</span>
+                                <span class="program-detail-link">Lihat detail <span aria-hidden="true">→</span></span>
+                            </span>
+                        </button>
 
-                        <article class="program-card" data-program="drone">
-                            <div class="program-image-wrap">
+                        <button class="program-card" type="button" data-program="drone" aria-label="Lihat detail Drone Academy">
+                            <span class="program-image-wrap">
                                 <img class="program-image" src="../assets/images/programs/drone-001.webp"
-                                    alt="Siswa mengoperasikan drone dalam program Drone Academy Mozaiq" width="760" height="507" loading="lazy">
+                                    alt="Siswa mengoperasikan drone dalam program Drone Academy" width="760" height="507" loading="eager">
                                 <span class="program-number">05</span>
-                            </div>
-                            <div class="program-card-body">
-                                <div class="program-topline"><span class="program-category category-tech">TEKNOLOGI</span><i data-lucide="plane" class="program-icon" aria-hidden="true"></i></div>
-                                <h3>Drone Academy</h3>
-                                <p class="program-tagline">Learn <span>•</span> Fly <span>•</span> Create <span>•</span> Innovate</p>
-                                <p class="program-description">Mengenal drone, keselamatan penerbangan, STEM, kontrol dasar, fotografi udara, videografi, dan problem solving melalui misi terbang.</p>
-                                <ul class="program-meta"><li>Grade 4–6</li><li>16 sesi</li><li>STEM &amp; aviation</li></ul>
-                                <div class="program-actions">
-                                    <button class="select-button" type="button" aria-pressed="false"><span class="select-check" aria-hidden="true">✓</span><span>Pilih program ini</span></button>
-                                    <button class="details-button" type="button" data-details="drone">Lihat silabus <i data-lucide="trending-up" class="icon" aria-hidden="true"></i></button>
-                                </div>
-                            </div>
-                        </article>
+                            </span>
+                            <span class="program-card-body">
+                                <span class="program-category category-tech">TEKNOLOGI</span>
+                                <strong class="program-title">Drone Academy</strong>
+                                <span class="program-tagline">Fly <i aria-hidden="true">•</i> Innovate</span>
+                                <span class="program-detail-link">Lihat detail <span aria-hidden="true">→</span></span>
+                            </span>
+                        </button>
 
-                        <article class="program-card" data-program="magic">
-                            <div class="program-image-wrap">
+                        <button class="program-card" type="button" data-program="magic" aria-label="Lihat detail Magic Class">
+                            <span class="program-image-wrap">
                                 <img class="program-image" src="../assets/images/programs/sulap-001.webp"
-                                    alt="Perlengkapan dan pertunjukan sulap dalam program Magic Class Mozaiq" width="760" height="507" loading="lazy">
+                                    alt="Perlengkapan dan pertunjukan sulap dalam program Magic Class" width="760" height="507" loading="eager">
                                 <span class="program-number">06</span>
-                            </div>
-                            <div class="program-card-body">
-                                <div class="program-topline"><span class="program-category category-creative">KREATIF</span><i data-lucide="wand-2" class="program-icon" aria-hidden="true"></i></div>
-                                <h3>Magic Class</h3>
-                                <p class="program-tagline">From Basics to Professional Stage</p>
-                                <p class="program-description">Mengembangkan koordinasi motorik halus, komunikasi, kreativitas, etika pesulap, dan keberanian tampil melalui seni sulap.</p>
-                                <ul class="program-meta"><li>16 sesi</li><li>Durasi 60 menit</li><li>Final gala show</li></ul>
-                                <div class="program-actions">
-                                    <button class="select-button" type="button" aria-pressed="false"><span class="select-check" aria-hidden="true">✓</span><span>Pilih program ini</span></button>
-                                    <button class="details-button" type="button" data-details="magic">Lihat silabus <i data-lucide="trending-up" class="icon" aria-hidden="true"></i></button>
-                                </div>
-                            </div>
-                        </article>
+                            </span>
+                            <span class="program-card-body">
+                                <span class="program-category category-creative">KREATIF</span>
+                                <strong class="program-title">Magic Class</strong>
+                                <span class="program-tagline">Create <i aria-hidden="true">•</i> Perform</span>
+                                <span class="program-detail-link">Lihat detail <span aria-hidden="true">→</span></span>
+                            </span>
+                        </button>
                     </div>
                 </div>
             </section>
 
-            <section class="reassurance-section">
-                <div class="container reassurance-card">
-                    <div class="reassurance-icon"><i data-lucide="handshake" class="icon" aria-hidden="true"></i></div>
-                    <div>
-                        <p class="section-kicker">UNTUK ORANG TUA</p>
-                        <h2>Belum yakin program mana yang paling cocok?</h2>
-                        <p>Tidak apa-apa. Pilih beberapa program yang menarik, lalu tim Mozaiq akan membantu menjelaskan
-                            pilihan berdasarkan usia, minat, dan kesiapan anak.</p>
-                    </div>
-                    <a class="secondary-button" href="https://wa.me/6281225734398?text=Halo%20Mozaiq%2C%20saya%20orang%20tua%20siswa%20SD%20Elyon%20dan%20ingin%20konsultasi%20pilihan%20ekskul"
-                        target="_blank" rel="noopener">
-                        <i data-lucide="message-circle" class="icon" aria-hidden="true"></i>
-                        Konsultasi dulu
-                    </a>
+            <section class="selection-bar" aria-live="polite" aria-label="Pilihan program">
+                <div class="selection-status">
+                    <span class="selection-badge" aria-hidden="true">✓</span>
+                    <span>
+                        <strong id="selected-count">Belum ada pilihan</strong>
+                        <small id="selected-names">Pilih kartu untuk menambahkan program.</small>
+                    </span>
                 </div>
+                <a class="whatsapp-button is-disabled" id="whatsapp-cta" href="#" aria-disabled="true">
+                    <i data-lucide="message-circle" class="icon" aria-hidden="true"></i>
+                    <span>Kirim via WhatsApp</span>
+                </a>
             </section>
         </main>
 
         <footer class="open-table-footer">
-            <div class="container footer-inner">
-                <div class="footer-brand">
-                    <img src="../assets/images/brand/logo-128.webp" alt="" width="128" height="128">
-                    <span><strong>MOZAIQ FUTURE ACADEMY</strong><small>Ekstrakurikuler premium siap jalan untuk sekolah masa depan.</small></span>
-                </div>
-                <div class="footer-contact"><span>0812-2573-4398</span><span>mozaiqfutureacademy@gmail.com</span></div>
-            </div>
+            <span>MOZAIQ FUTURE ACADEMY</span>
+            <span>SD Elyon Christian School</span>
         </footer>
     </div>
 
     <div class="modal" id="syllabus-modal" hidden>
         <div class="modal-backdrop" data-close-modal></div>
         <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-            <button class="modal-close" type="button" aria-label="Tutup silabus" data-close-modal>
+            <button class="modal-close" type="button" aria-label="Tutup detail program" data-close-modal>
                 <i data-lucide="plus" class="icon" aria-hidden="true"></i>
             </button>
+            <div class="modal-visual">
+                <img id="modal-image" src="" alt="" width="760" height="430">
+            </div>
             <div class="modal-header">
-                <p class="section-kicker" id="modal-kicker">PROGRAM SYLLABUS</p>
+                <p class="section-kicker" id="modal-kicker">PROGRAM</p>
                 <h2 id="modal-title"></h2>
                 <p id="modal-summary"></p>
                 <div class="modal-meta" id="modal-meta"></div>
@@ -283,14 +184,23 @@
                 </section>
             </div>
             <section class="session-section">
-                <div class="session-heading"><div><p class="section-kicker">ROADMAP BELAJAR</p><h3>Perjalanan 16 sesi</h3></div><span class="session-duration">1 sesi / minggu</span></div>
+                <div class="session-heading">
+                    <div><p class="section-kicker">ROADMAP BELAJAR</p><h3>Perjalanan 16 sesi</h3></div>
+                    <span class="session-duration">1 sesi / minggu</span>
+                </div>
                 <div class="session-list" id="modal-sessions"></div>
             </section>
             <p class="modal-note" id="modal-note"></p>
-            <a class="whatsapp-button modal-cta" id="modal-whatsapp" href="#" target="_blank" rel="noopener">
-                <i data-lucide="message-circle" class="icon" aria-hidden="true"></i>
-                Tanyakan program ini via WhatsApp
-            </a>
+            <div class="modal-actions">
+                <button class="select-program-button" id="modal-select" type="button" aria-pressed="false">
+                    <i data-lucide="check" class="icon" aria-hidden="true"></i>
+                    <span>Pilih Program</span>
+                </button>
+                <a class="whatsapp-button modal-cta" id="modal-whatsapp" href="#" target="_blank" rel="noopener">
+                    <i data-lucide="message-circle" class="icon" aria-hidden="true"></i>
+                    <span>Tanya via WhatsApp</span>
+                </a>
+            </div>
         </div>
     </div>
 

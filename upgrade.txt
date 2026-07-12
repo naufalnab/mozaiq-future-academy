@@ -1,0 +1,459 @@
+# Revisi UI/UX Halaman Open Table — Semua 6 Ekskul Tampil dalam 1 Layar
+
+Tolong redesign halaman:
+
+https://mozaiqfutureacademy.com/open-table/
+
+Halaman ini akan dibuka terutama melalui QR Code saat acara open table sekolah. Pengunjung biasanya hanya memiliki waktu singkat untuk melihat pilihan ekstrakurikuler.
+
+## Permasalahan Saat Ini
+
+Halaman sekarang terlalu panjang karena:
+
+- hero section terlalu tinggi
+- penjelasan pembuka terlalu banyak
+- kartu program menggunakan gambar besar
+- setiap kartu mempunyai deskripsi, tag, tombol, dan detail yang terlalu panjang
+- pengguna harus melakukan scroll berkali-kali untuk melihat seluruh program
+- pilihan keenam baru terlihat jauh di bagian bawah halaman
+
+Untuk kebutuhan open table, pengguna harus bisa langsung memahami seluruh pilihan dalam beberapa detik setelah QR Code dipindai.
+
+## Tujuan Utama
+
+Pada tampilan mobile, seluruh 6 pilihan ekstrakurikuler harus langsung terlihat dalam satu viewport tanpa perlu scroll.
+
+Enam program yang harus tampil:
+
+1. Archery
+2. Floorball
+3. AI Creative Media
+4. Affiliate Business
+5. Drone Academy
+6. Magic Class
+
+Prioritaskan viewport mobile umum:
+
+- 360 × 800 px
+- 375 × 812 px
+- 390 × 844 px
+- 393 × 873 px
+- 412 × 915 px
+
+Gunakan `100dvh`, bukan hanya `100vh`, agar tinggi halaman menyesuaikan browser mobile.
+
+---
+
+# Struktur Halaman Baru
+
+## 1. Header Sangat Ringkas
+
+Buat header maksimal sekitar 44–48 px.
+
+Isi:
+
+- logo MOZAIQ Future Academy di kiri
+- teks kecil `Open Table`
+- tidak perlu navigation menu besar
+- tidak perlu tombol kembali berbentuk lingkaran besar
+- tidak perlu header yang memakan banyak ruang
+
+Header tetap terlihat profesional, tetapi jangan mendominasi halaman.
+
+---
+
+## 2. Hero Compact
+
+Hapus hero section besar seperti tampilan sekarang.
+
+Ganti dengan hero ringkas maksimal sekitar 80–100 px.
+
+Copy utama:
+
+**Temukan Ekskul yang Membuat Anak Antusias Belajar**
+
+Subcopy pendek:
+
+**Pilih salah satu dari 6 program dan lihat detail kegiatannya.**
+
+Tambahkan indikator sederhana:
+
+`6 Program Pilihan`
+
+Jangan tampilkan paragraf panjang, statistik, daftar keuntungan, atau dekorasi besar di area ini.
+
+Tidak perlu gradient illustration besar yang mengambil hampir setengah layar.
+
+---
+
+## 3. Grid 6 Program dalam Satu Layar
+
+Tampilkan seluruh program dalam:
+
+- 2 kolom
+- 3 baris
+- total 6 kartu
+
+Struktur:
+
+```text
+Archery            Floorball
+AI Creative Media  Affiliate Business
+Drone Academy      Magic Class
+
+Gunakan CSS Grid:
+
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+grid-template-rows: repeat(3, minmax(0, 1fr));
+
+Grid harus mengisi ruang tersisa antara hero dan footer/action area.
+
+Contoh pendekatan:
+
+.open-table-page {
+  min-height: 100dvh;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.program-grid-wrapper {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+}
+
+.program-grid {
+  flex: 1;
+  min-height: 0;
+}
+
+Pastikan tidak ada scroll pada tampilan awal.
+
+Desain Kartu Program
+
+Setiap kartu harus sangat ringkas.
+
+Isi kartu
+
+Setiap kartu cukup memiliki:
+
+thumbnail program
+nomor program kecil, misalnya 01
+nama program
+satu frasa kategori singkat
+ikon panah atau teks kecil Lihat detail
+
+Contoh:
+
+01
+ARCHERY
+Focus • Discipline
+Lihat detail →
+
+Jangan tampilkan langsung:
+
+deskripsi panjang
+usia peserta secara panjang
+durasi program
+jumlah sesi
+beberapa badge sekaligus
+tombol besar Pilih program ini
+tombol terpisah Lihat silabus
+paragraf penjelasan
+harga
+informasi yang membuat kartu menjadi tinggi
+
+Seluruh permukaan kartu harus clickable, bukan hanya tombol kecil.
+
+Gunakan:
+
+cursor: pointer;
+
+dan target sentuh minimal tetap nyaman.
+
+Visual kartu
+border radius sekitar 12–14 px
+thumbnail tidak lebih dari sekitar 50–55% tinggi kartu
+gunakan object-fit: cover
+nama program maksimal 2 baris
+tidak boleh terjadi layout shift
+gunakan padding ringkas sekitar 8–10 px
+jarak antar kartu sekitar 8–10 px
+shadow sangat halus
+hindari terlalu banyak border, badge, dan dekorasi
+
+Ukuran teks yang disarankan:
+
+nomor program: 9–10 px
+nama program: 12–14 px, semibold atau bold
+kategori: 9–10 px
+teks detail: 9–10 px
+
+Gunakan line-clamp agar teks tidak membuat tinggi kartu berubah:
+
+.program-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+Detail Program Menggunakan Bottom Sheet atau Modal
+
+Saat salah satu kartu ditekan, jangan langsung memenuhi halaman awal dengan seluruh informasi program.
+
+Buka detail menggunakan:
+
+bottom sheet pada mobile
+modal dialog pada desktop
+
+Isi detail boleh meliputi:
+
+gambar program lebih besar
+nama program
+deskripsi
+manfaat
+kategori
+rentang usia
+jadwal atau jumlah sesi
+tombol Pilih Program
+tombol WhatsApp jika memang diperlukan
+
+Bottom sheet boleh memiliki scroll internal apabila informasinya panjang.
+
+Namun halaman utama dengan enam program harus tetap tidak scroll.
+
+Contoh perilaku:
+
+Pengguna scan QR
+→ semua 6 program langsung terlihat
+→ pengguna memilih satu kartu
+→ bottom sheet detail muncul
+→ pengguna menekan Pilih Program
+
+Tambahkan:
+
+tombol close yang jelas
+backdrop
+aria-modal
+keyboard escape pada desktop
+focus trap jika project sudah memiliki modal utility
+Footer atau Action Area
+
+Footer saat ini terlalu besar untuk kebutuhan halaman open table.
+
+Pada mobile:
+
+jangan tampilkan footer perusahaan yang panjang
+jangan tampilkan alamat, email, dan branding berulang
+pindahkan informasi tersebut ke modal Tentang Kami bila diperlukan
+
+Boleh tambahkan area kecil maksimal 36–44 px di bawah grid:
+
+Butuh bantuan memilih? Tanya tim kami
+
+Buat seluruh teks tersebut clickable menuju WhatsApp.
+
+Namun area bantuan tidak boleh menyebabkan enam kartu keluar dari viewport.
+
+Jika tinggi layar sangat terbatas, sembunyikan area bantuan tersebut dan prioritaskan enam kartu.
+
+Responsiveness
+Mobile
+
+Mobile adalah prioritas utama.
+
+Pada lebar hingga 767 px:
+
+halaman menggunakan height: 100dvh
+tidak ada vertical scrolling pada state awal
+header compact
+hero compact
+grid 2 × 3
+seluruh enam kartu terlihat
+footer besar disembunyikan
+detail dibuka melalui bottom sheet
+Tablet dan Desktop
+
+Pada layar lebih besar:
+
+boleh menggunakan 3 kolom × 2 baris
+konten ditempatkan di tengah
+maksimal lebar container sekitar 1000–1200 px
+kartu boleh sedikit lebih besar
+detail dibuka menggunakan modal
+tetap hindari halaman landing yang terlalu panjang
+
+Contoh:
+
+@media (min-width: 768px) {
+  .program-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+}
+Fallback untuk Layar Sangat Pendek
+
+Pada layar dengan tinggi kurang dari sekitar 700 px:
+
+perkecil tinggi header
+perkecil hero
+kurangi padding
+kurangi gap grid
+kecilkan thumbnail
+sembunyikan subcopy hero
+tampilkan hanya judul hero dan enam kartu
+
+Contoh:
+
+@media (max-height: 700px) {
+  .open-table-header {
+    height: 40px;
+  }
+
+  .open-table-subtitle {
+    display: none;
+  }
+
+  .program-grid {
+    gap: 6px;
+  }
+
+  .program-card {
+    padding: 6px;
+  }
+}
+
+Jangan langsung mengaktifkan vertical scroll hanya karena tinggi layar sedikit lebih kecil. Optimalkan ukuran komponen terlebih dahulu.
+
+Copywriting yang Digunakan
+
+Gunakan copy yang singkat.
+
+Judul
+
+Temukan Ekskul yang Membuat Anak Antusias Belajar
+
+Subjudul
+
+Pilih salah satu dari 6 program dan lihat detail kegiatannya.
+
+Label kartu
+Archery
+
+Focus • Discipline
+
+Floorball
+
+Play • Learn • Grow
+
+AI Creative Media
+
+Create with AI
+
+Affiliate Business
+
+Young Digital Entrepreneur
+
+Drone Academy
+
+Fly • Create • Innovate
+
+Magic Class
+
+Confidence • Performance
+
+CTA kartu
+
+Lihat detail
+
+Bantuan
+
+Masih bingung memilih? Tanya tim kami
+
+Hal yang Harus Dipertahankan
+gunakan data program yang sudah ada
+gunakan gambar program yang sudah ada
+pertahankan identitas warna MOZAIQ Future Academy
+pertahankan link WhatsApp dan mekanisme pendaftaran yang sudah berjalan
+jangan mengubah backend atau struktur database jika tidak diperlukan
+jangan menduplikasi data program secara hardcode apabila sekarang sudah menggunakan array, database, JSON, atau CMS
+buat satu komponen kartu reusable
+buat satu komponen modal atau bottom sheet reusable
+Hal yang Harus Dihapus dari Tampilan Awal
+
+Hapus atau pindahkan dari halaman utama:
+
+hero sangat besar
+paragraf panjang
+bagian Cara Memilih
+langkah 01, 02, dan 03
+panel pilihan jalur pendaftaran
+deskripsi panjang pada setiap kartu
+semua badge tambahan
+tombol besar pada setiap kartu
+link Lihat silabus di state awal
+bagian CTA besar di bawah halaman
+footer besar
+alamat dan informasi kontak panjang
+
+Informasi tersebut tidak harus dihapus dari sistem. Pindahkan ke modal detail atau halaman lanjutan.
+
+Accessibility
+
+Pastikan:
+
+kontras teks cukup jelas
+seluruh kartu dapat diakses menggunakan keyboard
+kartu menggunakan button atau link semantik, bukan hanya div
+setiap thumbnail memiliki alt
+modal mempunyai label yang jelas
+ukuran target sentuh nyaman
+tidak ada teks penting yang hanya dapat dipahami melalui warna
+Performance
+
+Halaman ini dibuka melalui QR Code saat acara, sehingga harus terasa sangat cepat.
+
+Lakukan:
+
+optimasi ukuran gambar
+gunakan WebP atau AVIF jika tersedia
+lazy loading hanya untuk gambar modal/detail
+enam thumbnail utama boleh diprioritaskan
+hindari animasi berat
+hindari library baru jika tidak diperlukan
+hindari request jaringan tambahan yang tidak penting
+gunakan font yang sudah tersedia di project
+
+Target pengalaman:
+
+halaman langsung menunjukkan enam program
+tidak ada skeleton panjang
+tidak ada layout shift
+kartu dapat ditekan segera setelah halaman terbuka
+Acceptance Criteria
+
+Implementasi dianggap selesai apabila:
+
+Pada viewport 390 × 844 px, seluruh enam program terlihat tanpa scroll.
+Pada viewport 375 × 812 px, seluruh enam program tetap terlihat tanpa scroll.
+Program ditampilkan dalam grid 2 kolom × 3 baris pada mobile.
+Tidak ada hero besar.
+Tidak ada deskripsi panjang di kartu.
+Seluruh kartu dapat ditekan.
+Detail program terbuka melalui modal atau bottom sheet.
+Pengguna dapat memilih program dari modal tersebut.
+Identitas visual MOZAIQ tetap dipertahankan.
+Tidak ada perubahan yang merusak data, WhatsApp, atau sistem pendaftaran yang sudah ada.
+Desktop tetap rapi menggunakan grid 3 kolom × 2 baris.
+Tidak ada horizontal overflow.
+Tidak ada vertical scroll pada state awal halaman mobile.
+QR Code yang sekarang tetap mengarah ke route yang sama.
+Jalankan lint, type-check, test, dan build project setelah implementasi.
+
+Sebelum mengubah kode, periksa terlebih dahulu struktur project, framework, route, komponen kartu, sumber data program, dan fungsi WhatsApp yang sudah ada. Gunakan pola dan styling system yang saat ini digunakan project. Jangan membuat ulang seluruh halaman dari nol apabila komponennya masih dapat digunakan dan diringkas.
+
+
+Saran terpentingnya: **jangan memaksa seluruh informasi masuk ke kartu**. Halaman awal cukup menjadi “menu pilihan”, sedangkan penjelasan lengkap baru muncul setelah salah satu ekskul ditekan. Ini yang membuat enam ekskul benar-benar muat dalam satu layar.

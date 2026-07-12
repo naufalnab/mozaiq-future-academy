@@ -1,37 +1,6 @@
 (function () {
     if (window.lucide) window.lucide.createIcons();
 
-    // Require the Google Form on the first visit to this device.
-    (function () {
-        var gate = document.getElementById("registration-gate");
-        var confirm = document.getElementById("registration-confirm");
-        var submit = document.getElementById("registration-submit");
-        var storageKey = "mfa-open-table-registration-complete";
-        if (!gate || !confirm || !submit) return;
-
-        var completed = false;
-        try { completed = localStorage.getItem(storageKey) === "true"; } catch (e) { /* ignore */ }
-
-        if (completed) {
-            gate.hidden = true;
-        } else {
-            document.body.classList.add("is-registration-locked");
-        }
-
-        confirm.addEventListener("change", function () {
-            submit.disabled = !confirm.checked;
-        });
-
-        submit.addEventListener("click", function () {
-            if (!confirm.checked) return;
-            try { localStorage.setItem(storageKey, "true"); } catch (e) { /* ignore */ }
-            gate.hidden = true;
-            document.body.classList.remove("is-registration-locked");
-            var programSection = document.getElementById("pilih-program");
-            if (programSection) programSection.setAttribute("tabindex", "-1");
-        });
-    })();
-
     var whatsappNumber = "6281225734398";
     var selected = new Set();
     var cards = document.querySelectorAll(".program-card");
@@ -39,6 +8,9 @@
     var selectedNames = document.getElementById("selected-names");
     var whatsappCta = document.getElementById("whatsapp-cta");
     var modal = document.getElementById("syllabus-modal");
+    var modalImage = document.getElementById("modal-image");
+    var modalSelect = document.getElementById("modal-select");
+    var currentProgramKey = null;
     var lastFocused = null;
 
     var programs = {
@@ -216,34 +188,50 @@
         var count = names.length;
 
         if (!count) {
-            selectedCount.textContent = "Belum ada program dipilih";
-            selectedNames.textContent = "Pilih satu atau beberapa program di bawah.";
+            selectedCount.textContent = "Belum ada pilihan";
+            selectedNames.textContent = "Pilih kartu untuk menambahkan program.";
             whatsappCta.classList.add("is-disabled");
             whatsappCta.setAttribute("aria-disabled", "true");
             whatsappCta.removeAttribute("href");
         } else {
-            selectedCount.textContent = count + (count === 1 ? " program dipilih" : " program dipilih");
+            selectedCount.textContent = count + " program dipilih";
             selectedNames.textContent = names.join(" • ");
             whatsappCta.classList.remove("is-disabled");
             whatsappCta.setAttribute("aria-disabled", "false");
             whatsappCta.setAttribute("href", waUrl(names));
         }
+
+        cards.forEach(function (card) {
+            var isSelected = selected.has(card.getAttribute("data-program"));
+            card.classList.toggle("is-selected", isSelected);
+            card.setAttribute("aria-pressed", isSelected ? "true" : "false");
+        });
+
+        if (currentProgramKey && modalSelect) {
+            var currentIsSelected = selected.has(currentProgramKey);
+            modalSelect.classList.toggle("is-selected", currentIsSelected);
+            modalSelect.setAttribute("aria-pressed", currentIsSelected ? "true" : "false");
+            modalSelect.querySelector("span").textContent = currentIsSelected ? "Hapus dari pilihan" : "Pilih Program";
+        }
+    }
+
+    function toggleSelection(key) {
+        if (selected.has(key)) {
+            selected.delete(key);
+        } else {
+            selected.add(key);
+        }
+        updateSelection();
     }
 
     cards.forEach(function (card) {
-        var key = card.getAttribute("data-program");
-        var selectButton = card.querySelector(".select-button");
-
-        selectButton.addEventListener("click", function () {
-            if (selected.has(key)) {
-                selected.delete(key);
-            } else {
-                selected.add(key);
-            }
-            var isSelected = selected.has(key);
-            card.classList.toggle("is-selected", isSelected);
-            selectButton.setAttribute("aria-pressed", isSelected ? "true" : "false");
-            updateSelection();
+        card.addEventListener("click", function () {
+            lastFocused = card;
+            currentProgramKey = card.getAttribute("data-program");
+            renderModal(currentProgramKey);
+            modal.hidden = false;
+            document.body.style.overflow = "hidden";
+            modal.querySelector(".modal-close").focus();
         });
     });
 
@@ -254,6 +242,12 @@
     function renderModal(key) {
         var program = programs[key];
         if (!program) return;
+
+        var cardImage = document.querySelector('.program-card[data-program="' + key + '"] .program-image');
+        if (cardImage && modalImage) {
+            modalImage.src = cardImage.currentSrc || cardImage.src;
+            modalImage.alt = cardImage.alt;
+        }
 
         document.getElementById("modal-kicker").textContent = program.kicker;
         document.getElementById("modal-title").textContent = program.name;
@@ -266,6 +260,7 @@
         }).join("");
         document.getElementById("modal-note").textContent = program.note;
         document.getElementById("modal-whatsapp").setAttribute("href", waUrl([program.name]));
+        updateSelection();
     }
 
     function closeModal() {
@@ -274,15 +269,11 @@
         if (lastFocused) lastFocused.focus();
     }
 
-    document.querySelectorAll("[data-details]").forEach(function (button) {
-        button.addEventListener("click", function () {
-            lastFocused = button;
-            renderModal(button.getAttribute("data-details"));
-            modal.hidden = false;
-            document.body.style.overflow = "hidden";
-            modal.querySelector(".modal-close").focus();
+    if (modalSelect) {
+        modalSelect.addEventListener("click", function () {
+            if (currentProgramKey) toggleSelection(currentProgramKey);
         });
-    });
+    }
 
     modal.querySelectorAll("[data-close-modal]").forEach(function (node) {
         node.addEventListener("click", closeModal);
