@@ -193,55 +193,100 @@
     <div class="modal" id="syllabus-modal" hidden>
         <div class="modal-backdrop" data-close-modal></div>
         <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-            <button class="modal-close" type="button" data-i18n-aria="modal.close" aria-label="Close program details" data-close-modal>
-                <i data-lucide="plus" class="icon" aria-hidden="true"></i>
-            </button>
-            <div class="modal-visual">
-                <img id="modal-image" src="" alt="" width="760" height="430">
-            </div>
-            <div class="modal-header">
-                <p class="section-kicker" id="modal-kicker">PROGRAM</p>
-                <h2 id="modal-title"></h2>
-                <p id="modal-summary"></p>
-                <div class="modal-meta" id="modal-meta"></div>
-            </div>
-            <div class="modal-content-grid">
-                <section class="modal-info-block">
-                    <h3><i data-lucide="target" class="icon" aria-hidden="true"></i> <span data-i18n="modal.outcomes">What your child develops</span></h3>
-                    <ul id="modal-outcomes"></ul>
-                </section>
-                <section class="modal-info-block">
-                    <h3><i data-lucide="trophy" class="icon" aria-hidden="true"></i> <span data-i18n="modal.values">Core values</span></h3>
-                    <ul id="modal-values"></ul>
-                </section>
-            </div>
-            <section class="video-examples" id="modal-videos" hidden aria-labelledby="modal-videos-title">
-                <div class="video-examples-heading">
-                    <div>
-                        <p class="section-kicker" data-i18n="modal.examplesKicker">EXAMPLE WORK</p>
-                        <h3 id="modal-videos-title" data-i18n="modal.examplesTitle">See AI Creative Media examples</h3>
-                    </div>
-                    <span class="video-platform">YouTube</span>
-                </div>
-                <div class="video-link-list" id="modal-video-links"></div>
-            </section>
-            <section class="session-section">
-                <div class="session-heading">
-                    <div><p class="section-kicker" data-i18n="modal.roadmap">LEARNING ROADMAP</p><h3 data-i18n="modal.sessionsTitle">A 16-session journey</h3></div>
-                    <span class="session-duration" data-i18n="modal.sessionDuration">1 session / week</span>
-                </div>
-                <div class="session-list" id="modal-sessions"></div>
-            </section>
-            <p class="modal-note" id="modal-note"></p>
-            <div class="modal-actions">
-                <button class="select-program-button" id="modal-select" type="button" aria-pressed="false">
-                    <i data-lucide="check" class="icon" aria-hidden="true"></i>
-                    <span data-i18n="modal.select">Choose Program</span>
+            <div class="modal-detail-header">
+                <button class="modal-back" type="button" data-i18n-aria="modal.back" aria-label="Back to all programs" data-close-modal>
+                    <i data-lucide="arrow-left" class="icon" aria-hidden="true"></i>
+                    <span data-i18n="modal.back">All Programs</span>
                 </button>
-                <a class="whatsapp-button modal-cta" id="modal-whatsapp" href="#" target="_blank" rel="noopener">
-                    <i data-lucide="message-circle" class="icon" aria-hidden="true"></i>
-                    <span data-i18n="modal.whatsapp">Ask via WhatsApp</span>
-                </a>
+                <strong class="modal-header-program" id="modal-header-program">Program</strong>
+                <button class="modal-close" type="button" data-i18n-aria="modal.close" aria-label="Close program details" data-close-modal>
+                    <i data-lucide="x" class="icon" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <div class="modal-detail-content">
+                <div class="modal-visual">
+                    <img id="modal-image" src="" alt="" width="760" height="430">
+                </div>
+                <div class="modal-header">
+                    <p class="section-kicker" id="modal-kicker">PROGRAM</p>
+                    <h2 id="modal-title"></h2>
+                    <p class="modal-summary" id="modal-summary"></p>
+                    <div class="modal-meta" id="modal-meta"></div>
+                </div>
+
+                <section class="learning-outcomes" aria-labelledby="outcomes-title">
+                    <h3 id="outcomes-title"><i data-lucide="sparkles" class="icon" aria-hidden="true"></i> <span data-i18n="modal.outcomes">What your child will learn</span></h3>
+                    <ul id="modal-outcomes"></ul>
+                    <div class="value-group">
+                        <p class="section-kicker" data-i18n="modal.values">VALUES WE BUILD</p>
+                        <div class="value-chips" id="modal-values"></div>
+                    </div>
+                </section>
+
+                <section class="video-examples" id="modal-videos" hidden aria-labelledby="modal-videos-title">
+                    <div class="video-examples-heading">
+                        <div>
+                            <p class="section-kicker" data-i18n="modal.examplesKicker">FEATURED WORK</p>
+                            <h3 id="modal-videos-title" data-i18n="modal.examplesTitle">See student work examples</h3>
+                        </div>
+                        <span class="video-platform">YouTube</span>
+                    </div>
+                    <div class="featured-video-grid" id="featured-video-grid"></div>
+                    <button class="video-show-all" id="video-show-all" type="button" aria-expanded="false" aria-controls="video-extra-links">
+                        <span data-i18n="modal.showAllExamples">View all examples</span>
+                        <i data-lucide="chevron-down" class="icon" aria-hidden="true"></i>
+                    </button>
+                    <div class="video-extra-links" id="video-extra-links" hidden></div>
+                </section>
+
+                <section class="learning-journey" aria-labelledby="journey-title">
+                    <div class="session-heading">
+                        <div><p class="section-kicker" data-i18n="modal.roadmap">LEARNING JOURNEY</p><h3 id="journey-title" data-i18n="modal.sessionsTitle">Four stages of learning</h3></div>
+                        <span class="session-duration" data-i18n="modal.sessionDuration">1 session / week</span>
+                    </div>
+                    <div class="phase-list" id="modal-phases"></div>
+                </section>
+
+                <section class="session-accordion">
+                    <button class="accordion-trigger" id="session-toggle" type="button" aria-expanded="false" aria-controls="session-panel">
+                        <span><i data-lucide="list" class="icon" aria-hidden="true"></i> <span data-i18n="modal.sessionDetails">View details of all sessions</span></span>
+                        <i data-lucide="chevron-down" class="icon accordion-chevron" aria-hidden="true"></i>
+                    </button>
+                    <div class="accordion-panel" id="session-panel" hidden>
+                        <div class="session-list" id="modal-sessions"></div>
+                    </div>
+                </section>
+
+                <section class="safety-notice" aria-labelledby="safety-title">
+                    <div class="safety-icon"><i data-lucide="shield-check" class="icon" aria-hidden="true"></i></div>
+                    <div>
+                        <p class="section-kicker" data-i18n="modal.safetyKicker">SAFETY &amp; GUIDANCE</p>
+                        <h3 id="safety-title" data-i18n="modal.safetyTitle">Safe &amp; Guided</h3>
+                        <p id="modal-note"></p>
+                    </div>
+                </section>
+
+                <section class="additional-note-accordion">
+                    <button class="accordion-trigger" id="note-toggle" type="button" aria-expanded="false" aria-controls="note-panel">
+                        <span><i data-lucide="info" class="icon" aria-hidden="true"></i> <span data-i18n="modal.additionalInfo">Additional program information</span></span>
+                        <i data-lucide="chevron-down" class="icon accordion-chevron" aria-hidden="true"></i>
+                    </button>
+                    <div class="accordion-panel" id="note-panel" hidden>
+                        <p class="full-program-note" id="modal-full-note"></p>
+                    </div>
+                </section>
+
+                <div class="modal-actions">
+                    <button class="select-program-button" id="modal-select" type="button" aria-pressed="false">
+                        <i data-lucide="check" class="icon" aria-hidden="true"></i>
+                        <span data-i18n="modal.select">Choose Program</span>
+                    </button>
+                    <a class="whatsapp-button modal-cta" id="modal-whatsapp" href="#" target="_blank" rel="noopener">
+                        <i data-lucide="message-circle" class="icon" aria-hidden="true"></i>
+                        <span data-i18n="modal.whatsapp">Ask via WhatsApp</span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

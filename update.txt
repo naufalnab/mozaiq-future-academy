@@ -1,0 +1,689 @@
+# Revisi UI/UX Detail Program Open Table
+
+Tolong revisi halaman atau modal detail program pada route:
+
+`/open-table/`
+
+Detail ini muncul setelah pengguna memilih salah satu dari enam kartu program.
+
+Gunakan tampilan AI Creative Media yang sekarang sebagai dasar. Jangan membuat ulang desain dari nol. Pertahankan identitas visual, warna ungu, tipografi, banner, data program, tautan WhatsApp, serta mekanisme pemilihan program yang sudah berjalan.
+
+## Latar Belakang
+
+Tampilan detail program saat ini sudah terlihat profesional, tetapi terlalu panjang untuk konteks open table sekolah.
+
+Pada detail AI Creative Media, pengguna langsung melihat:
+
+- banner
+- nama program
+- deskripsi
+- empat badge
+- bagian “Yang dikembangkan”
+- bagian “Nilai utama”
+- delapan tombol contoh karya
+- enam belas kartu roadmap
+- catatan pendampingan
+- dua tombol CTA
+
+Akibatnya, halaman terasa seperti brosur lengkap yang sangat panjang. Orang tua harus melakukan scroll berkali-kali sebelum memahami inti program atau memilih program tersebut.
+
+Open table membutuhkan pengalaman yang lebih cepat:
+
+1. Orang tua scan QR Code.
+2. Enam program langsung terlihat.
+3. Orang tua memilih salah satu program.
+4. Ringkasan program langsung dapat dipahami dalam beberapa detik.
+5. Detail tambahan hanya dibuka saat dibutuhkan.
+6. Pengguna dapat segera memilih program atau bertanya melalui WhatsApp.
+
+---
+
+# Tujuan Utama
+
+Ringkas tampilan detail program agar:
+
+- informasi utama langsung terlihat
+- detail program tidak terasa melelahkan
+- seluruh informasi tetap tersedia
+- konten sekunder disimpan dalam accordion
+- CTA pemilihan program selalu mudah ditemukan
+- desain tetap premium dan konsisten
+- komponen dapat digunakan untuk keenam program
+- kondisi awal detail idealnya hanya sekitar 2–3 layar mobile
+
+Jangan menghapus data. Ubah cara penyajiannya.
+
+---
+
+# Struktur Detail Program Baru
+
+Gunakan struktur berikut:
+
+```text
+Sticky header
+Banner program
+Identitas dan ringkasan program
+Informasi utama
+Hasil yang akan diperoleh anak
+Contoh karya unggulan
+Perjalanan belajar dalam 4 tahap
+Accordion informasi lengkap
+Catatan pendampingan
+Sticky CTA
+1. Sticky Header Detail
+
+Tambahkan header tipis yang tetap terlihat saat pengguna melakukan scroll.
+
+Isi:
+
+tombol kembali di kiri
+nama program singkat di tengah
+tombol tutup di kanan
+
+Contoh:
+
+← Semua Program     AI Creative Media     ×
+
+Ketentuan:
+
+tinggi sekitar 44–52 px
+menggunakan background solid atau blur yang tetap terbaca
+position: sticky
+top: 0
+z-index cukup tinggi
+jangan menutupi konten
+tombol kembali mengembalikan pengguna ke grid enam program
+tombol close menutup detail
+tombol tetap dapat diakses setelah pengguna scroll panjang
+
+Pada modal atau bottom sheet, tombol close jangan hanya berada di atas banner karena akan hilang saat scroll.
+
+2. Banner Program Lebih Ringkas
+
+Pertahankan banner program yang sekarang karena visualnya sudah kuat.
+
+Namun:
+
+batasi tinggi banner sekitar 150–190 px pada mobile
+gunakan object-fit: cover
+pastikan teks penting pada banner tidak terpotong
+tidak perlu tombol close mengambang besar di dalam banner jika sudah ada sticky header
+kurangi radius atau ruang kosong yang tidak diperlukan
+
+Banner harus terasa sebagai pembuka, bukan mengambil hampir seluruh layar.
+
+3. Identitas Program
+
+Di bawah banner, tampilkan:
+
+eyebrow kecil
+nama program
+deskripsi singkat
+badge informasi utama
+
+Contoh:
+
+CREATIVE TECHNOLOGY PROGRAM
+
+AI Creative Media
+
+Siswa belajar mengubah ide menjadi cerita, suara, gambar,
+dan video pendek menggunakan AI secara kreatif dan bertanggung jawab.
+
+Batasi deskripsi maksimal sekitar 2–3 baris pada mobile.
+
+Gunakan line-clamp jika data deskripsi terlalu panjang:
+
+.program-summary {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+Hindari pengulangan judul seperti:
+
+AI CREATIVE MEDIA ACADEMY
+AI Creative Media
+
+Cukup gunakan satu nama utama dan satu kategori kecil.
+
+4. Informasi Utama Program
+
+Tampilkan maksimal empat badge ringkas.
+
+Contoh:
+
+Grade 4–6
+16 sesi
+1 sesi/minggu
+Final: AI Expo Day
+
+Jangan menggunakan terlalu banyak badge.
+
+Gunakan icon kecil bila relevan, tetapi jangan membuat badge terlalu tinggi.
+
+Pastikan badge dapat wrap dengan rapi pada layar kecil.
+
+5. Gabungkan “Yang Dikembangkan” dan “Nilai Utama”
+
+Saat ini dua bagian tersebut menjadi dua kartu besar yang berdampingan dan memakan banyak ruang.
+
+Gabungkan menjadi satu section:
+
+Anak akan belajar
+
+Tampilkan maksimal empat hasil belajar utama.
+
+Contoh untuk AI Creative Media:
+
+Mengubah ide menjadi cerita dan video yang terstruktur.
+Memberikan instruksi AI melalui prompt yang jelas.
+Membuat voice-over, gambar, scene, dan video pendek.
+Bekerja dalam tim serta menggunakan AI secara bertanggung jawab.
+
+Gunakan icon check atau bullet kecil.
+
+Setelah daftar tersebut, tampilkan nilai utama sebagai chip kecil:
+
+Integrity
+Responsibility
+Creativity
+Collaboration
+Stewardship
+
+Ketentuan:
+
+chip bukan kartu besar
+gunakan ukuran kecil
+boleh scroll horizontal hanya jika benar-benar diperlukan
+lebih baik wrap menjadi beberapa baris
+hindari dua kolom dengan teks panjang yang padat
+
+Struktur yang disarankan:
+
+Anak akan belajar
+✓ Hasil belajar pertama
+✓ Hasil belajar kedua
+✓ Hasil belajar ketiga
+✓ Hasil belajar keempat
+
+Nilai yang dibangun
+[Integrity] [Responsibility] [Creativity] [Collaboration]
+6. Contoh Karya
+
+Bagian contoh karya saat ini menampilkan delapan tombol identik:
+
+Lihat contoh 01
+Lihat contoh 02
+dan seterusnya
+
+Ini terlalu repetitif dan tidak menjelaskan isi setiap contoh.
+
+Ubah menjadi:
+
+Contoh Karya Siswa
+
+Tampilkan:
+
+satu contoh utama dengan thumbnail atau preview lebih besar
+dua contoh tambahan dalam kartu kecil
+satu tombol Lihat semua contoh
+
+Contoh judul:
+
+Video promosi produk
+Storytelling edukasi
+Video karakter AI
+
+Jangan hanya menggunakan nama:
+
+Lihat contoh 01
+Lihat contoh 02
+
+Gunakan judul yang menjelaskan isi karya.
+
+Jika data contoh belum mempunyai judul, gunakan fallback:
+
+Contoh Karya 01
+Contoh Karya 02
+
+Tampilan awal maksimal tiga contoh.
+
+Sisa contoh dibuka melalui:
+
+accordion
+modal
+carousel
+bottom sheet
+
+Tombol:
+
+Lihat semua 8 contoh
+
+Jika contoh mengarah ke YouTube, tampilkan label atau icon YouTube secara kecil dan konsisten.
+
+Jangan langsung membuka video secara otomatis.
+
+7. Ringkas Roadmap Menjadi Empat Tahap
+
+Roadmap 16 sesi saat ini terlalu panjang karena seluruh sesi langsung ditampilkan dalam grid dua kolom.
+
+Pada kondisi awal, tampilkan hanya empat tahap besar.
+
+Contoh untuk AI Creative Media:
+
+Perjalanan Belajar
+1. Explore
+
+Mengenal AI, penggunaan yang bertanggung jawab, serta dasar cerita dan audiens.
+
+Mencakup sesi 1–4.
+
+2. Create
+
+Membuat voice direction, voice-over, audio, dan scene breakdown.
+
+Mencakup sesi 5–8.
+
+3. Produce
+
+Membuat visual, video, transisi, sound effect, dan proses editing.
+
+Mencakup sesi 9–13.
+
+4. Showcase
+
+Membuat thumbnail, caption, final project, peer review, dan AI Expo Day.
+
+Mencakup sesi 14–16.
+
+Gunakan layout:
+
+satu kolom pada mobile
+dua atau empat kolom pada desktop
+setiap tahap memiliki nomor, nama, deskripsi pendek, dan rentang sesi
+
+Jangan tampilkan enam belas kartu pada kondisi awal.
+
+8. Rincian 16 Sesi dalam Accordion
+
+Setelah empat tahap, tambahkan accordion:
+
+Lihat rincian 16 sesi
+
+Accordion tertutup secara default.
+
+Saat dibuka, tampilkan semua sesi yang sudah ada.
+
+Ketentuan:
+
+jangan menghapus data sesi
+pertahankan judul dan deskripsi sesi
+tampilkan dalam satu kolom pada mobile
+boleh dua kolom pada desktop
+jangan gunakan font terlalu kecil
+setiap item harus mudah dibaca
+accordion memiliki icon chevron
+gunakan transisi ringan
+jangan menggunakan animasi berlebihan
+
+Struktur:
+
+[01] What is AI?
+     AI Detective Quiz: membedakan ide, keputusan manusia,
+     dan bantuan AI.
+
+[02] Responsible AI & Digital Ethics
+     Membuat AI Promise tentang keamanan, kejujuran,
+     privasi, dan verifikasi.
+
+Ukuran teks minimum isi sekitar 12–14 px pada mobile.
+
+Jangan memaksakan dua kolom jika membuat teks terlalu sempit.
+
+9. Section Informasi Tambahan Menggunakan Accordion
+
+Gunakan beberapa accordion tertutup secara default:
+
+Apa yang akan dipelajari?
+Contoh karya siswa
+Rincian seluruh sesi
+Keamanan dan pendampingan
+
+Namun jangan menduplikasi informasi yang sudah tampil di ringkasan utama.
+
+Prinsipnya:
+
+informasi utama terlihat
+informasi detail disembunyikan
+pengguna membuka hanya bagian yang dibutuhkan
+
+Accordion harus:
+
+mempunyai area tap yang cukup besar
+dapat dibuka dengan keyboard
+menggunakan aria-expanded
+tidak menyebabkan layout rusak
+hanya membuka konten terkait
+
+Boleh gunakan pola satu accordion terbuka pada satu waktu, tetapi tidak wajib.
+
+10. Catatan Keamanan dan Pendampingan
+
+Pertahankan catatan berikut karena penting:
+
+Akun dan proses generate dilakukan melalui pendampingan guru/sekolah/orang tua.
+Siswa tidak perlu mengunggah data pribadi ke AI publik.
+
+Namun tampilkan lebih ringkas.
+
+Gunakan kartu kecil dengan icon shield atau info.
+
+Judul:
+
+Aman dan Terarah
+
+Isi:
+
+Aktivitas AI dilakukan dengan pendampingan.
+Siswa tidak perlu mengunggah data pribadi ke layanan AI publik.
+
+Jangan menggunakan paragraf terlalu panjang.
+
+11. Sticky CTA di Bawah
+
+Pertahankan CTA sticky di bagian bawah karena sudah membantu.
+
+Namun ubah hierarkinya.
+
+Tombol utama
+Pilih Program
+
+Gunakan warna utama ungu.
+
+Tombol sekunder
+Tanya via WhatsApp
+
+Gunakan:
+
+background putih
+border ungu
+teks ungu
+icon WhatsApp
+
+Saat ini kedua tombol memiliki bobot visual yang hampir sama. Buat Pilih Program lebih dominan.
+
+Layout mobile:
+
+[Pilih Program] [WhatsApp]
+
+atau jika ruang terlalu sempit:
+
+[Pilih Program]
+[Tanya via WhatsApp]
+
+Sticky CTA harus:
+
+tetap terlihat saat scroll
+menghormati safe area iPhone
+menggunakan padding-bottom: env(safe-area-inset-bottom)
+tidak menutupi konten terakhir
+mempunyai background solid atau blur
+memiliki shadow ringan
+
+Tambahkan padding bawah pada konten agar bagian terakhir tidak tertutup:
+
+.program-detail-content {
+  padding-bottom: calc(96px + env(safe-area-inset-bottom));
+}
+12. Perilaku Tombol Pilih Program
+
+Ketika Pilih Program ditekan:
+
+gunakan alur pemilihan yang sudah ada
+jangan mengubah backend tanpa kebutuhan
+pertahankan program ID atau slug yang sudah dipakai
+tampilkan konfirmasi ringan jika diperlukan
+setelah dipilih, pengguna dapat diarahkan ke form, WhatsApp, atau proses yang saat ini digunakan
+
+Jika halaman sebelumnya memiliki state program aktif, pastikan state tetap tersimpan.
+
+Jangan membuat hardcode khusus untuk AI Creative Media.
+
+Semua program harus menggunakan komponen dan struktur data yang sama.
+
+13. Komponen Reusable
+
+Buat atau rapikan komponen berikut sesuai framework yang digunakan project:
+
+ProgramDetail
+ProgramDetailHeader
+ProgramHero
+ProgramQuickFacts
+LearningOutcomes
+ProgramValues
+FeaturedWorks
+LearningJourney
+SessionAccordion
+SafetyNotice
+ProgramStickyActions
+
+Tidak wajib menggunakan nama tersebut jika project sudah mempunyai convention sendiri.
+
+Yang terpenting:
+
+jangan menduplikasi markup untuk setiap program
+data program tetap berasal dari array, JSON, CMS, atau database yang sudah digunakan
+seluruh enam program memakai komponen yang sama
+setiap section hanya dirender jika datanya tersedia
+
+Contoh pola data:
+
+{
+  id: "ai-creative-media",
+  title: "AI Creative Media",
+  category: "Creative Technology Program",
+  summary: "...",
+  grade: "Grade 4–6",
+  totalSessions: 16,
+  schedule: "1 sesi / minggu",
+  finalOutcome: "AI Expo Day",
+  outcomes: [],
+  values: [],
+  works: [],
+  phases: [],
+  sessions: [],
+  safetyNote: {}
+}
+
+Sesuaikan dengan struktur data yang sudah ada. Jangan mengganti struktur besar apabila tidak diperlukan.
+
+14. Responsive Design
+Mobile
+
+Prioritas utama:
+
+lebar 360–430 px
+sticky header
+banner ringkas
+konten satu kolom
+teks mudah dibaca
+accordion tertutup secara default
+sticky CTA
+tidak ada horizontal overflow
+Tablet
+container lebih lebar
+learning outcomes boleh dua kolom jika tetap nyaman
+featured works boleh tiga kolom
+roadmap boleh dua kolom
+Desktop
+tampilkan detail sebagai modal besar atau centered panel
+maksimal lebar sekitar 900–1100 px
+jangan membentangkan paragraf selebar layar
+roadmap dapat menggunakan empat kolom
+sesi dapat menggunakan dua kolom
+sticky CTA dapat tetap berada di bawah panel
+15. Visual Style
+
+Pertahankan gaya yang sudah ada:
+
+warna ungu sebagai warna utama
+latar putih atau off-white
+border ungu lembut
+rounded card
+shadow halus
+label uppercase kecil
+font modern dan jelas
+
+Kurangi:
+
+terlalu banyak kotak
+terlalu banyak border
+penggunaan ungu pada semua elemen
+badge yang tidak penting
+teks uppercase yang terlalu banyak
+section dengan tinggi berlebihan
+
+Gunakan white space yang cukup, tetapi jangan membuat halaman terlalu panjang.
+
+Ukuran yang disarankan:
+
+Detail title: 28–32 px
+Section title: 18–22 px
+Body: 14–16 px
+Small metadata: 12–13 px
+Badge: 11–12 px
+
+Jangan menggunakan body text di bawah 12 px.
+
+16. Performance
+
+Halaman dibuka melalui QR Code saat acara, sehingga harus cepat.
+
+Lakukan:
+
+optimasi gambar banner
+gunakan WebP atau AVIF jika tersedia
+lazy load gambar contoh karya yang belum terlihat
+jangan memuat seluruh embed YouTube pada initial load
+gunakan thumbnail dan buka video setelah diklik
+hindari library accordion baru jika project sudah mempunyai utility
+hindari animasi berat
+hindari request tambahan yang tidak diperlukan
+cegah layout shift
+17. Accessibility
+
+Pastikan:
+
+tombol kembali mempunyai aria-label
+tombol close mempunyai aria-label
+accordion menggunakan button semantik
+accordion mempunyai aria-expanded
+modal mempunyai role="dialog"
+modal mempunyai aria-modal="true"
+focus berpindah ke modal saat dibuka
+focus kembali ke kartu program setelah modal ditutup
+modal dapat ditutup dengan Escape pada desktop
+semua tombol dapat diakses menggunakan keyboard
+thumbnail mempunyai alt text
+warna bukan satu-satunya penanda informasi
+target sentuh minimal sekitar 44 × 44 px
+18. Hal yang Harus Dihindari
+
+Jangan:
+
+menghapus data 16 sesi
+menghapus contoh karya
+menghapus informasi keamanan
+menampilkan seluruh sesi secara terbuka saat pertama kali halaman dibuka
+menampilkan delapan tombol contoh secara langsung
+membuat modal dengan scroll horizontal
+membuat teks roadmap terlalu kecil
+membuat tombol close hanya muncul pada banner
+membuat CTA menutupi konten
+mengubah link WhatsApp
+mengubah backend atau database tanpa alasan
+hardcode data hanya untuk satu program
+membuat desain berbeda untuk setiap program
+menambahkan dependency besar tanpa kebutuhan
+19. Urutan Tampilan yang Diinginkan
+
+Tampilan awal detail program:
+
+Sticky header
+Banner
+Nama dan ringkasan
+Quick facts
+Anak akan belajar
+Nilai yang dibangun
+Contoh karya unggulan
+Empat tahap perjalanan
+Accordion detail
+Catatan keamanan
+Sticky CTA
+
+Kondisi awal harus tetap ringkas karena seluruh accordion masih tertutup.
+
+20. Acceptance Criteria
+
+Implementasi dianggap selesai apabila:
+
+Detail program dapat dibuka dari seluruh enam kartu program.
+Sticky header tetap terlihat saat pengguna scroll.
+Pengguna dapat kembali ke grid enam program dengan mudah.
+Banner tidak terlalu tinggi.
+Deskripsi utama maksimal sekitar tiga baris.
+“Yang dikembangkan” dan “Nilai utama” tidak lagi menjadi dua kartu besar.
+Hasil belajar diringkas menjadi maksimal empat poin.
+Nilai program tampil sebagai chip kecil.
+Maksimal tiga contoh karya tampil pada kondisi awal.
+Terdapat tombol untuk melihat seluruh contoh karya.
+Roadmap awal hanya menampilkan empat tahap besar.
+Enam belas sesi tetap tersedia melalui accordion.
+Accordion tertutup secara default.
+Catatan keamanan tetap tersedia dan lebih ringkas.
+Tombol Pilih Program menjadi CTA utama.
+Tombol WhatsApp menjadi CTA sekunder.
+CTA tetap terlihat saat scroll.
+CTA tidak menutupi konten.
+Tampilan detail awal jauh lebih pendek daripada versi sekarang.
+Semua program menggunakan komponen reusable yang sama.
+Data program, link, dan alur pendaftaran tetap berfungsi.
+Tidak ada horizontal overflow pada lebar 360 px.
+Tidak ada teks yang terlalu kecil untuk dibaca.
+Tidak ada error JavaScript.
+Lint, type-check, test, dan build berhasil dijalankan.
+Instruksi Implementasi
+
+Sebelum melakukan perubahan:
+
+Periksa framework yang digunakan.
+Temukan route /open-table/.
+Temukan komponen detail program.
+Temukan sumber data keenam program.
+Temukan mekanisme modal atau bottom sheet.
+Temukan fungsi tombol pilih program.
+Temukan fungsi WhatsApp.
+Periksa styling system yang sudah digunakan.
+Gunakan komponen dan utility yang sudah tersedia.
+Jangan langsung mengganti seluruh halaman.
+
+Setelah implementasi:
+
+Jalankan lint.
+Jalankan type-check.
+Jalankan test yang tersedia.
+Jalankan production build.
+Periksa tampilan pada viewport:
+360 × 800
+375 × 812
+390 × 844
+412 × 915
+tablet
+desktop
+Pastikan detail keenam program dapat dibuka.
+Pastikan semua accordion berfungsi.
+Pastikan tombol kembali, close, pilih program, contoh karya, dan WhatsApp berfungsi.
+Laporkan file apa saja yang diubah.
+Jelaskan perubahan yang dibuat dan hasil pengecekan build.

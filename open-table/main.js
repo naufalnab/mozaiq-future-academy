@@ -42,19 +42,30 @@
     var modal = document.getElementById("syllabus-modal");
     var modalImage = document.getElementById("modal-image");
     var modalSelect = document.getElementById("modal-select");
+    var modalHeaderProgram = document.getElementById("modal-header-program");
+    var sessionToggle = document.getElementById("session-toggle");
+    var sessionPanel = document.getElementById("session-panel");
+    var noteToggle = document.getElementById("note-toggle");
+    var notePanel = document.getElementById("note-panel");
+    var videoShowAll = document.getElementById("video-show-all");
+    var videoExtraLinks = document.getElementById("video-extra-links");
+    var featuredVideoGrid = document.getElementById("featured-video-grid");
+    var modalPhases = document.getElementById("modal-phases");
     var currentProgramKey = null;
     var lastFocused = null;
     var currentLanguage = "en";
-    var aiVideoExamples = [
-        "https://youtube.com/shorts/40jt0ZcbQME",
-        "https://youtube.com/shorts/OIuj-fMf4S0",
-        "https://youtube.com/shorts/NUgvyFAlHk4",
-        "https://youtube.com/shorts/I2YRz7n96uw",
-        "https://youtube.com/shorts/d-WRyGARsm8",
-        "https://youtube.com/shorts/W0mASn2pfK0",
-        "https://youtube.com/shorts/rpx_umueWio",
-        "https://youtube.com/shorts/f93PBgDXNI4"
-    ];
+    var programWorks = {
+        ai: [
+            "https://youtube.com/shorts/40jt0ZcbQME",
+            "https://youtube.com/shorts/OIuj-fMf4S0",
+            "https://youtube.com/shorts/NUgvyFAlHk4",
+            "https://youtube.com/shorts/I2YRz7n96uw",
+            "https://youtube.com/shorts/d-WRyGARsm8",
+            "https://youtube.com/shorts/W0mASn2pfK0",
+            "https://youtube.com/shorts/rpx_umueWio",
+            "https://youtube.com/shorts/f93PBgDXNI4"
+        ]
+    };
 
     var translations = {
         en: {
@@ -122,17 +133,24 @@
             "selection.whatsapp": "Send via WhatsApp",
             "footer.school": "SD Elyon Christian School",
             "modal.close": "Close program details",
-            "modal.outcomes": "What your child develops",
-            "modal.values": "Core values",
-            "modal.roadmap": "LEARNING ROADMAP",
-            "modal.sessionsTitle": "A 16-session journey",
+            "modal.back": "All Programs",
+            "modal.outcomes": "What your child will learn",
+            "modal.values": "VALUES WE BUILD",
+            "modal.roadmap": "LEARNING JOURNEY",
+            "modal.sessionsTitle": "Four stages of learning",
             "modal.sessionDuration": "1 session / week",
+            "modal.sessionDetails": "View details of all sessions",
+            "modal.safetyKicker": "SAFETY & GUIDANCE",
+            "modal.safetyTitle": "Safe & Guided",
+            "modal.additionalInfo": "Additional program information",
             "modal.select": "Choose Program",
             "modal.remove": "Remove from selection",
             "modal.whatsapp": "Ask via WhatsApp",
-            "modal.examplesKicker": "EXAMPLE WORK",
-            "modal.examplesTitle": "See AI Creative Media examples",
-            "modal.watchExample": "Watch example {count}"
+            "modal.examplesKicker": "FEATURED WORK",
+            "modal.examplesTitle": "See student work examples",
+            "modal.watchExample": "Student work example {count}",
+            "modal.showAllExamples": "View all {count} examples",
+            "modal.hideAllExamples": "Hide extra examples"
         },
         id: {
             pageTitle: "Open Table SD Elyon | Mozaiq Future Academy",
@@ -199,17 +217,24 @@
             "selection.whatsapp": "Kirim via WhatsApp",
             "footer.school": "SD Elyon Christian School",
             "modal.close": "Tutup detail program",
-            "modal.outcomes": "Yang dikembangkan",
-            "modal.values": "Nilai utama",
-            "modal.roadmap": "ROADMAP BELAJAR",
-            "modal.sessionsTitle": "Perjalanan 16 sesi",
+            "modal.back": "Semua Program",
+            "modal.outcomes": "Anak akan belajar",
+            "modal.values": "NILAI YANG DIBANGUN",
+            "modal.roadmap": "PERJALANAN BELAJAR",
+            "modal.sessionsTitle": "Empat tahap pembelajaran",
             "modal.sessionDuration": "1 sesi / minggu",
+            "modal.sessionDetails": "Lihat rincian seluruh sesi",
+            "modal.safetyKicker": "KEAMANAN & PENDAMPINGAN",
+            "modal.safetyTitle": "Aman & Terarah",
+            "modal.additionalInfo": "Informasi tambahan program",
             "modal.select": "Pilih Program",
             "modal.remove": "Hapus dari pilihan",
             "modal.whatsapp": "Tanya via WhatsApp",
-            "modal.examplesKicker": "CONTOH KARYA",
-            "modal.examplesTitle": "Lihat contoh AI Creative Media",
-            "modal.watchExample": "Lihat contoh {count}"
+            "modal.examplesKicker": "CONTOH KARYA UNGGULAN",
+            "modal.examplesTitle": "Lihat contoh karya siswa",
+            "modal.watchExample": "Contoh karya siswa {count}",
+            "modal.showAllExamples": "Lihat semua {count} contoh",
+            "modal.hideAllExamples": "Sembunyikan contoh tambahan"
         }
     };
 
@@ -272,7 +297,7 @@
             name: "AI Creative Media",
             kicker: "AI CREATIVE MEDIA ACADEMY",
             summary: "Siswa mengarahkan AI untuk mengubah ide menjadi karya yang bermakna: dari storytelling, voice over, scene visual, hingga video pendek yang siap dipresentasikan.",
-            meta: ["Grade 4–6", "16 sesi", "Video 9:16", "AI Expo Day"],
+            meta: ["Grade 4–6", "16 sesi", "1 sesi / minggu", "Final: AI Expo Day"],
             outcomes: ["Memahami kemampuan, keterbatasan, dan etika penggunaan AI", "Menulis prompt dengan konteks, karakter, tujuan, dan instruksi yang jelas", "Membuat naskah, voice direction, dan style instruction", "Menghasilkan voice over, visual, animasi, sound effect, dan subtitle melalui workflow terarah", "Bekerja dalam tim dan menjelaskan keputusan kreatif serta batasan AI"],
             values: ["Integrity", "Responsibility", "Creativity", "Collaboration", "Stewardship"],
             note: "Akun dan proses generate dilakukan melalui pendampingan guru/sekolah/orang tua. Siswa tidak perlu mengunggah data pribadi ke AI publik.",
@@ -378,6 +403,78 @@
         }
     };
 
+    var programCategories = {
+        en: {
+            archery: "Sports Program",
+            floorball: "Sports Program",
+            ai: "Creative Technology Program",
+            affiliate: "Digital Business Program",
+            drone: "Technology & Aviation Program",
+            magic: "Creative Performance Program"
+        },
+        id: {
+            archery: "PROGRAM OLAHRAGA",
+            floorball: "PROGRAM OLAHRAGA",
+            ai: "PROGRAM TEKNOLOGI KREATIF",
+            affiliate: "PROGRAM BISNIS DIGITAL",
+            drone: "PROGRAM TEKNOLOGI & PENERBANGAN",
+            magic: "PROGRAM KREATIF & PERTUNJUKAN"
+        }
+    };
+
+    var safetyNotes = {
+        en: {
+            archery: "Equipment and shooting practice are supervised by trained coaches.",
+            floorball: "Training follows coach guidance, safe play, and sportsmanship rules.",
+            ai: "AI activities are guided. Students do not need to upload personal data to public AI services.",
+            affiliate: "Activities are simulations. Real accounts or transactions require parent approval.",
+            drone: "Every flight is supervised and follows clear equipment and safety rules.",
+            magic: "Practice follows magician ethics, safe handling, and coach guidance."
+        },
+        id: {
+            archery: "Peralatan dan latihan menembak didampingi coach terlatih.",
+            floorball: "Latihan mengikuti arahan coach, aturan bermain aman, dan sportivitas.",
+            ai: "Aktivitas AI dilakukan dengan pendampingan. Siswa tidak perlu mengunggah data pribadi ke layanan AI publik.",
+            affiliate: "Aktivitas berbentuk simulasi. Akun atau transaksi nyata memerlukan persetujuan orang tua.",
+            drone: "Setiap penerbangan didampingi dan mengikuti aturan alat serta keselamatan.",
+            magic: "Latihan mengikuti etika pesulap, penggunaan alat yang aman, dan arahan coach."
+        }
+    };
+
+    var phaseLabels = {
+        en: [
+            { name: "Explore", range: "Sessions 1–4" },
+            { name: "Create", range: "Sessions 5–8" },
+            { name: "Produce", range: "Sessions 9–13" },
+            { name: "Showcase", range: "Sessions 14–16" }
+        ],
+        id: [
+            { name: "Explore", range: "Sesi 1–4" },
+            { name: "Create", range: "Sesi 5–8" },
+            { name: "Produce", range: "Sesi 9–13" },
+            { name: "Showcase", range: "Sesi 14–16" }
+        ]
+    };
+
+    var phaseDescriptions = {
+        en: {
+            archery: ["Learn safety, equipment, stance, and aiming.", "Build shooting skills through fun challenges and target practice.", "Develop focus, teamwork, and mission-solving through varied targets.", "Build confidence through independent shooting and a mini competition."],
+            floorball: ["Learn the equipment, safe play, dribbling, and direction changes.", "Build passing, receiving, shooting, and ball control.", "Develop teamwork, attack, defence, and match skills.", "Practise competition, sportsmanship, and a graduation festival."],
+            ai: ["Explore AI, responsible use, story ideas, and audiences.", "Create voice direction, voice-over, audio, and scene breakdowns.", "Produce visuals, video, transitions, sound effects, and edits.", "Prepare thumbnails, captions, the final project, peer review, and AI Expo Day."],
+            affiliate: ["Explore business, entrepreneurship, affiliate concepts, and customers.", "Create content, posters, videos, stories, and a personal brand.", "Practise communication, ethics, money management, and a business challenge.", "Prepare marketing work and showcase the young entrepreneur project."],
+            drone: ["Explore drone technology, parts, and safe flight rules.", "Create basic flight patterns through control and mission challenges.", "Produce aerial photos, videos, and obstacle-course missions.", "Showcase skills through a mini competition and Parents Demo Day."],
+            magic: ["Explore magician ethics, mentalism, numbers, and coin magic.", "Create routines with banknotes, rope, storytelling, and a mini show.", "Produce card routines and build performance technique.", "Showcase a complete performance at the final gala and graduation."]
+        },
+        id: {
+            archery: ["Mengenal keselamatan, peralatan, posisi tubuh, dan cara membidik.", "Membangun keterampilan menembak melalui tantangan dan latihan target.", "Melatih fokus, teamwork, dan penyelesaian misi dengan berbagai target.", "Membangun kepercayaan diri melalui latihan mandiri dan mini competition."],
+            floorball: ["Mengenal alat, bermain aman, menggiring bola, dan berganti arah.", "Membangun kemampuan passing, receiving, shooting, dan kontrol bola.", "Melatih teamwork, serangan, pertahanan, dan keterampilan pertandingan.", "Berlatih kompetisi, sportivitas, dan graduation festival."],
+            ai: ["Mengenal AI, penggunaan yang bertanggung jawab, ide cerita, dan audiens.", "Membuat voice direction, voice-over, audio, dan scene breakdown.", "Membuat visual, video, transisi, sound effect, dan editing.", "Menyiapkan thumbnail, caption, final project, peer review, dan AI Expo Day."],
+            affiliate: ["Mengenal bisnis, entrepreneurship, affiliate, dan customer.", "Membuat konten, poster, video, storytelling, dan personal branding.", "Berlatih komunikasi, etika, pengelolaan uang, dan business challenge.", "Menyiapkan marketing dan showcase proyek young entrepreneur."],
+            drone: ["Mengenal teknologi drone, bagian alat, dan aturan penerbangan aman.", "Membuat pola penerbangan dasar melalui tantangan kontrol dan misi.", "Menghasilkan foto, video udara, dan menyelesaikan obstacle course.", "Menampilkan keterampilan melalui mini competition dan Parents Demo Day."],
+            magic: ["Mengenal etika pesulap, mentalism, number magic, dan coin magic.", "Membuat rutinitas banknote, rope, storytelling, dan mini show.", "Membuat card routine dan mengembangkan teknik pertunjukan.", "Menampilkan pertunjukan lengkap pada final gala dan graduation."]
+        }
+    };
+
     var englishPrograms = {
         archery: {
             summary: "A safe, age-appropriate archery program that builds focus, coordination, discipline, and confidence.",
@@ -431,7 +528,7 @@
         },
         ai: {
             summary: "Students direct AI to turn ideas into meaningful stories, voice overs, visuals, and short videos through a structured and ethical creative workflow.",
-            meta: ["Grades 4–6", "16 sessions", "9:16 video", "AI Expo Day"],
+            meta: ["Grades 4–6", "16 sessions", "1 session / week", "Final: AI Expo Day"],
             outcomes: ["Understand the capabilities, limits, and ethics of AI", "Write prompts with clear context, characters, goals, and instructions", "Create scripts, voice direction, and style instructions", "Produce voice overs, visuals, animation, sound effects, and subtitles through a guided workflow", "Work in a team and explain creative decisions and AI limitations"],
             values: ["Integrity", "Responsibility", "Creativity", "Collaboration", "Stewardship"],
             note: "Accounts and generation are guided by teachers, schools, or parents. Students do not need to upload personal data to public AI tools.",
@@ -630,6 +727,7 @@
         card.addEventListener("click", function () {
             lastFocused = card;
             currentProgramKey = card.getAttribute("data-program");
+            resetModalDetails();
             renderModal(currentProgramKey);
             modal.hidden = false;
             document.body.style.overflow = "hidden";
@@ -643,20 +741,56 @@
 
     function renderVideoExamples(key) {
         var section = document.getElementById("modal-videos");
-        var links = document.getElementById("modal-video-links");
-        if (!section || !links) return;
+        if (!section || !featuredVideoGrid || !videoExtraLinks || !videoShowAll) return;
+        var works = programWorks[key] || [];
 
-        if (key !== "ai") {
+        if (!works.length) {
             section.hidden = true;
-            links.innerHTML = "";
+            featuredVideoGrid.innerHTML = "";
+            videoExtraLinks.innerHTML = "";
             return;
         }
 
         section.hidden = false;
-        links.innerHTML = aiVideoExamples.map(function (url, index) {
+        featuredVideoGrid.innerHTML = works.slice(0, 3).map(function (url, index) {
             var label = t("modal.watchExample").replace("{count}", String(index + 1).padStart(2, "0"));
-            return "<a class=\"video-example-link\" href=\"" + url + "\" target=\"_blank\" rel=\"noopener noreferrer\"><span>" + label + "</span><span aria-hidden=\"true\">↗</span></a>";
+            var featuredClass = index === 0 ? " is-featured" : "";
+            return "<a class=\"video-example-card" + featuredClass + "\" href=\"" + url + "\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"" + label + "\"><span class=\"video-preview\"><span class=\"video-play\">▶</span><span class=\"video-platform\">YouTube Short</span></span><span class=\"video-card-copy\"><strong>" + label + "</strong><span aria-hidden=\"true\">↗</span></span></a>";
         }).join("");
+        videoExtraLinks.innerHTML = works.slice(3).map(function (url, index) {
+            var number = index + 4;
+            var label = t("modal.watchExample").replace("{count}", String(number).padStart(2, "0"));
+            return "<a class=\"video-extra-link\" href=\"" + url + "\" target=\"_blank\" rel=\"noopener noreferrer\"><span>" + label + "</span><span aria-hidden=\"true\">↗</span></a>";
+        }).join("");
+        videoExtraLinks.hidden = true;
+        videoShowAll.hidden = false;
+        videoShowAll.setAttribute("aria-expanded", "false");
+        videoShowAll.querySelector("span").textContent = t("modal.showAllExamples").replace("{count}", works.length);
+    }
+
+    function renderPhases(key) {
+        if (!modalPhases) return;
+        var labels = phaseLabels[currentLanguage];
+        var descriptions = phaseDescriptions[currentLanguage][key] || phaseDescriptions.en[key];
+        modalPhases.innerHTML = labels.map(function (phase, index) {
+            return "<article class=\"phase-card\"><span class=\"phase-number\">0" + (index + 1) + "</span><div><strong>" + phase.name + "</strong><small>" + phase.range + "</small><p>" + descriptions[index] + "</p></div></article>";
+        }).join("");
+    }
+
+    function setAccordion(toggle, panel, isOpen) {
+        if (!toggle || !panel) return;
+        toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        toggle.classList.toggle("is-open", isOpen);
+        panel.hidden = !isOpen;
+    }
+
+    function resetModalDetails() {
+        setAccordion(sessionToggle, sessionPanel, false);
+        setAccordion(noteToggle, notePanel, false);
+        if (videoExtraLinks && videoShowAll) {
+            videoExtraLinks.hidden = true;
+            videoShowAll.setAttribute("aria-expanded", "false");
+        }
     }
 
     function renderModal(key) {
@@ -669,17 +803,20 @@
             modalImage.alt = cardImage.alt;
         }
 
-        document.getElementById("modal-kicker").textContent = program.kicker;
+        document.getElementById("modal-kicker").textContent = programCategories[currentLanguage][key];
+        if (modalHeaderProgram) modalHeaderProgram.textContent = program.name;
         document.getElementById("modal-title").textContent = program.name;
         document.getElementById("modal-summary").textContent = program.summary;
         document.getElementById("modal-meta").innerHTML = program.meta.map(function (item) { return "<span>" + item + "</span>"; }).join("");
-        document.getElementById("modal-outcomes").innerHTML = program.outcomes.map(function (item) { return "<li>" + item + "</li>"; }).join("");
-        document.getElementById("modal-values").innerHTML = program.values.map(function (item) { return "<li>" + item + "</li>"; }).join("");
+        document.getElementById("modal-outcomes").innerHTML = program.outcomes.slice(0, 4).map(function (item) { return "<li>" + item + "</li>"; }).join("");
+        document.getElementById("modal-values").innerHTML = program.values.map(function (item) { return "<span class=\"value-chip\">" + item + "</span>"; }).join("");
         document.getElementById("modal-sessions").innerHTML = program.sessions.map(function (session, index) {
             return "<article class=\"session-item\"><span class=\"session-number\">" + String(index + 1).padStart(2, "0") + "</span><span><strong>" + session[0] + "</strong><small>" + session[1] + "</small></span></article>";
         }).join("");
-        document.getElementById("modal-note").textContent = program.note;
+        document.getElementById("modal-note").textContent = safetyNotes[currentLanguage][key];
+        document.getElementById("modal-full-note").textContent = program.note;
         renderVideoExamples(key);
+        renderPhases(key);
         document.getElementById("modal-whatsapp").setAttribute("href", waUrl([program.name]));
         updateSelection();
     }
@@ -693,6 +830,28 @@
     if (modalSelect) {
         modalSelect.addEventListener("click", function () {
             if (currentProgramKey) toggleSelection(currentProgramKey);
+        });
+    }
+
+    if (sessionToggle) {
+        sessionToggle.addEventListener("click", function () {
+            setAccordion(sessionToggle, sessionPanel, sessionPanel.hidden);
+        });
+    }
+
+    if (noteToggle) {
+        noteToggle.addEventListener("click", function () {
+            setAccordion(noteToggle, notePanel, notePanel.hidden);
+        });
+    }
+
+    if (videoShowAll) {
+        videoShowAll.addEventListener("click", function () {
+            var isOpen = videoShowAll.getAttribute("aria-expanded") === "true";
+            var works = programWorks[currentProgramKey] || [];
+            videoExtraLinks.hidden = isOpen;
+            videoShowAll.setAttribute("aria-expanded", isOpen ? "false" : "true");
+            videoShowAll.querySelector("span").textContent = t(isOpen ? "modal.showAllExamples" : "modal.hideAllExamples").replace("{count}", works.length);
         });
     }
 
