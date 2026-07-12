@@ -13,6 +13,37 @@
 </head>
 
 <body>
+    <div class="registration-gate" id="registration-gate">
+        <div class="gate-backdrop" aria-hidden="true"></div>
+        <section class="gate-dialog" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+            <div class="gate-header">
+                <p class="section-kicker">SEBELUM MEMILIH PROGRAM</p>
+                <h1 id="gate-title">Kenalan dulu dengan kami</h1>
+                <p>Isi data singkat berikut agar tim Mozaiq dapat membantu menghubungi Bapak/Ibu setelah open table.</p>
+                <div class="gate-fields" aria-label="Data yang perlu diisi">
+                    <span>Nama orang tua</span><span>Nama siswa</span><span>Kelas</span><span>Minat ekskul</span>
+                </div>
+            </div>
+            <div class="google-form-frame-wrap">
+                <iframe class="google-form-frame"
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSdyNjKzO0I3S2v2_9lr2nJbqTVwl-eyh_yHu5xx1GF--1_1MA/viewform?embedded=true"
+                    title="Formulir data orang tua dan pilihan ekstrakurikuler" loading="eager"></iframe>
+            </div>
+            <div class="gate-footer">
+                <label class="gate-confirm">
+                    <input id="registration-confirm" type="checkbox">
+                    <span>Saya sudah mengisi dan mengirim Google Form.</span>
+                </label>
+                <button class="gate-submit" id="registration-submit" type="button" disabled>
+                    Lanjut ke pilihan ekskul
+                    <i data-lucide="chevron-down" class="icon gate-submit-icon" aria-hidden="true"></i>
+                </button>
+                <p class="gate-note">Data tersimpan di Google Form Mozaiq Future Academy. Form saat ini juga meminta nomor WhatsApp agar tim dapat menghubungi Bapak/Ibu.</p>
+                <a class="gate-fallback" href="https://docs.google.com/forms/d/e/1FAIpQLSdyNjKzO0I3S2v2_9lr2nJbqTVwl-eyh_yHu5xx1GF--1_1MA/viewform?usp=publish-editor" target="_blank" rel="noopener">Buka Google Form di tab baru</a>
+            </div>
+        </section>
+    </div>
+
     <div class="page-shell">
         <header class="open-table-header">
             <div class="container header-inner">
