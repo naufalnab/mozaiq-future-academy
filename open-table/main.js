@@ -1,6 +1,38 @@
 (function () {
     if (window.lucide) window.lucide.createIcons();
 
+    // Require the Google Form on the first visit to this device.
+    (function () {
+        var gate = document.getElementById("registration-gate");
+        var confirm = document.getElementById("registration-confirm");
+        var submit = document.getElementById("registration-submit");
+        var storageKey = "mfa-open-table-registration-complete-v2";
+        if (!gate || !confirm || !submit) return;
+
+        var completed = false;
+        try { completed = localStorage.getItem(storageKey) === "true"; } catch (e) { /* ignore */ }
+
+        if (completed) {
+            gate.hidden = true;
+        } else {
+            document.body.classList.add("is-registration-locked");
+            window.setTimeout(function () { confirm.focus(); }, 0);
+        }
+
+        confirm.addEventListener("change", function () {
+            submit.disabled = !confirm.checked;
+        });
+
+        submit.addEventListener("click", function () {
+            if (!confirm.checked) return;
+            try { localStorage.setItem(storageKey, "true"); } catch (e) { /* ignore */ }
+            gate.hidden = true;
+            document.body.classList.remove("is-registration-locked");
+            var programSection = document.getElementById("pilih-program");
+            if (programSection) programSection.setAttribute("tabindex", "-1");
+        });
+    })();
+
     var whatsappNumber = "6281225734398";
     var selected = new Set();
     var cards = document.querySelectorAll(".program-card");
