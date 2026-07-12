@@ -56,7 +56,7 @@
     var currentLanguage = "en";
     var programWorks = {
         ai: [
-            "https://youtube.com/shorts/40jt0ZcbQME",
+            "https://youtu.be/Jx7dhu8TVrU",
             "https://youtube.com/shorts/OIuj-fMf4S0",
             "https://youtube.com/shorts/NUgvyFAlHk4",
             "https://youtube.com/shorts/I2YRz7n96uw",
@@ -1036,13 +1036,13 @@
         }
 
         section.hidden = false;
-        featuredVideoGrid.innerHTML = works.slice(0, 3).map(function (url, index) {
+        featuredVideoGrid.innerHTML = works.slice(0, 1).map(function (url, index) {
             var label = t("modal.watchExample").replace("{count}", String(index + 1).padStart(2, "0"));
             var featuredClass = index === 0 ? " is-featured" : "";
             return "<a class=\"video-example-card" + featuredClass + "\" href=\"" + url + "\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"" + label + "\"><span class=\"video-preview\"><span class=\"video-play\">▶</span><span class=\"video-platform\">YouTube Short</span></span><span class=\"video-card-copy\"><strong>" + label + "</strong><span aria-hidden=\"true\">↗</span></span></a>";
         }).join("");
-        videoExtraLinks.innerHTML = works.slice(3).map(function (url, index) {
-            var number = index + 4;
+        videoExtraLinks.innerHTML = works.slice(1).map(function (url, index) {
+            var number = index + 2;
             var label = t("modal.watchExample").replace("{count}", String(number).padStart(2, "0"));
             return "<a class=\"video-extra-link\" href=\"" + url + "\" target=\"_blank\" rel=\"noopener noreferrer\"><span>" + label + "</span><span aria-hidden=\"true\">↗</span></a>";
         }).join("");
