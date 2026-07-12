@@ -1,83 +1,156 @@
 MOZAIQ FUTURE ACADEMY
-AI ACADEMY
-Upper Primary (Grade 3–6)
- 
+AI CREATIVE MEDIA ACADEMY
+Upper Primary (Grade 4–6)
+Elyon Christian School
+
+PROGRAM OVERVIEW
+Program Name    Mozaiq AI Creative Media Academy
+Target Grade    Grade 4–6
+Duration        16 sessions
+Meeting         1x per week
+Session         60 minutes
+Final Output    Short AI-assisted video (vertical 9:16) untuk AI Expo Day
+
 VISION
 Create with AI, Not Replace by AI
- 
-TUJUAN
-Siswa mampu:
-✅ Menggunakan AI secara etis
-✅ Membuat gambar AI
-✅ Membuat presentasi AI
-✅ Membuat video AI
-✅ Mengenal Prompt Engineering
- 
-SOFTWARE
-• ChatGPT
-• Canva AI
-• Gamma
-• D-ID / HeyGen (demonstrasi)
-• Bing Image Creator atau setara
-• Google Workspace
- 
-SILABUS
-Pertemuan
-Materi
-Project
-1
-What is AI?
-AI Quiz
-2
-Prompt Engineering
-Create Good Prompt
-3
-AI Storytelling
-Story Book
-4
-AI Image
-Poster
-5
-AI Presentation
-Slide
-6
-AI Mind Map
-Brainstorm
-7
-AI Video
-Greeting Video
-8
-AI Voice
-Voice Project
-9
-AI for School
-Homework Assistant (etika penggunaan)
-10
-AI Design
-Flyer
-11
-AI Animation
-Short Animation
-12
-AI Business Idea
-Business Canvas
-13
-AI Collaboration
-Team Project
-14
-AI Showcase Prep
-Presentation
-15
-Final Project
-Demo
-16
-AI Expo Day
-Parents Exhibition
- 
+
+PROGRAM PHILOSOPHY
+Siswa tidak hanya belajar memakai AI, tetapi belajar mengarahkan AI untuk
+mengubah ide menjadi karya yang bermakna.
+
+Alur utama pembelajaran:
+IDE → STORY → VOICE → SCENE → IMAGE → VIDEO → EDIT → SHARE
+
+AI diposisikan sebagai creative assistant. Ide, keputusan, nilai, verifikasi,
+dan tanggung jawab tetap berada pada siswa dengan pendampingan guru.
+
+TUJUAN PROGRAM
+Setelah mengikuti program ini, siswa mampu:
+✅ Menjelaskan apa itu AI, kemampuan, keterbatasan, dan cara menggunakannya dengan aman
+✅ Menulis prompt sederhana dengan konteks, karakter, tujuan, dan instruksi yang jelas
+✅ Membuat naskah storytelling pendek yang memiliki awal, perkembangan, dan penutup
+✅ Membuat voice direction dan style instruction untuk karakter atau narrator
+✅ Menghasilkan voice over sederhana dengan struktur multi-speaker melalui pendampingan guru
+✅ Mengolah audio dasar: memotong dialog, menyusun urutan, mengatur volume, dan export
+✅ Memecah naskah menjadi scene pendek dengan konsep “dunia visual + makna emosional”
+✅ Membuat prompt gambar dengan karakter, setting, lighting, komposisi, dan style yang konsisten
+✅ Mengubah gambar menjadi video pendek dengan gerakan kamera dan transisi yang terarah
+✅ Menambahkan sound effect, ambience, subtitle, thumbnail, dan caption secara bertanggung jawab
+✅ Bekerja dalam tim, memberi feedback, menjelaskan proses, dan mempresentasikan karya
+
+NILAI PEMBENTUKAN KARAKTER
+• Integrity — jujur saat menggunakan AI dan menyebutkan bantuan AI
+• Responsibility — menjaga privasi, akun, file, perangkat, dan karya orang lain
+• Creativity — menghasilkan ide dan keputusan visual sendiri
+• Collaboration — mendengarkan, berbagi peran, dan menghargai kontribusi teman
+• Stewardship — memakai teknologi secara bijak untuk membuat karya yang bermanfaat
+
+TOOLS PEMBELAJARAN
+Tools utama:
+• ChatGPT, Claude, Gemini, atau DeepSeek — ide, naskah, prompt, dan feedback
+• Google AI Studio Generate Speech — voice over, teacher-guided
+• Audacity — memotong, mengatur volume, dan mencoba pitch audio dasar
+• Canva — menyusun audio, video, subtitle, thumbnail, dan presentasi
+• Google Flow / AI image generator — membuat visual, teacher-guided
+• Dreamina AI / BytePlus — mengubah gambar menjadi video, teacher-guided
+
+Tools pendukung:
+• Antigravity atau AI assistant lain — membantu membuat struktur scene/JSON
+• Google Sheets — mengorganisasi scene, prompt, dan pembagian tugas Grade 6
+• AI sound-effect tool — membuat sound effect dan ambience sederhana
+
+Catatan keselamatan digital:
+• Akun AI dan proses generate dilakukan menggunakan akun sekolah/guru/orang tua
+  sesuai kebijakan sekolah dan ketentuan usia masing-masing platform.
+• Siswa tidak wajib membuat akun AI pribadi dan tidak mengunggah data pribadi,
+  foto wajah, nama lengkap, suara, atau informasi keluarga ke AI publik.
+• Karya siswa dipublikasikan hanya setelah mendapat persetujuan guru/sekolah
+  dan, bila diperlukan, persetujuan orang tua.
+• Siswa belajar memeriksa jawaban AI; AI dapat salah, bias, atau menghasilkan
+  informasi yang tidak sesuai.
+
+STRUKTUR SETIAP SESI (60 MENIT)
+1. Opening & connection              5 menit
+2. Demonstration / concept         10 menit
+3. Guided practice                 15 menit
+4. Creative production             25 menit
+5. Reflection & file management     5 menit
+
+WORKFLOW PEMBELAJARAN 16 SESI
+
+Pertemuan | Materi | Praktik / Project
+
+1 | What is AI? | AI Detective Quiz: membedakan ide, keputusan manusia, dan bantuan AI
+2 | Responsible AI & Digital Ethics | AI Promise: membuat aturan penggunaan AI yang aman, jujur, dan bertanggung jawab
+3 | Story Idea & Audience | Story Seed: memilih topik yang bermanfaat bagi teman/sekolah dan menentukan target penonton
+4 | Script with AI | Membuat naskah video 30–60 detik dengan karakter, konflik sederhana, hook, dan penutup
+5 | Voice Direction & Style Instruction | Membuat Voice Card: karakter, emosi, gaya bicara, pacing, jeda, dan contoh dialog
+6 | AI Voice Over | Teacher-guided Google AI Studio Multi-speaker: membuat dan membandingkan dua take voice over
+7 | Audio Lab | Praktik Audacity: memisahkan dialog, memotong bagian yang tidak perlu, mengatur volume, mencoba pitch karakter (teacher-guided), dan export MP3
+8 | Scene Breakdown: Dunia + Makna | Mengubah naskah menjadi 4–8 scene pendek; setiap scene memiliki dialog, dunia visual, dan makna emosional
+9 | Visual Story & Prompt Formula | Membuat Style Bible: karakter, dunia, benda, lighting, komposisi, aspect ratio, negative prompt, dan penempatan teks pada benda/ruang visual
+10 | AI Image Generation | Teacher-guided Google Flow / image generator: membuat visual per scene dan memilih hasil paling sesuai
+11 | Image to Video & Transition | Teacher-guided Dreamina AI / BytePlus: membuat motion, camera movement, dan transisi antarscene
+12 | Sound Effect & Ambience | Membuat atau memilih SFX, ambience, dan layering audio yang memperkuat makna scene
+13 | Edit in Canva | Menjadikan voice over sebagai backbone, menyusun video 9:16, menyesuaikan speed video, dan membuat subtitle
+14 | Thumbnail, Caption & Responsible Sharing | Membuat thumbnail yang konsisten dengan video, caption untuk audiens, dan rencana publikasi yang aman
+15 | Final Project & Peer Review | Menyelesaikan video tim, memberi feedback dengan rubrik, memperbaiki karya, dan menyiapkan presentasi
+16 | AI Expo Day | Parents Exhibition: menampilkan video, menjelaskan workflow, tools, keputusan kreatif, dan etika penggunaan AI
+
+PROJECT BRIEF
+Setiap tim membuat satu video pendek vertikal 9:16 dengan ketentuan:
+• Durasi target 30–60 detik
+• Memiliki 4–8 scene pendek
+• Memiliki minimal satu narrator atau dua karakter
+• Memiliki voice direction/style instruction
+• Memiliki visual yang konsisten dan transisi sederhana
+• Memiliki subtitle, sound effect/ambience, thumbnail, dan caption
+• Mencantumkan pernyataan: “Dibuat dengan bantuan AI dan keputusan kreatif siswa.”
+
+Pilihan tema yang sesuai untuk Grade 4–6:
+• Kindness / compassion di lingkungan sekolah
+• Stewardship of creation dan kepedulian lingkungan
+• Gratitude dan family values
+• Persahabatan, kerja sama, dan keberanian
+• Literasi digital dan penggunaan teknologi yang bijak
+• Cerita lokal atau budaya Indonesia
+• Penjelasan konsep pelajaran dalam bentuk storytelling
+
+DIFERENSIASI GRADE 4–6
+Grade 4:
+• Menggunakan template prompt dan scene yang disiapkan guru
+• Membuat 4 scene dengan satu gaya visual utama
+• Fokus pada ide, storytelling, etika, dan kerja tim
+
+Grade 5:
+• Memodifikasi prompt berdasarkan hasil generate
+• Membuat 5–6 scene dengan dua karakter atau narrator + karakter
+• Mulai memilih voice, ambience, dan transisi yang sesuai dengan makna scene
+
+Grade 6:
+• Menyusun workflow dan scene table secara lebih mandiri
+• Membuat 6–8 scene dengan revisi prompt dan konsistensi karakter
+• Menjadi production lead / editor / presenter dalam tim
+• Dapat menggunakan JSON atau Google Sheets sebagai extension project
+
 PENILAIAN
-Prompt Quality 20%
-Creativity 30%
-Presentation 20%
-Digital Ethics 15%
-Teamwork 15%
- 
+Ethical & Responsible AI Use       20%
+Storytelling, Script & Prompt      20%
+Creative Visual & Audio            20%
+Production Process & Craft         20%
+Teamwork, Reflection & Presentation 20%
+
+RUBRIK SINGKAT
+Excellent:
+Karya memiliki ide orisinal, alur jelas, prompt terarah, visual/audio selaras,
+proses terdokumentasi, dan siswa mampu menjelaskan keputusan serta batasan AI.
+
+Developing:
+Karya sudah selesai dan dapat dipahami, tetapi masih membutuhkan arahan pada
+konsistensi visual, struktur scene, kualitas audio, atau penjelasan proses.
+
+NECESSARY TEACHER CHECKPOINTS
+• Sebelum generate: cek topik, privasi, keamanan, dan kesesuaian usia
+• Sebelum image-to-video: cek karakter, teks, simbol, dan potensi bias visual
+• Sebelum export: cek subtitle, audio, kredit/bantuan AI, dan nama file
+• Sebelum showcase/publication: cek izin sekolah/orang tua dan kelayakan konten
