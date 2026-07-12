@@ -1,298 +1,649 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Elyon Open Table | Mozaiq Future Academy</title>
+    <meta
+      name="description"
+      content="Explore six extracurricular programs from Mozaiq Future Academy for Elyon Christian School students."
+    />
+    <meta name="theme-color" content="#17112d" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SD Elyon Open Table | Mozaiq Future Academy</title>
-    <meta name="description"
-        content="Explore six extracurricular programs from Mozaiq Future Academy for SD Elyon Christian School students.">
-    <meta name="theme-color" content="#17112d">
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
-    <link rel="stylesheet" href="./style.css">
-</head>
-
-<body class="open-table-page">
+  <body class="open-table-page">
     <div class="registration-gate" id="registration-gate">
-        <div class="gate-backdrop" aria-hidden="true"></div>
-        <section class="gate-dialog" role="dialog" aria-modal="true" aria-labelledby="gate-title">
-            <div class="gate-header">
-                <div class="language-switch gate-language-switch" role="group" aria-label="Choose language">
-                    <button type="button" data-lang="en" class="is-active" aria-pressed="true">EN</button>
-                    <button type="button" data-lang="id" aria-pressed="false">ID</button>
-                </div>
-                <p class="section-kicker" data-i18n="gate.kicker">BEFORE CHOOSING A PROGRAM</p>
-                <h1 id="gate-title" data-i18n="gate.title">Get to know us first</h1>
-                <p data-i18n="gate.intro">Fill in the short form below so the Mozaiq team can follow up after the open table.</p>
-                <div class="gate-fields" data-i18n-aria="gate.fieldsLabel" aria-label="Information needed">
-                    <span data-i18n="gate.parent">Parent name</span><span data-i18n="gate.student">Student name</span><span data-i18n="gate.grade">Grade</span><span data-i18n="gate.interest">Program interest</span>
-                </div>
-            </div>
-            <div class="google-form-frame-wrap">
-                <iframe class="google-form-frame"
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSdyNjKzO0I3S2v2_9lr2nJbqTVwl-eyh_yHu5xx1GF--1_1MA/viewform?embedded=true"
-                    data-i18n-title="gate.formTitle" title="Parent information and extracurricular preferences form" loading="eager"></iframe>
-            </div>
-            <div class="gate-footer">
-                <label class="gate-confirm">
-                    <input id="registration-confirm" type="checkbox">
-                    <span data-i18n="gate.confirm">I have completed and submitted the Google Form.</span>
-                </label>
-                <button class="gate-submit" id="registration-submit" type="button" disabled>
-                    <span data-i18n="gate.continue">Continue to program choices</span>
-                    <i data-lucide="chevron-down" class="icon gate-submit-icon" aria-hidden="true"></i>
-                </button>
-                <p class="gate-note" data-i18n="gate.note">Your information is saved in the Mozaiq Future Academy Google Form. The form also asks for a WhatsApp number so our team can contact you.</p>
-                <a class="gate-fallback" data-i18n="gate.fallback" href="https://docs.google.com/forms/d/e/1FAIpQLSdyNjKzO0I3S2v2_9lr2nJbqTVwl-eyh_yHu5xx1GF--1_1MA/viewform?usp=publish-editor" target="_blank" rel="noopener">Open the Google Form in a new tab</a>
-            </div>
-        </section>
+      <div class="gate-backdrop" aria-hidden="true"></div>
+      <section
+        class="gate-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="gate-title"
+      >
+        <div class="gate-header">
+          <div
+            class="language-switch gate-language-switch"
+            role="group"
+            aria-label="Choose language"
+          >
+            <button
+              type="button"
+              data-lang="en"
+              class="is-active"
+              aria-pressed="true"
+            >
+              EN
+            </button>
+            <button type="button" data-lang="id" aria-pressed="false">
+              ID
+            </button>
+          </div>
+          <p class="section-kicker" data-i18n="gate.kicker">
+            BEFORE CHOOSING A PROGRAM
+          </p>
+          <h1 id="gate-title" data-i18n="gate.title">Get to know us first</h1>
+          <p data-i18n="gate.intro">
+            Fill in the short form below so the Mozaiq team can follow up after
+            the open table.
+          </p>
+          <div
+            class="gate-fields"
+            data-i18n-aria="gate.fieldsLabel"
+            aria-label="Information needed"
+          >
+            <span data-i18n="gate.parent">Parent name</span
+            ><span data-i18n="gate.student">Student name</span
+            ><span data-i18n="gate.grade">Grade</span
+            ><span data-i18n="gate.interest">Program interest</span>
+          </div>
+        </div>
+        <div class="google-form-frame-wrap">
+          <iframe
+            class="google-form-frame"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdyNjKzO0I3S2v2_9lr2nJbqTVwl-eyh_yHu5xx1GF--1_1MA/viewform?embedded=true"
+            data-i18n-title="gate.formTitle"
+            title="Parent information and extracurricular preferences form"
+            loading="eager"
+          ></iframe>
+        </div>
+        <div class="gate-footer">
+          <label class="gate-confirm">
+            <input id="registration-confirm" type="checkbox" />
+            <span data-i18n="gate.confirm"
+              >I have completed and submitted the Google Form.</span
+            >
+          </label>
+          <button
+            class="gate-submit"
+            id="registration-submit"
+            type="button"
+            disabled
+          >
+            <span data-i18n="gate.continue">Continue to program choices</span>
+            <i
+              data-lucide="chevron-down"
+              class="icon gate-submit-icon"
+              aria-hidden="true"
+            ></i>
+          </button>
+          <p class="gate-note" data-i18n="gate.note">
+            Your information is saved in the Mozaiq Future Academy Google Form.
+            The form also asks for a WhatsApp number so our team can contact
+            you.
+          </p>
+          <a
+            class="gate-fallback"
+            data-i18n="gate.fallback"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdyNjKzO0I3S2v2_9lr2nJbqTVwl-eyh_yHu5xx1GF--1_1MA/viewform?usp=publish-editor"
+            target="_blank"
+            rel="noopener"
+            >Open the Google Form in a new tab</a
+          >
+        </div>
+      </section>
     </div>
 
     <div class="page-shell">
-        <header class="open-table-header">
-            <div class="container header-inner">
-                <a class="brand" href="../index.html" data-i18n-aria="brand.aria" aria-label="Back to Mozaiq Future Academy website">
-                    <span class="brand-mark">
-                        <img src="../assets/images/brand/logo-128.webp" alt="" width="128" height="128">
-                    </span>
-                    <span class="brand-copy">
-                        <strong>MOZAIQ</strong>
-                        <span>Future Academy</span>
-                    </span>
-                </a>
-                <div class="header-tools">
-                    <span class="header-context" data-i18n="header.context">Open Table</span>
-                    <div class="language-switch" role="group" aria-label="Choose language">
-                        <button type="button" data-lang="en" class="is-active" aria-pressed="true">EN</button>
-                        <button type="button" data-lang="id" aria-pressed="false">ID</button>
-                    </div>
-                </div>
+      <header class="open-table-header">
+        <div class="container header-inner">
+          <a
+            class="brand"
+            href="../index.html"
+            data-i18n-aria="brand.aria"
+            aria-label="Back to Mozaiq Future Academy website"
+          >
+            <span class="brand-mark">
+              <img
+                src="../assets/images/brand/logo-128.webp"
+                alt=""
+                width="128"
+                height="128"
+              />
+            </span>
+            <span class="brand-copy">
+              <strong>MOZAIQ</strong>
+              <span>Future Academy</span>
+            </span>
+          </a>
+          <div class="header-tools">
+            <span class="header-context" data-i18n="header.context"
+              >Open Table</span
+            >
+            <div
+              class="language-switch"
+              role="group"
+              aria-label="Choose language"
+            >
+              <button
+                type="button"
+                data-lang="en"
+                class="is-active"
+                aria-pressed="true"
+              >
+                EN
+              </button>
+              <button type="button" data-lang="id" aria-pressed="false">
+                ID
+              </button>
             </div>
-        </header>
+          </div>
+        </div>
+      </header>
 
-        <main>
-            <section class="program-section" id="pilih-program" aria-labelledby="program-title">
-                <div class="container program-section-inner">
-                    <div class="section-heading">
-                        <div>
-                            <p class="section-kicker" data-i18n="program.kicker">CHOOSE A PROGRAM</p>
-                            <h2 id="program-title" data-i18n="program.title">Explore the programs</h2>
-                        </div>
-                        <p class="section-hint" data-i18n="program.hint">Tap a card to view details.</p>
-                    </div>
+      <main>
+        <section
+          class="program-section"
+          id="pilih-program"
+          aria-labelledby="program-title"
+        >
+          <div class="container program-section-inner">
+            <div class="section-heading">
+              <div>
+                <p class="section-kicker" data-i18n="program.kicker">
+                  CHOOSE A PROGRAM
+                </p>
+                <h2 id="program-title" data-i18n="program.title">
+                  Explore the programs
+                </h2>
+              </div>
+              <p class="section-hint" data-i18n="program.hint">
+                Tap a card to view details.
+              </p>
+            </div>
 
-                    <div class="program-grid" data-i18n-aria="program.gridLabel" aria-label="Six extracurricular programs">
-                        <button class="program-card" type="button" data-program="archery" data-i18n-aria="card.archery.aria" aria-label="View Archery details">
-                            <span class="program-image-wrap">
-                                <img class="program-image" src="../assets/images/programs/archery-001.webp"
-                                    data-i18n-alt="card.archery.alt" alt="Students practicing archery in the Mozaiq Archery program" width="760" height="317" fetchpriority="high">
-                                <span class="program-number">01</span>
-                            </span>
-                            <span class="program-card-body">
-                                <span class="program-category category-sport" data-i18n="card.archery.category">SPORTS</span>
-                                <strong class="program-title" data-i18n="card.archery.name">Archery</strong>
-                                <span class="program-tagline" data-i18n="card.archery.tagline">Focus <i aria-hidden="true">•</i> Discipline</span>
-                                <span class="program-detail-link" data-i18n="card.detail">View details <span aria-hidden="true">→</span></span>
-                            </span>
-                        </button>
+            <div
+              class="program-grid"
+              data-i18n-aria="program.gridLabel"
+              aria-label="Six extracurricular programs"
+            >
+              <button
+                class="program-card"
+                type="button"
+                data-program="archery"
+                data-i18n-aria="card.archery.aria"
+                aria-label="View Archery details"
+              >
+                <span class="program-image-wrap">
+                  <img
+                    class="program-image"
+                    src="../assets/images/programs/archery-001.webp"
+                    data-i18n-alt="card.archery.alt"
+                    alt="Students practicing archery in the Mozaiq Archery program"
+                    width="760"
+                    height="317"
+                    fetchpriority="high"
+                  />
+                  <span class="program-number">01</span>
+                </span>
+                <span class="program-card-body">
+                  <span
+                    class="program-category category-sport"
+                    data-i18n="card.archery.category"
+                    >SPORTS</span
+                  >
+                  <strong class="program-title" data-i18n="card.archery.name"
+                    >Archery</strong
+                  >
+                  <span class="program-tagline" data-i18n="card.archery.tagline"
+                    >Focus <i aria-hidden="true">•</i> Discipline</span
+                  >
+                  <span class="program-detail-link" data-i18n="card.detail"
+                    >View details <span aria-hidden="true">→</span></span
+                  >
+                </span>
+              </button>
 
-                        <button class="program-card" type="button" data-program="floorball" data-i18n-aria="card.floorball.aria" aria-label="View Floorball details">
-                            <span class="program-image-wrap">
-                                <img class="program-image" src="../assets/images/programs/floor-ball-001.webp"
-                                    data-i18n-alt="card.floorball.alt" alt="Students playing floorball in the Mozaiq Floorball program" width="760" height="317" loading="eager">
-                                <span class="program-number">02</span>
-                            </span>
-                            <span class="program-card-body">
-                                <span class="program-category category-sport" data-i18n="card.floorball.category">SPORTS</span>
-                                <strong class="program-title" data-i18n="card.floorball.name">Floorball</strong>
-                                <span class="program-tagline" data-i18n="card.floorball.tagline">Play <i aria-hidden="true">•</i> Teamwork</span>
-                                <span class="program-detail-link" data-i18n="card.detail">View details <span aria-hidden="true">→</span></span>
-                            </span>
-                        </button>
+              <button
+                class="program-card"
+                type="button"
+                data-program="floorball"
+                data-i18n-aria="card.floorball.aria"
+                aria-label="View Floorball details"
+              >
+                <span class="program-image-wrap">
+                  <img
+                    class="program-image"
+                    src="../assets/images/programs/floor-ball-001.webp"
+                    data-i18n-alt="card.floorball.alt"
+                    alt="Students playing floorball in the Mozaiq Floorball program"
+                    width="760"
+                    height="317"
+                    loading="eager"
+                  />
+                  <span class="program-number">02</span>
+                </span>
+                <span class="program-card-body">
+                  <span
+                    class="program-category category-sport"
+                    data-i18n="card.floorball.category"
+                    >SPORTS</span
+                  >
+                  <strong class="program-title" data-i18n="card.floorball.name"
+                    >Floorball</strong
+                  >
+                  <span
+                    class="program-tagline"
+                    data-i18n="card.floorball.tagline"
+                    >Play <i aria-hidden="true">•</i> Teamwork</span
+                  >
+                  <span class="program-detail-link" data-i18n="card.detail"
+                    >View details <span aria-hidden="true">→</span></span
+                  >
+                </span>
+              </button>
 
-                        <button class="program-card" type="button" data-program="ai" data-i18n-aria="card.ai.aria" aria-label="View AI Creative Media details">
-                            <span class="program-image-wrap">
-                                <img class="program-image" src="../assets/images/programs/AI-001.webp"
-                                    data-i18n-alt="card.ai.alt" alt="Students learning artificial intelligence in the AI Creative Media program" width="760" height="507" loading="eager">
-                                <span class="program-number">03</span>
-                            </span>
-                            <span class="program-card-body">
-                                <span class="program-category category-tech" data-i18n="card.ai.category">TECHNOLOGY</span>
-                                <strong class="program-title" data-i18n="card.ai.name">AI Creative Media</strong>
-                                <span class="program-tagline" data-i18n="card.ai.tagline">Create <i aria-hidden="true">•</i> Imagine</span>
-                                <span class="program-detail-link" data-i18n="card.detail">View details <span aria-hidden="true">→</span></span>
-                            </span>
-                        </button>
+              <button
+                class="program-card"
+                type="button"
+                data-program="ai"
+                data-i18n-aria="card.ai.aria"
+                aria-label="View AI Creative Media details"
+              >
+                <span class="program-image-wrap">
+                  <img
+                    class="program-image"
+                    src="../assets/images/programs/AI-001.webp"
+                    data-i18n-alt="card.ai.alt"
+                    alt="Students learning artificial intelligence in the AI Creative Media program"
+                    width="760"
+                    height="507"
+                    loading="eager"
+                  />
+                  <span class="program-number">03</span>
+                </span>
+                <span class="program-card-body">
+                  <span
+                    class="program-category category-tech"
+                    data-i18n="card.ai.category"
+                    >TECHNOLOGY</span
+                  >
+                  <strong class="program-title" data-i18n="card.ai.name"
+                    >AI Creative Media</strong
+                  >
+                  <span class="program-tagline" data-i18n="card.ai.tagline"
+                    >Create <i aria-hidden="true">•</i> Imagine</span
+                  >
+                  <span class="program-detail-link" data-i18n="card.detail"
+                    >View details <span aria-hidden="true">→</span></span
+                  >
+                </span>
+              </button>
 
-                        <button class="program-card" type="button" data-program="affiliate" data-i18n-aria="card.affiliate.aria" aria-label="View Affiliate Business details">
-                            <span class="program-image-wrap">
-                                <img class="program-image" src="../assets/images/programs/affiliate-001.webp"
-                                    data-i18n-alt="card.affiliate.alt" alt="Students learning digital business in the Affiliate Business program" width="760" height="507" loading="eager">
-                                <span class="program-number">04</span>
-                            </span>
-                            <span class="program-card-body">
-                                <span class="program-category category-business" data-i18n="card.affiliate.category">DIGITAL BUSINESS</span>
-                                <strong class="program-title" data-i18n="card.affiliate.name">Affiliate Business</strong>
-                                <span class="program-tagline" data-i18n="card.affiliate.tagline">Create <i aria-hidden="true">•</i> Communicate</span>
-                                <span class="program-detail-link" data-i18n="card.detail">View details <span aria-hidden="true">→</span></span>
-                            </span>
-                        </button>
+              <button
+                class="program-card"
+                type="button"
+                data-program="affiliate"
+                data-i18n-aria="card.affiliate.aria"
+                aria-label="View Affiliate Business details"
+              >
+                <span class="program-image-wrap">
+                  <img
+                    class="program-image"
+                    src="../assets/images/programs/affiliate-001.webp"
+                    data-i18n-alt="card.affiliate.alt"
+                    alt="Students learning digital business in the Affiliate Business program"
+                    width="760"
+                    height="507"
+                    loading="eager"
+                  />
+                  <span class="program-number">04</span>
+                </span>
+                <span class="program-card-body">
+                  <span
+                    class="program-category category-business"
+                    data-i18n="card.affiliate.category"
+                    >DIGITAL BUSINESS</span
+                  >
+                  <strong class="program-title" data-i18n="card.affiliate.name"
+                    >Affiliate Business</strong
+                  >
+                  <span
+                    class="program-tagline"
+                    data-i18n="card.affiliate.tagline"
+                    >Create <i aria-hidden="true">•</i> Communicate</span
+                  >
+                  <span class="program-detail-link" data-i18n="card.detail"
+                    >View details <span aria-hidden="true">→</span></span
+                  >
+                </span>
+              </button>
 
-                        <button class="program-card" type="button" data-program="drone" data-i18n-aria="card.drone.aria" aria-label="View Drone Academy details">
-                            <span class="program-image-wrap">
-                                <img class="program-image" src="../assets/images/programs/drone-001.webp"
-                                    data-i18n-alt="card.drone.alt" alt="Students operating a drone in the Drone Academy program" width="760" height="507" loading="eager">
-                                <span class="program-number">05</span>
-                            </span>
-                            <span class="program-card-body">
-                                <span class="program-category category-tech" data-i18n="card.drone.category">TECHNOLOGY</span>
-                                <strong class="program-title" data-i18n="card.drone.name">Drone Academy</strong>
-                                <span class="program-tagline" data-i18n="card.drone.tagline">Fly <i aria-hidden="true">•</i> Innovate</span>
-                                <span class="program-detail-link" data-i18n="card.detail">View details <span aria-hidden="true">→</span></span>
-                            </span>
-                        </button>
+              <button
+                class="program-card"
+                type="button"
+                data-program="drone"
+                data-i18n-aria="card.drone.aria"
+                aria-label="View Drone Academy details"
+              >
+                <span class="program-image-wrap">
+                  <img
+                    class="program-image"
+                    src="../assets/images/programs/drone-001.webp"
+                    data-i18n-alt="card.drone.alt"
+                    alt="Students operating a drone in the Drone Academy program"
+                    width="760"
+                    height="507"
+                    loading="eager"
+                  />
+                  <span class="program-number">05</span>
+                </span>
+                <span class="program-card-body">
+                  <span
+                    class="program-category category-tech"
+                    data-i18n="card.drone.category"
+                    >TECHNOLOGY</span
+                  >
+                  <strong class="program-title" data-i18n="card.drone.name"
+                    >Drone Academy</strong
+                  >
+                  <span class="program-tagline" data-i18n="card.drone.tagline"
+                    >Fly <i aria-hidden="true">•</i> Innovate</span
+                  >
+                  <span class="program-detail-link" data-i18n="card.detail"
+                    >View details <span aria-hidden="true">→</span></span
+                  >
+                </span>
+              </button>
 
-                        <button class="program-card" type="button" data-program="magic" data-i18n-aria="card.magic.aria" aria-label="View Magic Class details">
-                            <span class="program-image-wrap">
-                                <img class="program-image" src="../assets/images/programs/sulap-001.webp"
-                                    data-i18n-alt="card.magic.alt" alt="Magic props and performance from the Magic Class program" width="760" height="507" loading="eager">
-                                <span class="program-number">06</span>
-                            </span>
-                            <span class="program-card-body">
-                                <span class="program-category category-creative" data-i18n="card.magic.category">CREATIVE</span>
-                                <strong class="program-title" data-i18n="card.magic.name">Magic Class</strong>
-                                <span class="program-tagline" data-i18n="card.magic.tagline">Create <i aria-hidden="true">•</i> Perform</span>
-                                <span class="program-detail-link" data-i18n="card.detail">View details <span aria-hidden="true">→</span></span>
-                            </span>
-                        </button>
-                    </div>
-                </div>
-            </section>
+              <button
+                class="program-card"
+                type="button"
+                data-program="magic"
+                data-i18n-aria="card.magic.aria"
+                aria-label="View Magic Class details"
+              >
+                <span class="program-image-wrap">
+                  <img
+                    class="program-image"
+                    src="../assets/images/programs/sulap-001.webp"
+                    data-i18n-alt="card.magic.alt"
+                    alt="Magic props and performance from the Magic Class program"
+                    width="760"
+                    height="507"
+                    loading="eager"
+                  />
+                  <span class="program-number">06</span>
+                </span>
+                <span class="program-card-body">
+                  <span
+                    class="program-category category-creative"
+                    data-i18n="card.magic.category"
+                    >CREATIVE</span
+                  >
+                  <strong class="program-title" data-i18n="card.magic.name"
+                    >Magic Class</strong
+                  >
+                  <span class="program-tagline" data-i18n="card.magic.tagline"
+                    >Create <i aria-hidden="true">•</i> Perform</span
+                  >
+                  <span class="program-detail-link" data-i18n="card.detail"
+                    >View details <span aria-hidden="true">→</span></span
+                  >
+                </span>
+              </button>
+            </div>
+          </div>
+        </section>
 
-            <section class="selection-bar" aria-live="polite" data-i18n-aria="selection.label" aria-label="Program selection">
-                <div class="selection-status">
-                    <span class="selection-badge" aria-hidden="true">✓</span>
-                    <span>
-                        <strong id="selected-count">No program selected</strong>
-                        <small id="selected-names">Tap a card to add a program.</small>
-                    </span>
-                </div>
-                <a class="whatsapp-button is-disabled" id="whatsapp-cta" href="#" aria-disabled="true">
-                    <i data-lucide="message-circle" class="icon" aria-hidden="true"></i>
-                    <span data-i18n="selection.whatsapp">Send via WhatsApp</span>
-                </a>
-            </section>
-        </main>
+        <section
+          class="selection-bar"
+          aria-live="polite"
+          data-i18n-aria="selection.label"
+          aria-label="Program selection"
+        >
+          <div class="selection-status">
+            <span class="selection-badge" aria-hidden="true">✓</span>
+            <span>
+              <strong id="selected-count">No program selected</strong>
+              <small id="selected-names">Tap a card to add a program.</small>
+            </span>
+          </div>
+          <a
+            class="whatsapp-button is-disabled"
+            id="whatsapp-cta"
+            href="#"
+            aria-disabled="true"
+          >
+            <i data-lucide="message-circle" class="icon" aria-hidden="true"></i>
+            <span data-i18n="selection.whatsapp">Send via WhatsApp</span>
+          </a>
+        </section>
+      </main>
 
-        <footer class="open-table-footer">
-            <span>MOZAIQ FUTURE ACADEMY</span>
-            <span data-i18n="footer.school">SD Elyon Christian School</span>
-        </footer>
+      <footer class="open-table-footer">
+        <span>MOZAIQ FUTURE ACADEMY</span>
+        <span data-i18n="footer.school">Elyon Christian School</span>
+      </footer>
     </div>
 
     <div class="modal" id="syllabus-modal" hidden>
-        <div class="modal-backdrop" data-close-modal></div>
-        <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-            <div class="modal-detail-header">
-                <button class="modal-back" type="button" data-i18n-aria="modal.back" aria-label="Back to all programs" data-close-modal>
-                    <i data-lucide="arrow-left" class="icon" aria-hidden="true"></i>
-                    <span data-i18n="modal.back">All Programs</span>
-                </button>
-                <strong class="modal-header-program" id="modal-header-program">Program</strong>
-                <button class="modal-close" type="button" data-i18n-aria="modal.close" aria-label="Close program details" data-close-modal>
-                    <i data-lucide="x" class="icon" aria-hidden="true"></i>
-                </button>
-            </div>
-
-            <div class="modal-detail-content">
-                <div class="modal-visual">
-                    <img id="modal-image" src="" alt="" width="760" height="430">
-                </div>
-                <div class="modal-header">
-                    <p class="section-kicker" id="modal-kicker">PROGRAM</p>
-                    <h2 id="modal-title"></h2>
-                    <p class="modal-summary" id="modal-summary"></p>
-                    <div class="modal-meta" id="modal-meta"></div>
-                </div>
-
-                <section class="learning-outcomes" aria-labelledby="outcomes-title">
-                    <h3 id="outcomes-title"><i data-lucide="sparkles" class="icon" aria-hidden="true"></i> <span data-i18n="modal.outcomes">What your child will learn</span></h3>
-                    <ul id="modal-outcomes"></ul>
-                    <div class="value-group">
-                        <p class="section-kicker" data-i18n="modal.values">VALUES WE BUILD</p>
-                        <div class="value-chips" id="modal-values"></div>
-                    </div>
-                </section>
-
-                <section class="video-examples" id="modal-videos" hidden aria-labelledby="modal-videos-title">
-                    <div class="video-examples-heading">
-                        <div>
-                            <p class="section-kicker" data-i18n="modal.examplesKicker">FEATURED WORK</p>
-                            <h3 id="modal-videos-title" data-i18n="modal.examplesTitle">See student work examples</h3>
-                        </div>
-                        <span class="video-platform">YouTube</span>
-                    </div>
-                    <div class="featured-video-grid" id="featured-video-grid"></div>
-                    <button class="video-show-all" id="video-show-all" type="button" aria-expanded="false" aria-controls="video-extra-links">
-                        <span data-i18n="modal.showAllExamples">View all examples</span>
-                        <i data-lucide="chevron-down" class="icon" aria-hidden="true"></i>
-                    </button>
-                    <div class="video-extra-links" id="video-extra-links" hidden></div>
-                </section>
-
-                <section class="learning-journey" aria-labelledby="journey-title">
-                    <div class="session-heading">
-                        <div><p class="section-kicker" data-i18n="modal.roadmap">LEARNING JOURNEY</p><h3 id="journey-title" data-i18n="modal.sessionsTitle">Four stages of learning</h3></div>
-                        <span class="session-duration" data-i18n="modal.sessionDuration">1 session / week</span>
-                    </div>
-                    <div class="phase-list" id="modal-phases"></div>
-                </section>
-
-                <section class="session-accordion">
-                    <button class="accordion-trigger" id="session-toggle" type="button" aria-expanded="false" aria-controls="session-panel">
-                        <span><i data-lucide="list" class="icon" aria-hidden="true"></i> <span data-i18n="modal.sessionDetails">View details of all sessions</span></span>
-                        <i data-lucide="chevron-down" class="icon accordion-chevron" aria-hidden="true"></i>
-                    </button>
-                    <div class="accordion-panel" id="session-panel" hidden>
-                        <div class="session-list" id="modal-sessions"></div>
-                    </div>
-                </section>
-
-                <section class="safety-notice" aria-labelledby="safety-title">
-                    <div class="safety-icon"><i data-lucide="shield-check" class="icon" aria-hidden="true"></i></div>
-                    <div>
-                        <p class="section-kicker" data-i18n="modal.safetyKicker">SAFETY &amp; GUIDANCE</p>
-                        <h3 id="safety-title" data-i18n="modal.safetyTitle">Safe &amp; Guided</h3>
-                        <p id="modal-note"></p>
-                    </div>
-                </section>
-
-                <section class="additional-note-accordion">
-                    <button class="accordion-trigger" id="note-toggle" type="button" aria-expanded="false" aria-controls="note-panel">
-                        <span><i data-lucide="info" class="icon" aria-hidden="true"></i> <span data-i18n="modal.additionalInfo">Additional program information</span></span>
-                        <i data-lucide="chevron-down" class="icon accordion-chevron" aria-hidden="true"></i>
-                    </button>
-                    <div class="accordion-panel" id="note-panel" hidden>
-                        <p class="full-program-note" id="modal-full-note"></p>
-                    </div>
-                </section>
-
-                <div class="modal-actions">
-                    <button class="select-program-button" id="modal-select" type="button" aria-pressed="false">
-                        <i data-lucide="check" class="icon" aria-hidden="true"></i>
-                        <span data-i18n="modal.select">Choose Program</span>
-                    </button>
-                    <a class="whatsapp-button modal-cta" id="modal-whatsapp" href="#" target="_blank" rel="noopener">
-                        <i data-lucide="message-circle" class="icon" aria-hidden="true"></i>
-                        <span data-i18n="modal.whatsapp">Ask via WhatsApp</span>
-                    </a>
-                </div>
-            </div>
+      <div class="modal-backdrop" data-close-modal></div>
+      <div
+        class="modal-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+      >
+        <div class="modal-detail-header">
+          <button
+            class="modal-back"
+            type="button"
+            data-i18n-aria="modal.back"
+            aria-label="Back to all programs"
+            data-close-modal
+          >
+            <i data-lucide="arrow-left" class="icon" aria-hidden="true"></i>
+            <span data-i18n="modal.back">All Programs</span>
+          </button>
+          <strong class="modal-header-program" id="modal-header-program"
+            >Program</strong
+          >
+          <button
+            class="modal-close"
+            type="button"
+            data-i18n-aria="modal.close"
+            aria-label="Close program details"
+            data-close-modal
+          >
+            <i data-lucide="x" class="icon" aria-hidden="true"></i>
+          </button>
         </div>
+
+        <div class="modal-detail-content">
+          <div class="modal-visual">
+            <img id="modal-image" src="" alt="" width="760" height="430" />
+          </div>
+          <div class="modal-header">
+            <p class="section-kicker" id="modal-kicker">PROGRAM</p>
+            <h2 id="modal-title"></h2>
+            <p class="modal-summary" id="modal-summary"></p>
+            <div class="modal-meta" id="modal-meta"></div>
+          </div>
+
+          <section class="learning-outcomes" aria-labelledby="outcomes-title">
+            <h3 id="outcomes-title">
+              <i data-lucide="sparkles" class="icon" aria-hidden="true"></i>
+              <span data-i18n="modal.outcomes">What your child will learn</span>
+            </h3>
+            <ul id="modal-outcomes"></ul>
+            <div class="value-group">
+              <p class="section-kicker" data-i18n="modal.values">
+                VALUES WE BUILD
+              </p>
+              <div class="value-chips" id="modal-values"></div>
+            </div>
+          </section>
+
+          <section
+            class="video-examples"
+            id="modal-videos"
+            hidden
+            aria-labelledby="modal-videos-title"
+          >
+            <div class="video-examples-heading">
+              <div>
+                <p class="section-kicker" data-i18n="modal.examplesKicker">
+                  FEATURED WORK
+                </p>
+                <h3 id="modal-videos-title" data-i18n="modal.examplesTitle">
+                  See student work examples
+                </h3>
+              </div>
+              <span class="video-platform">YouTube</span>
+            </div>
+            <div class="featured-video-grid" id="featured-video-grid"></div>
+            <button
+              class="video-show-all"
+              id="video-show-all"
+              type="button"
+              aria-expanded="false"
+              aria-controls="video-extra-links"
+            >
+              <span data-i18n="modal.showAllExamples">View all examples</span>
+              <i data-lucide="chevron-down" class="icon" aria-hidden="true"></i>
+            </button>
+            <div class="video-extra-links" id="video-extra-links" hidden></div>
+          </section>
+
+          <section class="learning-journey" aria-labelledby="journey-title">
+            <div class="session-heading">
+              <div>
+                <p class="section-kicker" data-i18n="modal.roadmap">
+                  LEARNING JOURNEY
+                </p>
+                <h3 id="journey-title" data-i18n="modal.sessionsTitle">
+                  Four stages of learning
+                </h3>
+              </div>
+              <span class="session-duration" data-i18n="modal.sessionDuration"
+                >1 session / week</span
+              >
+            </div>
+            <div class="phase-list" id="modal-phases"></div>
+          </section>
+
+          <section class="session-accordion">
+            <button
+              class="accordion-trigger"
+              id="session-toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="session-panel"
+            >
+              <span
+                ><i data-lucide="list" class="icon" aria-hidden="true"></i>
+                <span data-i18n="modal.sessionDetails"
+                  >View details of all sessions</span
+                ></span
+              >
+              <i
+                data-lucide="chevron-down"
+                class="icon accordion-chevron"
+                aria-hidden="true"
+              ></i>
+            </button>
+            <div class="accordion-panel" id="session-panel" hidden>
+              <div class="session-list" id="modal-sessions"></div>
+            </div>
+          </section>
+
+          <section class="safety-notice" aria-labelledby="safety-title">
+            <div class="safety-icon">
+              <i data-lucide="shield-check" class="icon" aria-hidden="true"></i>
+            </div>
+            <div>
+              <p class="section-kicker" data-i18n="modal.safetyKicker">
+                SAFETY &amp; GUIDANCE
+              </p>
+              <h3 id="safety-title" data-i18n="modal.safetyTitle">
+                Safe &amp; Guided
+              </h3>
+              <p id="modal-note"></p>
+            </div>
+          </section>
+
+          <section class="additional-note-accordion">
+            <button
+              class="accordion-trigger"
+              id="note-toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="note-panel"
+            >
+              <span
+                ><i data-lucide="info" class="icon" aria-hidden="true"></i>
+                <span data-i18n="modal.additionalInfo"
+                  >Additional program information</span
+                ></span
+              >
+              <i
+                data-lucide="chevron-down"
+                class="icon accordion-chevron"
+                aria-hidden="true"
+              ></i>
+            </button>
+            <div class="accordion-panel" id="note-panel" hidden>
+              <p class="full-program-note" id="modal-full-note"></p>
+            </div>
+          </section>
+
+          <div class="modal-actions">
+            <button
+              class="select-program-button"
+              id="modal-select"
+              type="button"
+              aria-pressed="false"
+            >
+              <i data-lucide="check" class="icon" aria-hidden="true"></i>
+              <span data-i18n="modal.select">Choose Program</span>
+            </button>
+            <a
+              class="whatsapp-button modal-cta"
+              id="modal-whatsapp"
+              href="#"
+              target="_blank"
+              rel="noopener"
+            >
+              <i
+                data-lucide="message-circle"
+                class="icon"
+                aria-hidden="true"
+              ></i>
+              <span data-i18n="modal.whatsapp">Ask via WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="../assets/js/icons.js" defer></script>
     <script src="./main.js" defer></script>
-</body>
-
+  </body>
 </html>

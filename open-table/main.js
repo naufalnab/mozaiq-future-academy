@@ -69,8 +69,8 @@
 
     var translations = {
         en: {
-            pageTitle: "SD Elyon Open Table | Mozaiq Future Academy",
-            pageDescription: "Explore six extracurricular programs from Mozaiq Future Academy for SD Elyon Christian School students.",
+            pageTitle: "Elyon Open Table | Mozaiq Future Academy",
+            pageDescription: "Explore six extracurricular programs from Mozaiq Future Academy for Elyon Christian School students.",
             "gate.kicker": "BEFORE CHOOSING A PROGRAM",
             "gate.title": "Get to know us first",
             "gate.intro": "Fill in the short form below so the Mozaiq team can follow up after the open table.",
@@ -86,7 +86,7 @@
             "gate.fallback": "Open the Google Form in a new tab",
             "brand.aria": "Back to Mozaiq Future Academy website",
             "header.context": "Open Table",
-            "hero.eyebrow": "OPEN TABLE • SD ELYON",
+            "hero.eyebrow": "OPEN TABLE • Elyon",
             "hero.title": "Find an extracurricular program that makes your child excited to learn",
             "hero.lead": "Choose one of 6 programs and explore the activities.",
             "hero.count": "Programs to Explore",
@@ -131,7 +131,7 @@
             "selection.one": "1 program selected",
             "selection.many": "{count} programs selected",
             "selection.whatsapp": "Send via WhatsApp",
-            "footer.school": "SD Elyon Christian School",
+            "footer.school": "Elyon Christian School",
             "modal.close": "Close program details",
             "modal.back": "All Programs",
             "modal.outcomes": "What your child will learn",
@@ -153,8 +153,8 @@
             "modal.hideAllExamples": "Hide extra examples"
         },
         id: {
-            pageTitle: "Open Table SD Elyon | Mozaiq Future Academy",
-            pageDescription: "Temukan enam pilihan ekstrakurikuler Mozaiq Future Academy untuk siswa SD Elyon Christian School.",
+            pageTitle: "Open Table Elyon | Mozaiq Future Academy",
+            pageDescription: "Temukan enam pilihan ekstrakurikuler Mozaiq Future Academy untuk siswa Elyon Christian School.",
             "gate.kicker": "SEBELUM MEMILIH PROGRAM",
             "gate.title": "Kenalan dulu dengan kami",
             "gate.intro": "Isi data singkat berikut agar tim Mozaiq dapat membantu menghubungi Bapak/Ibu setelah open table.",
@@ -170,7 +170,7 @@
             "gate.fallback": "Buka Google Form di tab baru",
             "brand.aria": "Kembali ke website Mozaiq Future Academy",
             "header.context": "Open Table",
-            "hero.eyebrow": "OPEN TABLE • SD ELYON",
+            "hero.eyebrow": "OPEN TABLE • Elyon",
             "hero.title": "Temukan ekskul yang membuat anak antusias belajar",
             "hero.lead": "Pilih salah satu dari 6 program dan lihat detail kegiatannya.",
             "hero.count": "Program Pilihan",
@@ -215,7 +215,7 @@
             "selection.one": "1 program dipilih",
             "selection.many": "{count} program dipilih",
             "selection.whatsapp": "Kirim via WhatsApp",
-            "footer.school": "SD Elyon Christian School",
+            "footer.school": "Elyon Christian School",
             "modal.close": "Tutup detail program",
             "modal.back": "Semua Program",
             "modal.outcomes": "Anak akan belajar",
@@ -639,8 +639,8 @@
 
     function waUrl(programNames) {
         var message = currentLanguage === "en"
-            ? "Hello Mozaiq, I am a parent of an SD Elyon Christian School student. I am interested in: " + programNames.join(", ")
-            : "Halo Mozaiq, saya orang tua siswa SD Elyon Christian School. Saya tertarik dengan program: " + programNames.join(", ");
+            ? "Hello Mozaiq, I am a parent of an Elyon Christian School student. I am interested in: " + programNames.join(", ")
+            : "Halo Mozaiq, saya orang tua siswa Elyon Christian School. Saya tertarik dengan program: " + programNames.join(", ");
         return "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message);
     }
 
