@@ -231,8 +231,8 @@
             "modal.remove": "Hapus dari pilihan",
             "modal.whatsapp": "Tanya via WhatsApp",
             "modal.examplesKicker": "CONTOH KARYA UNGGULAN",
-            "modal.examplesTitle": "Lihat contoh karya siswa",
-            "modal.watchExample": "Contoh karya siswa {count}",
+            "modal.examplesTitle": "Lihat contoh karya",
+            "modal.watchExample": "Contoh karya {count}",
             "modal.showAllExamples": "Lihat semua {count} contoh",
             "modal.hideAllExamples": "Sembunyikan contoh tambahan"
         }
