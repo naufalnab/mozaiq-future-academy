@@ -45,6 +45,16 @@
     var currentProgramKey = null;
     var lastFocused = null;
     var currentLanguage = "en";
+    var aiVideoExamples = [
+        "https://youtube.com/shorts/40jt0ZcbQME",
+        "https://youtube.com/shorts/OIuj-fMf4S0",
+        "https://youtube.com/shorts/NUgvyFAlHk4",
+        "https://youtube.com/shorts/I2YRz7n96uw",
+        "https://youtube.com/shorts/d-WRyGARsm8",
+        "https://youtube.com/shorts/W0mASn2pfK0",
+        "https://youtube.com/shorts/rpx_umueWio",
+        "https://youtube.com/shorts/f93PBgDXNI4"
+    ];
 
     var translations = {
         en: {
@@ -119,7 +129,10 @@
             "modal.sessionDuration": "1 session / week",
             "modal.select": "Choose Program",
             "modal.remove": "Remove from selection",
-            "modal.whatsapp": "Ask via WhatsApp"
+            "modal.whatsapp": "Ask via WhatsApp",
+            "modal.examplesKicker": "EXAMPLE WORK",
+            "modal.examplesTitle": "See AI Creative Media examples",
+            "modal.watchExample": "Watch example {count}"
         },
         id: {
             pageTitle: "Open Table SD Elyon | Mozaiq Future Academy",
@@ -193,7 +206,10 @@
             "modal.sessionDuration": "1 sesi / minggu",
             "modal.select": "Pilih Program",
             "modal.remove": "Hapus dari pilihan",
-            "modal.whatsapp": "Tanya via WhatsApp"
+            "modal.whatsapp": "Tanya via WhatsApp",
+            "modal.examplesKicker": "CONTOH KARYA",
+            "modal.examplesTitle": "Lihat contoh AI Creative Media",
+            "modal.watchExample": "Lihat contoh {count}"
         }
     };
 
@@ -625,6 +641,24 @@
         if (!selected.size) event.preventDefault();
     });
 
+    function renderVideoExamples(key) {
+        var section = document.getElementById("modal-videos");
+        var links = document.getElementById("modal-video-links");
+        if (!section || !links) return;
+
+        if (key !== "ai") {
+            section.hidden = true;
+            links.innerHTML = "";
+            return;
+        }
+
+        section.hidden = false;
+        links.innerHTML = aiVideoExamples.map(function (url, index) {
+            var label = t("modal.watchExample").replace("{count}", String(index + 1).padStart(2, "0"));
+            return "<a class=\"video-example-link\" href=\"" + url + "\" target=\"_blank\" rel=\"noopener noreferrer\"><span>" + label + "</span><span aria-hidden=\"true\">↗</span></a>";
+        }).join("");
+    }
+
     function renderModal(key) {
         var program = getProgramCopy(key);
         if (!program) return;
@@ -645,6 +679,7 @@
             return "<article class=\"session-item\"><span class=\"session-number\">" + String(index + 1).padStart(2, "0") + "</span><span><strong>" + session[0] + "</strong><small>" + session[1] + "</small></span></article>";
         }).join("");
         document.getElementById("modal-note").textContent = program.note;
+        renderVideoExamples(key);
         document.getElementById("modal-whatsapp").setAttribute("href", waUrl([program.name]));
         updateSelection();
     }

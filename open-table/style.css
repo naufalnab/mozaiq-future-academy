@@ -625,6 +625,50 @@ main {
 .session-item strong { font-size: 9px; line-height: 1.25; }
 .session-item small { margin-top: 2px; color: var(--muted); font-size: 8px; line-height: 1.25; }
 .modal-note { margin: 10px 0; padding: 8px 10px; border-left: 2px solid var(--gold); color: var(--muted); background: #fffbef; font-size: 9px; line-height: 1.35; }
+.video-examples {
+    margin: 10px 0 12px;
+    padding: 10px;
+    border: 1px solid #e1d8fa;
+    border-radius: 10px;
+    background: #faf8ff;
+}
+.video-examples-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 7px;
+}
+.video-examples-heading h3 { margin: 3px 0 0; font-size: 13px; line-height: 1.2; }
+.video-platform {
+    padding: 4px 6px;
+    border-radius: 5px;
+    color: #b91c1c;
+    background: #fee2e2;
+    font-size: 8px;
+    font-weight: 850;
+    line-height: 1;
+}
+.video-link-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 5px; }
+.video-example-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    min-height: 27px;
+    padding: 6px 7px;
+    border: 1px solid #e8e4f1;
+    border-radius: 7px;
+    color: var(--purple);
+    background: #fff;
+    font-size: 9px;
+    font-weight: 800;
+    line-height: 1.1;
+    transition: border-color 160ms ease, background 160ms ease, transform 160ms ease;
+}
+.video-example-link:hover,
+.video-example-link:focus-visible { border-color: #b9a2fa; background: #f3efff; outline: none; transform: translateY(-1px); }
+.video-example-link > span:last-child { font-size: 13px; line-height: .8; }
 .modal-actions { display: flex; gap: 8px; }
 .select-program-button { flex: 1 1 50%; cursor: pointer; background: var(--ink); }
 .select-program-button.is-selected { color: var(--purple-deep); background: #ddd6fe; }
@@ -653,6 +697,8 @@ main {
     .session-item strong { font-size: 11px; }
     .session-item small { font-size: 10px; }
     .modal-note { font-size: 11px; }
+    .video-examples-heading h3 { font-size: 15px; }
+    .video-example-link { font-size: 10px; }
 }
 
 @media (max-width: 760px) {
