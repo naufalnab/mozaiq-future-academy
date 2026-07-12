@@ -84,6 +84,7 @@
             "gate.continue": "Continue to program choices",
             "gate.note": "Your information is saved in the Mozaiq Future Academy Google Form. The form also asks for a WhatsApp number so our team can contact you.",
             "gate.fallback": "Open the Google Form in a new tab",
+            "language.aria": "Choose language",
             "brand.aria": "Back to Mozaiq Future Academy website",
             "header.context": "Open Table",
             "hero.eyebrow": "OPEN TABLE • Elyon",
@@ -168,6 +169,7 @@
             "gate.continue": "Lanjut ke pilihan program",
             "gate.note": "Data tersimpan di Google Form Mozaiq Future Academy. Form juga meminta nomor WhatsApp agar tim kami dapat menghubungi Bapak/Ibu.",
             "gate.fallback": "Buka Google Form di tab baru",
+            "language.aria": "Pilih bahasa",
             "brand.aria": "Kembali ke website Mozaiq Future Academy",
             "header.context": "Open Table",
             "hero.eyebrow": "OPEN TABLE • Elyon",
@@ -235,6 +237,91 @@
             "modal.watchExample": "Contoh karya {count}",
             "modal.showAllExamples": "Lihat semua {count} contoh",
             "modal.hideAllExamples": "Sembunyikan contoh tambahan"
+        },
+        zh: {
+            pageTitle: "Elyon 开放体验日 | Mozaiq Future Academy",
+            pageDescription: "探索 Mozaiq Future Academy 为 Elyon Christian School 学生准备的六项课外活动课程。",
+            "gate.kicker": "选择课程前",
+            "gate.title": "先了解我们",
+            "gate.intro": "请填写以下简短表格，方便 Mozaiq 团队在开放体验日后与您联系。",
+            "gate.fieldsLabel": "所需信息",
+            "gate.parent": "家长姓名",
+            "gate.student": "学生姓名",
+            "gate.grade": "年级",
+            "gate.interest": "感兴趣的课程",
+            "gate.formTitle": "家长信息及课外活动偏好表",
+            "gate.confirm": "我已填写并提交 Google 表单。",
+            "gate.continue": "继续选择课程",
+            "gate.note": "您的信息会保存于 Mozaiq Future Academy 的 Google 表单中。表单也会收集 WhatsApp 号码，方便我们的团队与您联系。",
+            "gate.fallback": "在新标签页打开 Google 表单",
+            "language.aria": "选择语言",
+            "brand.aria": "返回 Mozaiq Future Academy 网站",
+            "header.context": "开放体验日",
+            "hero.eyebrow": "开放体验日 • Elyon",
+            "hero.title": "寻找让孩子充满学习热情的课外活动",
+            "hero.lead": "选择 6 项课程中的一项，探索丰富的活动内容。",
+            "hero.count": "可探索课程",
+            "program.kicker": "选择课程",
+            "program.title": "探索课程",
+            "program.hint": "点击卡片查看详情。",
+            "program.gridLabel": "六项课外活动课程",
+            "card.detail": "查看详情 <span aria-hidden=\"true\">→</span>",
+            "card.archery.category": "体育",
+            "card.archery.name": "射箭",
+            "card.archery.tagline": "专注 <i aria-hidden=\"true\">•</i> 纪律",
+            "card.archery.aria": "查看射箭课程详情",
+            "card.archery.alt": "学生参加 Mozaiq 射箭课程的练习",
+            "card.floorball.category": "体育",
+            "card.floorball.name": "地板球",
+            "card.floorball.tagline": "乐趣 <i aria-hidden=\"true\">•</i> 团队合作",
+            "card.floorball.aria": "查看地板球课程详情",
+            "card.floorball.alt": "学生参加 Mozaiq 地板球课程的活动",
+            "card.ai.category": "科技",
+            "card.ai.name": "AI 创意媒体",
+            "card.ai.tagline": "创作 <i aria-hidden=\"true\">•</i> 想象",
+            "card.ai.aria": "查看 AI 创意媒体课程详情",
+            "card.ai.alt": "学生在 AI 创意媒体课程中学习人工智能",
+            "card.affiliate.category": "数字商业",
+            "card.affiliate.name": "联盟营销",
+            "card.affiliate.tagline": "创作 <i aria-hidden=\"true\">•</i> 沟通",
+            "card.affiliate.aria": "查看联盟营销课程详情",
+            "card.affiliate.alt": "学生在联盟营销课程中学习数字商业",
+            "card.drone.category": "科技",
+            "card.drone.name": "无人机学院",
+            "card.drone.tagline": "飞行 <i aria-hidden=\"true\">•</i> 创新",
+            "card.drone.aria": "查看无人机学院课程详情",
+            "card.drone.alt": "学生在无人机学院课程中操作无人机",
+            "card.magic.category": "创意",
+            "card.magic.name": "魔术课",
+            "card.magic.tagline": "创作 <i aria-hidden=\"true\">•</i> 表演",
+            "card.magic.aria": "查看魔术课详情",
+            "card.magic.alt": "魔术课中的道具与表演",
+            "selection.label": "课程选择",
+            "selection.emptyCount": "尚未选择课程",
+            "selection.emptyHint": "点击卡片添加课程。",
+            "selection.one": "已选择 1 项课程",
+            "selection.many": "已选择 {count} 项课程",
+            "selection.whatsapp": "通过 WhatsApp 发送",
+            "footer.school": "Elyon Christian School",
+            "modal.close": "关闭课程详情",
+            "modal.back": "全部课程",
+            "modal.outcomes": "孩子将学到什么",
+            "modal.values": "培养的价值观",
+            "modal.roadmap": "学习历程",
+            "modal.sessionsTitle": "四个学习阶段",
+            "modal.sessionDuration": "每周 1 节课",
+            "modal.sessionDetails": "查看全部课程安排",
+            "modal.safetyKicker": "安全与指导",
+            "modal.safetyTitle": "安全且有指导",
+            "modal.additionalInfo": "课程补充信息",
+            "modal.select": "选择课程",
+            "modal.remove": "从选择中移除",
+            "modal.whatsapp": "通过 WhatsApp 咨询",
+            "modal.examplesKicker": "精选作品",
+            "modal.examplesTitle": "查看学生作品示例",
+            "modal.watchExample": "学生作品示例 {count}",
+            "modal.showAllExamples": "查看全部 {count} 个示例",
+            "modal.hideAllExamples": "隐藏其他示例"
         }
     };
 
@@ -419,6 +506,14 @@
             affiliate: "PROGRAM BISNIS DIGITAL",
             drone: "PROGRAM TEKNOLOGI & PENERBANGAN",
             magic: "PROGRAM KREATIF & PERTUNJUKAN"
+        },
+        zh: {
+            archery: "体育课程",
+            floorball: "体育课程",
+            ai: "创意科技课程",
+            affiliate: "数字商业课程",
+            drone: "科技与航空课程",
+            magic: "创意表演课程"
         }
     };
 
@@ -438,6 +533,14 @@
             affiliate: "Aktivitas berbentuk simulasi. Akun atau transaksi nyata memerlukan persetujuan orang tua.",
             drone: "Setiap penerbangan didampingi dan mengikuti aturan alat serta keselamatan.",
             magic: "Latihan mengikuti etika pesulap, penggunaan alat yang aman, dan arahan coach."
+        },
+        zh: {
+            archery: "器材和射击练习均由经过培训的教练指导。",
+            floorball: "训练遵循教练指导、安全比赛规则和体育精神。",
+            ai: "AI 活动均有指导。学生无需将个人资料上传到公共 AI 服务。",
+            affiliate: "活动均为模拟学习。真实账号或交易需要家长同意。",
+            drone: "每次飞行均有指导，并遵循明确的器材和安全规则。",
+            magic: "练习遵循魔术师伦理、安全使用器材和教练指导。"
         }
     };
 
@@ -453,6 +556,12 @@
             { name: "Create", range: "Sesi 5–8" },
             { name: "Produce", range: "Sesi 9–13" },
             { name: "Showcase", range: "Sesi 14–16" }
+        ],
+        zh: [
+            { name: "探索", range: "第 1–4 节" },
+            { name: "创作", range: "第 5–8 节" },
+            { name: "制作", range: "第 9–13 节" },
+            { name: "展示", range: "第 14–16 节" }
         ]
     };
 
@@ -472,6 +581,14 @@
             affiliate: ["Mengenal bisnis, entrepreneurship, affiliate, dan customer.", "Membuat konten, poster, video, storytelling, dan personal branding.", "Berlatih komunikasi, etika, pengelolaan uang, dan business challenge.", "Menyiapkan marketing dan showcase proyek young entrepreneur."],
             drone: ["Mengenal teknologi drone, bagian alat, dan aturan penerbangan aman.", "Membuat pola penerbangan dasar melalui tantangan kontrol dan misi.", "Menghasilkan foto, video udara, dan menyelesaikan obstacle course.", "Menampilkan keterampilan melalui mini competition dan Parents Demo Day."],
             magic: ["Mengenal etika pesulap, mentalism, number magic, dan coin magic.", "Membuat rutinitas banknote, rope, storytelling, dan mini show.", "Membuat card routine dan mengembangkan teknik pertunjukan.", "Menampilkan pertunjukan lengkap pada final gala dan graduation."]
+        },
+        zh: {
+            archery: ["认识安全规则、器材、站姿和瞄准方法。", "通过挑战和目标练习培养射击技能。", "通过不同目标训练专注、团队合作和任务解决能力。", "通过独立练习和迷你比赛建立自信。"],
+            floorball: ["认识器材，学习安全比赛、带球和改变方向。", "培养传球、接球、射门和控球能力。", "训练团队合作、进攻、防守和比赛技能。", "练习比赛、体育精神并参加毕业嘉年华。"],
+            ai: ["探索 AI、负责任的使用方式、故事想法和目标受众。", "创作配音指导、配音、音频和场景拆解。", "制作视觉、视频、转场、音效并进行剪辑。", "准备缩略图、文案、最终项目、同伴互评和 AI 创意展。"],
+            affiliate: ["探索商业、创业、联盟营销概念和客户。", "创作内容、海报、视频、故事并建立个人品牌。", "练习沟通、伦理、资金管理和商业挑战。", "准备营销作品并展示青年创业者项目。"],
+            drone: ["探索无人机技术、部件和安全飞行规则。", "通过控制和任务挑战创作基础飞行路线。", "制作航拍照片、视频并完成障碍赛道任务。", "通过迷你比赛和家长展示日展示技能。"],
+            magic: ["探索魔术师伦理、心灵魔术、数字魔术和硬币魔术。", "使用钞票、绳子和讲故事创作魔术流程，并完成迷你演出。", "制作纸牌魔术流程并发展表演技巧。", "在期末 gala 演出和毕业典礼展示完整表演。"]
         }
     };
 
@@ -628,19 +745,186 @@
         }
     };
 
+    var chinesePrograms = {
+        archery: {
+            name: "射箭",
+            summary: "一项安全、适合年龄的射箭课程，帮助孩子培养专注力、协调性、纪律性和自信心。",
+            meta: ["1–2 年级", "6–8 岁", "16 节课", "每节 60 分钟"],
+            outcomes: ["安全学习射箭基础", "培养专注力、手眼协调和身体平衡", "正确准备器材并遵守安全规则", "练习站姿、瞄准和短距离射击", "自信参加迷你比赛"],
+            values: ["专注", "纪律", "尊重", "团队合作", "自信", "快乐学习"],
+            note: "每节课包括问候、趣味热身、主要课程、挑战活动和回顾。",
+            sessions: [
+                ["认识射箭", "认识弓、箭、靶子、安全线以及教练指令。"],
+                ["安全第一", "学习安全区域、携弓方式、站姿和遵循教练指示。"],
+                ["握弓", "学习正确的手部和手指位置。"],
+                ["站姿", "学习正方形站姿并保持身体平衡。"],
+                ["锚点姿势", "在不搭箭的情况下安全练习拉弦。"],
+                ["瞄准", "从 3 米距离瞄准大型靶子。"],
+                ["第一支箭", "通过五箭挑战，开始从 3 米距离射击。"],
+                ["趣味射击日", "体验气球靶、动物靶和彩色靶等活动。"],
+                ["专注挑战", "瞄准更小的目标并参与超越自己得分的游戏。"],
+                ["团队射击", "两队进行接力射击练习。"],
+                ["移动靶", "通过彩色棋盘游戏认识移动目标。"],
+                ["寻宝活动", "通过有趣的目标任务收集分数。"],
+                ["目标任务", "完成红色、蓝色和绿色目标任务。"],
+                ["自信射击", "独立完成射击并展示自己的进步。"],
+                ["模拟比赛", "按照简单规则练习迷你锦标赛。"],
+                ["毕业日", "通过迷你比赛庆祝学生的学习成果。"]
+            ]
+        },
+        floorball: {
+            name: "地板球",
+            summary: "一项充满乐趣的团队运动，培养运动能力、协调性、敏捷性、团队合作、判断力和体育精神。",
+            meta: ["1–2 年级", "6–8 岁", "16 节课", "每节 60 分钟"],
+            outcomes: ["认识地板球球杆、球、球门和安全规则", "练习带球、传球、接球和控球", "练习射门并参与迷你游戏", "在团队中沟通与合作", "学习体育精神和公平比赛"],
+            values: ["团队合作", "尊重", "永不放弃", "体育精神", "自信", "纪律"],
+            note: "每节课包括开场、趣味热身、技能训练、趣味游戏和回顾。",
+            sessions: [
+                ["认识地板球", "通过寻球游戏认识球杆、球、球门和安全规则。"],
+                ["握杆", "学习握杆、杆上平衡以及带球行走。"],
+                ["基础带球", "在最快者挑战中绕过锥桶带球。"],
+                ["改变方向", "通过红绿灯游戏练习改变方向。"],
+                ["传球", "练习短传、双人传球和传球接力。"],
+                ["接球", "停球并接住队友的传球。"],
+                ["射门", "学习推射并练习瞄准球门。"],
+                ["趣味目标", "体验保龄球门、动物球门和气球球门。"],
+                ["障碍带球", "绕过锥桶、隧道和球门带球。"],
+                ["传球挑战", "边移动边传球，培养团队沟通。"],
+                ["团队合作日", "进行 2 对 2 迷你比赛并学习合作。"],
+                ["进攻球门", "学习进入对方区域并发起进攻。"],
+                ["防守", "学习在不犯规的情况下抢回球权。"],
+                ["迷你比赛", "按照简单规则进行 3 对 3 比赛。"],
+                ["模拟比赛", "通过循环赛练习策略和体育精神。"],
+                ["毕业嘉年华", "参加迷你锦标赛、家长对孩子比赛，并获得奖牌、证书和照片。"]
+            ]
+        },
+        ai: {
+            name: "AI 创意媒体",
+            summary: "孩子将学习引导 AI，把想法变成有意义的故事、配音、视觉作品和短视频，完成结构清晰且负责任的创作流程。",
+            meta: ["4–6 年级", "16 节课", "每周 1 节课", "结课：AI 创意展"],
+            outcomes: ["了解 AI 的能力、局限和使用伦理", "编写包含清晰背景、角色、目标和指令的提示词", "创作脚本、配音指导和风格说明", "通过指导流程制作配音、视觉、动画、音效和字幕", "团队协作，并说明创作决定和 AI 的局限"],
+            values: ["诚信", "责任", "创造力", "协作", "善用资源"],
+            note: "账号和生成过程由教师、学校或家长指导。学生无需将个人资料上传到公共 AI 工具。",
+            sessions: [
+                ["什么是 AI？", "通过 AI 侦探问答区分人类想法、人类决定和 AI 协助。"],
+                ["负责任的 AI 与数字伦理", "围绕安全、诚实、隐私和验证制定 AI 承诺。"],
+                ["故事想法与受众", "选择有益的主题并确定目标观众。"],
+                ["使用 AI 创作脚本", "制作包含吸引点、角色和结尾的 30–60 秒视频脚本。"],
+                ["配音指导与风格说明", "制作包含角色、情绪、风格、节奏和停顿的配音卡。"],
+                ["AI 配音", "在教师指导下使用多人配音流程，比较两种配音版本。"],
+                ["音频实验室", "在 Audacity 中编辑对白、音量和音高，并导出 MP3。"],
+                ["场景拆解：世界与意义", "将脚本拆分为 4–8 个短场景，明确视觉和情绪意义。"],
+                ["视觉故事与提示词公式", "为角色、世界、物品、灯光、构图和负面提示词制作风格手册。"],
+                ["AI 图像生成", "在教师指导下为每个场景生成视觉，并选出最合适的结果。"],
+                ["图像转视频与转场", "使用教师指导的工具制作运动、镜头移动和转场。"],
+                ["音效与环境声", "选择支持场景的音效、环境声和音频层。"],
+                ["在 Canva 中剪辑", "围绕配音制作 9:16 视频，调整速度并添加字幕。"],
+                ["缩略图、文案与负责任分享", "制作缩略图、面向观众的文案和安全发布计划。"],
+                ["最终项目与同伴互评", "完成团队视频，给予反馈、修改作品并准备展示。"],
+                ["AI 创意展", "展示视频，并说明创作流程、工具和 AI 伦理。"]
+            ]
+        },
+        affiliate: {
+            name: "联盟营销",
+            summary: "通过负责任且适合年龄的青年数字创业模拟，让学生认识数字创业的基本概念。",
+            meta: ["5–6 年级", "16 节课", "内容创作", "项目模拟"],
+            outcomes: ["理解创业者思维和联盟营销概念", "创作简单内容并建立个人品牌", "学习客户画像和产品匹配", "练习沟通和销售演讲", "理解推广伦理和基础财务素养"],
+            values: ["创造力", "沟通", "团队合作", "责任", "创业者思维"],
+            note: "所有活动均为学习模拟。真实账号、交易或佣金需要家长同意，并遵守学校政策。",
+            sessions: [
+                ["什么是商业？", "通过商业游戏认识商业活动的基础。"],
+                ["创业者思维", "围绕目标和学生想法制作梦想板。"],
+                ["什么是联盟营销？", "通过简单模拟学习产品匹配。"],
+                ["了解你的客户", "制作客户画像。"],
+                ["内容创作", "通过照片挑战练习创作内容。"],
+                ["Canva 基础", "设计数字海报。"],
+                ["视频内容", "制作短视频。"],
+                ["讲故事", "构思有吸引力的产品故事。"],
+                ["沟通技巧", "练习销售演讲。"],
+                ["个人品牌", "制作个人资料卡。"],
+                ["数字伦理", "讨论数字推广案例。"],
+                ["资金管理", "制作简单预算。"],
+                ["商业挑战", "完成团队项目。"],
+                ["营销日", "展示想法和内容。"],
+                ["商业展准备", "为展览设计摊位。"],
+                ["青年创业者展", "向家长展示作品。"]
+            ]
+        },
+        drone: {
+            name: "无人机学院",
+            summary: "通过亲手操作无人机，将安全、STEM、创造力、创新和责任融合在科技学习体验中。",
+            meta: ["4–6 年级", "16 节课", "STEM 与航空", "家长展示日"],
+            outcomes: ["了解无人机技术、部件和功能", "安全地驾驶无人机", "掌握起飞、降落、悬停和基础飞行路线", "拍摄简单的航拍照片和视频", "完成障碍赛道和任务挑战"],
+            values: ["安全", "科技", "创造力", "创新", "责任"],
+            note: "配套设备包括 DJI Neo、DJI Mini、降落垫、安全锥、FPV 模拟器、平板电脑、笔记本电脑和电池站。",
+            sessions: [
+                ["无人机入门", "认识无人机并制作无人机知识指南。"],
+                ["无人机安全", "完成安全挑战并学习飞行安全规则。"],
+                ["无人机部件", "通过装配问答检验对无人机部件的认识。"],
+                ["起飞与降落", "通过降落任务掌握起飞和降落。"],
+                ["悬停", "通过平衡挑战让无人机保持稳定。"],
+                ["前进与后退", "在飞行迷宫中控制前进和后退。"],
+                ["左与右", "通过控制挑战培养方向感。"],
+                ["方形飞行", "完成方形路线飞行任务。"],
+                ["圆形飞行", "练习圆形飞行路线。"],
+                ["摄影", "拍摄最佳航拍照片。"],
+                ["摄像", "从空中制作短视频。"],
+                ["障碍赛道", "驾驶无人机穿越障碍赛道。"],
+                ["精准降落", "参加精准降落挑战赛。"],
+                ["救援任务", "团队合作完成救援情境任务。"],
+                ["迷你比赛", "参加无人机技能挑战赛。"],
+                ["无人机展示", "在家长展示日中展示飞行技能。"]
+            ]
+        },
+        magic: {
+            name: "魔术课",
+            summary: "从基础走向舞台，通过魔术培养协调性、沟通力、创造力、职业伦理和表演自信。",
+            meta: ["16 节课", "每节 60 分钟", "近景魔术", "期末 gala 演出"],
+            outcomes: ["学习魔术师伦理以及保护秘密的重要性", "培养精细动作协调和手部灵活性", "发展误导、讲故事和沟通能力", "将单个技巧编排成完整表演", "建立自信并克服舞台紧张"],
+            values: ["魔术师伦理", "协调", "创造力", "沟通", "自信"],
+            note: "每节课包括 10 分钟理论、历史和伦理学习，以及 50 分钟练习、重复训练和反馈。",
+            sessions: [
+                ["基础橡皮筋魔术", "学习 Crazy Domino's Band 和魔术师守则。"],
+                ["心灵魔术与蜡笔预言", "探索误导、肢体语言和有说服力的沟通。"],
+                ["基础数字魔术", "运用数学魔术和演示创造惊喜。"],
+                ["硬币魔术 – 第一部分", "学习 Classic Palm、Finger Palm 和硬币消失。"],
+                ["硬币魔术 – 第二部分", "练习硬币穿桌和双手配合。"],
+                ["钞票魔术 – 第一部分", "通过秘密折法改变钞票形态。"],
+                ["钞票魔术 – 第二部分", "学习笔穿钞票和观众管理。"],
+                ["迷你演出", "完成第一次演出并回顾自信心。"],
+                ["绳子魔术 – 第一部分", "学习秘密活结和安全的绳子幻术。"],
+                ["绳子魔术 – 第二部分", "练习剪绳复原术和故事节奏。"],
+                ["绳子魔术 – 第三部分", "用清晰的结尾故事表演 Professor's Nightmare。"],
+                ["纸牌魔术 – 第一部分", "学习 Mechanic's Grip、洗牌和自动完成的纸牌技巧。"],
+                ["纸牌魔术 – 第二部分", "练习控牌和视觉变牌。"],
+                ["纸牌魔术 – 第三部分", "编排 Ambitious Card Routine，建立完整表演。"],
+                ["拇指套道具", "学习隐藏拇指套，以及丝巾消失与再现。"],
+                ["期末 gala 演出与毕业", "穿着服装完成 3–5 分钟的表演，并加入旁白和反馈。"]
+            ]
+        }
+    };
+
     function getProgramCopy(key) {
         var baseProgram = programs[key];
         if (!baseProgram) return null;
         if (currentLanguage === "en" && englishPrograms[key]) {
             return Object.assign({}, baseProgram, englishPrograms[key]);
         }
+        if (currentLanguage === "zh" && chinesePrograms[key]) {
+            return Object.assign({}, baseProgram, chinesePrograms[key]);
+        }
         return baseProgram;
     }
 
     function waUrl(programNames) {
-        var message = currentLanguage === "en"
-            ? "Hello Mozaiq, I am a parent of an Elyon Christian School student. I am interested in: " + programNames.join(", ")
-            : "Halo Mozaiq, saya orang tua siswa Elyon Christian School. Saya tertarik dengan program: " + programNames.join(", ");
+        var message;
+        if (currentLanguage === "en") {
+            message = "Hello Mozaiq, I am a parent of an Elyon Christian School student. I am interested in: " + programNames.join(", ");
+        } else if (currentLanguage === "zh") {
+            message = "您好 Mozaiq，我是 Elyon Christian School 学生的家长。我对以下课程感兴趣：" + programNames.join("、");
+        } else {
+            message = "Halo Mozaiq, saya orang tua siswa Elyon Christian School. Saya tertarik dengan program: " + programNames.join(", ");
+        }
         return "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message);
     }
 
@@ -649,8 +933,8 @@
     }
 
     function applyLanguage(nextLanguage) {
-        currentLanguage = nextLanguage === "id" ? "id" : "en";
-        document.documentElement.lang = currentLanguage;
+        currentLanguage = nextLanguage === "id" || nextLanguage === "zh" ? nextLanguage : "en";
+        document.documentElement.lang = currentLanguage === "zh" ? "zh-CN" : currentLanguage;
         document.title = t("pageTitle");
         var description = document.querySelector('meta[name="description"]');
         if (description) description.setAttribute("content", t("pageDescription"));
@@ -683,7 +967,7 @@
     }
 
     function updateSelection() {
-        var names = Array.from(selected).map(function (key) { return programs[key].name; });
+        var names = Array.from(selected).map(function (key) { return getProgramCopy(key).name; });
         var count = names.length;
 
         if (!count) {
@@ -871,5 +1155,5 @@
 
     var savedLanguage = null;
     try { savedLanguage = localStorage.getItem("mfa-open-table-language"); } catch (e) { /* ignore */ }
-    applyLanguage(savedLanguage === "id" ? "id" : "en");
+    applyLanguage(savedLanguage === "id" || savedLanguage === "zh" ? savedLanguage : "en");
 })();

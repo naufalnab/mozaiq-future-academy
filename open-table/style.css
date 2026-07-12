@@ -677,6 +677,7 @@ main {
 
 @media (max-width: 360px) {
     .container { width: calc(100% - 24px); }
+    .header-context { display: none; }
     .program-section { padding-top: 7px; }
     .program-card-body { padding-left: 8px; padding-right: 8px; }
     .program-title { font-size: 11px; }
