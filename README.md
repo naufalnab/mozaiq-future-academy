@@ -40,7 +40,7 @@ Static, bilingual (Indonesian default + English) company profile & portfolio web
 ## Content To Update Before Launch
 
 - **Social links:** only active channels are shown (WhatsApp, Instagram, TikTok, Email). Facebook and YouTube were removed per review; re-add later when the accounts are live. Replace the placeholder `mozaiqfutureacademy` handles with real account URLs.
-- **WhatsApp number:** `6281225734398` (0812-2573-4398).
+- **WhatsApp number:** `6287815892929` (0812-2573-4398).
 - **Programs & pricing:** each program is an `<article class="program-card">` in the `#programs` section. Cards marked `data-featured="true"` appear in the first 6 on mobile.
 - **Trust assets:** the Safety and FAQ sections are copy-based. Add real activity photos, coach profiles, and certificates when available to further raise trust.
 
