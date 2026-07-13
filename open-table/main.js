@@ -1,38 +1,6 @@
 (function () {
     if (window.lucide) window.lucide.createIcons();
 
-    // Require the Google Form on the first visit to this device.
-    (function () {
-        var gate = document.getElementById("registration-gate");
-        var confirm = document.getElementById("registration-confirm");
-        var submit = document.getElementById("registration-submit");
-        var storageKey = "mfa-open-table-registration-complete-v2";
-        if (!gate || !confirm || !submit) return;
-
-        var completed = false;
-        try { completed = localStorage.getItem(storageKey) === "true"; } catch (e) { /* ignore */ }
-
-        if (completed) {
-            gate.hidden = true;
-        } else {
-            document.body.classList.add("is-registration-locked");
-            window.setTimeout(function () { confirm.focus(); }, 0);
-        }
-
-        confirm.addEventListener("change", function () {
-            submit.disabled = !confirm.checked;
-        });
-
-        submit.addEventListener("click", function () {
-            if (!confirm.checked) return;
-            try { localStorage.setItem(storageKey, "true"); } catch (e) { /* ignore */ }
-            gate.hidden = true;
-            document.body.classList.remove("is-registration-locked");
-            var programSection = document.getElementById("pilih-program");
-            if (programSection) programSection.setAttribute("tabindex", "-1");
-        });
-    })();
-
     var whatsappNumber = "6287815892929";
     var selected = new Set();
     var cards = document.querySelectorAll(".program-card");
@@ -71,19 +39,6 @@
         en: {
             pageTitle: "Elyon Open Table | Mozaiq Future Academy",
             pageDescription: "Explore six extracurricular programs from Mozaiq Future Academy for Elyon Christian School students.",
-            "gate.kicker": "BEFORE CHOOSING A PROGRAM",
-            "gate.title": "Get to know us first",
-            "gate.intro": "Fill in the short form below so the Mozaiq team can follow up after the open table.",
-            "gate.fieldsLabel": "Information needed",
-            "gate.parent": "Parent name",
-            "gate.student": "Student name",
-            "gate.grade": "Grade",
-            "gate.interest": "Program interest",
-            "gate.formTitle": "Parent information and extracurricular preferences form",
-            "gate.confirm": "I have completed and submitted the Google Form.",
-            "gate.continue": "Continue to program choices",
-            "gate.note": "Your information is saved in the Mozaiq Future Academy Google Form. The form also asks for a WhatsApp number so our team can contact you.",
-            "gate.fallback": "Open the Google Form in a new tab",
             "language.aria": "Choose language",
             "brand.aria": "Back to Mozaiq Future Academy website",
             "header.context": "Open Table",
@@ -156,19 +111,6 @@
         id: {
             pageTitle: "Open Table Elyon | Mozaiq Future Academy",
             pageDescription: "Temukan enam pilihan ekstrakurikuler Mozaiq Future Academy untuk siswa Elyon Christian School.",
-            "gate.kicker": "SEBELUM MEMILIH PROGRAM",
-            "gate.title": "Kenalan dulu dengan kami",
-            "gate.intro": "Isi data singkat berikut agar tim Mozaiq dapat membantu menghubungi Bapak/Ibu setelah open table.",
-            "gate.fieldsLabel": "Data yang diperlukan",
-            "gate.parent": "Nama orang tua",
-            "gate.student": "Nama siswa",
-            "gate.grade": "Kelas",
-            "gate.interest": "Minat program",
-            "gate.formTitle": "Formulir data orang tua dan pilihan ekstrakurikuler",
-            "gate.confirm": "Saya sudah mengisi dan mengirim Google Form.",
-            "gate.continue": "Lanjut ke pilihan program",
-            "gate.note": "Data tersimpan di Google Form Mozaiq Future Academy. Form juga meminta nomor WhatsApp agar tim kami dapat menghubungi Bapak/Ibu.",
-            "gate.fallback": "Buka Google Form di tab baru",
             "language.aria": "Pilih bahasa",
             "brand.aria": "Kembali ke website Mozaiq Future Academy",
             "header.context": "Open Table",
@@ -241,19 +183,6 @@
         zh: {
             pageTitle: "Elyon 开放体验日 | Mozaiq Future Academy",
             pageDescription: "探索 Mozaiq Future Academy 为 Elyon Christian School 学生准备的六项课外活动课程。",
-            "gate.kicker": "选择课程前",
-            "gate.title": "先了解我们",
-            "gate.intro": "请填写以下简短表格，方便 Mozaiq 团队在开放体验日后与您联系。",
-            "gate.fieldsLabel": "所需信息",
-            "gate.parent": "家长姓名",
-            "gate.student": "学生姓名",
-            "gate.grade": "年级",
-            "gate.interest": "感兴趣的课程",
-            "gate.formTitle": "家长信息及课外活动偏好表",
-            "gate.confirm": "我已填写并提交 Google 表单。",
-            "gate.continue": "继续选择课程",
-            "gate.note": "您的信息会保存于 Mozaiq Future Academy 的 Google 表单中。表单也会收集 WhatsApp 号码，方便我们的团队与您联系。",
-            "gate.fallback": "在新标签页打开 Google 表单",
             "language.aria": "选择语言",
             "brand.aria": "返回 Mozaiq Future Academy 网站",
             "header.context": "开放体验日",

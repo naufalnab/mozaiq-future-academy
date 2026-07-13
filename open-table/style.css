@@ -34,101 +34,6 @@ button { border: 0; }
 .icon { width: 16px; height: 16px; flex: 0 0 auto; stroke-width: 2.2; }
 [hidden] { display: none !important; }
 
-/* Registration form shown on the first visit */
-.registration-gate {
-    position: fixed;
-    inset: 0;
-    z-index: 100;
-    display: grid;
-    place-items: center;
-    padding: 18px;
-}
-.gate-backdrop {
-    position: absolute;
-    inset: 0;
-    background: rgba(13, 9, 27, .78);
-    backdrop-filter: blur(9px);
-}
-.gate-dialog {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: min(760px, 100%);
-    max-height: calc(100dvh - 36px);
-    overflow: auto;
-    border: 1px solid #e4dcf8;
-    border-radius: 20px;
-    background: #fff;
-    box-shadow: 0 30px 100px rgba(15, 8, 34, .4);
-}
-.gate-header { position: relative; padding: 24px 28px 17px; }
-.gate-header h1 {
-    margin: 7px 0 7px;
-    color: var(--ink);
-    font-size: clamp(27px, 4vw, 38px);
-    letter-spacing: -.045em;
-    line-height: 1.1;
-}
-.gate-header > p:not(.section-kicker) {
-    max-width: 600px;
-    margin: 0;
-    color: var(--muted);
-    font-size: 13px;
-    line-height: 1.5;
-}
-.gate-fields { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
-.gate-fields span {
-    padding: 5px 9px;
-    border-radius: 7px;
-    color: var(--purple);
-    background: #f0ebff;
-    font-size: 11px;
-    font-weight: 800;
-}
-.google-form-frame-wrap {
-    padding: 0 16px;
-    border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
-    background: #fbfaff;
-}
-.google-form-frame { display: block; width: 100%; height: min(560px, 61dvh); border: 0; background: #fff; }
-.gate-footer { display: grid; gap: 10px; padding: 16px 28px 20px; }
-.gate-confirm {
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;
-    color: var(--ink);
-    font-size: 12px;
-    font-weight: 750;
-    line-height: 1.4;
-    cursor: pointer;
-}
-.gate-confirm input { width: 17px; height: 17px; flex: 0 0 auto; margin: 0; accent-color: var(--purple); }
-.gate-submit {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 7px;
-    width: 100%;
-    min-height: 46px;
-    border-radius: 10px;
-    color: #fff;
-    background: linear-gradient(135deg, var(--purple-soft), var(--purple));
-    box-shadow: 0 10px 22px rgba(109, 40, 217, .22);
-    font-size: 13px;
-    font-weight: 850;
-    cursor: pointer;
-    transition: opacity 160ms ease, transform 160ms ease, box-shadow 160ms ease;
-}
-.gate-submit:not(:disabled):hover,
-.gate-submit:not(:disabled):focus-visible { transform: translateY(-1px); box-shadow: 0 15px 28px rgba(109, 40, 217, .3); outline: none; }
-.gate-submit:disabled { opacity: .42; cursor: not-allowed; box-shadow: none; }
-.gate-submit-icon { transform: rotate(-90deg); }
-.gate-note { margin: 0; color: var(--muted); font-size: 10px; line-height: 1.4; }
-.gate-fallback { width: fit-content; color: var(--purple); font-size: 11px; font-weight: 750; text-decoration: underline; text-underline-offset: 3px; }
-body.is-registration-locked { overflow: hidden; }
-body.is-registration-locked .page-shell { pointer-events: none; user-select: none; }
-
 .language-switch {
     display: inline-flex;
     align-items: center;
@@ -154,19 +59,7 @@ body.is-registration-locked .page-shell { pointer-events: none; user-select: non
 .language-switch button:hover,
 .language-switch button:focus-visible { color: #fff; outline: none; }
 .language-switch button.is-active { color: var(--purple-deep); background: #fff; }
-.gate-language-switch {
-    position: absolute;
-    top: 15px;
-    right: 18px;
-    border-color: var(--line);
-    background: #f7f3ff;
-}
-.gate-language-switch button { color: var(--muted); }
-.gate-language-switch button:hover,
-.gate-language-switch button:focus-visible { color: var(--purple); }
-.gate-language-switch button.is-active { color: #fff; background: var(--purple); }
-
-/* The QR landing view is intentionally locked to the first viewport. */
+/* The QR landing view stays focused on the program choices. */
 .open-table-page,
 .page-shell {
     width: 100%;
@@ -666,16 +559,6 @@ main {
 
 @media (min-width: 1040px) {
     .phase-list { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-}
-
-@media (max-width: 760px) {
-    .registration-gate { padding: 8px; }
-    .gate-dialog { max-height: calc(100dvh - 16px); border-radius: 16px; }
-    .gate-header { padding: 19px 18px 13px; }
-    .gate-header h1 { font-size: 27px; }
-    .google-form-frame-wrap { padding: 0 7px; }
-    .google-form-frame { height: min(540px, 57dvh); }
-    .gate-footer { padding: 14px 18px 17px; }
 }
 
 @media (max-width: 360px) {
