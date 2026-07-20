@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Downloads/elyon"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "mozaiq-future-academy"
+	}
+}
