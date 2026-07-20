@@ -10,16 +10,17 @@ if (yearEl) {
 }
 
 // Track current language so other features (e.g. show-more button) stay in sync.
-var currentLang = "id";
+var currentLang = document.documentElement.getAttribute("data-default-lang") || "id";
 
-// Language switch (ID default, EN via data-en attributes).
+// Language switch. Pages can choose their own default and storage key.
 (function () {
-    var STORAGE_KEY = "mfa-lang";
+    var DEFAULT_LANG = document.documentElement.getAttribute("data-default-lang") || "id";
+    var STORAGE_KEY = document.documentElement.getAttribute("data-lang-storage") || "mfa-lang";
     var translatable = document.querySelectorAll("[data-en]");
 
     // Cache the original Indonesian markup so we can switch back losslessly.
     translatable.forEach(function (el) {
-        el.setAttribute("data-id", el.innerHTML);
+        if (!el.hasAttribute("data-id")) el.setAttribute("data-id", el.innerHTML);
     });
 
     function applyLang(lang) {
@@ -56,9 +57,10 @@ var currentLang = "id";
         });
     });
 
-    var saved = "id";
-    try { saved = localStorage.getItem(STORAGE_KEY) || "id"; } catch (e) { /* ignore */ }
-    if (saved === "en") applyLang("en");
+    var saved = DEFAULT_LANG;
+    try { saved = localStorage.getItem(STORAGE_KEY) || DEFAULT_LANG; } catch (e) { /* ignore */ }
+    if (saved !== "en" && saved !== "id") saved = DEFAULT_LANG;
+    applyLang(saved);
 })();
 
 // Mobile menu toggle.
