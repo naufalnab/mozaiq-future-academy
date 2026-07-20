@@ -1176,6 +1176,28 @@ h2 {
     min-height: 52px;
 }
 
+.program-learn-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    width: fit-content;
+    margin: 0 0 16px;
+    color: var(--purple-dark);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.program-learn-more .icon {
+    width: 15px;
+    height: 15px;
+    transition: transform 160ms ease;
+}
+
+.program-learn-more:hover .icon,
+.program-learn-more:focus-visible .icon {
+    transform: translateX(3px);
+}
+
 .program-more {
     display: none;
     justify-content: center;
