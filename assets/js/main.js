@@ -69,6 +69,12 @@ var currentLang = document.documentElement.getAttribute("data-default-lang") || 
     var menu = document.querySelector(".mobile-menu");
     if (!toggle || !menu) return;
 
+    function closeMenu(returnFocus) {
+        menu.classList.remove("is-open");
+        toggle.setAttribute("aria-expanded", "false");
+        if (returnFocus) toggle.focus();
+    }
+
     toggle.addEventListener("click", function () {
         var isOpen = menu.classList.toggle("is-open");
         toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
@@ -76,9 +82,20 @@ var currentLang = document.documentElement.getAttribute("data-default-lang") || 
 
     menu.querySelectorAll("a").forEach(function (link) {
         link.addEventListener("click", function () {
-            menu.classList.remove("is-open");
-            toggle.setAttribute("aria-expanded", "false");
+            closeMenu(false);
         });
+    });
+
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" && menu.classList.contains("is-open")) {
+            closeMenu(true);
+        }
+    });
+
+    window.addEventListener("resize", function () {
+        if (window.innerWidth > 860 && menu.classList.contains("is-open")) {
+            closeMenu(false);
+        }
     });
 })();
 
