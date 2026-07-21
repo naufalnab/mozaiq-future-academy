@@ -976,43 +976,76 @@ High-resolution cinematic mood illustration, environment-focused, lighting-focus
   }
 
   renderIdeKePrompt(slide) {
-    // Generate initial prompt
-    const initialPrompt = slide.basePromptPattern
-      .replace('{tokoh}', this.promptState.tokoh)
-      .replace('{tempat}', this.promptState.tempat)
-      .replace('{suasana}', this.promptState.suasana);
+    const activeCat = this.promptState.activeCategory || 'tokoh';
+    
+    const activeData = {
+      tokoh: {
+        title: "CHARACTER",
+        label: "Little robot",
+        image: "../../assets/characters/Robot.jpeg",
+        prompt: this.promptState.tokoh
+      },
+      tempat: {
+        title: "SETTING",
+        label: "School garden",
+        image: "../../assets/Tempat/school garden.jpeg",
+        prompt: this.promptState.tempat
+      },
+      suasana: {
+        title: "MOOD",
+        label: "Bright morning",
+        image: "../../assets/Mood/bright morning.jpeg",
+        prompt: this.promptState.suasana
+      }
+    };
+
+    const current = activeData[activeCat];
 
     return `
       <div style="display:flex; flex-direction:column; height:100%;">
         <h2 class="slide-title">${slide.title}</h2>
         <p class="slide-subtitle">${slide.supportingCopy}</p>
         
-        <div class="grid-2">
-          <div>
-            <div style="font-size:14px; font-weight:600; color:var(--accent-teal); margin-bottom:16px;">1. CHARACTER</div>
-            <div class="prompt-chips" id="chips-tokoh">
-              ${slide.chips.tokoh.map((c,i) => `<button class="prompt-chip ${i===0?'is-active':''}" data-type="tokoh" data-value="${c.value}">${c.label}</button>`).join('')}
+        <div style="display:grid; grid-template-columns: 200px 1fr 300px; gap: 32px; flex:1;">
+          <!-- Left: Categories -->
+          <div style="display:flex; flex-direction:column; gap: 24px;">
+            <div>
+              <div style="font-size:14px; font-weight:600; color:var(--accent-teal); margin-bottom:12px;">1. CHARACTER</div>
+              <div class="prompt-chips">
+                <button class="prompt-chip ${activeCat === 'tokoh' ? 'is-active' : ''}" data-type="activeCategory" data-value="tokoh">Little robot</button>
+              </div>
             </div>
             
-            <div style="font-size:14px; font-weight:600; color:var(--accent-teal); margin-bottom:16px;">2. SETTING</div>
-            <div class="prompt-chips" id="chips-tempat">
-              ${slide.chips.tempat.map((c,i) => `<button class="prompt-chip ${i===0?'is-active':''}" data-type="tempat" data-value="${c.value}">${c.label}</button>`).join('')}
+            <div>
+              <div style="font-size:14px; font-weight:600; color:var(--accent-teal); margin-bottom:12px;">2. SETTING</div>
+              <div class="prompt-chips">
+                <button class="prompt-chip ${activeCat === 'tempat' ? 'is-active' : ''}" data-type="activeCategory" data-value="tempat">School garden</button>
+              </div>
             </div>
             
-            <div style="font-size:14px; font-weight:600; color:var(--accent-teal); margin-bottom:16px;">3. MOOD</div>
-            <div class="prompt-chips" id="chips-suasana">
-              ${slide.chips.suasana.map((c,i) => `<button class="prompt-chip ${i===0?'is-active':''}" data-type="suasana" data-value="${c.value}">${c.label}</button>`).join('')}
+            <div>
+              <div style="font-size:14px; font-weight:600; color:var(--accent-teal); margin-bottom:12px;">3. MOOD</div>
+              <div class="prompt-chips">
+                <button class="prompt-chip ${activeCat === 'suasana' ? 'is-active' : ''}" data-type="activeCategory" data-value="suasana">Bright morning</button>
+              </div>
             </div>
           </div>
           
-          <div style="display:flex; flex-direction:column; justify-content:center;">
+          <!-- Middle: Prompt -->
+          <div style="display:flex; flex-direction:column; overflow:hidden;">
             <p style="font-size:14px; color:rgba(255,255,255,0.5); margin-bottom:12px; text-transform:uppercase; letter-spacing:0.05em;">AI Prompt Result</p>
-            <div class="prompt-preview" id="prompt-preview-box">
-              ${initialPrompt}
+            <div class="prompt-preview" id="prompt-preview-box" style="flex:1; margin-bottom:16px; max-height:420px; overflow-y:auto; white-space:pre-wrap;">
+              ${current.prompt}
             </div>
             <button class="btn-secondary" id="btn-copy-prompt" style="align-self:flex-start;">
               <i data-lucide="copy" class="icon"></i> Copy Prompt
             </button>
+          </div>
+          
+          <!-- Right: Image -->
+          <div style="display:flex; flex-direction:column; align-items:center;">
+            <p style="font-size:14px; color:rgba(255,255,255,0.5); margin-bottom:12px; text-transform:uppercase; letter-spacing:0.05em;">Visual Result</p>
+            <img src="${current.image}" alt="${current.label}" style="width:100%; border-radius:12px; object-fit:contain; max-height:420px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05);" />
           </div>
         </div>
       </div>
