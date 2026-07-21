@@ -270,10 +270,29 @@ body.is-presenter .slide-area {
   padding: 24px;
   border-radius: 12px;
   font-family: monospace;
-  font-size: 18px;
+  font-size: 14px;
   color: #a78bfa;
   line-height: 1.6;
   margin-bottom: 24px;
+  max-height: 380px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+}
+
+.prompt-preview::-webkit-scrollbar {
+  width: 8px;
+}
+.prompt-preview::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  margin: 8px 0;
+}
+.prompt-preview::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+.prompt-preview::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
 }
 
 /* Visual Placeholders */
