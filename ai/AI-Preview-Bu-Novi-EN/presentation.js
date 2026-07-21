@@ -992,11 +992,11 @@ High-resolution cinematic mood illustration, environment-focused, lighting-focus
     const current = this.getPromptCategoryData(activeCat);
 
     return `
-      <div style="display:flex; flex-direction:column; height:100%;">
+      <div style="display:flex; flex-direction:column; height:100%; min-height:0;">
         <h2 class="slide-title">${slide.title}</h2>
-        <p class="slide-subtitle">${slide.supportingCopy}</p>
+        <p class="slide-subtitle" style="margin-bottom:24px;">${slide.supportingCopy}</p>
         
-        <div style="display:grid; grid-template-columns: 200px 1fr 300px; gap: 32px; flex:1;">
+        <div style="display:grid; grid-template-columns: 200px 1fr 300px; gap:32px; flex:1; min-height:0; align-items:stretch;">
           <!-- Left: Categories -->
           <div style="display:flex; flex-direction:column; gap: 24px;">
             <div>
@@ -1022,12 +1022,12 @@ High-resolution cinematic mood illustration, environment-focused, lighting-focus
           </div>
           
           <!-- Middle: Prompt -->
-          <div style="display:flex; flex-direction:column; overflow:hidden;">
+          <div style="display:flex; flex-direction:column; min-height:0; overflow:hidden;">
             <p style="font-size:14px; color:rgba(255,255,255,0.5); margin-bottom:12px; text-transform:uppercase; letter-spacing:0.05em;">AI Prompt Result</p>
-            <div class="prompt-preview" id="prompt-preview-box" style="flex:1; margin-bottom:16px; max-height:420px; overflow-y:auto; white-space:pre-wrap;">
+            <div class="prompt-preview" id="prompt-preview-box" style="flex:1 1 auto; min-height:0; margin-bottom:12px; max-height:none; overflow-y:auto; white-space:pre-wrap;">
               ${current.prompt}
             </div>
-            <button class="btn-secondary" id="btn-copy-prompt" style="align-self:flex-start;">
+            <button class="btn-secondary" id="btn-copy-prompt" style="align-self:flex-start; flex:0 0 auto;">
               <i data-lucide="copy" class="icon"></i> Copy Prompt
             </button>
           </div>
@@ -1068,77 +1068,124 @@ High-resolution cinematic mood illustration, environment-focused, lighting-focus
   }
 
   renderContohVisual(slide) {
-    const storySlide = this.slides.find(item => item.id === 'alur-cerita-3-scene');
-    const storyScenes = storySlide?.scenes || [];
+    const storyboard = slide.storyboard;
 
     return `
       <div style="display:flex; flex-direction:column; height:100%;">
         <h2 class="slide-title">${slide.title}</h2>
-        <p class="slide-subtitle" style="margin-bottom:24px;">${slide.supportingCopy}</p>
-        
-        <div class="grid-3" style="margin-bottom:24px;">
-          ${slide.visuals.map((visualLabel, index) => {
-            const scene = storyScenes[index];
+        <p class="slide-subtitle storyboard-subtitle">${slide.supportingCopy}</p>
 
-            return `
-            <div class="info-card story-scene-card" style="padding:0; overflow:hidden;">
-              <div class="visual-placeholder story-scene-visual" style="aspect-ratio:16/9; border:none; border-radius:0; border-bottom:1px solid rgba(255,255,255,0.1);">
-                <img class="story-scene-image" src="${scene.image}" alt="${visualLabel}" />
-                <div class="scene-prompt-overlay">
-                  <span>Detailed prompt for Scene ${index + 1}</span>
-                  <button
-                    type="button"
-                    class="scene-prompt-copy"
-                    data-scene-index="${index}"
-                    aria-label="Copy detailed prompt for ${visualLabel}"
-                  >
-                    <i data-lucide="copy" class="icon" aria-hidden="true"></i>
-                    Copy Prompt
-                  </button>
-                </div>
-              </div>
-              <div style="padding:18px 20px;">
-                <span style="display:inline-block; font-size:10px; padding:4px 8px; background:rgba(255,255,255,0.1); border-radius:4px; margin-bottom:10px; font-weight:600; letter-spacing:0.05em;">SCENE ${index + 1} · ${scene.label}</span>
-                <strong style="display:block; font-size:16px;">${visualLabel}</strong>
+        <div class="storyboard-layout">
+          <div class="info-card story-scene-card storyboard-result-card">
+            <div class="story-scene-visual storyboard-result-visual">
+              <img class="story-scene-image storyboard-result-image" src="${storyboard.image}" alt="${storyboard.label}" />
+              <div class="scene-prompt-overlay">
+                <span>Prompt used to create this storyboard</span>
+                <button
+                  type="button"
+                  class="scene-prompt-copy storyboard-prompt-copy"
+                  aria-label="Copy storyboard prompt"
+                >
+                  <i data-lucide="copy" class="icon" aria-hidden="true"></i>
+                  Copy Prompt
+                </button>
               </div>
             </div>
-          `;
-          }).join('')}
-        </div>
-        
-        <div class="callout" style="margin-top:auto;">
-          <strong>${slide.callout}</strong>
-          <span>${slide.subCallout}</span>
+            <div class="storyboard-result-caption">
+              <div>
+                <span>FINAL PLANNING OUTPUT</span>
+                <strong>${storyboard.label}</strong>
+              </div>
+              <p>${storyboard.description}</p>
+            </div>
+          </div>
+
+          <aside class="info-card storyboard-prompt-panel">
+            <span class="storyboard-panel-eyebrow">ACTUAL AI WORKFLOW</span>
+            <img src="${storyboard.promptScreenshot}" alt="ChatGPT storyboard prompt and result" />
+            <div class="storyboard-prompt-quote">
+              <span>PROMPT</span>
+              <p>“${storyboard.prompt}”</p>
+            </div>
+            <div class="storyboard-panel-takeaway">
+              <strong>${slide.callout}</strong>
+              <span>${slide.subCallout}</span>
+            </div>
+          </aside>
         </div>
       </div>
     `;
   }
 
   renderGambarKeVideo(slide) {
+    const video = slide.video;
+
     return `
       <div style="display:flex; flex-direction:column; height:100%;">
         <h2 class="slide-title">${slide.title}</h2>
-        <p class="slide-subtitle" style="margin-bottom:32px;">${slide.supportingCopy}</p>
-        
-        <div class="grid-2" style="flex:1;">
-          <div class="visual-placeholder" style="height:100%; aspect-ratio:unset;">
-            <i data-lucide="play-circle" class="icon" style="width:64px; height:64px;"></i>
-            <span style="font-size:16px;">Sample Video Demonstration</span>
+        <p class="slide-subtitle video-slide-subtitle">${slide.supportingCopy}</p>
+
+        <div class="video-slide-layout">
+          <div class="info-card video-preview-card">
+            ${video.source ? `
+              <video
+                class="video-player"
+                controls
+                playsinline
+                preload="metadata"
+                poster="${video.poster}"
+                aria-label="10-second school garden animation"
+              >
+                <source src="${video.source}" type="video/mp4" />
+                Your browser does not support the video element.
+              </video>
+            ` : video.youtubeUrl ? `
+              <iframe
+                src="${video.youtubeUrl}"
+                title="10-second school garden animation"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            ` : `
+              <img class="video-preview-poster" src="${video.poster}" alt="Storyboard used for the video generation" />
+              <div class="video-generation-overlay">
+                <span class="video-loader-icon" aria-hidden="true"></span>
+                <span>GENERATION IN PROGRESS</span>
+                <strong>10-Second Cinematic Animation</strong>
+                <p>The YouTube preview will appear here when the final render is ready.</p>
+              </div>
+            `}
           </div>
-          <div style="display:flex; flex-direction:column; justify-content:center; padding-left:24px;">
-            <h3 style="color:var(--accent-teal); font-size:20px; margin-bottom:24px;">Added to the Video:</h3>
-            <ul style="list-style:none; padding:0; margin:0 0 40px; font-size:18px; line-height:2.2;">
+
+          <aside class="info-card video-prompt-panel">
+            <span class="video-panel-eyebrow">LONG-FORM VIDEO PROMPT</span>
+            <h3>Cinematic production instructions</h3>
+
+            <div class="video-specs">
+              <span><strong>${video.duration}</strong>Duration</span>
+              <span><strong>${video.format}</strong>Format</span>
+              <span><strong>${video.audio}</strong>Audio</span>
+            </div>
+
+            <ul class="video-aspects">
               ${slide.aspects.map(a => `
-                <li style="display:flex; align-items:center; gap:12px;">
-                  <i data-lucide="check-circle-2" class="icon" style="color:var(--purple-soft);"></i> ${a}
+                <li>
+                  <i data-lucide="check-circle-2" class="icon" aria-hidden="true"></i>
+                  ${a}
                 </li>
               `).join('')}
             </ul>
-            <div class="callout" style="margin:0;">
+
+            <button type="button" class="video-prompt-copy" aria-label="Copy long video prompt">
+              <i data-lucide="copy" class="icon" aria-hidden="true"></i>
+              Copy Long Prompt
+            </button>
+
+            <div class="video-status-callout">
               <strong>${slide.callout}</strong>
-              <span style="font-size:14px; display:block; margin-top:8px; opacity:0.6;">* ${slide.note}</span>
+              <span>${slide.note}</span>
             </div>
-          </div>
+          </aside>
         </div>
       </div>
     `;
@@ -1246,9 +1293,15 @@ High-resolution cinematic mood illustration, environment-focused, lighting-focus
     
     // Prompt interactions are bound via delegation for the story and prompt slides.
     document.addEventListener('click', (e) => {
+      const videoPromptButton = e.target.closest('.video-prompt-copy');
+      const storyboardPromptButton = e.target.closest('.storyboard-prompt-copy');
       const scenePromptButton = e.target.closest('.scene-prompt-copy');
 
-      if (scenePromptButton) {
+      if (videoPromptButton) {
+        this.copyVideoPrompt();
+      } else if (storyboardPromptButton) {
+        this.copyStoryboardPrompt();
+      } else if (scenePromptButton) {
         this.copyScenePrompt(scenePromptButton);
       } else if (e.target.classList.contains('prompt-chip')) {
         this.handlePromptChipClick(e.target);
@@ -1308,6 +1361,24 @@ High-resolution cinematic mood illustration, environment-focused, lighting-focus
     if (!prompt) return;
 
     this.copyText(prompt.trim(), `Scene ${sceneIndex + 1} prompt copied successfully`);
+  }
+
+  copyStoryboardPrompt() {
+    const storyboardSlide = this.slides.find(slide => slide.id === 'contoh-visual-ai');
+    const prompt = storyboardSlide?.storyboard?.prompt;
+
+    if (!prompt) return;
+
+    this.copyText(prompt.trim(), 'Storyboard prompt copied successfully');
+  }
+
+  copyVideoPrompt() {
+    const videoSlide = this.slides.find(slide => slide.id === 'dari-gambar-ke-video');
+    const prompt = videoSlide?.video?.prompt;
+
+    if (!prompt) return;
+
+    this.copyText(prompt.trim(), 'Long video prompt copied successfully');
   }
 
   copyText(text, successMessage) {

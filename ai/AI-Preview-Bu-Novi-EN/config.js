@@ -1191,22 +1191,159 @@ High-resolution cinematic mood illustration, environment-focused, lighting-focus
   },
   {
     id: "contoh-visual-ai",
-    title: "AI Visual Examples",
-    supportingCopy: "One idea can generate several visuals. The child learns to choose the best result.",
-    visuals: ["Discovery Version", "Action Version", "Resolution Version"],
-    evaluationQuestions: ["Which one fits the story best?", "What needs to be improved?", "Are the colors right?", "Is the character's position correct?"],
-    callout: "The first result doesn't have to be accepted immediately.",
-    subCallout: "The child learns to evaluate, select, and refine.",
-    presenterNote: "The child doesn't just accept the AI's result, but learns to evaluate and refine it."
+    title: "From Images to Storyboard",
+    supportingCopy: "After all scene images are ready, AI can organize them into a clear 10-second video plan.",
+    storyboard: {
+      image: "../assets/Storyboard.png",
+      promptScreenshot: "../assets/ChatGPT.jpeg",
+      prompt: "Bikinin storyboard dengan tanda panah dan arti tanda panah tersebut untuk ini: video 10 detik",
+      label: "10-Second Storyboard",
+      description: "12 shots with visual directions for character movement, camera movement, composition, lighting, and effects."
+    },
+    callout: "The storyboard connects finished images into one continuous visual sequence.",
+    subCallout: "Arrows make movement and cinematic direction easier to understand before video generation.",
+    presenterNote: "After the images are complete, AI helps arrange them into a storyboard with timing, camera direction, and movement notes."
   },
   {
     id: "dari-gambar-ke-video",
-    title: "From Image to Video",
-    supportingCopy: "Visuals can be developed into short videos through motion, camera movement, and mood changes.",
-    aspects: ["Character motion", "Camera movement", "Smooth transitions", "Mood changes"],
-    callout: "In this preview, the result might be a short animation or a sample video scene.",
-    note: "Processing speed may vary depending on the generator and internet connection.",
-    presenterNote: "Visuals can then be developed into a video with motion and camera direction."
+    title: "From Storyboard to Video",
+    supportingCopy: "The storyboard and detailed prompt are now transformed into a finished 10-second cinematic sequence.",
+    video: {
+      status: "Ready",
+      poster: "../assets/Storyboard.png",
+      youtubeUrl: "https://www.youtube-nocookie.com/embed/6m5kCXMQLrs?rel=0&modestbranding=1",
+      duration: "10 seconds",
+      format: "16:9 Full Screen",
+      audio: "Natural sound effects only",
+      prompt: `Create a cinematic 10-second full-screen animated video based on the uploaded annotated storyboard.
+VISUAL STYLE:
+A polished, colorful, family-friendly 3D animated illustration with soft cinematic rendering, smooth rounded shapes, subtle depth of field, warm bright-morning lighting, clean school environment, and cheerful educational atmosphere. Preserve the exact visual identity of the reference images.
+MAIN CHARACTER:
+One small friendly school-garden robot.
+The robot must remain visually consistent throughout the video:
+rounded pearl-white helmet and body armor
+glossy dark navy digital face screen
+two simple glowing cyan oval eyes
+cyan circular light on the chest
+dark navy flexible joints
+subtle soft-violet accents
+short child-friendly proportions
+rounded white boots
+small mechanical hands
+no mouth
+no nose
+no human facial features
+no costume changes
+no color changes
+no sudden changes in body proportions
+ENVIRONMENT:
+Reconstruct the same enclosed school garden shown in the references:
+modern cream-colored two-story school building
+blue-framed windows
+central large leafy tree
+circular wooden bench surrounding the tree
+pale stone pathways
+low decorative metal fence
+arched entrance gate
+several rectangular raised garden beds
+irrigation pipes running beside the beds
+gardening-tool board with shovel, rake, watering items, and bucket
+wooden bench near the school building
+colorful flower beds
+vegetable beds
+clean green lawn
+clear blue morning sky
+Maintain the same garden geography and object positions throughout the entire video. Do not randomly move buildings, pathways, fences, garden beds, trees, pipes, or tools.
+STORY AND TIMING:
+00:00–00:00.80
+Begin with a beautiful wide establishing shot of the school garden in bright morning light. The camera gently glides forward through the entrance gate. Some garden beds are healthy, while one foreground vegetable bed has visibly wilted plants. The damaged irrigation pipe is subtly visible near that bed. Leaves and flowers move slightly in a soft breeze.
+00:00.80–00:01.60
+The robot walks naturally into the garden along the stone path. Use a smooth medium-wide tracking shot. Its arms swing gently and its steps have believable weight. The camera follows slightly behind and to the side without cutting.
+00:01.60–00:02.30
+The robot notices the wilted plants. It slows down, turns its head and upper body toward the damaged garden bed, then leans forward with concerned but curious body language. Its cyan eyes subtly change into a softer concerned expression while remaining simple digital shapes.
+00:02.30–00:03.70
+The camera smoothly pushes closer as the robot kneels beside the irrigation pipe. It examines a leaking connector, picks up a wrench, and carefully tightens the loose pipe joint. Show convincing hand contact with the wrench and pipe. A few drops of water leak from the damaged connection. Other tools rest naturally on the ground nearby.
+00:03.70–00:04.50
+The pipe connection locks securely into place. The leaking stops for a brief moment, followed by a gentle pressure pulse traveling through the pipe. Water begins flowing correctly. Nearby sprinkler heads activate one after another in a natural sequence.
+00:04.50–00:05.60
+The robot stands and gently tends the wilted plants. It lifts one drooping stem, adjusts the soil around the roots, and checks the water flow. The plants begin recovering gradually—not instantly. Leaves slowly rise, regain firmness, and transition from dull green-brown to healthy fresh green.
+00:05.60–00:06.70
+The restoration spreads across the garden. Use a smooth medium-wide orbit around the robot while sprinklers create sparkling arcs of water. Flowers open gradually, dry soil darkens with moisture, vegetable leaves lift, and the garden becomes brighter and healthier. Use subtle magical visual enhancement only through sunlight, water sparkle, pollen-like particles, and soft cyan-golden glimmers. Do not make the scene look supernatural or explosive.
+00:06.70–00:07.50
+The camera rises into a graceful high-angle view, revealing the entire garden becoming lush and colorful. Water travels evenly through the irrigation system. Sprinklers create elegant curved streams. Maintain continuity in all flower-bed and pathway positions.
+00:07.50–00:08.30
+Return smoothly to a low-angle medium shot of the robot standing proudly among the restored flowers. The robot looks around, places one hand near its glowing chest light, then gives a cheerful thumbs-up. Its cyan eyes curve into a happy expression.
+00:08.30–00:09.10
+The robot turns and walks calmly toward the garden gate. The camera tracks backward in front of it, keeping the robot centered while the healthy garden remains visible behind it.
+00:09.10–00:10.00
+The robot exits the frame naturally. The camera cranes upward and pulls back into a final wide hero shot of the fully restored school garden. Sprinklers continue watering gently, flowers sway in the breeze, sunlight glows softly across the school building, and the final composition feels peaceful, complete, and optimistic.
+CAMERA DIRECTION:
+Create the sequence as one seamless cinematic camera journey. Use smooth combinations of:
+slow dolly forward
+gentle side tracking
+subtle push-in
+controlled orbit
+high-angle crane movement
+slow final pullback
+No hard cuts.
+No jump cuts.
+No sudden angle changes.
+No whip pans.
+No shaky camera.
+No teleporting.
+No abrupt zooms.
+No frozen slideshow effect.
+ANIMATION QUALITY:
+Use smooth natural character animation with accurate foot placement, believable kneeling motion, correct hand-tool interaction, stable body proportions, realistic mechanical joint movement, subtle secondary motion, and consistent eye-screen illumination.
+Water must flow naturally through the pipes and sprinklers. Avoid water clipping through objects. Plant recovery must happen progressively and smoothly. Do not make all plants transform at exactly the same instant.
+LIGHTING:
+Bright cheerful morning with warm sunlight coming diagonally from the upper right side of the scene. Add soft shadows beneath the robot, tree, fences, flower beds, and benches. Use gentle blue ambient sky light and warm rim lighting on the robot’s pearl-white shell. Keep exposure stable throughout the shot.
+AUDIO:
+No voice-over.
+No spoken dialogue.
+No narration.
+No background music.
+No melody.
+No musical instruments.
+No singing.
+Use only subtle natural environmental sound effects:
+soft morning birds in the distance
+light breeze through leaves
+quiet robot footsteps
+small metallic wrench sounds
+gentle pipe clicks
+soft water droplets
+sprinkler water flowing
+quiet garden ambience
+NEGATIVE REQUIREMENTS:
+Do not display the storyboard sheet.
+Do not show panel borders, numbers, arrows, labels, captions, subtitles, logos, watermarks, or text.
+Do not add children, teachers, animals, additional robots, or background characters.
+Do not alter the school architecture.
+Do not redesign the robot.
+Do not create extra limbs or fingers.
+Do not deform the robot’s hands, helmet, body, or legs.
+Do not let tools float.
+Do not let objects pass through each other.
+Do not create broken physics.
+Do not make plants flicker, pop, duplicate, or disappear.
+Do not change daytime.
+Do not create rain, storms, dramatic fog, explosions, or fantasy portals.
+Do not add facial features to the robot.
+Do not end with a black screen.
+OUTPUT:
+Exactly 10 seconds.
+16:9 widescreen.
+Full-screen video.
+High detail.
+Smooth cinematic motion.
+Stable character and environment consistency.
+Bright, colorful, wholesome educational animation., 16:9`
+    },
+    aspects: ["Seamless camera journey", "Consistent character and environment", "Progressive garden restoration", "Natural environmental sound effects"],
+    callout: "The final 10-second video is ready to review.",
+    note: "Streamed from YouTube to keep the website lightweight. Player controls include volume and fullscreen.",
+    presenterNote: "The finished storyboard and a detailed timed prompt guide the AI video generation process."
   },
   {
     id: "yang-dilatih-anak",
