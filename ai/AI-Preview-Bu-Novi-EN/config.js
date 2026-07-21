@@ -74,9 +74,335 @@ export const slidesData = [
     id: "alur-cerita-3-scene",
     title: "3-Scene Story Structure",
     scenes: [
-      { label: "DISCOVERY", title: "The Garden Withers", description: "A little robot discovers the plants in the school garden are drying up and withering.", direction: "wide shot; morning time; slightly dry plants; robot observing the garden." },
-      { label: "ACTION", title: "The Robot Finds a Solution", description: "The robot inspects the water pipes and tries to fix the sprinkler system.", direction: "medium shot; robot actively working; a few simple tools; light starts to get brighter." },
-      { label: "RESOLUTION", title: "The Garden is Green Again", description: "Water flows again and the plants become fresh and colorful.", direction: "cinematic wide shot; green garden; water spraying gently; robot looking at its work." }
+      {
+        label: "DISCOVERY",
+        title: "The Garden Withers",
+        description: "A little robot discovers the plants in the school garden are drying up and withering.",
+        direction: "wide shot; morning time; slightly dry plants; robot observing the garden.",
+        prompt: `Create a polished cinematic 3D animation story frame for:
+
+SCENE 1 — DISCOVERY: THE GARDEN WITHERS
+
+Use the three provided reference images as mandatory visual references. Identify them by their content, regardless of upload order:
+- CHARACTER REFERENCE: the Little Robot character design sheet
+- ENVIRONMENT REFERENCE: the School Garden environment design sheet
+- MOOD REFERENCE: the Bright Morning lighting and atmosphere image
+
+REFERENCE PRIORITY AND CONTINUITY
+
+Preserve the exact Little Robot identity from the character reference:
+- the same rounded-square white head
+- the same dark navy digital face screen
+- the same simple glowing cyan eyes
+- the same compact childlike body proportions
+- the same white shell, navy joints, cyan chest core, violet details, hands, feet, and materials
+- no redesign, no clothing, no mouth, no hair, no extra accessories, and no change in proportions
+
+Preserve the exact School Garden architecture and layout from the environment reference:
+- the same elementary school building
+- the same garden entrance, paths, raised planting beds, planters, pipe and sprinkler locations
+- the same fences, trees, gardening area, landmarks, colors, scale, and spatial relationships
+- do not invent a different garden or move major landmarks
+
+Use the Bright Morning reference as the lighting foundation, but reduce the warmth and saturation slightly to support the discovery of a problem. It must still feel like the same morning, location, and visual world used in the later scenes.
+
+STORY PURPOSE
+
+This is the opening discovery frame. The audience must immediately understand that the school garden is normally cared for, but something is wrong: several plants are drying up because the sprinkler system is not working. The mood should feel concerned and curious, never frightening, tragic, or hopeless.
+
+COMPOSITION AND CAMERA
+
+- single cinematic illustration, not a concept sheet, collage, storyboard grid, or multi-panel layout
+- landscape 4:3 composition designed to fit an educational presentation card
+- wide establishing shot showing the School Garden clearly
+- camera at a child-friendly eye level with a gentle three-quarter view into the garden
+- use a natural 28–35 mm cinematic lens feeling
+- keep the main paths and planting beds readable
+- place Little Robot in the foreground or middle ground, slightly off-center, with enough negative space to reveal the withering plants
+- create clear depth with foreground leaves, the robot and affected planting bed in the middle ground, and the school building in the background
+- use strong but simple visual hierarchy: Little Robot first, withering plants second, garden context third
+
+CHARACTER ACTION AND EMOTION
+
+Show Little Robot standing beside a raised planting bed and noticing the problem for the first time.
+- body leaning forward slightly in careful observation
+- head tilted with curious concern
+- cyan eyes shaped subtly to communicate attention and empathy
+- one hand near the chest or chin in a thinking gesture
+- the other hand gently indicating or reaching toward one wilted leaf
+- friendly, calm, intelligent, and ready to help
+- full character silhouette must remain readable
+- no exaggerated panic, sadness, or theatrical pose
+
+ENVIRONMENTAL STORY DETAILS
+
+- show several visibly wilted flowers and vegetables with drooping leaves
+- include patches of dry, slightly cracked soil, but do not turn the garden into a desert
+- healthy structural elements of the garden must remain intact
+- sprinkler heads are inactive with no water spraying
+- include a subtle visual clue leading toward the cause, such as a dry pipe connection, loose sprinkler fitting, or small damp mark near the maintenance area
+- keep some surrounding plants only mildly affected so the garden still feels recoverable
+- gardening tools may appear only if they already belong naturally in the established environment
+- no children, crowds, gardeners, animals, or unrelated characters
+
+LIGHTING, COLOR, AND ATMOSPHERE
+
+- early bright morning base with soft directional sunlight
+- slightly cooler and less saturated than the final resolution scene
+- gentle shadows and soft global illumination
+- pale blue sky with clean morning air
+- subtle warm rim light on Little Robot so the white shell remains separated from the background
+- preserve cyan and violet robot lights without overpowering the scene
+- use restrained greens, warm soil colors, and muted flower colors around the affected plants
+- maintain a hopeful educational tone
+
+VISUAL STYLE
+
+- premium stylized 3D animated feature-film still
+- child-friendly educational cinematic storytelling
+- clean shapes, polished materials, soft global illumination, accurate contact shadows
+- detailed environment without clutter
+- expressive staging through posture and eye shape rather than human facial features
+- consistent production design suitable for a three-scene animated sequence
+- high resolution, sharp focal subject, subtle depth of field, clean edge quality
+
+CONTINUITY REQUIREMENTS FOR THE NEXT SCENES
+
+This image is Scene 1 of a continuous sequence. Preserve the exact robot model, garden layout, time of day, weather, and major prop positions so Scene 2 and Scene 3 can feel like the same event occurring minutes apart. The affected planting bed, broken sprinkler area, and main path must remain easy to identify later.
+
+DO NOT INCLUDE
+
+- text, captions, labels, speech bubbles, logos, watermarks, borders, or UI
+- multiple versions of the robot
+- duplicated limbs, missing fingers, distorted hands, cropped feet, or changed robot anatomy
+- a different school building or redesigned garden
+- heavy destruction, dead trees, dramatic storm clouds, darkness, fire, flooding, or dangerous machinery
+- photorealistic humans or a live-action look
+- excessive cinematic blur that hides the story information
+
+FINAL OUTPUT
+
+A single production-ready landscape 4:3 cinematic frame that clearly communicates: Little Robot has just discovered that the familiar School Garden is withering because the water system is not working. The image must feel like the first frame of one coherent, warm, educational animated story.`
+      },
+      {
+        label: "ACTION",
+        title: "The Robot Finds a Solution",
+        description: "The robot inspects the water pipes and tries to fix the sprinkler system.",
+        direction: "medium shot; robot actively working; a few simple tools; light starts to get brighter.",
+        prompt: `Create a polished cinematic 3D animation story frame for:
+
+SCENE 2 — ACTION: THE ROBOT FINDS A SOLUTION
+
+Use the three provided reference images as mandatory visual references. Identify them by their content, regardless of upload order:
+- CHARACTER REFERENCE: the Little Robot character design sheet
+- ENVIRONMENT REFERENCE: the School Garden environment design sheet
+- MOOD REFERENCE: the Bright Morning lighting and atmosphere image
+
+REFERENCE PRIORITY AND CONTINUITY
+
+Preserve the exact Little Robot identity from the character reference:
+- the same rounded-square white head and dark navy face screen
+- the same glowing cyan eyes, compact childlike proportions, cyan chest core, violet accents, hands, feet, and materials
+- the same number and shape of fingers
+- no redesign, clothing, mouth, hair, weapons, antenna changes, extra equipment attached to the body, or altered proportions
+
+Preserve the exact School Garden design from the environment reference:
+- the same school building, entrance, paths, raised planting beds, fences, planters, trees, pipe network, sprinkler heads, and maintenance area
+- retain the same spatial relationships and recognizable landmarks shown in Scene 1
+- the affected planting bed and damaged sprinkler connection must be the same story location discovered in Scene 1
+
+Use the Bright Morning reference as the lighting foundation. The light may be slightly brighter and warmer than Scene 1 to suggest progress, but the scene must clearly occur only a few minutes later on the same morning.
+
+STORY PURPOSE
+
+This is the central action frame. The audience must immediately understand that Little Robot has found the likely cause of the problem and is carefully repairing the sprinkler pipe. The scene should celebrate observation, problem-solving, patience, and safe hands-on learning. The repair must look understandable and achievable, not like dangerous industrial engineering.
+
+COMPOSITION AND CAMERA
+
+- single cinematic illustration, not a character sheet, environment sheet, collage, storyboard grid, or multi-panel image
+- landscape 4:3 composition designed for an educational presentation card
+- medium-wide action shot at a child-friendly eye level
+- gentle three-quarter camera angle looking toward the repair area
+- natural 35–50 mm cinematic lens feeling
+- frame Little Robot large enough for the hand action and facial-screen expression to be readable
+- keep enough background visible to confirm this is the same School Garden
+- place the damaged pipe and robot hands near a rule-of-thirds focal point
+- use garden paths, hose lines, or planting-bed edges as subtle leading lines toward the repair
+- show clear foreground, middle-ground action, and recognizable school background without clutter
+
+CHARACTER ACTION AND PERFORMANCE
+
+Show Little Robot kneeling safely beside a low sprinkler pipe connection.
+- stable balanced kneeling pose with both feet and body mechanics believable
+- focused cyan eyes with a calm, intelligent expression
+- head angled toward the repair
+- one hand carefully stabilizing the pipe or sprinkler fitting
+- the other hand using one simple child-safe tool, such as a small rounded wrench
+- hands must be anatomically consistent with the reference and visibly connected to the correct arms
+- posture communicates concentration, patience, and confidence
+- no superhero pose, combat stance, panic, or exaggerated speed
+
+REPAIR AND STORY DETAILS
+
+- clearly show one simple, readable cause: a loosened coupling, disconnected sprinkler fitting, or small cracked connector
+- keep the repair mechanism visually understandable and not overly technical
+- include only two or three neatly arranged tools, such as a rounded wrench, small screwdriver, and compact repair kit
+- no sharp dangerous tools, exposed electrical wires, sparks, welding, heavy machinery, or complex industrial equipment
+- show a small test droplet or faint trickle near the repaired joint to suggest the solution is beginning to work
+- do not show the entire garden fully restored yet
+- the nearby plants should still be wilted, with perhaps one or two leaves beginning to lift slightly
+- inactive sprinkler heads may be visible farther back
+- preserve the dry soil and affected bed from Scene 1
+
+LIGHTING, COLOR, AND ATMOSPHERE
+
+- bright morning light becoming warmer and more optimistic
+- soft sunlight catches the edge of the robot shell and tool
+- gentle cyan reflection from the robot chest core near the repair area
+- balanced contrast so white robot materials keep their detail
+- slightly richer greens than Scene 1, but clearly less lush than Scene 3
+- soft blue sky, clean air, natural shadows, subtle global illumination
+- the mood is focused, constructive, hopeful, and safe
+
+VISUAL STYLE
+
+- premium stylized 3D animated feature-film still
+- child-friendly educational cinematic storytelling
+- polished ceramic-polymer robot materials, soft navy joints, subtle reflective face screen
+- consistent architectural proportions and garden production design
+- clean composition, high visual readability, accurate contact shadows, subtle depth of field
+- detailed enough to reward observation while remaining uncluttered
+- high-resolution production-ready frame from one coherent animated sequence
+
+CONTINUITY REQUIREMENTS
+
+This image is Scene 2 of the same continuous event as Scene 1 and Scene 3. Keep the exact robot model, garden layout, affected planting bed, repair location, weather, and time of day. Scene 1 showed discovery; this frame shows the repair in progress; Scene 3 will show the successful result. Do not introduce major new props or move established landmarks.
+
+DO NOT INCLUDE
+
+- text, captions, labels, arrows, diagrams, speech bubbles, logos, watermarks, borders, or UI
+- multiple robots, children, adults, crowds, or unrelated characters
+- duplicated limbs, extra fingers, missing fingers, deformed hands, disconnected tools, or floating objects
+- a redesigned robot, different garden, altered school building, or different time of day
+- dangerous machinery, sparks, fire, exposed electricity, dramatic flooding, or explosive water pressure
+- a fully restored garden before the repair is complete
+- a photorealistic live-action look or excessive blur
+
+FINAL OUTPUT
+
+A single production-ready landscape 4:3 cinematic frame that clearly communicates: Little Robot has found the broken sprinkler connection and is carefully fixing it. The frame must bridge the concern of Scene 1 and the joyful recovery of Scene 3 while maintaining exact visual continuity with all three provided references.`
+      },
+      {
+        label: "RESOLUTION",
+        title: "The Garden is Green Again",
+        description: "Water flows again and the plants become fresh and colorful.",
+        direction: "cinematic wide shot; green garden; water spraying gently; robot looking at its work.",
+        prompt: `Create a polished cinematic 3D animation story frame for:
+
+SCENE 3 — RESOLUTION: THE GARDEN IS GREEN AGAIN
+
+Use the three provided reference images as mandatory visual references. Identify them by their content, regardless of upload order:
+- CHARACTER REFERENCE: the Little Robot character design sheet
+- ENVIRONMENT REFERENCE: the School Garden environment design sheet
+- MOOD REFERENCE: the Bright Morning lighting and atmosphere image
+
+REFERENCE PRIORITY AND CONTINUITY
+
+Preserve the exact Little Robot identity from the character reference:
+- the same rounded-square white head
+- the same dark navy digital face screen and glowing cyan eyes
+- the same compact childlike body, cyan chest core, violet accents, navy joints, hands, feet, and premium toy-like materials
+- no redesign, clothing, mouth, hair, new accessories, or changed proportions
+
+Preserve the exact School Garden architecture and layout from the environment reference and the previous story scenes:
+- the same school building, garden entrance, paths, planting beds, fences, planters, trees, pipes, sprinklers, and landmarks
+- the repair area remains in the same location
+- major props and spatial relationships must remain unchanged
+
+Use the Bright Morning mood reference strongly for the final lighting, color harmony, atmosphere, and emotional finish. This is the most luminous and colorful scene, but it must still feel natural, polished, and consistent with the two earlier frames.
+
+STORY PURPOSE
+
+This is the satisfying resolution frame. The audience must instantly understand that Little Robot's repair worked: water flows through the sprinkler system, the School Garden is healthy and colorful again, and the robot quietly appreciates the positive result. The emotion should be fresh, joyful, hopeful, and earned—celebrating care, creativity, and problem-solving without becoming overly dramatic.
+
+COMPOSITION AND CAMERA
+
+- single cinematic illustration, not a concept sheet, collage, storyboard grid, before-and-after split, or multi-panel layout
+- landscape 4:3 composition designed for an educational presentation card
+- cinematic wide hero shot revealing the restored School Garden
+- camera at a child-friendly eye level from a recognizable three-quarter garden view
+- natural 28–35 mm cinematic lens feeling
+- echo the establishing geography of Scene 1 so viewers can immediately compare the transformation
+- place Little Robot off-center in the foreground or middle ground, looking across the thriving garden
+- use paths, planting beds, and gentle arcs of sprinkler water to guide the eye through the frame
+- keep the school building visible as a stable background landmark
+- create layered depth with fresh leaves in the foreground, robot and sprinklers in the middle ground, and school architecture behind
+- strong visual hierarchy: thriving garden and water first, Little Robot second, school setting third
+
+CHARACTER ACTION AND EMOTION
+
+Show Little Robot standing near the repaired sprinkler area and admiring the result.
+- relaxed proud posture without arrogance
+- shoulders open and body facing the restored garden
+- head tilted slightly upward
+- cyan eyes gently curved to communicate happiness and relief
+- one hand may rest near the glowing chest core
+- the other hand may be open toward the garden in a calm presenting gesture
+- alternatively, both hands may rest naturally at the sides while the robot observes the water
+- maintain a clear full-body silhouette and exact anatomy
+- no jumping, exaggerated celebration, trophy pose, or confetti
+
+RESTORED GARDEN AND STORY DETAILS
+
+- the previously wilted planting bed is now visibly fresh, upright, and healthy
+- show lush but believable green leaves, colorful flowers, healthy vegetables, and moist rich soil
+- the repaired pipe connection is secure and tidy
+- several sprinkler heads release gentle controlled arcs of sparkling water
+- water must look refreshing and safe, never like a flood or powerful jet
+- include tiny water droplets catching the morning light
+- retain the same garden structures and plant placement rather than inventing a fantasy garden
+- the repair tools from Scene 2 may be neatly packed into a small kit near the robot, or removed entirely
+- no magical transformation effects are required; the recovery should feel like a beautiful cinematic story moment grounded in care and problem-solving
+
+LIGHTING, COLOR, AND ATMOSPHERE
+
+- match the provided Bright Morning reference closely
+- warm golden-white sunlight with a fresh clear blue sky
+- soft volumetric rays only where natural
+- clean soft shadows, realistic global illumination, and subtle reflections on the robot shell
+- vibrant greens, cheerful flower colors, warm earth, cyan robot accents, and gentle violet details
+- luminous water droplets and restrained sun highlights
+- bright and optimistic without overexposure, neon saturation, fantasy glow, or washed-out whites
+- fresh air, calm weather, and a polished hopeful atmosphere
+
+VISUAL STYLE
+
+- premium stylized 3D animated feature-film still
+- high-end child-friendly educational visual language
+- cinematic environmental storytelling with clear readable staging
+- polished character and garden materials, accurate shadows, subtle depth of field, high-resolution detail
+- beautiful but uncluttered composition
+- consistent with the exact production design established by all three reference images
+- suitable as the final shot of a coherent three-scene animated sequence
+
+CONTINUITY REQUIREMENTS
+
+This is Scene 3 of the same event shown in Scene 1 and Scene 2. Preserve the exact robot model, garden layout, repaired sprinkler location, school architecture, weather, and morning timeline. The transformation must come from restored water flow and healthier plants—not from redesigning the location. Viewers should recognize the affected planting bed and understand that the robot's repair created this result.
+
+DO NOT INCLUDE
+
+- text, captions, labels, speech bubbles, logos, watermarks, borders, or UI
+- multiple robots, crowds, unrelated children or adults, fantasy creatures, or random props
+- duplicated limbs, extra fingers, distorted anatomy, changed robot design, or cropped feet
+- a different garden, moved landmarks, redesigned school building, or different season
+- flooding, extreme water jets, storm effects, nighttime lighting, fireworks, confetti, or excessive rainbow effects
+- impossible plant growth, giant flowers, magical sparkles covering the scene, or an amusement-park look
+- photorealistic live action or excessive background blur
+
+FINAL OUTPUT
+
+A single production-ready landscape 4:3 cinematic frame that clearly communicates: the sprinkler works again, the familiar School Garden is fresh and green, and Little Robot calmly enjoys the successful result. It must feel like the warm, visually satisfying final frame of the same educational animated story established in Scene 1 and Scene 2.`
+      }
     ],
     presenterNote: "A long story can be divided into several scenes that are easier to create."
   },

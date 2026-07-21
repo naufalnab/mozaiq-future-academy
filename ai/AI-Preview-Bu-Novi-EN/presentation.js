@@ -17,6 +17,7 @@ class PresentationEngine {
     
     // Prompt Builder State
     this.promptState = {
+      activeCategory: 'tokoh',
       tokoh: `Create a polished vertical character design reference sheet for an original mascot named “LITTLE ROBOT”, presented in a clean professional animation model-sheet layout.
 
 CHARACTER IDENTITY
@@ -958,10 +959,22 @@ High-resolution cinematic mood illustration, environment-focused, lighting-focus
         
         <div class="grid-3" style="margin-top:auto; margin-bottom:auto;">
           ${slide.scenes.map((s, i) => `
-            <div class="info-card" style="padding:0; overflow:hidden;">
-              <div class="visual-placeholder" style="aspect-ratio:4/3; border:none; border-radius:0; border-bottom:1px solid rgba(255,255,255,0.1);">
+            <div class="info-card story-scene-card" style="padding:0; overflow:hidden;">
+              <div class="visual-placeholder story-scene-visual" style="aspect-ratio:4/3; border:none; border-radius:0; border-bottom:1px solid rgba(255,255,255,0.1);">
                 <i data-lucide="image" class="icon"></i>
-                <span style="font-size:12px;">Sample Demonstration</span>
+                <span style="font-size:12px;">Generation Prompt Ready</span>
+                <div class="scene-prompt-overlay">
+                  <span>Detailed prompt for Scene ${i + 1}</span>
+                  <button
+                    type="button"
+                    class="scene-prompt-copy"
+                    data-scene-index="${i}"
+                    aria-label="Copy detailed prompt for ${s.title}"
+                  >
+                    <i data-lucide="copy" class="icon" aria-hidden="true"></i>
+                    Copy Prompt
+                  </button>
+                </div>
               </div>
               <div style="padding:24px;">
                 <span style="display:inline-block; font-size:11px; padding:4px 8px; background:rgba(255,255,255,0.1); border-radius:4px; margin-bottom:12px; font-weight:600; letter-spacing:0.05em;">SCENE ${i+1} · ${s.label}</span>
@@ -976,30 +989,8 @@ High-resolution cinematic mood illustration, environment-focused, lighting-focus
   }
 
   renderIdeKePrompt(slide) {
-    const activeCat = this.promptState.activeCategory || 'tokoh';
-    
-    const activeData = {
-      tokoh: {
-        title: "CHARACTER",
-        label: "Little robot",
-        image: "../../assets/characters/Robot.jpeg",
-        prompt: this.promptState.tokoh
-      },
-      tempat: {
-        title: "SETTING",
-        label: "School garden",
-        image: "../../assets/Tempat/school garden.jpeg",
-        prompt: this.promptState.tempat
-      },
-      suasana: {
-        title: "MOOD",
-        label: "Bright morning",
-        image: "../../assets/Mood/bright morning.jpeg",
-        prompt: this.promptState.suasana
-      }
-    };
-
-    const current = activeData[activeCat];
+    const activeCat = this.promptState.activeCategory;
+    const current = this.getPromptCategoryData(activeCat);
 
     return `
       <div style="display:flex; flex-direction:column; height:100%;">
@@ -1012,21 +1003,21 @@ High-resolution cinematic mood illustration, environment-focused, lighting-focus
             <div>
               <div style="font-size:14px; font-weight:600; color:var(--accent-teal); margin-bottom:12px;">1. CHARACTER</div>
               <div class="prompt-chips">
-                <button class="prompt-chip ${activeCat === 'tokoh' ? 'is-active' : ''}" data-type="activeCategory" data-value="tokoh">Little robot</button>
+                <button class="prompt-chip ${activeCat === 'tokoh' ? 'is-active' : ''}" data-type="activeCategory" data-value="tokoh" aria-pressed="${activeCat === 'tokoh'}">Little robot</button>
               </div>
             </div>
             
             <div>
               <div style="font-size:14px; font-weight:600; color:var(--accent-teal); margin-bottom:12px;">2. SETTING</div>
               <div class="prompt-chips">
-                <button class="prompt-chip ${activeCat === 'tempat' ? 'is-active' : ''}" data-type="activeCategory" data-value="tempat">School garden</button>
+                <button class="prompt-chip ${activeCat === 'tempat' ? 'is-active' : ''}" data-type="activeCategory" data-value="tempat" aria-pressed="${activeCat === 'tempat'}">School garden</button>
               </div>
             </div>
             
             <div>
               <div style="font-size:14px; font-weight:600; color:var(--accent-teal); margin-bottom:12px;">3. MOOD</div>
               <div class="prompt-chips">
-                <button class="prompt-chip ${activeCat === 'suasana' ? 'is-active' : ''}" data-type="activeCategory" data-value="suasana">Bright morning</button>
+                <button class="prompt-chip ${activeCat === 'suasana' ? 'is-active' : ''}" data-type="activeCategory" data-value="suasana" aria-pressed="${activeCat === 'suasana'}">Bright morning</button>
               </div>
             </div>
           </div>
@@ -1045,11 +1036,36 @@ High-resolution cinematic mood illustration, environment-focused, lighting-focus
           <!-- Right: Image -->
           <div style="display:flex; flex-direction:column; align-items:center;">
             <p style="font-size:14px; color:rgba(255,255,255,0.5); margin-bottom:12px; text-transform:uppercase; letter-spacing:0.05em;">Visual Result</p>
-            <img src="${current.image}" alt="${current.label}" style="width:100%; border-radius:12px; object-fit:contain; max-height:420px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05);" />
+            <img id="prompt-result-image" src="${current.image}" alt="${current.label}" style="width:100%; border-radius:12px; object-fit:contain; max-height:420px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05);" />
           </div>
         </div>
       </div>
     `;
+  }
+
+  getPromptCategoryData(category) {
+    const activeData = {
+      tokoh: {
+        title: "CHARACTER",
+        label: "Little robot",
+        image: "../assets/characters/Robot.jpeg",
+        prompt: this.promptState.tokoh
+      },
+      tempat: {
+        title: "SETTING",
+        label: "School garden",
+        image: "../assets/Tempat/school garden.jpeg",
+        prompt: this.promptState.tempat
+      },
+      suasana: {
+        title: "MOOD",
+        label: "Bright morning",
+        image: "../assets/Mood/bright morning.jpeg",
+        prompt: this.promptState.suasana
+      }
+    };
+
+    return activeData[category] || activeData.tokoh;
   }
 
   renderContohVisual(slide) {
@@ -1208,9 +1224,13 @@ High-resolution cinematic mood illustration, environment-focused, lighting-focus
     document.getElementById('btn-next').addEventListener('click', () => this.nextSlide());
     document.getElementById('btn-fullscreen').addEventListener('click', () => this.toggleFullscreen());
     
-    // Prompt Builder Interactivity (only runs on slide 6, bound via delegation)
+    // Prompt interactions are bound via delegation for the story and prompt slides.
     document.addEventListener('click', (e) => {
-      if (e.target.classList.contains('prompt-chip')) {
+      const scenePromptButton = e.target.closest('.scene-prompt-copy');
+
+      if (scenePromptButton) {
+        this.copyScenePrompt(scenePromptButton);
+      } else if (e.target.classList.contains('prompt-chip')) {
         this.handlePromptChipClick(e.target);
       } else if (e.target.closest('#btn-copy-prompt')) {
         this.copyPrompt();
@@ -1221,35 +1241,59 @@ High-resolution cinematic mood illustration, environment-focused, lighting-focus
   handlePromptChipClick(btn) {
     const type = btn.getAttribute('data-type');
     const value = btn.getAttribute('data-value');
-    
+
+    if (type !== 'activeCategory' || !['tokoh', 'tempat', 'suasana'].includes(value)) {
+      return;
+    }
+
     // Update state
-    this.promptState[type] = value;
+    this.promptState.activeCategory = value;
     
     // Update UI for chips
     document.querySelectorAll(`.prompt-chip[data-type="${type}"]`).forEach(el => {
       el.classList.remove('is-active');
+      el.setAttribute('aria-pressed', 'false');
     });
     btn.classList.add('is-active');
-    
-    // Re-render preview box
-    const slideData = this.slides.find(s => s.id === 'dari-ide-ke-prompt');
-    if (slideData) {
-      const newPrompt = slideData.basePromptPattern
-        .replace('{tokoh}', this.promptState.tokoh)
-        .replace('{tempat}', this.promptState.tempat)
-        .replace('{suasana}', this.promptState.suasana);
-        
-      const box = document.getElementById('prompt-preview-box');
-      if (box) box.textContent = newPrompt;
+    btn.setAttribute('aria-pressed', 'true');
+
+    // Keep the prompt and its matching visual in sync with the selected category.
+    const current = this.getPromptCategoryData(value);
+    const box = document.getElementById('prompt-preview-box');
+    const image = document.getElementById('prompt-result-image');
+
+    if (box) {
+      box.textContent = current.prompt;
+      box.scrollTop = 0;
+    }
+
+    if (image) {
+      image.src = current.image;
+      image.alt = current.label;
     }
   }
 
   copyPrompt() {
     const box = document.getElementById('prompt-preview-box');
     if (!box) return;
-    
-    navigator.clipboard.writeText(box.textContent.trim()).then(() => {
+
+    this.copyText(box.textContent.trim(), 'Prompt copied successfully');
+  }
+
+  copyScenePrompt(btn) {
+    const sceneIndex = Number.parseInt(btn.getAttribute('data-scene-index'), 10);
+    const storySlide = this.slides.find(slide => slide.id === 'alur-cerita-3-scene');
+    const prompt = storySlide?.scenes?.[sceneIndex]?.prompt;
+
+    if (!prompt) return;
+
+    this.copyText(prompt.trim(), `Scene ${sceneIndex + 1} prompt copied successfully`);
+  }
+
+  copyText(text, successMessage) {
+    navigator.clipboard.writeText(text).then(() => {
       const toast = document.getElementById('toast-message');
+      toast.textContent = successMessage;
       toast.classList.add('is-visible');
       setTimeout(() => {
         toast.classList.remove('is-visible');
