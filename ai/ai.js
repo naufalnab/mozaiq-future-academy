@@ -1,95 +1,138 @@
 (function () {
-  var sourceUrls = {
-    id: "../silabus/Untitled%20spreadsheet%20-%20Pertemuan.csv",
-    en: "../silabus/AI-syllabus-en.csv"
-  };
-  var container = document.getElementById("syllabus-content");
-  if (!container) return;
+  "use strict";
 
-  var currentLang = document.documentElement.getAttribute("lang") === "id" ? "id" : "en";
-  var datasets = {};
-  var openMeetings = new Set([1]);
-  var openPhases = new Set(["fase-1"]);
-  var activePhase = "fase-1";
-  var phaseObserver = null;
-  var mobileQuery = window.matchMedia("(max-width: 680px)");
-
-  var phaseSets = {
-    en: [
-      { id: "fase-1", number: "01", range: "MEETINGS 1–5", title: "Story Foundations", summary: "From a first idea to a production-ready storyboard.", start: 1, end: 5 },
-      { id: "fase-2", number: "02", range: "MEETINGS 6–9", title: "Visual Production", summary: "From prompt writing to a consistent set of final scene visuals.", start: 6, end: 9 },
-      { id: "fase-3", number: "03", range: "MEETINGS 10–13", title: "Video & Editing", summary: "From voice-over and scene assembly to movement, sound, and text.", start: 10, end: 13 },
-      { id: "fase-4", number: "04", range: "MEETINGS 14–16", title: "Finalization & Showcase", summary: "From quality and ethics review to export, presentation, and reflection.", start: 14, end: 16 }
-    ],
-    id: [
-      { id: "fase-1", number: "01", range: "PERTEMUAN 1–5", title: "Fondasi Cerita", summary: "Dari ide pertama hingga storyboard yang siap diproduksi.", start: 1, end: 5 },
-      { id: "fase-2", number: "02", range: "PERTEMUAN 6–9", title: "Produksi Visual", summary: "Dari penulisan prompt hingga rangkaian visual final yang konsisten.", start: 6, end: 9 },
-      { id: "fase-3", number: "03", range: "PERTEMUAN 10–13", title: "Video & Editing", summary: "Dari voice-over dan penyusunan scene hingga gerak, suara, dan teks.", start: 10, end: 13 },
-      { id: "fase-4", number: "04", range: "PERTEMUAN 14–16", title: "Finalisasi & Showcase", summary: "Dari review kualitas dan etika hingga export, presentasi, dan refleksi.", start: 14, end: 16 }
-    ]
-  };
-
-  var labels = {
-    en: {
-      meeting: "MEETING",
-      output: "INDIVIDUAL OUTPUT",
-      minute: "min",
-      togglePhase: "Toggle phase",
-      toggleMeeting: "Toggle details for meeting",
-      error: "The curriculum details could not be loaded. Please refresh the page or contact the Mozaiq team for the complete syllabus.",
-      title: "AI Creative Media Academy | 16-Meeting School Program",
-      description: "A guided 16-meeting school program where students develop a story, create visual scenes, edit a video, and present one complete AI-assisted final project responsibly."
+  var pageConfig = {
+    contact: {
+      whatsappNumber: "6287815892929",
+      messages: {
+        en: "Hello Mozaiq, I would like to discuss bringing AI Creative Media Academy to my school.",
+        id: "Halo Mozaiq, saya ingin mendiskusikan program AI Creative Media Academy untuk sekolah saya.",
+      },
     },
-    id: {
-      meeting: "PERTEMUAN",
-      output: "HASIL INDIVIDU",
-      minute: "mnt",
-      togglePhase: "Buka atau tutup fase",
-      toggleMeeting: "Buka atau tutup detail pertemuan",
-      error: "Rincian kurikulum belum dapat dimuat. Silakan muat ulang halaman atau hubungi tim Mozaiq untuk mendapatkan silabus lengkap.",
-      title: "AI Creative Media Academy | Program Sekolah 16 Pertemuan",
-      description: "Program sekolah 16 pertemuan yang membimbing siswa mengembangkan cerita, membuat visual, mengedit video, dan mempresentasikan satu proyek final berbantuan AI secara bertanggung jawab."
-    }
+    quickInformation: [
+      { icon: "graduation-cap", label: { en: "Recommended grade or age", id: "Rekomendasi kelas atau usia" }, value: null },
+      { icon: "users-round", label: { en: "Class format", id: "Format kelas" }, value: null },
+      {
+        icon: "calendar-check",
+        label: { en: "Number of meetings", id: "Jumlah pertemuan" },
+        value: { en: "16 meetings", id: "16 pertemuan" },
+      },
+      {
+        icon: "clock",
+        label: { en: "Meeting duration", id: "Durasi pertemuan" },
+        value: { en: "60 minutes each", id: "60 menit per sesi" },
+      },
+      {
+        icon: "trophy",
+        label: { en: "Final student output", id: "Hasil akhir siswa" },
+        value: { en: "One presentation-ready video", id: "Satu video siap presentasi" },
+      },
+      { icon: "users", label: { en: "Suggested class size", id: "Saran ukuran kelas" }, value: null },
+      { icon: "clipboard-list", label: { en: "Prerequisites", id: "Prasyarat" }, value: null },
+      { icon: "messages-square", label: { en: "Language", id: "Bahasa" }, value: null },
+      { icon: "handshake", label: { en: "What Mozaiq provides", id: "Yang disediakan Mozaiq" }, value: null },
+      { icon: "clipboard-list", label: { en: "What the school prepares", id: "Yang disiapkan sekolah" }, value: null },
+    ],
+    meetingFlow: [
+      {
+        minutes: 5,
+        color: "#a78bfa",
+        title: { en: "Opening", id: "Pembukaan" },
+        copy: { en: "Connect the theme to students’ experiences.", id: "Menghubungkan tema dengan pengalaman siswa." },
+      },
+      {
+        minutes: 8,
+        color: "#60a5fa",
+        title: { en: "Teacher Demo", id: "Demo Guru" },
+        copy: { en: "See the process through one clear example.", id: "Melihat proses melalui satu contoh yang jelas." },
+      },
+      {
+        minutes: 7,
+        color: "#22d3ee",
+        title: { en: "Guided Practice", id: "Latihan Bersama" },
+        copy: { en: "Try the concept together with support.", id: "Mencoba konsep bersama dengan pendampingan." },
+      },
+      {
+        minutes: 35,
+        color: "#5eead4",
+        primary: true,
+        title: { en: "Individual Creation", id: "Kreasi Individu" },
+        copy: { en: "Build the next part of each student’s project.", id: "Membangun bagian berikutnya dari proyek masing-masing." },
+      },
+      {
+        minutes: 5,
+        color: "#eabf54",
+        title: { en: "Save & Reflect", id: "Simpan & Refleksi" },
+        copy: { en: "Organize files and identify the next improvement.", id: "Merapikan file dan menentukan perbaikan berikutnya." },
+      },
+    ],
+    faqs: [
+      {
+        question: { en: "Who is this program for?", id: "Untuk siapa program ini?" },
+        answer: {
+          en: "It is structured as a guided school program for students who will develop one creative media project across 16 meetings.",
+          id: "Program ini disusun sebagai program sekolah terpandu bagi siswa untuk mengembangkan satu proyek media kreatif selama 16 pertemuan.",
+        },
+      },
+      {
+        question: { en: "Do students need prior AI or editing experience?", id: "Apakah siswa memerlukan pengalaman AI atau editing sebelumnya?" },
+        answer: null,
+      },
+      {
+        question: { en: "What equipment is required?", id: "Peralatan apa yang diperlukan?" },
+        answer: null,
+      },
+      {
+        question: { en: "How many students can join?", id: "Berapa banyak siswa yang dapat bergabung?" },
+        answer: null,
+      },
+      {
+        question: { en: "Who teaches the sessions?", id: "Siapa yang mengajar setiap sesi?" },
+        answer: null,
+      },
+      {
+        question: { en: "What will students complete?", id: "Apa yang akan diselesaikan siswa?" },
+        answer: {
+          en: "Students complete a developed story concept, a structured storyboard, consistent visual scenes, and one presentation-ready video.",
+          id: "Siswa menyelesaikan konsep cerita yang matang, storyboard terstruktur, rangkaian visual konsisten, dan satu video siap presentasi.",
+        },
+      },
+      {
+        question: { en: "How is responsible AI taught?", id: "Bagaimana penggunaan AI yang bertanggung jawab diajarkan?" },
+        answer: {
+          en: "Responsible use is integrated into the workflow through teacher-guided review of privacy, safety, accuracy, respectful content, and the final work before sharing.",
+          id: "Penggunaan yang bertanggung jawab terintegrasi dalam alur kerja melalui review dengan panduan guru mengenai privasi, keamanan, akurasi, konten yang menghargai, dan karya final sebelum dibagikan.",
+        },
+      },
+      {
+        question: { en: "Can the program be adapted to the school schedule?", id: "Apakah program dapat disesuaikan dengan jadwal sekolah?" },
+        answer: null,
+      },
+    ],
+    trust: {
+      schoolLogos: [],
+      testimonials: [],
+      teacherProfiles: [],
+      studentProjects: [],
+      programDocumentation: [],
+    },
+    metadata: {
+      en: {
+        title: "AI Creative Media Academy | 16-Meeting School Program",
+        description: "A guided 16-meeting school program where students develop a story, create consistent visuals, edit a video, and present one complete AI-assisted project responsibly.",
+      },
+      id: {
+        title: "AI Creative Media Academy | Program Sekolah 16 Pertemuan",
+        description: "Program sekolah 16 pertemuan yang membimbing siswa mengembangkan cerita, membuat visual konsisten, menyunting video, dan mempresentasikan satu proyek berbantuan AI secara bertanggung jawab.",
+      },
+    },
   };
 
-  function parseCsv(text) {
-    var rows = [];
-    var row = [];
-    var value = "";
-    var quoted = false;
+  window.aiProgramConfig = pageConfig;
 
-    for (var i = 0; i < text.length; i += 1) {
-      var char = text[i];
-      var next = text[i + 1];
-
-      if (char === '"') {
-        if (quoted && next === '"') {
-          value += '"';
-          i += 1;
-        } else {
-          quoted = !quoted;
-        }
-      } else if (char === "," && !quoted) {
-        row.push(value.trim());
-        value = "";
-      } else if ((char === "\n" || char === "\r") && !quoted) {
-        if (char === "\r" && next === "\n") i += 1;
-        row.push(value.trim());
-        if (row.some(function (cell) { return cell !== ""; })) rows.push(row);
-        row = [];
-        value = "";
-      } else {
-        value += char;
-      }
-    }
-
-    if (value !== "" || row.length) {
-      row.push(value.trim());
-      if (row.some(function (cell) { return cell !== ""; })) rows.push(row);
-    }
-
-    return rows;
-  }
+  var body = document.body;
+  var currentLang = document.documentElement.lang === "id" ? "id" : "en";
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
   function escapeHtml(value) {
     return String(value || "")
@@ -100,267 +143,360 @@
       .replace(/'/g, "&#039;");
   }
 
-  function pad(number) {
-    return String(number).padStart(2, "0");
+  function localized(value) {
+    return value && (value[currentLang] || value.en || value.id) || "";
   }
 
-  function shortLabel(label) {
-    var aliases = {
-      "Latihan bareng dengan contoh": "Latihan bersama",
-      "Simpan hasil dan refleksi": "Simpan & refleksi",
-      "Guided Practice with Example": "Guided Practice",
-      "Save Results and Reflection": "Save & Reflect"
-    };
-    return aliases[label] || label;
+  function syncMetadata() {
+    var metadata = pageConfig.metadata[currentLang];
+    document.title = metadata.title;
+    var description = document.querySelector('meta[name="description"]');
+    if (description) description.setAttribute("content", metadata.description);
   }
 
-  function getPhaseById(id) {
-    return phaseSets[currentLang].filter(function (phase) { return phase.id === id; })[0];
-  }
+  function syncLocalizedAttributes() {
+    document.querySelectorAll("[data-aria-en]").forEach(function (element) {
+      var next = element.getAttribute(currentLang === "id" ? "data-aria-id" : "data-aria-en");
+      if (next) element.setAttribute("aria-label", next);
+    });
 
-  function renderDetail(description, header, minute, isPrimary) {
-    return (
-      '<div class="detail-step' + (isPrimary ? ' is-primary' : '') + '">' +
-        '<span class="detail-time">' + escapeHtml(minute) + ' ' + labels[currentLang].minute + '</span>' +
-        '<b>' + escapeHtml(shortLabel(header)) + '</b>' +
-        '<p>' + escapeHtml(description) + '</p>' +
-      '</div>'
-    );
-  }
+    document.querySelectorAll(".lang-switch button").forEach(function (button) {
+      button.setAttribute("aria-pressed", button.getAttribute("data-lang") === currentLang ? "true" : "false");
+    });
 
-  function renderMeeting(session, headers, minutes) {
-    var number = Number(session[0]);
-    var expanded = openMeetings.has(number);
-    var panelId = "meeting-panel-" + number;
-    var titleId = "meeting-title-" + number;
-    var details = session.slice(3, 8).map(function (description, index) {
-      var columnIndex = index + 3;
-      return renderDetail(description, headers[columnIndex], minutes[columnIndex], columnIndex === 6);
-    }).join("");
-
-    return (
-      '<article class="meeting-accordion" data-meeting="' + number + '">' +
-        '<h4 class="meeting-heading" id="' + titleId + '">' +
-          '<button class="meeting-toggle" type="button" aria-expanded="' + expanded + '" aria-controls="' + panelId + '" aria-label="' + labels[currentLang].toggleMeeting + ' ' + number + '">' +
-            '<span class="meeting-number">' + pad(number) + '</span>' +
-            '<span class="meeting-title"><small>' + labels[currentLang].meeting + ' ' + number + '</small><strong>' + escapeHtml(session[1]) + '</strong></span>' +
-            '<span class="meeting-deliverable"><small>' + labels[currentLang].output + '</small><span>' + escapeHtml(session[2]) + '</span></span>' +
-            '<i data-lucide="chevron-down" class="icon" aria-hidden="true"></i>' +
-          '</button>' +
-        '</h4>' +
-        '<div class="meeting-panel" id="' + panelId + '" aria-labelledby="' + titleId + '"' + (expanded ? '' : ' hidden') + '>' +
-          '<div class="meeting-details">' + details + '</div>' +
-        '</div>' +
-      '</article>'
-    );
-  }
-
-  function renderPhase(phase, sessions, headers, minutes, index) {
-    var phasePanelId = phase.id + "-meetings";
-    var mobileExpanded = openPhases.has(phase.id);
-    return (
-      '<section id="' + phase.id + '" class="syllabus-phase" data-phase="' + (index + 1) + '" aria-labelledby="' + phase.id + '-title">' +
-        '<header class="phase-collapse">' +
-          '<span class="phase-title-number">' + phase.number + '</span>' +
-          '<div class="phase-heading-copy"><span>' + phase.range + '</span><h3 id="' + phase.id + '-title">' + phase.title + '</h3><span>' + phase.summary + '</span></div>' +
-          '<button class="phase-toggle" type="button" aria-expanded="' + mobileExpanded + '" aria-controls="' + phasePanelId + '" aria-label="' + labels[currentLang].togglePhase + ': ' + phase.title + '"><span class="sr-only">' + labels[currentLang].togglePhase + '</span><i data-lucide="chevron-down" class="icon" aria-hidden="true"></i></button>' +
-        '</header>' +
-        '<div id="' + phasePanelId + '" class="phase-meetings">' + sessions.map(function (session) {
-          return renderMeeting(session, headers, minutes);
-        }).join("") + '</div>' +
-      '</section>'
-    );
-  }
-
-  function renderCurriculum(rows) {
-    var minutes = rows[0];
-    var headers = rows[1];
-    var sessions = rows.slice(2).filter(function (row) { return /^\d+$/.test(row[0]); });
-
-    if ((headers[0] !== "Pertemuan" && headers[0] !== "Meeting") || sessions.length !== 16) {
-      throw new Error("Invalid curriculum structure");
+    var menuToggle = document.querySelector(".nav-toggle");
+    if (menuToggle) {
+      var open = menuToggle.getAttribute("aria-expanded") === "true";
+      var key = "data-aria-" + (open ? "close" : "open") + "-" + currentLang;
+      menuToggle.setAttribute("aria-label", menuToggle.getAttribute(key));
     }
+  }
 
-    container.innerHTML = phaseSets[currentLang].map(function (phase, index) {
-      var phaseSessions = sessions.filter(function (session) {
-        var number = Number(session[0]);
-        return number >= phase.start && number <= phase.end;
-      });
-      return renderPhase(phase, phaseSessions, headers, minutes, index);
+  function syncWhatsAppLinks() {
+    var directUrl = "https://wa.me/" + pageConfig.contact.whatsappNumber;
+    var schoolUrl = directUrl + "?text=" + encodeURIComponent(pageConfig.contact.messages[currentLang]);
+    document.querySelectorAll("[data-whatsapp]").forEach(function (link) {
+      link.href = link.getAttribute("data-whatsapp") === "direct" ? directUrl : schoolUrl;
+    });
+  }
+
+  function renderQuickInformation() {
+    var section = document.getElementById("program-information");
+    var grid = document.getElementById("program-information-grid");
+    if (!section || !grid) return;
+    var validItems = pageConfig.quickInformation.filter(function (item) {
+      return item.value && localized(item.value);
+    });
+    grid.innerHTML = validItems.map(function (item) {
+      return '<div class="program-information-item">' +
+        '<span class="program-information-icon"><i data-lucide="' + escapeHtml(item.icon) + '" class="icon" aria-hidden="true"></i></span>' +
+        '<div><dt>' + escapeHtml(localized(item.label)) + '</dt><dd>' + escapeHtml(localized(item.value)) + '</dd></div>' +
+      '</div>';
     }).join("");
+    section.hidden = validItems.length === 0;
+  }
 
-    syncResponsivePhases();
-    setActivePhase(activePhase, false);
-    installPhaseObserver();
+  function renderMeetingFlow() {
+    var list = document.getElementById("meeting-flow");
+    var totalElement = document.getElementById("meeting-total");
+    if (!list || !totalElement) return;
+    var total = pageConfig.meetingFlow.reduce(function (sum, step) { return sum + step.minutes; }, 0);
+    totalElement.textContent = String(total);
+    list.setAttribute("aria-label", currentLang === "id" ? "Struktur pertemuan " + total + " menit" : total + "-minute meeting structure");
+    list.innerHTML = pageConfig.meetingFlow.map(function (step, index) {
+      return '<li' + (step.primary ? ' class="is-primary"' : "") + ' style="--step-color:' + step.color + ';--minutes:' + step.minutes + '">' +
+        '<span class="timeline-minute">' + step.minutes + ' <small>' + (currentLang === "id" ? "MNT" : "MIN") + '</small></span>' +
+        '<span class="timeline-marker">' + String(index + 1).padStart(2, "0") + '</span>' +
+        '<div><h3>' + escapeHtml(localized(step.title)) + '</h3><p>' + escapeHtml(localized(step.copy)) + '</p></div>' +
+      '</li>';
+    }).join("");
+  }
+
+  function renderTrustContent() {
+    var section = document.getElementById("trust-content");
+    var grid = document.getElementById("trust-content-grid");
+    if (!section || !grid) return;
+    var categoryLabels = {
+      schoolLogos: { en: "Schools", id: "Sekolah" },
+      testimonials: { en: "Testimonials", id: "Testimoni" },
+      teacherProfiles: { en: "Teacher profiles", id: "Profil pengajar" },
+      studentProjects: { en: "Student projects", id: "Proyek siswa" },
+      programDocumentation: { en: "Program documentation", id: "Dokumentasi program" },
+    };
+    var groups = Object.keys(pageConfig.trust).filter(function (key) {
+      return Array.isArray(pageConfig.trust[key]) && pageConfig.trust[key].length > 0;
+    });
+    grid.innerHTML = groups.map(function (key) {
+      var items = pageConfig.trust[key].map(function (item) {
+        var image = item.image || item.logo || item.src;
+        var title = item.name || item.title || item.attribution || "";
+        var copy = item.quote || item.copy || item.role || "";
+        return '<article class="trust-item">' +
+          (image ? '<img src="' + escapeHtml(image) + '" alt="' + escapeHtml(item.alt || title) + '" loading="lazy" decoding="async">' : "") +
+          (title ? '<strong>' + escapeHtml(title) + '</strong>' : "") +
+          (copy ? '<p>' + escapeHtml(copy) + '</p>' : "") +
+        '</article>';
+      }).join("");
+      return '<section class="trust-group" aria-label="' + escapeHtml(localized(categoryLabels[key])) + '"><h3>' + escapeHtml(localized(categoryLabels[key])) + '</h3><div>' + items + '</div></section>';
+    }).join("");
+    section.hidden = groups.length === 0;
+  }
+
+  function renderFaqs() {
+    var list = document.getElementById("faq-list");
+    if (!list) return;
+    list.innerHTML = pageConfig.faqs.filter(function (item) {
+      return item.answer && localized(item.question) && localized(item.answer);
+    }).map(function (item) {
+      return '<details><summary>' + escapeHtml(localized(item.question)) + '</summary><p>' + escapeHtml(localized(item.answer)) + '</p></details>';
+    }).join("");
+  }
+
+  function refreshIcons() {
     if (window.lucide) window.lucide.createIcons();
   }
 
+  var projectTabs = Array.from(document.querySelectorAll("[data-project-tab]"));
+  var projectPanels = Array.from(document.querySelectorAll("[data-project-panel]"));
+  var activeProjectState = "idea";
+
+  function setProjectState(state, focusTab) {
+    if (!projectTabs.some(function (tab) { return tab.getAttribute("data-project-tab") === state; })) return;
+    activeProjectState = state;
+    projectTabs.forEach(function (tab) {
+      var active = tab.getAttribute("data-project-tab") === state;
+      tab.setAttribute("aria-selected", active ? "true" : "false");
+      tab.tabIndex = active ? 0 : -1;
+      tab.classList.toggle("is-active", active);
+      if (active && focusTab) tab.focus();
+    });
+    projectPanels.forEach(function (panel) {
+      var active = panel.getAttribute("data-project-panel") === state;
+      panel.classList.toggle("is-active", active);
+      panel.hidden = !active;
+    });
+  }
+
+  projectTabs.forEach(function (tab, index) {
+    tab.addEventListener("click", function () { setProjectState(tab.getAttribute("data-project-tab"), false); });
+    tab.addEventListener("keydown", function (event) {
+      if (!["ArrowDown", "ArrowUp", "ArrowRight", "ArrowLeft", "Home", "End"].includes(event.key)) return;
+      event.preventDefault();
+      var nextIndex = index;
+      if (event.key === "Home") nextIndex = 0;
+      else if (event.key === "End") nextIndex = projectTabs.length - 1;
+      else if (event.key === "ArrowDown" || event.key === "ArrowRight") nextIndex = (index + 1) % projectTabs.length;
+      else nextIndex = (index - 1 + projectTabs.length) % projectTabs.length;
+      setProjectState(projectTabs[nextIndex].getAttribute("data-project-tab"), true);
+    });
+  });
+
+  document.querySelectorAll("[data-project-target]").forEach(function (button) {
+    button.addEventListener("click", function () {
+      setProjectState(button.getAttribute("data-project-target"), false);
+      var preview = document.querySelector(".sample-project-preview");
+      if (preview && window.innerWidth < 760) preview.scrollIntoView({ behavior: reduceMotion.matches ? "auto" : "smooth", block: "start" });
+    });
+  });
+
+  var phaseTabs = Array.from(document.querySelectorAll("[data-phase-tab]"));
+  var phasePanels = Array.from(document.querySelectorAll(".syllabus-phase"));
+  var openMeetings = new Set();
+  var activePhase = "phase-1";
+
+  function phaseRange(phaseId) {
+    var number = Number(phaseId.replace("phase-", ""));
+    return [[1, 5], [6, 9], [10, 13], [14, 16]][number - 1] || [1, 5];
+  }
+
+  function meetingBelongsToPhase(meeting, phaseId) {
+    var range = phaseRange(phaseId);
+    return meeting >= range[0] && meeting <= range[1];
+  }
+
   function syncMeetingPanels() {
-    container.querySelectorAll(".meeting-toggle").forEach(function (button) {
-      var meeting = Number(button.closest(".meeting-accordion").getAttribute("data-meeting"));
-      var expanded = openMeetings.has(meeting);
-      var panel = document.getElementById(button.getAttribute("aria-controls"));
-      button.setAttribute("aria-expanded", expanded ? "true" : "false");
-      if (panel) panel.hidden = !expanded;
-    });
-  }
-
-  function ensureFirstMeetingOpen(phaseId) {
-    var phase = getPhaseById(phaseId);
-    if (!phase) return;
-    var hasOpenMeeting = false;
-    openMeetings.forEach(function (number) {
-      if (number >= phase.start && number <= phase.end) hasOpenMeeting = true;
-    });
-    if (!hasOpenMeeting) openMeetings.add(phase.start);
-    syncMeetingPanels();
-  }
-
-  function closeMeetingsOutsidePhase(phaseId) {
-    var phase = getPhaseById(phaseId);
-    if (!phase) return;
-    Array.from(openMeetings).forEach(function (number) {
-      if (number < phase.start || number > phase.end) openMeetings.delete(number);
-    });
-  }
-
-  function syncResponsivePhases() {
-    container.querySelectorAll(".syllabus-phase").forEach(function (section) {
-      var id = section.id;
-      var toggle = section.querySelector(".phase-toggle");
-      var expanded = !mobileQuery.matches || openPhases.has(id);
-      section.classList.toggle("is-collapsed", !expanded);
-      if (toggle) toggle.setAttribute("aria-expanded", expanded ? "true" : "false");
-    });
-  }
-
-  function setActivePhase(id, openFirstMeeting) {
-    if (!getPhaseById(id)) return;
-    activePhase = id;
-    document.querySelectorAll("[data-phase-link]").forEach(function (link) {
-      var active = link.getAttribute("data-phase-link") === id;
-      link.classList.toggle("is-active", active);
-      if (active) link.setAttribute("aria-current", "true");
-      else link.removeAttribute("aria-current");
-    });
-    if (openFirstMeeting) ensureFirstMeetingOpen(id);
-  }
-
-  function installPhaseObserver() {
-    if (phaseObserver) phaseObserver.disconnect();
-    if (!("IntersectionObserver" in window)) return;
-    phaseObserver = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) setActivePhase(entry.target.id, true);
-      });
-    }, { rootMargin: "-28% 0px -62% 0px", threshold: 0 });
-    container.querySelectorAll(".syllabus-phase").forEach(function (phase) {
-      phaseObserver.observe(phase);
-    });
-  }
-
-  function syncMetadata(lang) {
-    document.title = labels[lang].title;
-    var description = document.querySelector('meta[name="description"]');
-    if (description) description.setAttribute("content", labels[lang].description);
-  }
-
-  function showLanguage(lang) {
-    currentLang = lang === "id" ? "id" : "en";
-    syncMetadata(currentLang);
-    if (datasets[currentLang]) renderCurriculum(datasets[currentLang]);
-  }
-
-  container.addEventListener("click", function (event) {
-    var meetingButton = event.target.closest(".meeting-toggle");
-    if (meetingButton) {
-      var article = meetingButton.closest(".meeting-accordion");
-      var phaseSection = meetingButton.closest(".syllabus-phase");
+    document.querySelectorAll(".meeting-accordion").forEach(function (article) {
       var meeting = Number(article.getAttribute("data-meeting"));
-      var opening = !openMeetings.has(meeting);
+      var button = article.querySelector(".meeting-toggle");
+      var panel = document.getElementById(button.getAttribute("aria-controls"));
+      var expanded = openMeetings.has(meeting);
+      button.setAttribute("aria-expanded", expanded ? "true" : "false");
+      panel.classList.toggle("is-collapsed", !expanded);
+      panel.setAttribute("aria-hidden", expanded ? "false" : "true");
+      panel.inert = !expanded;
+    });
+  }
 
-      if (opening) {
-        phaseSection.querySelectorAll(".meeting-accordion").forEach(function (sibling) {
-          openMeetings.delete(Number(sibling.getAttribute("data-meeting")));
-        });
-        openMeetings.add(meeting);
+  function updateCurriculumHash(meeting) {
+    var hash = "#curriculum/" + activePhase + (meeting ? "/meeting-" + meeting : "");
+    history.replaceState(null, "", hash);
+  }
+
+  function setActivePhase(phaseId, options) {
+    options = options || {};
+    if (!phasePanels.some(function (panel) { return panel.id === phaseId; })) return;
+    activePhase = phaseId;
+    phaseTabs.forEach(function (tab) {
+      var active = tab.getAttribute("data-phase-tab") === phaseId;
+      tab.setAttribute("aria-selected", active ? "true" : "false");
+      tab.tabIndex = active ? 0 : -1;
+      tab.classList.toggle("is-active", active);
+      if (active && options.focusTab) tab.focus();
+    });
+    phasePanels.forEach(function (panel) { panel.hidden = panel.id !== phaseId; });
+
+    if (options.meeting) {
+      openMeetings.clear();
+      openMeetings.add(options.meeting);
+    } else if (options.openFirst !== false) {
+      var range = phaseRange(phaseId);
+      openMeetings.clear();
+      openMeetings.add(range[0]);
+    }
+    syncMeetingPanels();
+    if (options.updateHash) updateCurriculumHash(options.meeting);
+  }
+
+  phaseTabs.forEach(function (tab, index) {
+    tab.addEventListener("click", function () {
+      setActivePhase(tab.getAttribute("data-phase-tab"), { openFirst: true, updateHash: true });
+    });
+    tab.addEventListener("keydown", function (event) {
+      if (!["ArrowRight", "ArrowLeft", "Home", "End"].includes(event.key)) return;
+      event.preventDefault();
+      var nextIndex = index;
+      if (event.key === "Home") nextIndex = 0;
+      else if (event.key === "End") nextIndex = phaseTabs.length - 1;
+      else if (event.key === "ArrowRight") nextIndex = (index + 1) % phaseTabs.length;
+      else nextIndex = (index - 1 + phaseTabs.length) % phaseTabs.length;
+      setActivePhase(phaseTabs[nextIndex].getAttribute("data-phase-tab"), { openFirst: true, updateHash: true, focusTab: true });
+    });
+  });
+
+  document.getElementById("syllabus-content").addEventListener("click", function (event) {
+    var button = event.target.closest(".meeting-toggle");
+    if (!button) return;
+    var article = button.closest(".meeting-accordion");
+    var meeting = Number(article.getAttribute("data-meeting"));
+    if (openMeetings.has(meeting)) {
+      openMeetings.delete(meeting);
+      updateCurriculumHash();
+    } else {
+      openMeetings.add(meeting);
+      updateCurriculumHash(meeting);
+    }
+    syncMeetingPanels();
+  });
+
+  document.querySelectorAll("[data-accordion-action]").forEach(function (button) {
+    button.addEventListener("click", function () {
+      var range = phaseRange(activePhase);
+      if (button.getAttribute("data-accordion-action") === "expand") {
+        for (var meeting = range[0]; meeting <= range[1]; meeting += 1) openMeetings.add(meeting);
       } else {
-        openMeetings.delete(meeting);
+        for (var number = range[0]; number <= range[1]; number += 1) openMeetings.delete(number);
       }
       syncMeetingPanels();
-      return;
-    }
-
-    var phaseButton = event.target.closest(".phase-toggle");
-    if (phaseButton && mobileQuery.matches) {
-      var section = phaseButton.closest(".syllabus-phase");
-      var shouldOpen = !openPhases.has(section.id);
-      openPhases.clear();
-      if (shouldOpen) {
-        openPhases.add(section.id);
-        closeMeetingsOutsidePhase(section.id);
-        setActivePhase(section.id, true);
-      }
-      syncResponsivePhases();
-    }
-  });
-
-  document.querySelectorAll("[data-phase-link]").forEach(function (link) {
-    link.addEventListener("click", function () {
-      var id = link.getAttribute("data-phase-link");
-      openPhases.clear();
-      openPhases.add(id);
-      if (mobileQuery.matches) closeMeetingsOutsidePhase(id);
-      setActivePhase(id, true);
-      syncResponsivePhases();
+      updateCurriculumHash();
     });
   });
 
-  document.addEventListener("langchange", function (event) {
-    showLanguage(event.detail && event.detail.lang);
-  });
-
-  if (mobileQuery.addEventListener) mobileQuery.addEventListener("change", syncResponsivePhases);
-  else mobileQuery.addListener(syncResponsivePhases);
-
-  Promise.all(Object.keys(sourceUrls).map(function (lang) {
-    return fetch(sourceUrls[lang])
-      .then(function (response) {
-        if (!response.ok) throw new Error("Curriculum could not be loaded");
-        return response.text();
-      })
-      .then(function (text) {
-        datasets[lang] = parseCsv(text.replace(/^\uFEFF/, ""));
+  function applyDeepLink(shouldScroll) {
+    var match = window.location.hash.match(/^#curriculum\/phase-([1-4])(?:\/meeting-(\d{1,2}))?$/);
+    if (!match) return false;
+    var phaseId = "phase-" + match[1];
+    var meeting = match[2] ? Number(match[2]) : null;
+    if (meeting && !meetingBelongsToPhase(meeting, phaseId)) meeting = null;
+    setActivePhase(phaseId, { meeting: meeting, openFirst: !meeting, updateHash: false });
+    if (shouldScroll) {
+      window.requestAnimationFrame(function () {
+        var curriculum = document.getElementById("curriculum");
+        curriculum.scrollIntoView({ behavior: reduceMotion.matches ? "auto" : "smooth", block: "start" });
+        if (meeting) {
+          window.setTimeout(function () {
+            var target = document.getElementById("meeting-" + meeting);
+            if (target) target.scrollIntoView({ behavior: reduceMotion.matches ? "auto" : "smooth", block: "center" });
+          }, reduceMotion.matches ? 0 : 280);
+        }
       });
-  }))
-    .then(function () {
-      showLanguage(currentLang);
-    })
-    .catch(function () {
-      container.innerHTML = '<p class="syllabus-error">' + labels[currentLang].error + '</p>';
-    });
-})();
-
-(function () {
-  var header = document.querySelector(".ai-header");
-  var stickyCta = document.querySelector(".mobile-sticky-cta");
-  var hero = document.querySelector(".ai-hero");
-  var schoolCta = document.getElementById("school-cta");
-  var footer = document.querySelector(".site-footer");
-  var mobileQuery = window.matchMedia("(max-width: 680px)");
-
-  function syncPageChrome() {
-    if (header) header.classList.toggle("is-scrolled", window.scrollY > 12);
-    if (!stickyCta || !hero || !schoolCta || !footer) return;
-
-    var pastHero = window.scrollY > hero.offsetTop + hero.offsetHeight - 120;
-    var ctaVisible = schoolCta.getBoundingClientRect().top < window.innerHeight;
-    var footerVisible = footer.getBoundingClientRect().top < window.innerHeight;
-    stickyCta.classList.toggle("is-visible", mobileQuery.matches && pastHero && !ctaVisible && !footerVisible);
+    }
+    return true;
   }
 
-  window.addEventListener("scroll", syncPageChrome, { passive: true });
-  window.addEventListener("resize", syncPageChrome);
-  if (mobileQuery.addEventListener) mobileQuery.addEventListener("change", syncPageChrome);
-  syncPageChrome();
+  window.addEventListener("hashchange", function () { applyDeepLink(true); });
+
+  var navSections = ["program", "outcomes", "curriculum", "why-it-matters"];
+  var scrollTicking = false;
+  function syncNavigationAndChrome() {
+    scrollTicking = false;
+    var position = window.scrollY + 150;
+    var currentSection = navSections[0];
+    navSections.forEach(function (id) {
+      var section = document.getElementById(id);
+      if (section && section.offsetTop <= position) currentSection = id;
+    });
+    document.querySelectorAll('.nav-links a[href^="#"], .mobile-menu > a[href^="#"]').forEach(function (link) {
+      var active = link.getAttribute("href") === "#" + currentSection;
+      link.classList.toggle("is-active", active);
+      if (active) link.setAttribute("aria-current", "location");
+      else link.removeAttribute("aria-current");
+    });
+
+    var header = document.querySelector(".ai-header");
+    if (header) header.classList.toggle("is-scrolled", window.scrollY > 12);
+    var sticky = document.querySelector(".mobile-sticky-cta");
+    var hero = document.querySelector(".ai-hero");
+    var finalCta = document.getElementById("school-cta");
+    var footer = document.querySelector(".site-footer");
+    if (sticky && hero && finalCta && footer) {
+      var pastHero = window.scrollY > hero.offsetTop + hero.offsetHeight - 120;
+      var finalVisible = finalCta.getBoundingClientRect().top < window.innerHeight && finalCta.getBoundingClientRect().bottom > 0;
+      var footerVisible = footer.getBoundingClientRect().top < window.innerHeight;
+      sticky.classList.toggle("is-visible", window.innerWidth <= 680 && pastHero && !finalVisible && !footerVisible);
+    }
+  }
+
+  function requestChromeSync() {
+    if (scrollTicking) return;
+    scrollTicking = true;
+    window.requestAnimationFrame(syncNavigationAndChrome);
+  }
+  window.addEventListener("scroll", requestChromeSync, { passive: true });
+  window.addEventListener("resize", requestChromeSync);
+
+  var menuToggle = document.querySelector(".nav-toggle");
+  if (menuToggle) {
+    menuToggle.addEventListener("click", function () {
+      window.setTimeout(syncLocalizedAttributes, 0);
+    });
+  }
+
+  function syncLanguage(nextLanguage) {
+    currentLang = nextLanguage === "id" ? "id" : "en";
+    syncMetadata();
+    syncLocalizedAttributes();
+    syncWhatsAppLinks();
+    renderQuickInformation();
+    renderMeetingFlow();
+    renderFaqs();
+    renderTrustContent();
+    refreshIcons();
+  }
+
+  document.addEventListener("langchange", function (event) {
+    syncLanguage(event.detail && event.detail.lang);
+  });
+
+  renderQuickInformation();
+  renderMeetingFlow();
+  renderFaqs();
+  renderTrustContent();
+  syncMetadata();
+  syncLocalizedAttributes();
+  syncWhatsAppLinks();
+  setProjectState(activeProjectState, false);
+  if (!applyDeepLink(true)) setActivePhase("phase-1", { openFirst: true, updateHash: false });
+  body.classList.add("ai-ready");
+  refreshIcons();
+  syncNavigationAndChrome();
 })();

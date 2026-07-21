@@ -78,6 +78,10 @@ var currentLang = document.documentElement.getAttribute("data-default-lang") || 
     toggle.addEventListener("click", function () {
         var isOpen = menu.classList.toggle("is-open");
         toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        if (isOpen) {
+            var firstFocusable = menu.querySelector('a, button:not([disabled])');
+            if (firstFocusable) firstFocusable.focus();
+        }
     });
 
     menu.querySelectorAll("a").forEach(function (link) {
@@ -89,6 +93,21 @@ var currentLang = document.documentElement.getAttribute("data-default-lang") || 
     document.addEventListener("keydown", function (event) {
         if (event.key === "Escape" && menu.classList.contains("is-open")) {
             closeMenu(true);
+        }
+
+        if (event.key === "Tab" && menu.classList.contains("is-open")) {
+            var focusable = Array.from(menu.querySelectorAll('a, button:not([disabled])'));
+            focusable.unshift(toggle);
+            if (!focusable.length) return;
+            var first = focusable[0];
+            var last = focusable[focusable.length - 1];
+            if (event.shiftKey && document.activeElement === first) {
+                event.preventDefault();
+                last.focus();
+            } else if (!event.shiftKey && document.activeElement === last) {
+                event.preventDefault();
+                first.focus();
+            }
         }
     });
 
