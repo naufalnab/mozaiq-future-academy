@@ -77,6 +77,7 @@ export const slidesData = [
       {
         label: "DISCOVERY",
         title: "The Garden Withers",
+        image: "../assets/Discovery.jpeg",
         description: "A little robot discovers the plants in the school garden are drying up and withering.",
         direction: "wide shot; morning time; slightly dry plants; robot observing the garden.",
         prompt: `Create a polished cinematic 3D animation story frame for:
@@ -113,7 +114,7 @@ This is the opening discovery frame. The audience must immediately understand th
 COMPOSITION AND CAMERA
 
 - single cinematic illustration, not a concept sheet, collage, storyboard grid, or multi-panel layout
-- landscape 4:3 composition designed to fit an educational presentation card
+- landscape 16:9 composition designed to fit an educational presentation card
 - wide establishing shot showing the School Garden clearly
 - camera at a child-friendly eye level with a gentle three-quarter view into the garden
 - use a natural 28–35 mm cinematic lens feeling
@@ -182,11 +183,12 @@ DO NOT INCLUDE
 
 FINAL OUTPUT
 
-A single production-ready landscape 4:3 cinematic frame that clearly communicates: Little Robot has just discovered that the familiar School Garden is withering because the water system is not working. The image must feel like the first frame of one coherent, warm, educational animated story.`
+A single production-ready landscape 16:9 cinematic frame that clearly communicates: Little Robot has just discovered that the familiar School Garden is withering because the water system is not working. The image must feel like the first frame of one coherent, warm, educational animated story.`
       },
       {
         label: "ACTION",
         title: "The Robot Finds a Solution",
+        image: "../assets/Action.jpeg",
         description: "The robot inspects the water pipes and tries to fix the sprinkler system.",
         direction: "medium shot; robot actively working; a few simple tools; light starts to get brighter.",
         prompt: `Create a polished cinematic 3D animation story frame for:
@@ -220,7 +222,7 @@ This is the central action frame. The audience must immediately understand that 
 COMPOSITION AND CAMERA
 
 - single cinematic illustration, not a character sheet, environment sheet, collage, storyboard grid, or multi-panel image
-- landscape 4:3 composition designed for an educational presentation card
+- landscape 16:9 composition designed for an educational presentation card
 - medium-wide action shot at a child-friendly eye level
 - gentle three-quarter camera angle looking toward the repair area
 - natural 35–50 mm cinematic lens feeling
@@ -290,11 +292,12 @@ DO NOT INCLUDE
 
 FINAL OUTPUT
 
-A single production-ready landscape 4:3 cinematic frame that clearly communicates: Little Robot has found the broken sprinkler connection and is carefully fixing it. The frame must bridge the concern of Scene 1 and the joyful recovery of Scene 3 while maintaining exact visual continuity with all three provided references.`
+A single production-ready landscape 16:9 cinematic frame that clearly communicates: Little Robot has found the broken sprinkler connection and is carefully fixing it. The frame must bridge the concern of Scene 1 and the joyful recovery of Scene 3 while maintaining exact visual continuity with all three provided references.`
       },
       {
         label: "RESOLUTION",
         title: "The Garden is Green Again",
+        image: "../assets/Resolution.jpeg",
         description: "Water flows again and the plants become fresh and colorful.",
         direction: "cinematic wide shot; green garden; water spraying gently; robot looking at its work.",
         prompt: `Create a polished cinematic 3D animation story frame for:
@@ -328,7 +331,7 @@ This is the satisfying resolution frame. The audience must instantly understand 
 COMPOSITION AND CAMERA
 
 - single cinematic illustration, not a concept sheet, collage, storyboard grid, before-and-after split, or multi-panel layout
-- landscape 4:3 composition designed for an educational presentation card
+- landscape 16:9 composition designed for an educational presentation card
 - cinematic wide hero shot revealing the restored School Garden
 - camera at a child-friendly eye level from a recognizable three-quarter garden view
 - natural 28–35 mm cinematic lens feeling
@@ -401,7 +404,7 @@ DO NOT INCLUDE
 
 FINAL OUTPUT
 
-A single production-ready landscape 4:3 cinematic frame that clearly communicates: the sprinkler works again, the familiar School Garden is fresh and green, and Little Robot calmly enjoys the successful result. It must feel like the warm, visually satisfying final frame of the same educational animated story established in Scene 1 and Scene 2.`
+A single production-ready landscape 16:9 cinematic frame that clearly communicates: the sprinkler works again, the familiar School Garden is fresh and green, and Little Robot calmly enjoys the successful result. It must feel like the warm, visually satisfying final frame of the same educational animated story established in Scene 1 and Scene 2.`
       }
     ],
     presenterNote: "A long story can be divided into several scenes that are easier to create."

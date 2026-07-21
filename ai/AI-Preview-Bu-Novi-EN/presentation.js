@@ -960,9 +960,8 @@ High-resolution cinematic mood illustration, environment-focused, lighting-focus
         <div class="grid-3" style="margin-top:auto; margin-bottom:auto;">
           ${slide.scenes.map((s, i) => `
             <div class="info-card story-scene-card" style="padding:0; overflow:hidden;">
-              <div class="visual-placeholder story-scene-visual" style="aspect-ratio:4/3; border:none; border-radius:0; border-bottom:1px solid rgba(255,255,255,0.1);">
-                <i data-lucide="image" class="icon"></i>
-                <span style="font-size:12px;">Generation Prompt Ready</span>
+              <div class="visual-placeholder story-scene-visual" style="aspect-ratio:16/9; border:none; border-radius:0; border-bottom:1px solid rgba(255,255,255,0.1);">
+                <img class="story-scene-image" src="${s.image}" alt="${s.title}" />
                 <div class="scene-prompt-overlay">
                   <span>Detailed prompt for Scene ${i + 1}</span>
                   <button
@@ -1069,21 +1068,42 @@ High-resolution cinematic mood illustration, environment-focused, lighting-focus
   }
 
   renderContohVisual(slide) {
+    const storySlide = this.slides.find(item => item.id === 'alur-cerita-3-scene');
+    const storyScenes = storySlide?.scenes || [];
+
     return `
       <div style="display:flex; flex-direction:column; height:100%;">
         <h2 class="slide-title">${slide.title}</h2>
         <p class="slide-subtitle" style="margin-bottom:24px;">${slide.supportingCopy}</p>
         
-        <div class="grid-3" style="margin-bottom:32px;">
-          ${slide.visuals.map(v => `
-            <div>
-              <div class="visual-placeholder" style="margin-bottom:16px;">
-                <i data-lucide="aperture" class="icon"></i>
-                <span style="font-size:12px;">Sample Demonstration</span>
+        <div class="grid-3" style="margin-bottom:24px;">
+          ${slide.visuals.map((visualLabel, index) => {
+            const scene = storyScenes[index];
+
+            return `
+            <div class="info-card story-scene-card" style="padding:0; overflow:hidden;">
+              <div class="visual-placeholder story-scene-visual" style="aspect-ratio:16/9; border:none; border-radius:0; border-bottom:1px solid rgba(255,255,255,0.1);">
+                <img class="story-scene-image" src="${scene.image}" alt="${visualLabel}" />
+                <div class="scene-prompt-overlay">
+                  <span>Detailed prompt for Scene ${index + 1}</span>
+                  <button
+                    type="button"
+                    class="scene-prompt-copy"
+                    data-scene-index="${index}"
+                    aria-label="Copy detailed prompt for ${visualLabel}"
+                  >
+                    <i data-lucide="copy" class="icon" aria-hidden="true"></i>
+                    Copy Prompt
+                  </button>
+                </div>
               </div>
-              <strong style="display:block; text-align:center; font-size:16px;">${v}</strong>
+              <div style="padding:18px 20px;">
+                <span style="display:inline-block; font-size:10px; padding:4px 8px; background:rgba(255,255,255,0.1); border-radius:4px; margin-bottom:10px; font-weight:600; letter-spacing:0.05em;">SCENE ${index + 1} · ${scene.label}</span>
+                <strong style="display:block; font-size:16px;">${visualLabel}</strong>
+              </div>
             </div>
-          `).join('')}
+          `;
+          }).join('')}
         </div>
         
         <div class="callout" style="margin-top:auto;">
