@@ -673,7 +673,186 @@ The design sheet must look like one environment documented from several producti
         { label: "Colorful forest", value: "a colorful forest" }
       ],
       suasana: [
-        { label: "Bright morning", value: "bright morning light" },
+        { label: "Bright morning", value: `Create a polished cinematic mood key illustration for the environment mood:
+
+“BRIGHT MORNING”
+
+Use the provided reference images as the main visual foundation:
+
+- Reference Image A: the School Garden environment design sheet
+- Reference Image B: the Little Robot character design sheet
+
+IMPORTANT REFERENCE USAGE
+
+Use Reference Image A to preserve the exact School Garden identity:
+- modern elementary school building in the background
+- central rounded tree slightly left of center
+- curved beige stone pathway
+- colorful flower beds
+- small vegetable learning patch
+- wooden bench
+- garden tool station
+- irrigation system and pipe area
+- low decorative fence and entrance gate
+- child-friendly, clean, safe educational setting
+
+Use Reference Image B to preserve the exact Little Robot character identity:
+- small friendly humanoid robot
+- white rounded shell
+- dark navy face screen
+- two glowing cyan oval eyes
+- cyan chest core
+- navy joints
+- compact childlike proportions
+- cute, safe, helpful, and curious appearance
+- do not redesign the robot
+
+GOAL
+
+Create a dedicated lighting-and-atmosphere mood image that captures the School Garden in a bright morning mood.
+
+The image should feel:
+- cheerful
+- fresh
+- hopeful
+- energetic
+- clean
+- welcoming
+- child-friendly
+- educational
+- peaceful but alive
+
+SCENE CONTENT
+
+Show the School Garden in its healthy and beautiful state during a bright morning.
+
+The scene should include:
+- the school garden fully visible and visually readable
+- the school building softly lit in the background
+- the central tree with fresh green leaves
+- vibrant flower beds with healthy colors
+- the vegetable learning area looking neat and alive
+- the curved garden path clearly visible
+- the bench and tool station in their consistent locations
+- the irrigation system working properly
+- soft gentle sprinkler water arcs catching sunlight
+- Little Robot present in the scene as a friendly helper or observer
+
+Little Robot can be:
+- standing near the path
+- admiring the healthy garden
+- gently gesturing toward the flowers
+- walking through the garden with a happy, helpful posture
+
+LIGHTING DIRECTION
+
+The main focus is the “Bright Morning” mood.
+
+Lighting characteristics:
+- clear bright morning sky
+- soft golden sunlight from a low-to-medium morning sun angle
+- fresh blue skylight fill
+- bright but gentle illumination
+- soft, clean shadows
+- slightly glowing sunlit edges on leaves, flowers, and robot shell
+- subtle atmospheric freshness
+- morning clarity, not hazy
+- light should feel crisp, healthy, and uplifting
+
+ATMOSPHERIC DETAILS
+
+Include subtle bright morning mood cues:
+- fresh morning air
+- soft sunlight touching the tops of flowers and leaves
+- tiny dew-like highlights or fresh moisture sparkle
+- light breeze suggested through leaves and plants
+- clean blue sky or pale warm sky gradient
+- fresh reflective highlights on sprinkler water
+- natural shadows that feel soft and inviting
+
+COLOR MOOD
+
+Use a bright and harmonious morning palette:
+- warm cream sunlight
+- soft sky blue
+- fresh greens
+- healthy flower colors
+- clean water blue
+- light beige path
+- natural wood brown
+- subtle cyan accents from the robot and technology elements
+
+The color balance should feel:
+- luminous
+- fresh
+- optimistic
+- not oversaturated
+- not washed out
+- not dramatic
+
+COMPOSITION
+
+Create a beautiful cinematic composition.
+Preferred shot:
+- wide three-quarter establishing shot
+- camera near the garden entrance or slightly elevated
+- the viewer can clearly understand the garden layout
+- the robot should be visible but not dominate the environment
+- use clear visual hierarchy with the garden and light mood as the main focus
+
+VISUAL STYLE
+
+- premium stylized 3D animation look
+- child-friendly cinematic illustration
+- clean shapes
+- soft rounded forms
+- subtle anime-inspired composition
+- high-end educational animation visual language
+- polished rendering
+- gentle global illumination
+- soft contact shadows
+- clean readable silhouettes
+
+MOOD RULES
+
+This must feel specifically like:
+- a bright school morning
+- the beginning of a hopeful day
+- a healthy, encouraging learning environment
+- an emotionally positive atmosphere for creativity and exploration
+
+AVOID
+
+Do not make it:
+- sunset
+- golden hour evening
+- cloudy
+- rainy
+- overcast
+- dramatic
+- dark
+- gloomy
+- foggy
+- abandoned
+- overgrown
+- dull
+- moody in a sad way
+- too futuristic
+- too photorealistic
+
+Do not add:
+- text
+- labels
+- logos
+- watermarks
+- extra random buildings
+- crowds of children
+- unrelated props
+- redesigns of the garden or robot
+
+QUALITY
+
+High-resolution cinematic mood illustration, environment-focused, lighting-focused, consistent with the provided School Garden and Little Robot references, polished, beautiful, fresh, hopeful, and visually production-ready.` },
         { label: "Adventurous", value: "adventurous mood" },
         { label: "Futuristic", value: "neon glowing lights" },
         { label: "Calm", value: "calm and peaceful lighting" }
