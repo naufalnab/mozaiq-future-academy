@@ -65,7 +65,7 @@ export const slidesData = [
     id: "contoh-proyek-mini",
     title: "Contoh Proyek Mini",
     projectName: "Robot Kecil Menyelamatkan Taman Sekolah",
-    premise: "Seekor robot kecil menemukan taman sekolah yang mulai layu. Ia mencari penyebabnya, memperbaiki sistem penyiram, dan membantu taman kembali hijau.",
+    premise: "Robot kecil menemukan taman sekolah yang mulai layu. Ia mencari penyebabnya, memperbaiki sistem penyiram, dan membantu taman kembali hijau.",
     stages: ["Menemukan masalah", "Mencari dan memperbaiki", "Membantu taman kembali hijau"],
     callout: "Anak boleh mengubah tokoh, warna, tempat, maupun jalan ceritanya.",
     presenterNote: "Kita menggunakan proyek sederhana agar anak dapat memahami alurnya tanpa merasa terbebani."
