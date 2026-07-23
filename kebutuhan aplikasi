@@ -1,0 +1,420 @@
+Isi file tersebut meliputi:
+12 program ekstrakurikuler MFA. 
+Simulasi jumlah peserta 5, 10, 15, dan 20 siswa. 
+Biaya per sesi per siswa. 
+Perhitungan biaya per bulan (4 pertemuan). 
+Perhitungan biaya per tahun (24 pertemuan). 
+Estimasi investasi awal perlengkapan. 
+Ringkasan kebutuhan alat setiap program. 
+Namun, jika targetnya adalah analisa bisnis premium yang siap dipresentasikan ke Yayasan Sabilillah Malang, saya menyarankan membuat workbook yang jauh lebih lengkap, misalnya terdiri dari 10 sheet:
+Executive Summary 
+Analisa Sistem Mandiri 
+Analisa Flat Rate 
+Break Even Point (BEP) 
+ROI Yayasan & MFA 
+Cash Flow 1 Tahun 
+Rincian Peralatan 12 Program 
+Pricelist Alat (merk, spesifikasi, supplier, harga satuan) 
+Simulasi 5 / 10 / 15 / 20 siswa 
+Dashboard Profesional (grafik, margin, laba, investasi, ROI) 
+Kemudian setiap program akan memiliki rincian seperti:
+Program
+Peralatan
+Qty
+Harga Satuan
+Total
+Archery
+Bow Standard
+10
+Rp1.850.000
+Rp18.500.000
+Archery
+Arrow Carbon
+50
+Rp125.000
+Rp6.250.000
+Archery
+Target Boss
+2
+Rp2.500.000
+Rp5.000.000
+...
+...
+...
+...
+...
+
+Hal yang sama akan dibuat untuk:
+Badminton 
+Pickleball 
+Floorball 
+Pingpong 
+Padel 
+Renang 
+Drone Academy 
+Airsoft Leadership 
+AI Business Academy 
+Affiliate Business Academy 
+Magic School Academy 
+Lengkap dengan:
+harga pasar Indonesia tahun 2026, 
+merek yang direkomendasikan, 
+supplier, 
+umur ekonomis alat, 
+biaya penyusutan, 
+biaya maintenance, 
+biaya penggantian alat, 
+serta margin keuntungan MFA. 
+Hasil akhirnya akan setara dengan studi kelayakan (feasibility study) dan sangat layak digunakan sebagai proposal resmi kepada SD–SMP–SMA Sabilillah Malang maupun sekolah-sekolah premium lainnya.
+
+Workbook ini sudah berisi struktur utama dengan sheet:
+Executive Summary 
+Detail Peralatan 
+BEP 
+ROI 
+Cash Flow 
+Dashboard 
+Pricelist 
+Simulasi 
+Namun, mengingat permintaan Anda adalah analisa profesional dan premium, saya menyarankan kita membuat versi yang jauh lebih komprehensif. Targetnya bukan sekadar spreadsheet, tetapi dokumen finansial setara proposal investasi.
+Versi Premium (±2.000–3.000 baris data) akan mencakup:
+12 program MFA lengkap. 
+Simulasi 5, 10, 15, dan 20 siswa. 
+Perhitungan: 
+biaya operasional per sesi, 
+biaya per bulan, 
+biaya per semester, 
+biaya per tahun, 
+gaji coach, 
+transport, 
+konsumsi, 
+administrasi, 
+maintenance alat, 
+penyusutan aset, 
+laba kotor, 
+laba bersih, 
+BEP, 
+ROI, 
+Payback Period, 
+NPV sederhana. 
+Daftar perlengkapan sangat detail untuk seluruh 12 ekstrakurikuler: 
+spesifikasi alat, 
+merek rekomendasi, 
+harga satuan, 
+jumlah ideal, 
+supplier, 
+umur ekonomis, 
+biaya penggantian. 
+Dashboard interaktif dengan grafik: 
+pendapatan, 
+biaya, 
+profit, 
+margin, 
+ROI, 
+kebutuhan investasi. 
+Baik. Saya akan melanjutkan dan menyusunnya menjadi Financial Feasibility Study kelas konsultan (setara yang digunakan Deloitte, PwC, EY, atau KPMG untuk studi investasi pendidikan), khusus disesuaikan dengan model bisnis Mozaiq Future Academy.
+Deliverable Akhir
+Workbook Excel akan terdiri dari sekitar 20 sheet.
+1. Executive Dashboard
+KPI Total Investasi 
+Total Revenue 
+Total Operating Cost 
+Gross Profit 
+Net Profit 
+EBITDA 
+ROI 
+Break Even Point 
+Payback Period 
+Margin 
+
+2. Asumsi Dasar
+Berisi seluruh parameter yang bisa diubah.
+Misalnya:
+jumlah siswa 
+jumlah coach 
+gaji coach 
+transport 
+inflasi 
+maintenance 
+depresiasi 
+biaya marketing 
+biaya admin 
+profit target 
+Semua sheet akan mengambil data otomatis dari sini.
+
+3. Investment Plan
+Investasi seluruh 12 program.
+Contoh:
+Program
+Investasi
+Archery
+Rp35.000.000
+Badminton
+Rp8.000.000
+Pickleball
+Rp15.000.000
+Floorball
+Rp18.000.000
+Pingpong
+Rp10.000.000
+Swimming
+Rp5.000.000
+Padel
+Rp30.000.000
+Drone Academy
+Rp25.000.000
+Airsoft Leadership
+Rp40.000.000
+AI Business Academy
+Rp15.000.000
+Affiliate Academy
+Rp5.000.000
+Magic School
+Rp12.000.000
+
+
+4. Pricelist Detail Alat
+Contohnya Archery saja nanti berisi seperti ini.
+Item
+Merk
+Qty
+Harga
+Bow
+Core Archery
+10
+Rp1.850.000
+Arrow Carbon
+Easton
+50
+Rp125.000
+Target Boss
+Avalon
+2
+Rp2.500.000
+Arm Guard
+Avalon
+10
+Rp150.000
+Finger Tab
+Avalon
+10
+Rp120.000
+Quiver
+Avalon
+10
+Rp350.000
+Target Stand
+Custom
+2
+Rp1.500.000
+
+Begitu juga untuk:
+Badminton 
+Pickleball 
+Floorball 
+Pingpong 
+Padel 
+Swimming 
+Drone 
+Airsoft 
+AI 
+Affiliate 
+Magic 
+Total sekitar 300–500 item perlengkapan.
+
+5. Operating Cost
+Per sesi
+Per bulan
+Per semester
+Per tahun
+meliputi:
+Coach 
+Assistant 
+Admin 
+Marketing 
+Transport 
+Maintenance 
+ATK 
+Consumable 
+Replacement Equipment 
+
+6. Revenue Projection
+Otomatis menghitung
+5 siswa
+10 siswa
+15 siswa
+20 siswa
+25 siswa
+30 siswa
+40 siswa
+50 siswa
+
+7. Profit Analysis
+Gross Profit
+Operating Profit
+Net Profit
+Margin
+
+8. Break Even Analysis
+Grafik otomatis.
+
+9. ROI Analysis
+ROI
+IRR sederhana
+Payback Period
+
+10. Sensitivity Analysis
+Jika siswa turun
+10%
+20%
+30%
+40%
+maka profit berubah otomatis.
+
+11. Cash Flow 5 Tahun
+Semester
+Tahunan
+Akumulasi
+
+12. Dashboard Interaktif
+Grafik otomatis.
+Revenue 
+Cost 
+Profit 
+ROI 
+Margin 
+Investasi 
+Yang saya usulkan
+Saya akan menyusun Master Financial Model MFA v1.0 secara bertahap hingga menjadi satu workbook final. Struktur yang akan dibuat:
+Executive Dashboard 
+Executive Summary 
+Master Assumptions 
+Investment Plan 
+Operating Cost 
+Revenue Projection 
+Profit & Loss 
+Cash Flow 
+Balance Sheet (sederhana) 
+Break Even Point 
+ROI & Payback Period 
+Sensitivity Analysis 
+Depreciation Schedule 
+Equipment Database 
+Supplier Pricelist 
+Program Analysis 
+Student Scenario (5/10/15/20) 
+School Comparison 
+Charts Dashboard 
+Print Report 
+Untuk setiap program MFA akan ada:
+Daftar perlengkapan lengkap 
+Spesifikasi 
+Merek 
+Supplier 
+Harga pasar 
+Umur ekonomis 
+Penyusutan 
+Maintenance 
+Biaya penggantian 
+Kapasitas peserta 
+Biaya operasional 
+Margin 
+Selain itu, workbook akan menggunakan:
+Formula Excel (bukan angka statis) 
+Named Ranges 
+Data Validation 
+Conditional Formatting 
+Dashboard KPI 
+Grafik otomatis 
+Format siap presentasi 
+Rekomendasi
+Daripada membuat versi yang dipadatkan dan kualitasnya turun, saya menyarankan kita membuat Master Financial Model Premium sebagai proyek penuh. Hasilnya akan benar-benar siap digunakan untuk:
+Presentasi ke SD–SMP–SMA Sabilillah Malang 
+Proposal ke sekolah premium lain 
+Simulasi investasi 
+Negosiasi kerja sama 
+Acuan operasional MFA 
+Dengan pendekatan ini, kualitas workbook akan jauh lebih baik daripada versi sederhana dan dapat menjadi aset bisnis jangka panjang yang bisa dipakai berulang untuk seluruh jaringan sekolah target Anda.
+Jawaban singkatnya: lebih mampu, tetapi tetap tidak selalu bisa selesai dalam satu kali respons.
+Perbedaan utamanya bukan hanya karena berlangganan, tetapi juga karena batas ukuran output, waktu eksekusi, dan kompleksitas pekerjaan.
+Berikut gambaran realistisnya:
+Fitur
+ChatGPT Free
+ChatGPT Plus/Pro
+Kapasitas analisis
+Standar
+Jauh lebih besar
+Memproses file Excel besar
+Terbatas
+Lebih baik
+Membuat workbook kompleks
+Terbatas
+Lebih mampu
+Menangani ribuan rumus
+Sulit
+Lebih baik, tetapi tetap ada batas
+Membuat dashboard profesional
+Ya, bertahap
+Ya, lebih cepat
+Membuat file 10–20 MB sekali jalan
+Umumnya tidak
+Masih belum tentu
+
+Untuk proyek seperti yang Anda inginkan:
+20–25 worksheet 
+300–500 item perlengkapan 
+5.000–10.000 rumus Excel 
+Dashboard interaktif 
+Pivot Table 
+Grafik 
+Dropdown 
+Conditional Formatting 
+Data Validation 
+VBA (opsional) 
+Template Purchase Order 
+Inventory 
+Financial Model 
+hasil akhirnya setara dengan pekerjaan konsultan selama beberapa hari. Bahkan dengan paket berlangganan tertinggi, model tetap memiliki batas respons sehingga biasanya pekerjaan sebesar itu diselesaikan dalam beberapa tahap.
+Cara kerja yang paling efektif
+Jika saya mengerjakannya sebagai satu proyek, saya akan membaginya menjadi beberapa modul yang nantinya digabung menjadi satu workbook final, misalnya:
+Modul 1: Master Database Peralatan 
+Modul 2: Dashboard 
+Modul 3: Kalkulator SOP 
+Modul 4: Supplier Database 
+Modul 5: Financial Model 
+Modul 6: Inventory 
+Modul 7: Purchase Order 
+Modul 8: Reporting 
+Pada akhirnya Anda tetap menerima satu file Excel final, tetapi proses pembuatannya dilakukan bertahap agar hasilnya stabil dan berkualitas.
+Untuk kebutuhan MFA
+Menurut saya, yang paling bernilai adalah membuat Master Workbook Mozaiq Future Academy v1.0, bukan hanya untuk panahan. Isinya mencakup seluruh 12 program ekstrakurikuler:
+Archery 
+Badminton 
+Pickleball 
+Floorball 
+Table Tennis 
+Padel 
+Swimming 
+Drone Academy 
+Airsoft Leadership 
+AI Business Academy 
+Affiliate Business Academy 
+Magic School Academy 
+Dalam satu workbook akan tersedia:
+Dashboard profesional 
+Pricelist alat 
+Database supplier 
+SOP kebutuhan alat berdasarkan jumlah siswa 
+Kalkulator otomatis (5–100 peserta atau lebih) 
+Estimasi investasi 
+BEP 
+ROI 
+Cash Flow 
+Inventory 
+Purchase Order 
+Jadwal maintenance 
+Depresiasi aset 
+Analisis keuntungan per sekolah 
+Workbook seperti ini bisa dipakai berulang untuk Sabilillah, Al Azhar, Petra, Gloria, Ciputra, Cita Hati, dan sekolah lain hanya dengan mengganti nama sekolah dan jumlah peserta.
+Jadi, berlangganan Plus atau Pro memang akan membuat prosesnya lebih nyaman dan efisien, tetapi untuk proyek sebesar ini tetap lebih realistis dikerjakan sebagai satu proyek yang disusun bertahap hingga menghasilkan satu Master Workbook yang lengkap dan siap dipakai.
+
