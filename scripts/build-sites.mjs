@@ -22,7 +22,7 @@ const files = [
   ["ai/training-planner/data/training-templates.js", "ai/training-planner/data/training-templates.js", "text/javascript; charset=utf-8"],
   ["ai/training-planner/data/handoyo-plan.js", "ai/training-planner/data/handoyo-plan.js", "text/javascript; charset=utf-8"],
   ["ai/training-planner/data/default-participants.js", "ai/training-planner/data/default-participants.js", "text/javascript; charset=utf-8"],
-  ["ai/training-planner/og.png", "ai/training-planner/og.png", "image/png"],
+  ["ai/training-planner/og.jpg", "ai/training-planner/og.jpg", "image/jpeg"],
   ["assets/images/favicon-32x32.png", "assets/images/favicon-32x32.png", "image/png"],
   ["assets/images/favicon-16x16.png", "assets/images/favicon-16x16.png", "image/png"],
   ["assets/images/apple-touch-icon.png", "assets/images/apple-touch-icon.png", "image/png"],
