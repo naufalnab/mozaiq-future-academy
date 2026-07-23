@@ -4,7 +4,6 @@ import { fileURLToPath } from "node:url";
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const distRoot = path.join(projectRoot, "dist");
-const staticRoot = path.join(distRoot, "static");
 const serverRoot = path.join(distRoot, "server");
 const hostingConfig = JSON.parse(
   await fs.readFile(path.join(projectRoot, ".openai", "hosting.json"), "utf8")
@@ -31,7 +30,6 @@ const files = [
 ];
 
 await fs.rm(distRoot, { recursive: true, force: true });
-await fs.mkdir(staticRoot, { recursive: true });
 await fs.mkdir(serverRoot, { recursive: true });
 
 const assets = {};
@@ -43,9 +41,6 @@ for (const [route, source, type] of files) {
     type,
     html: type.startsWith("text/html")
   };
-  const destinationPath = path.join(staticRoot, source);
-  await fs.mkdir(path.dirname(destinationPath), { recursive: true });
-  await fs.writeFile(destinationPath, bytes);
 }
 
 const workerSource = `const assets = ${JSON.stringify(assets)};
