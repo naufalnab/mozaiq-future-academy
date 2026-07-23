@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#090818" />
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+    <meta name="referrer" content="no-referrer" />
+    <title>AI Training Planner | Mozaiq Future Academy</title>
+    <meta
+      name="description"
+      content="Workspace internal untuk mengelola rencana pelatihan, praktik, dan perkembangan peserta."
+    />
+    <link rel="canonical" href="https://mozaiqfutureacademy.com/ai/training-planner/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:title" content="AI Training Planner | Mozaiq Future Academy" />
+    <meta
+      property="og:description"
+      content="Rencana pelatihan, praktik, dan perkembangan peserta dalam satu workspace."
+    />
+    <meta property="og:image" content="https://mozaiqfutureacademy.com/ai/training-planner/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AI Training Planner | Mozaiq Future Academy" />
+    <meta
+      name="twitter:description"
+      content="Rencana pelatihan, praktik, dan perkembangan peserta dalam satu workspace."
+    />
+    <meta name="twitter:image" content="https://mozaiqfutureacademy.com/ai/training-planner/og.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/apple-touch-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+
+    <div class="app-shell">
+      <aside class="sidebar" id="app-sidebar" aria-label="Navigasi AI Training Planner">
+        <div class="sidebar__header">
+          <a class="brand" href="../../" aria-label="Kembali ke Mozaiq Future Academy">
+            <img
+              src="../../assets/images/brand/logo-128.webp"
+              width="48"
+              height="48"
+              alt=""
+              decoding="async"
+            />
+            <span>
+              <strong>MOZAIQ</strong>
+              <small>Future Academy</small>
+            </span>
+          </a>
+          <button class="icon-button sidebar__close" type="button" data-action="close-sidebar" aria-label="Tutup menu">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+
+        <div class="planner-title">
+          <span class="planner-title__eyebrow">INSTRUCTOR WORKSPACE</span>
+          <strong>AI Training Planner</strong>
+          <p>Rencana yang rapi, dapat digunakan kembali.</p>
+        </div>
+
+        <div class="participant-control">
+          <label for="participant-selector">Peserta aktif</label>
+          <select id="participant-selector" data-control="participant-selector"></select>
+          <div class="participant-control__actions">
+            <button class="button button--primary button--small" type="button" data-action="add-participant">
+              <span aria-hidden="true">＋</span> Peserta
+            </button>
+            <button class="button button--quiet button--small" type="button" data-action="duplicate-participant">
+              <span aria-hidden="true">⧉</span> Duplikasi
+            </button>
+          </div>
+        </div>
+
+        <nav class="sidebar-nav" aria-label="Bagian planner">
+          <button type="button" data-view="overview" aria-current="page">
+            <span aria-hidden="true">◫</span><span>Overview</span>
+          </button>
+          <button type="button" data-view="profile">
+            <span aria-hidden="true">○</span><span>Participant Profile</span>
+          </button>
+          <button type="button" data-view="needs">
+            <span aria-hidden="true">◎</span><span>Needs Assessment</span>
+          </button>
+          <button type="button" data-view="sessions">
+            <span aria-hidden="true">▤</span><span>Session Plan</span>
+          </button>
+          <button type="button" data-view="roadmap">
+            <span aria-hidden="true">⌁</span><span>Training Roadmap</span>
+          </button>
+          <button type="button" data-view="prompts">
+            <span aria-hidden="true">✦</span><span>Prompt Templates</span>
+          </button>
+          <button type="button" data-view="practice">
+            <span aria-hidden="true">◇</span><span>Practice Results</span>
+          </button>
+          <button type="button" data-view="homework">
+            <span aria-hidden="true">✓</span><span>Homework</span>
+          </button>
+          <button type="button" data-view="notes">
+            <span aria-hidden="true">⌑</span><span>Instructor Notes</span>
+          </button>
+          <button type="button" data-view="preparation">
+            <span aria-hidden="true">☑</span><span>Preparation Checklist</span>
+          </button>
+          <button type="button" data-view="settings">
+            <span aria-hidden="true">⚙</span><span>Settings</span>
+          </button>
+        </nav>
+
+        <div class="autosave-status" role="status" aria-live="polite">
+          <span class="autosave-status__dot" aria-hidden="true"></span>
+          <span id="autosave-status">Semua perubahan telah tersimpan di perangkat ini.</span>
+        </div>
+      </aside>
+
+      <div class="sidebar-backdrop" data-action="close-sidebar" aria-hidden="true"></div>
+
+      <div class="workspace">
+        <header class="topbar">
+          <div class="topbar__primary">
+            <button
+              class="icon-button topbar__menu"
+              type="button"
+              data-action="open-sidebar"
+              aria-label="Buka menu"
+              aria-expanded="false"
+              aria-controls="app-sidebar"
+            >
+              <span aria-hidden="true">☰</span>
+            </button>
+            <div>
+              <nav class="breadcrumb" aria-label="Breadcrumb">
+                <span>AI Training Planner</span>
+                <span aria-hidden="true">/</span>
+                <span id="breadcrumb-participant">Peserta</span>
+                <span aria-hidden="true">/</span>
+                <span id="breadcrumb-session">Session 1</span>
+              </nav>
+              <div class="topbar__identity">
+                <h2 id="topbar-participant">Peserta aktif</h2>
+                <span class="status-badge" id="topbar-status">Active</span>
+              </div>
+              <p id="topbar-program">AI Training Program</p>
+            </div>
+          </div>
+
+          <dl class="topbar__facts">
+            <div>
+              <dt>Pertemuan berikutnya</dt>
+              <dd id="topbar-next-date">Kamis, 19.00–20.30</dd>
+            </div>
+            <div>
+              <dt>Sesi aktif</dt>
+              <dd id="topbar-session">1 dari 4</dd>
+            </div>
+            <div>
+              <dt>Progress</dt>
+              <dd id="topbar-progress">0%</dd>
+            </div>
+          </dl>
+
+          <div class="topbar__actions" aria-label="Aksi planner">
+            <button class="button button--quiet" type="button" data-action="edit-profile">Edit</button>
+            <button class="button button--quiet" type="button" data-action="print">Print</button>
+            <button class="button button--quiet" type="button" data-action="export-current">Export</button>
+            <button class="icon-button" type="button" data-action="fullscreen" aria-label="Buka layar penuh">
+              <span aria-hidden="true">⛶</span>
+            </button>
+          </div>
+        </header>
+
+        <div class="utility-bar">
+          <label class="global-search">
+            <span class="sr-only">Cari di seluruh planner</span>
+            <span aria-hidden="true">⌕</span>
+            <input
+              id="global-search"
+              type="search"
+              placeholder="Cari peserta, sesi, prompt, tugas, catatan..."
+              autocomplete="off"
+            />
+            <kbd>⌘ K</kbd>
+          </label>
+          <button class="button button--primary session-start" type="button" data-action="start-session">
+            <span aria-hidden="true">▶</span>
+            <span id="session-start-label">Mulai Sesi</span>
+          </button>
+        </div>
+
+        <div class="privacy-banner" role="note">
+          <span aria-hidden="true">⌾</span>
+          <p>
+            Data disimpan di browser perangkat ini.
+            <strong>Jangan simpan password, API key, data pelanggan, atau informasi rahasia pada halaman ini.</strong>
+          </p>
+        </div>
+
+        <main id="main-content" class="main-content" tabindex="-1">
+          <div class="view-loading" aria-live="polite">
+            <span aria-hidden="true"></span>
+            <p>Menyiapkan workspace pelatihan…</p>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <div class="modal-layer" id="modal-layer" hidden>
+      <div class="modal-backdrop" data-action="close-modal"></div>
+      <section
+        class="modal"
+        id="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+        tabindex="-1"
+      >
+        <header class="modal__header">
+          <div>
+            <span class="section-kicker" id="modal-kicker">AI TRAINING PLANNER</span>
+            <h2 id="modal-title">Dialog</h2>
+          </div>
+          <button class="icon-button" type="button" data-action="close-modal" aria-label="Tutup dialog">
+            <span aria-hidden="true">×</span>
+          </button>
+        </header>
+        <div class="modal__body" id="modal-body"></div>
+        <footer class="modal__footer" id="modal-footer"></footer>
+      </section>
+    </div>
+
+    <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+    <input id="import-file" type="file" accept="application/json,.json" hidden />
+
+    <script src="data/training-templates.js"></script>
+    <script src="data/handoyo-plan.js"></script>
+    <script src="data/default-participants.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
