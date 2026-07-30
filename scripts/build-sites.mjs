@@ -14,6 +14,11 @@ if (!hostingConfig.project_id) {
 }
 
 const files = [
+  ["bina-bangsa/", "bina-bangsa/index.html", "text/html; charset=utf-8"],
+  ["bina-bangsa/index.html", "bina-bangsa/index.html", "text/html; charset=utf-8"],
+  ["bina-bangsa/styles.css", "bina-bangsa/styles.css", "text/css; charset=utf-8"],
+  ["bina-bangsa/app.js", "bina-bangsa/app.js", "text/javascript; charset=utf-8"],
+  ["bina-bangsa/og.png", "bina-bangsa/og.png", "image/png"],
   ["ai/training-planner/", "ai/training-planner/index.html", "text/html; charset=utf-8"],
   ["ai/training-planner/index.html", "ai/training-planner/index.html", "text/html; charset=utf-8"],
   ["ai/training-planner/styles.css", "ai/training-planner/styles.css", "text/css; charset=utf-8"],
@@ -26,6 +31,8 @@ const files = [
   ["assets/images/favicon-16x16.png", "assets/images/favicon-16x16.png", "image/png"],
   ["assets/images/apple-touch-icon.png", "assets/images/apple-touch-icon.png", "image/png"],
   ["assets/images/brand/logo-128.webp", "assets/images/brand/logo-128.webp", "image/webp"],
+  ["assets/images/programs/archery-001.webp", "assets/images/programs/archery-001.webp", "image/webp"],
+  ["assets/images/gallery/archer-alat-001.webp", "assets/images/gallery/archer-alat-001.webp", "image/webp"],
   ["robots.txt", "robots.txt", "text/plain; charset=utf-8"]
 ];
 
