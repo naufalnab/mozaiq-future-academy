@@ -1,6 +1,6 @@
 # Mozaiq Future Academy Website
 
-Static, bilingual (Indonesian default + English) company profile & portfolio website for Mozaiq Future Academy, a premium extracurricular partner for schools, offering 12 programs across Sports, Technology, Tactical, Future Business, and Creative divisions.
+Static, bilingual (Indonesian default + English) company profile & portfolio website for Mozaiq Future Academy, a premium extracurricular partner for schools, offering 26 programs across Sports, Technology, Tactical, Future Business, and Creative divisions.
 
 ## Project Structure
 
@@ -24,7 +24,7 @@ Static, bilingual (Indonesian default + English) company profile & portfolio web
 3. **Kenapa Mozaiq** — value proposition (system, not just a vendor)
 4. **Cara Kerja** — 4-step partnership process
 5. **Divisi** — 5 program divisions
-6. **Program** — 12 programs, reordered by sales appeal; first 6 featured on mobile with "Lihat 6 Program Lainnya"
+6. **Program** — 26 programs, ordered by sales appeal; first 6 featured on mobile with "Lihat 20 Program Lainnya"
 7. **Kemitraan** — Basic / Premium / Elite (Elite framed as a full school academy system)
 8. **Keamanan & SOP** — child safety, supervision, standard operating procedure
 9. **FAQ** — 8 common questions schools ask
