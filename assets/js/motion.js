@@ -69,7 +69,7 @@
             [".footer-social", "a"]
         ];
 
-        var items = $$(".section-head, .section-cta, .fit-banner, .safety-banner, .contact-intro, .contact-card");
+        var items = $$(".section-head, .section-cta, .fit-banner, .comparison-cta-wrap, .safety-banner, .contact-intro, .contact-card");
         groups.forEach(function (group) {
             var container = document.querySelector(group[0]);
             if (container) items = items.concat($$(group[1], container));

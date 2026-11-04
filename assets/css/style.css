@@ -1028,6 +1028,29 @@ h2 {
     background: var(--purple);
 }
 
+/* Comparison Section CTA (Phase 2.8) */
+.comparison-cta-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 36px;
+    gap: 12px;
+}
+
+.comparison-cta-wrap .button {
+    font-size: 15.5px;
+    padding: 14px 28px;
+}
+
+.comparison-cta-microcopy {
+    margin: 0;
+    font-size: 13.5px;
+    color: var(--muted);
+    font-weight: 500;
+}
+
 /* SEKSI 3: 5 Divisions & Program Catalog */
 .division-grid {
     display: grid;
@@ -1565,6 +1588,21 @@ h2 {
     color: var(--muted);
 }
 
+.report-illustrative-tag {
+    display: inline-flex;
+    align-items: center;
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #64748b;
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    padding: 2px 7px;
+    margin-top: 6px;
+}
+
 .report-wa-badge {
     display: inline-flex;
     align-items: center;
@@ -1706,6 +1744,13 @@ h2 {
 }
 
 /* Expandable Archive Gallery */
+.asset-archive-note {
+    margin: 18px 0 0;
+    font-size: 13.5px;
+    color: var(--muted);
+    font-weight: 500;
+}
+
 .asset-gallery {
     display: none;
     grid-template-columns: repeat(4, minmax(0, 1fr));
