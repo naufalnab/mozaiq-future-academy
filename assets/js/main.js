@@ -118,18 +118,22 @@ var currentLang = document.documentElement.getAttribute("data-default-lang") || 
     });
 })();
 
-// Program category filter + mobile "show more" expansion.
+// Program category filter + desktop/mobile "show more" expansion.
 (function () {
     var grid = document.querySelector(".program-grid");
     var chips = document.querySelectorAll(".filter-chip");
+    var divisionCards = document.querySelectorAll(".division-card[data-division-filter]");
     var cards = document.querySelectorAll(".program-card");
     var moreBtn = document.getElementById("program-more-btn");
     if (!grid || !chips.length || !cards.length) return;
 
     var expanded = false;
+    var activeFilter = "all";
 
     function updateMoreLabel() {
         if (!moreBtn) return;
+        moreBtn.setAttribute("aria-expanded", expanded ? "true" : "false");
+        moreBtn.classList.toggle("is-expanded", expanded);
         var labelSpan = moreBtn.querySelector("span");
         var en = currentLang === "en";
         var key = expanded
@@ -138,36 +142,72 @@ var currentLang = document.documentElement.getAttribute("data-default-lang") || 
         if (labelSpan) labelSpan.textContent = moreBtn.getAttribute(key);
     }
 
+    function matchesCategory(card, filter) {
+        if (filter === "all") return true;
+        var primary = card.getAttribute("data-category");
+        if (primary === filter) return true;
+        var extra = card.getAttribute("data-categories");
+        if (!extra) return false;
+        return extra.split(/\s+/).indexOf(filter) !== -1;
+    }
+
+    function applyFilter(filter, scrollToFilter) {
+        activeFilter = filter;
+
+        chips.forEach(function (c) {
+            c.classList.toggle("is-active", c.getAttribute("data-filter") === filter);
+        });
+
+        divisionCards.forEach(function (d) {
+            d.classList.toggle("is-active", d.getAttribute("data-division-filter") === filter);
+        });
+
+        cards.forEach(function (card) {
+            var match = matchesCategory(card, filter);
+            card.classList.toggle("is-hidden", !match);
+        });
+
+        if (filter === "all") {
+            expanded = false;
+            grid.classList.remove("show-all");
+            if (moreBtn) {
+                moreBtn.style.display = "";
+                updateMoreLabel();
+            }
+        } else {
+            grid.classList.add("show-all");
+            if (moreBtn) moreBtn.style.display = "none";
+        }
+
+        if (scrollToFilter) {
+            var filterBar = document.querySelector(".program-filter-bar");
+            if (filterBar) {
+                filterBar.scrollIntoView({ behavior: "smooth", block: "nearest" });
+            }
+        }
+    }
+
     chips.forEach(function (chip) {
         chip.addEventListener("click", function () {
-            var filter = chip.getAttribute("data-filter");
+            applyFilter(chip.getAttribute("data-filter"), false);
+        });
+    });
 
-            chips.forEach(function (c) { c.classList.remove("is-active"); });
-            chip.classList.add("is-active");
-
-            cards.forEach(function (card) {
-                var match = filter === "all" || card.getAttribute("data-category") === filter;
-                card.classList.toggle("is-hidden", !match);
-            });
-
-            if (filter === "all") {
-                // Restore the featured-only view on mobile.
-                expanded = false;
-                grid.classList.remove("show-all");
-                if (moreBtn) {
-                    moreBtn.style.display = "";
-                    updateMoreLabel();
-                }
-            } else {
-                // A specific category reveals all of its matching cards.
-                grid.classList.add("show-all");
-                if (moreBtn) moreBtn.style.display = "none";
+    divisionCards.forEach(function (divCard) {
+        divCard.addEventListener("click", function () {
+            var targetFilter = divCard.getAttribute("data-division-filter");
+            var nextFilter = activeFilter === targetFilter ? "all" : targetFilter;
+            applyFilter(nextFilter, true);
+        });
+        divCard.addEventListener("keydown", function (event) {
+            if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                divCard.click();
             }
         });
     });
 
     if (moreBtn) {
-        // The span carries data-en, so mark it dynamic to avoid double management.
         var labelSpan = moreBtn.querySelector("span");
         if (labelSpan) labelSpan.setAttribute("data-dynamic-label", "true");
 
@@ -191,6 +231,8 @@ var currentLang = document.documentElement.getAttribute("data-default-lang") || 
     var expanded = false;
 
     function updateMoreLabel() {
+        moreBtn.setAttribute("aria-expanded", expanded ? "true" : "false");
+        moreBtn.classList.toggle("is-expanded", expanded);
         var labelSpan = moreBtn.querySelector("span");
         var en = currentLang === "en";
         var key = expanded

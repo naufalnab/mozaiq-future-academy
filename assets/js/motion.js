@@ -56,14 +56,12 @@
         if (!("IntersectionObserver" in window) || reduceMotion) return;
 
         var groups = [
-            [".problem-grid", ".problem-card"],
-            [".outcome-grid", ".outcome-card"],
-            [".benefit-grid", ".benefit-card"],
-            [".steps-grid", ".step-card"],
-            [".safety-grid", ".safety-item"],
+            [".comparison-grid", ".comparison-col"],
             [".division-grid", ".division-card"],
             [".program-grid", ".program-card"],
-            [".asset-gallery", ".asset-card"],
+            [".bento-showcase", ".bento-card"],
+            [".steps-timeline", ".step-card"],
+            [".safety-grid", ".safety-item"],
             [".package-grid", ".package-card"],
             [".faq-list", ".faq-item"],
             [".social-grid", ".social-link"],
@@ -71,7 +69,7 @@
             [".footer-social", "a"]
         ];
 
-        var items = $$(".section-head, .section-cta, .fit-panel, .contact-intro, .contact-card");
+        var items = $$(".section-head, .section-cta, .fit-banner, .safety-banner, .contact-intro, .contact-card");
         groups.forEach(function (group) {
             var container = document.querySelector(group[0]);
             if (container) items = items.concat($$(group[1], container));
