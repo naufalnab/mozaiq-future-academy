@@ -1,0 +1,564 @@
+{
+  "phase": "after",
+  "baseURL": "http://127.0.0.1:8000/",
+  "results": [
+    {
+      "name": "26 programs preserved",
+      "pass": true
+    },
+    {
+      "name": "Four challenges and four solutions",
+      "pass": true
+    },
+    {
+      "name": "All local anchors exist",
+      "pass": true
+    },
+    {
+      "name": "One H1 and no duplicate IDs",
+      "pass": true
+    },
+    {
+      "name": "id: title and metadata translation",
+      "pass": true
+    },
+    {
+      "name": "id: language and selected state",
+      "pass": true
+    },
+    {
+      "name": "id: 320px layout {\"width\":320,\"scrollWidth\":305,\"bad\":[]}",
+      "pass": true
+    },
+    {
+      "name": "id: 320px comparison introduction centered",
+      "pass": true
+    },
+    {
+      "name": "id: 375px layout {\"width\":375,\"scrollWidth\":360,\"bad\":[]}",
+      "pass": true
+    },
+    {
+      "name": "id: 375px comparison introduction centered",
+      "pass": true
+    },
+    {
+      "name": "id: 390px layout {\"width\":390,\"scrollWidth\":375,\"bad\":[]}",
+      "pass": true
+    },
+    {
+      "name": "id: 390px comparison introduction centered",
+      "pass": true
+    },
+    {
+      "name": "id: 428px layout {\"width\":428,\"scrollWidth\":413,\"bad\":[]}",
+      "pass": true
+    },
+    {
+      "name": "id: 428px comparison introduction centered",
+      "pass": true
+    },
+    {
+      "name": "id: 768px layout {\"width\":768,\"scrollWidth\":753,\"bad\":[]}",
+      "pass": true
+    },
+    {
+      "name": "id: 768px comparison introduction centered",
+      "pass": true
+    },
+    {
+      "name": "id: 1024px layout {\"width\":1024,\"scrollWidth\":1009,\"bad\":[]}",
+      "pass": true
+    },
+    {
+      "name": "id: 1024px comparison introduction centered",
+      "pass": true
+    },
+    {
+      "name": "id: 1280px layout {\"width\":1280,\"scrollWidth\":1265,\"bad\":[]}",
+      "pass": true
+    },
+    {
+      "name": "id: 1280px comparison introduction centered",
+      "pass": true
+    },
+    {
+      "name": "id: 1440px layout {\"width\":1440,\"scrollWidth\":1425,\"bad\":[]}",
+      "pass": true
+    },
+    {
+      "name": "id: 1440px comparison introduction centered",
+      "pass": true
+    },
+    {
+      "name": "id: 1920px layout {\"width\":1920,\"scrollWidth\":1905,\"bad\":[]}",
+      "pass": true
+    },
+    {
+      "name": "id: 1920px comparison introduction centered",
+      "pass": true
+    },
+    {
+      "name": "id: menu opens and focuses first link",
+      "pass": true
+    },
+    {
+      "name": "id: menu Tab cycles to toggle",
+      "pass": true
+    },
+    {
+      "name": "id: Escape closes and restores focus",
+      "pass": true
+    },
+    {
+      "name": "id: filter sports",
+      "pass": true
+    },
+    {
+      "name": "id: filter technology",
+      "pass": true
+    },
+    {
+      "name": "id: filter tactical",
+      "pass": true
+    },
+    {
+      "name": "id: filter business",
+      "pass": true
+    },
+    {
+      "name": "id: filter creative",
+      "pass": true
+    },
+    {
+      "name": "id: expand all programs",
+      "pass": true
+    },
+    {
+      "name": "id: gallery expands",
+      "pass": true
+    },
+    {
+      "name": "id: keyboard FAQ expands",
+      "pass": true
+    },
+    {
+      "name": "id: journey anchor why",
+      "pass": true
+    },
+    {
+      "name": "id: journey anchor programs",
+      "pass": true
+    },
+    {
+      "name": "id: journey anchor facilities",
+      "pass": true
+    },
+    {
+      "name": "id: journey anchor how",
+      "pass": true
+    },
+    {
+      "name": "id: journey anchor partnership",
+      "pass": true
+    },
+    {
+      "name": "id: journey anchor contact",
+      "pass": true
+    },
+    {
+      "name": "id: WhatsApp links use configured number and nonempty message",
+      "pass": true
+    },
+    {
+      "name": "en: title and metadata translation",
+      "pass": true
+    },
+    {
+      "name": "en: language and selected state",
+      "pass": true
+    },
+    {
+      "name": "en: 320px layout {\"width\":320,\"scrollWidth\":305,\"bad\":[]}",
+      "pass": true
+    },
+    {
+      "name": "en: 320px comparison introduction centered",
+      "pass": true
+    },
+    {
+      "name": "en: 375px layout {\"width\":375,\"scrollWidth\":360,\"bad\":[]}",
+      "pass": true
+    },
+    {
+      "name": "en: 375px comparison introduction centered",
+      "pass": true
+    },
+    {
+      "name": "en: 390px layout {\"width\":390,\"scrollWidth\":375,\"bad\":[]}",
+      "pass": true
+    },
+    {
+      "name": "en: 390px comparison introduction centered",
+      "pass": true
+    },
+    {
+      "name": "en: 428px layout {\"width\":428,\"scrollWidth\":413,\"bad\":[]}",
+      "pass": true
+    },
+    {
+      "name": "en: 428px comparison introduction centered",
+      "pass": true
+    },
+    {
+      "name": "en: 768px layout {\"width\":768,\"scrollWidth\":753,\"bad\":[]}",
+      "pass": true
+    },
+    {
+      "name": "en: 768px comparison introduction centered",
+      "pass": true
+    },
+    {
+      "name": "en: 1024px layout {\"width\":1024,\"scrollWidth\":1009,\"bad\":[]}",
+      "pass": true
+    },
+    {
+      "name": "en: 1024px comparison introduction centered",
+      "pass": true
+    },
+    {
+      "name": "en: 1280px layout {\"width\":1280,\"scrollWidth\":1265,\"bad\":[]}",
+      "pass": true
+    },
+    {
+      "name": "en: 1280px comparison introduction centered",
+      "pass": true
+    },
+    {
+      "name": "en: 1440px layout {\"width\":1440,\"scrollWidth\":1425,\"bad\":[]}",
+      "pass": true
+    },
+    {
+      "name": "en: 1440px comparison introduction centered",
+      "pass": true
+    },
+    {
+      "name": "en: 1920px layout {\"width\":1920,\"scrollWidth\":1905,\"bad\":[]}",
+      "pass": true
+    },
+    {
+      "name": "en: 1920px comparison introduction centered",
+      "pass": true
+    },
+    {
+      "name": "en: menu opens and focuses first link",
+      "pass": true
+    },
+    {
+      "name": "en: menu Tab cycles to toggle",
+      "pass": true
+    },
+    {
+      "name": "en: Escape closes and restores focus",
+      "pass": true
+    },
+    {
+      "name": "en: filter sports",
+      "pass": true
+    },
+    {
+      "name": "en: filter technology",
+      "pass": true
+    },
+    {
+      "name": "en: filter tactical",
+      "pass": true
+    },
+    {
+      "name": "en: filter business",
+      "pass": true
+    },
+    {
+      "name": "en: filter creative",
+      "pass": true
+    },
+    {
+      "name": "en: expand all programs",
+      "pass": true
+    },
+    {
+      "name": "en: gallery expands",
+      "pass": true
+    },
+    {
+      "name": "en: keyboard FAQ expands",
+      "pass": true
+    },
+    {
+      "name": "en: journey anchor why",
+      "pass": true
+    },
+    {
+      "name": "en: journey anchor programs",
+      "pass": true
+    },
+    {
+      "name": "en: journey anchor facilities",
+      "pass": true
+    },
+    {
+      "name": "en: journey anchor how",
+      "pass": true
+    },
+    {
+      "name": "en: journey anchor partnership",
+      "pass": true
+    },
+    {
+      "name": "en: journey anchor contact",
+      "pass": true
+    },
+    {
+      "name": "en: WhatsApp links use configured number and nonempty message",
+      "pass": true
+    },
+    {
+      "name": "All images have alternative text and dimensions",
+      "pass": true
+    },
+    {
+      "name": "No broken loaded images",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/brand/logo-128.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/12-eskul.png",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/hero/12-eskul-720.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/programs/badminton-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/programs/renang-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/programs/archery-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/programs/pingpong-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/programs/AI-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset ai/",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/programs/drone-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/programs/pickle-ball-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/programs/padel-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/programs/floor-ball-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/programs/airsoft-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/programs/affiliate-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/programs/sulap-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/programs/roundnet-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/programs/flag-football-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/programs/handball-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/programs/petanque-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/programs/ultimate-frisbee-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/programs/kin-ball-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/programs/roller-skating-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/programs/korfball-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/programs/woodball-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/programs/push-bike-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/programs/rc-car-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/programs/fullball-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/programs/dragon-shot-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/programs/dodgeball-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/gallery/seragam-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/gallery/drone-fasilitas-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/gallery/badminton-alat-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/gallery/archer-alat-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/gallery/seragam-002.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/gallery/digital-business-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/gallery/renang-alat-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/gallery/renang-fasilitas-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/gallery/archer-fasilitas-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/gallery/pingpong-fasilitas-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/gallery/padel-alat-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/gallery/padel-fasilitas-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/gallery/pickle-ball-alat-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/gallery/pickleball-fasilitas-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/gallery/floorball-alat-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/gallery/drone-alat-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/gallery/ai-alat-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/gallery/AI-fasilitas-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/gallery/airsoft-alat-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/images/gallery/sulap-alat-001.webp",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/js/icons.js",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/js/main.js",
+      "pass": true
+    },
+    {
+      "name": "Asset assets/js/motion.js",
+      "pass": true
+    },
+    {
+      "name": "Language preference survives reload",
+      "pass": true
+    },
+    {
+      "name": "No runtime exceptions",
+      "pass": true
+    },
+    {
+      "name": "No HTTP asset errors",
+      "pass": true
+    },
+    {
+      "name": "Motion mode leaves scrolled sections visible",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "failedRequests": []
+}

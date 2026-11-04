@@ -807,6 +807,22 @@ h2 {
     line-height: 1.65;
 }
 
+/* Keep the comparison introduction on one shared center axis. */
+#why .section-kicker {
+    margin: 0 0 14px;
+}
+
+#why-title {
+    margin-top: 0;
+    text-wrap: balance;
+}
+
+#why .section-head-center .section-copy {
+    max-width: 68ch;
+    margin: 16px auto 0;
+    text-wrap: pretty;
+}
+
 .card {
     border: 1px solid var(--line);
     border-radius: var(--radius);

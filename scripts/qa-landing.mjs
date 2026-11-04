@@ -6,7 +6,7 @@ import assert from 'node:assert/strict';
 
 const phase = process.argv[2] || 'after';
 const baseURL = process.env.MOZAIQ_QA_URL || 'http://127.0.0.1:8000/';
-const out = path.resolve('docs/qa');
+const out = path.resolve(process.env.MOZAIQ_QA_OUT || 'docs/qa');
 await mkdir(out, { recursive: true });
 const profile = await mkdtemp(path.join(os.tmpdir(), 'mozaiq-qa-'));
 const chrome = spawn('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', [
@@ -82,6 +82,11 @@ try {
           return { width: innerWidth, scrollWidth: document.documentElement.scrollWidth, bad };
         })()`);
         check(`${lang}: ${width}px layout ${JSON.stringify(layout)}`, layout.scrollWidth <= width && layout.bad.length === 0);
+        check(`${lang}: ${width}px comparison introduction centered`, await evaluate(`(() => {
+          const title = document.querySelector('#why-title').getBoundingClientRect();
+          const copy = document.querySelector('#why .section-copy').getBoundingClientRect();
+          return Math.abs((title.left + title.width / 2) - (copy.left + copy.width / 2)) < 1;
+        })()`));
       }
       await send('Emulation.setDeviceMetricsOverride', { width: 390, height: 844, deviceScaleFactor: 1, mobile: false });
       await evaluate(`document.querySelector('.nav-toggle').click()`);
@@ -148,6 +153,7 @@ try {
     for (const lang of ['id','en']) {
       await evaluate(`document.querySelector('[data-lang="${lang}"]').click()`);
       for (const width of [390,1440]) {
+        await screenshot(`comparison-${lang}-${width}`, width, 900);
         await send('Emulation.setDeviceMetricsOverride', {width,height:900,deviceScaleFactor:1,mobile:false});
         await evaluate(`window.scrollTo(0,0)`); await sleep(100);
         const shot=await send('Page.captureScreenshot',{format:'png'});
