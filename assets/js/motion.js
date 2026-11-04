@@ -41,7 +41,6 @@
         element.dataset.motionReveal = "true";
         element.style.opacity = "0";
         element.style.transform = "translateY(18px)";
-        element.style.filter = "blur(6px)";
     }
 
     function reveal(element) {
@@ -49,7 +48,6 @@
         element.dataset.motionShown = "true";
         element.style.opacity = "1";
         element.style.transform = "translateY(0)";
-        element.style.filter = "blur(0)";
     }
 
     function installRevealAnimations() {

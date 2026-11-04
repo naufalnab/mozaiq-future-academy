@@ -6,3 +6,6 @@ node_modules/
 critics.txt
 docs/research.md
 docs/feedback-*.txt
+
+# Reviewable static landing build (GitHub Pages serves the source root)
+.build/

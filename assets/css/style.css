@@ -61,6 +61,27 @@ a {
     text-decoration: none;
 }
 
+:focus-visible {
+    outline: 3px solid var(--purple-soft);
+    outline-offset: 4px;
+}
+
+.skip-link {
+    position: fixed;
+    top: 12px;
+    left: 20px;
+    z-index: 100;
+    padding: 12px 20px;
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+    color: var(--ink);
+    transform: translateY(-200%);
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+}
+
 button {
     font: inherit;
 }
@@ -289,6 +310,8 @@ button {
     padding: 6px 20px 18px;
     background: rgba(15, 23, 42, 0.98);
     border-top: 1px solid rgba(255, 255, 255, 0.08);
+    max-height: calc(100dvh - 82px);
+    overflow-y: auto;
 }
 
 .mobile-menu a {
@@ -832,7 +855,7 @@ h2 {
 .comparison-col {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     border-radius: calc(var(--radius) + 2px);
     padding: 36px 32px;
 }
@@ -907,6 +930,8 @@ h2 {
     margin: 0;
     padding: 0;
     list-style: none;
+    flex: 1;
+    grid-auto-rows: 1fr;
 }
 
 .comparison-list li {
@@ -969,6 +994,57 @@ h2 {
 
 .comparison-col-highlight .comparison-list span {
     color: rgba(226, 232, 240, 0.84);
+}
+
+.comparison-list .comparison-mark {
+    display: grid;
+    place-items: center;
+    color: var(--rose-ink);
+}
+
+.comparison-list .comparison-mark-positive {
+    color: #a7f3d0;
+}
+
+.comparison-mark > span {
+    color: inherit !important;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+@media (min-width: 1025px) {
+    .comparison-header {
+        min-height: 156px;
+    }
+}
+
+.pricing-clarity {
+    margin-top: 28px;
+    padding: 24px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--soft);
+}
+
+.pricing-clarity h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+}
+
+.pricing-clarity p {
+    margin: 0 0 12px;
+    color: var(--muted);
+    font-size: 15px;
+}
+
+.pricing-clarity a {
+    display: inline-block;
+    padding-block: 8px;
+    color: var(--purple);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 /* Compact Fit Checklist Banner */
@@ -1591,11 +1667,11 @@ h2 {
 .report-illustrative-tag {
     display: inline-flex;
     align-items: center;
-    font-size: 10.5px;
+    font-size: 12px;
     font-weight: 700;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #64748b;
+    color: var(--muted);
     background: #f1f5f9;
     border: 1px solid #cbd5e1;
     border-radius: 4px;
@@ -2522,7 +2598,19 @@ h2 {
     transform: scale(0.8);
 }
 
-/* Responsive Breakpoints (1024px, 860px, 680px, 400px) */
+/* Navigation switches before the bilingual desktop links crowd the brand. */
+@media (max-width: 1200px) {
+    .nav-links,
+    .nav-actions {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: inline-flex;
+    }
+}
+
+/* Content breakpoints: 1080px, 1024px, 860px, 680px, 400px. */
 @media (max-width: 1080px) {
     .division-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -2610,6 +2698,12 @@ h2 {
 }
 
 @media (max-width: 680px) {
+    .mobile-menu {
+        max-height: calc(100dvh - 70px);
+    }
+    .comparison-list {
+        grid-auto-rows: auto;
+    }
     section {
         padding: 60px 0;
     }
@@ -2701,8 +2795,7 @@ h2 {
 }
 
 .motion-enhanced [data-motion-reveal="true"] {
-    will-change: transform, opacity, filter;
-    transition: opacity 480ms ease, transform 480ms ease, filter 480ms ease;
+    transition: opacity 480ms ease, transform 480ms ease;
 }
 
 @media (prefers-reduced-motion: reduce) {

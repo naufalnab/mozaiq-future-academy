@@ -1,0 +1,136 @@
+{
+  "baseline": "1d03023",
+  "pass": true,
+  "programs": [
+    {
+      "name": "Badminton",
+      "price": "35.000 \u2013 150.000 / siswa / sesi",
+      "category": "sports"
+    },
+    {
+      "name": "Renang",
+      "price": "120.000 \u2013 300.000 / siswa / sesi",
+      "category": "sports"
+    },
+    {
+      "name": "Panahan",
+      "price": "75.000 \u2013 250.000 / siswa / sesi",
+      "category": "sports"
+    },
+    {
+      "name": "Tenis Meja",
+      "price": "55.000 \u2013 100.000 / siswa / sesi",
+      "category": "sports"
+    },
+    {
+      "name": "AI Creative Media Academy",
+      "price": "125.000 \u2013 350.000 / siswa / sesi",
+      "category": "creative"
+    },
+    {
+      "name": "Drone Academy",
+      "price": "125.000 \u2013 350.000 / siswa / sesi",
+      "category": "technology"
+    },
+    {
+      "name": "Pickleball",
+      "price": "95.000 \u2013 175.000 / siswa / sesi",
+      "category": "sports"
+    },
+    {
+      "name": "Padel",
+      "price": "175.000 \u2013 375.000 / siswa / sesi",
+      "category": "sports"
+    },
+    {
+      "name": "Floorball",
+      "price": "75.000 \u2013 195.000 / siswa / sesi",
+      "category": "sports"
+    },
+    {
+      "name": "Airsoft Leadership",
+      "price": "125.000 \u2013 350.000 / siswa / sesi",
+      "category": "tactical"
+    },
+    {
+      "name": "Affiliate Business",
+      "price": "85.000 \u2013 300.000 / siswa / sesi",
+      "category": "business"
+    },
+    {
+      "name": "Magic School Academy",
+      "price": "125.000 \u2013 250.000 / siswa / sesi",
+      "category": "creative"
+    },
+    {
+      "name": "Roundnet",
+      "price": "65.000 \u2013 160.000 / siswa / sesi",
+      "category": "sports"
+    },
+    {
+      "name": "Flag Football",
+      "price": "75.000 \u2013 195.000 / siswa / sesi",
+      "category": "sports"
+    },
+    {
+      "name": "Bola Tangan (Handball)",
+      "price": "65.000 \u2013 175.000 / siswa / sesi",
+      "category": "sports"
+    },
+    {
+      "name": "Petanque",
+      "price": "65.000 \u2013 160.000 / siswa / sesi",
+      "category": "sports"
+    },
+    {
+      "name": "Ultimate Frisbee",
+      "price": "65.000 \u2013 165.000 / siswa / sesi",
+      "category": "sports"
+    },
+    {
+      "name": "Kin-Ball",
+      "price": "75.000 \u2013 185.000 / siswa / sesi",
+      "category": "sports"
+    },
+    {
+      "name": "Sepatu Roda (Roller Skating)",
+      "price": "75.000 \u2013 185.000 / siswa / sesi",
+      "category": "sports"
+    },
+    {
+      "name": "Korfball",
+      "price": "65.000 \u2013 170.000 / siswa / sesi",
+      "category": "sports"
+    },
+    {
+      "name": "Woodball",
+      "price": "75.000 \u2013 185.000 / siswa / sesi",
+      "category": "sports"
+    },
+    {
+      "name": "Push Bike",
+      "price": "75.000 \u2013 185.000 / siswa / sesi",
+      "category": "sports"
+    },
+    {
+      "name": "RC Car Racing & STEM Academy",
+      "price": "125.000 \u2013 350.000 / siswa / sesi",
+      "category": "technology"
+    },
+    {
+      "name": "Fullball",
+      "price": "65.000 \u2013 175.000 / siswa / sesi",
+      "category": "sports"
+    },
+    {
+      "name": "Dragon Shot",
+      "price": "65.000 \u2013 165.000 / siswa / sesi",
+      "category": "sports"
+    },
+    {
+      "name": "Dodgeball",
+      "price": "55.000 \u2013 150.000 / siswa / sesi",
+      "category": "sports"
+    }
+  ]
+}

@@ -1,0 +1,4052 @@
+{
+  "violations": [],
+  "incomplete": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "11.3pt (15px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<header class=\"site-header is-scrolled\">",
+                  "target": [
+                    "header"
+                  ]
+                },
+                {
+                  "html": "<div class=\"contact-intro\">",
+                  "target": [
+                    ".contact-intro"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<strong>MOZAIQ FUTURE ACADEMY</strong>",
+          "target": [
+            ".brand-text > strong"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscuring",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it partially overlaps other elements"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"brand-sub\" data-en=\"Premium Future-Ready Extracurricular\" data-id=\"Ekstrakurikuler Premium Masa Depan\">Premium Future-Ready Extracurricular</span>",
+          "target": [
+            ".brand-sub"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<header class=\"site-header is-scrolled\">",
+                  "target": [
+                    "header"
+                  ]
+                },
+                {
+                  "html": "<div class=\"contact-intro\">",
+                  "target": [
+                    ".contact-intro"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"#why\" data-en=\"Why Mozaiq\" data-id=\"Realita &amp;amp; Solusi\" class=\"\">Why Mozaiq</a>",
+          "target": [
+            ".nav-links > a[href$=\"#why\"][data-en=\"Why Mozaiq\"][data-id=\"Realita &amp; Solusi\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<a href=\"#programs\" data-en=\"Programs\" data-id=\"Program\" class=\"is-active\" aria-current=\"location\">Programs</a>",
+                  "target": [
+                    "a[aria-current=\"location\"]"
+                  ]
+                },
+                {
+                  "html": "<header class=\"site-header is-scrolled\">",
+                  "target": [
+                    "header"
+                  ]
+                },
+                {
+                  "html": "<div class=\"contact-intro\">",
+                  "target": [
+                    ".contact-intro"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"#programs\" data-en=\"Programs\" data-id=\"Program\" class=\"is-active\" aria-current=\"location\">Programs</a>",
+          "target": [
+            "a[aria-current=\"location\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<header class=\"site-header is-scrolled\">",
+                  "target": [
+                    "header"
+                  ]
+                },
+                {
+                  "html": "<div class=\"contact-intro\">",
+                  "target": [
+                    ".contact-intro"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"#facilities\" data-en=\"Documentation\" data-id=\"Dokumentasi\" class=\"\">Documentation</a>",
+          "target": [
+            ".nav-links > a[href$=\"#facilities\"][data-en=\"Documentation\"][data-id=\"Dokumentasi\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<header class=\"site-header is-scrolled\">",
+                  "target": [
+                    "header"
+                  ]
+                },
+                {
+                  "html": "<div class=\"contact-intro\">",
+                  "target": [
+                    ".contact-intro"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"#how\" data-en=\"How It Works\" data-id=\"Cara Kerja\" class=\"\">How It Works</a>",
+          "target": [
+            ".nav-links > a[href$=\"#how\"][data-en=\"How It Works\"][data-id=\"Cara Kerja\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "bold",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"hero\" aria-labelledby=\"hero-title\">",
+                  "target": [
+                    ".hero"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"eyebrow\" data-en=\"Your School Extracurricular Development &amp; Management Partner\" data-id=\"\n              Mitra Pengembangan dan Pengelolaan Program Ekstrakurikuler Sekolah\n            \">Your School Extracurricular Development &amp; Management Partner</p>",
+          "target": [
+            ".eyebrow"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "43.5pt (58px)",
+                "fontWeight": "bold",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"hero\" aria-labelledby=\"hero-title\">",
+                  "target": [
+                    ".hero"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h1 id=\"hero-title\" data-en=\"Premium Extracurricular Programs Built to <span>Strengthen Your School’s Value.</span>\" data-id=\"\n              Ekskul Premium Siap Jalan untuk\n              <span>Meningkatkan Daya Tarik Sekolah.</span>\n            \">",
+          "target": [
+            "#hero-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "43.5pt (58px)",
+                "fontWeight": "bold",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"hero\" aria-labelledby=\"hero-title\">",
+                  "target": [
+                    ".hero"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>Strengthen Your School’s Value.</span>",
+          "target": [
+            "#hero-title > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "14.3pt (19px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"hero\" aria-labelledby=\"hero-title\">",
+                  "target": [
+                    ".hero"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"hero-lead\" data-en=\"Mozaiq Future Academ...\" data-id=\"\n              Mozai...\">",
+          "target": [
+            ".hero-lead"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "11.3pt (15px)",
+                "fontWeight": "bold",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"hero\" aria-labelledby=\"hero-title\">",
+                  "target": [
+                    ".hero"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-en=\"Discuss School Partnership\" data-id=\"Diskusi Kemitraan Sekolah\">Discuss School Partnership</span>",
+          "target": [
+            "span[data-en=\"Discuss School Partnership\"][data-id=\"Diskusi Kemitraan Sekolah\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "11.3pt (15px)",
+                "fontWeight": "bold",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"hero\" aria-labelledby=\"hero-title\">",
+                  "target": [
+                    ".hero"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-en=\"View 26 Extracurricular Programs\" data-id=\"Lihat 26 Program Ekskul\">View 26 Extracurricular Programs</span>",
+          "target": [
+            "span[data-id=\"Lihat 26 Program Ekskul\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"hero\" aria-labelledby=\"hero-title\">",
+                  "target": [
+                    ".hero"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"hero-microcopy\" data-en=\"Ideal for schools th...\" data-id=\"\n              <svg ...\">",
+          "target": [
+            ".hero-microcopy"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "21.0pt (28px)",
+                "fontWeight": "bold",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"hero\" aria-labelledby=\"hero-title\">",
+                  "target": [
+                    ".hero"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<strong>26</strong>",
+          "target": [
+            "li:nth-child(1) > strong"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "10.1pt (13.5px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"hero\" aria-labelledby=\"hero-title\">",
+                  "target": [
+                    ".hero"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-en=\"Ready-to-run extracurricular programs\" data-id=\"Program ekskul siap jalan\">Ready-to-run extracurricular programs</span>",
+          "target": [
+            "span[data-id=\"Program ekskul siap jalan\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "21.0pt (28px)",
+                "fontWeight": "bold",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"hero\" aria-labelledby=\"hero-title\">",
+                  "target": [
+                    ".hero"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<strong>5</strong>",
+          "target": [
+            "li:nth-child(2) > strong"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "10.1pt (13.5px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"hero\" aria-labelledby=\"hero-title\">",
+                  "target": [
+                    ".hero"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-en=\"Program divisions\" data-id=\"Divisi program\">Program divisions</span>",
+          "target": [
+            "span[data-en=\"Program divisions\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "21.0pt (28px)",
+                "fontWeight": "bold",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"hero\" aria-labelledby=\"hero-title\">",
+                  "target": [
+                    ".hero"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<strong data-en=\"Syllabus\" data-id=\"Silabus\">Syllabus</strong>",
+          "target": [
+            "strong[data-en=\"Syllabus\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "10.1pt (13.5px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"hero\" aria-labelledby=\"hero-title\">",
+                  "target": [
+                    ".hero"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-en=\"Program learning plans\" data-id=\"Rencana pembelajaran program\">Program learning plans</span>",
+          "target": [
+            "span[data-en=\"Program learning plans\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "21.0pt (28px)",
+                "fontWeight": "bold",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"hero\" aria-labelledby=\"hero-title\">",
+                  "target": [
+                    ".hero"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<strong data-en=\"K–12\" data-id=\"TK–SMA\">K–12</strong>",
+          "target": [
+            "strong[data-en=\"K–12\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "10.1pt (13.5px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"hero\" aria-labelledby=\"hero-title\">",
+                  "target": [
+                    ".hero"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-en=\"School level formats\" data-id=\"Format jenjang sekolah\">School level formats</span>",
+          "target": [
+            "span[data-en=\"School level formats\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "bold",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"hero\" aria-labelledby=\"hero-title\">",
+                  "target": [
+                    ".hero"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-en=\"26 Programs\" data-id=\"26 Program\">26 Programs</span>",
+          "target": [
+            "span[data-en=\"26 Programs\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "bold",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"hero\" aria-labelledby=\"hero-title\">",
+                  "target": [
+                    ".hero"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-en=\"K–12 Ready\" data-id=\"TK–SMA\">K–12 Ready</span>",
+          "target": [
+            "span[data-en=\"K–12 Ready\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "bold",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"hero\" aria-labelledby=\"hero-title\">",
+                  "target": [
+                    ".hero"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-en=\"Documentation Included\" data-id=\"Dokumentasi Visual\">Documentation Included</span>",
+          "target": [
+            "span[data-en=\"Documentation Included\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "10.1pt (13.5px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"hero\" aria-labelledby=\"hero-title\">",
+                  "target": [
+                    ".hero"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"trust-bar-lead\" data-en=\"Designed to meet the standards of leading private schools, educational foundations, & K–12 institutions\" data-id=\"\n              Dirancang sesuai standar kebutuhan sekolah swasta unggulan, yayasan\n              pendidikan, &amp; institusi TK–SMA\n            \">",
+          "target": [
+            ".trust-bar-lead"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "9.8pt (13px)",
+                "fontWeight": "bold",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"hero\" aria-labelledby=\"hero-title\">",
+                  "target": [
+                    ".hero"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-en=\"Tiered Curriculum\" data-id=\"Kurikulum Berjenjang\">Tiered Curriculum</span>",
+          "target": [
+            "span[data-en=\"Tiered Curriculum\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "9.8pt (13px)",
+                "fontWeight": "bold",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"hero\" aria-labelledby=\"hero-title\">",
+                  "target": [
+                    ".hero"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-en=\"Curated Coaches &amp; Mentors\" data-id=\"Pelatih &amp;amp; Mentor Terkurasi\">Curated Coaches &amp; Mentors</span>",
+          "target": [
+            "span[data-en=\"Curated Coaches & Mentors\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "9.8pt (13px)",
+                "fontWeight": "bold",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"hero\" aria-labelledby=\"hero-title\">",
+                  "target": [
+                    ".hero"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-en=\"Parent Reports &amp; Documentation\" data-id=\"Rapor &amp;amp; Dokumentasi Orang Tua\">Parent Reports &amp; Documentation</span>",
+          "target": [
+            "span[data-en=\"Parent Reports & Documentation\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "9.8pt (13px)",
+                "fontWeight": "bold",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"hero\" aria-labelledby=\"hero-title\">",
+                  "target": [
+                    ".hero"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-en=\"Physical Safety SOP\" data-id=\"SOP Keamanan Fisik\">Physical Safety SOP</span>",
+          "target": [
+            "span[data-id=\"SOP Keamanan Fisik\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "8.6pt (11.5px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"comparison-badge comparison-badge-highlight\" data-en=\"Integrated Solution\" data-id=\"Solusi Terintegrasi\">Integrated Solution</span>",
+                  "target": [
+                    ".comparison-badge-highlight"
+                  ]
+                },
+                {
+                  "html": "<article class=\"comparison-col comparison-col-highlight\" aria-labelledby=\"comp-new-title\">",
+                  "target": [
+                    ".comparison-col-highlight"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"comparison-badge comparison-badge-highlight\" data-en=\"Integrated Solution\" data-id=\"Solusi Terintegrasi\">Integrated Solution</span>",
+          "target": [
+            ".comparison-badge-highlight"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "16.5pt (22px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"comparison-col comparison-col-highlight\" aria-labelledby=\"comp-new-title\">",
+                  "target": [
+                    ".comparison-col-highlight"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h3 id=\"comp-new-title\" data-en=\"Mozaiq's Integrated Approach\" data-id=\"\n                  Pendekatan Terintegrasi Mozaiq\n                \">Mozaiq's Integrated Approach</h3>",
+          "target": [
+            "#comp-new-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.9pt (14.5px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"comparison-col comparison-col-highlight\" aria-labelledby=\"comp-new-title\">",
+                  "target": [
+                    ".comparison-col-highlight"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p data-en=\"A structured approach to support learning quality, program coordination, and student progress reviews.\" data-id=\"\n                  Pendekatan terstruktur untuk mendukung kualitas pembelajaran,\n                  koordinasi program, dan evaluasi perkembangan siswa.\n                \">",
+          "target": [
+            ".comparison-col-highlight > .comparison-header > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"comparison-mark comparison-mark-positive\">\n                    <span aria-hidden=\"true\">01</span>\n                  </span>",
+                  "target": [
+                    "li:nth-child(1) > .comparison-mark-positive.comparison-mark"
+                  ]
+                },
+                {
+                  "html": "<article class=\"comparison-col comparison-col-highlight\" aria-labelledby=\"comp-new-title\">",
+                  "target": [
+                    ".comparison-col-highlight"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span aria-hidden=\"true\">01</span>",
+          "target": [
+            "li:nth-child(1) > .comparison-mark-positive.comparison-mark > span[aria-hidden=\"true\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"comparison-col comparison-col-highlight\" aria-labelledby=\"comp-new-title\">",
+                  "target": [
+                    ".comparison-col-highlight"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<strong data-en=\"Curriculum &amp; outcome indicators:\" data-id=\"Kurikulum &amp;amp; Indikator Capaian:\">Curriculum &amp; outcome indicators:</strong>",
+          "target": [
+            ".comparison-col-highlight > .comparison-list > li:nth-child(1) > div > strong"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.9pt (14.5px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"comparison-col comparison-col-highlight\" aria-labelledby=\"comp-new-title\">",
+                  "target": [
+                    ".comparison-col-highlight"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-en=\"Programs are structu...\" data-id=\"Program disusun deng...\">",
+          "target": [
+            ".comparison-col-highlight > .comparison-list > li:nth-child(1) > div > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"comparison-mark comparison-mark-positive\">\n                    <span aria-hidden=\"true\">02</span>\n                  </span>",
+                  "target": [
+                    "li:nth-child(2) > .comparison-mark-positive.comparison-mark"
+                  ]
+                },
+                {
+                  "html": "<article class=\"comparison-col comparison-col-highlight\" aria-labelledby=\"comp-new-title\">",
+                  "target": [
+                    ".comparison-col-highlight"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span aria-hidden=\"true\">02</span>",
+          "target": [
+            "li:nth-child(2) > .comparison-mark-positive.comparison-mark > span[aria-hidden=\"true\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"comparison-col comparison-col-highlight\" aria-labelledby=\"comp-new-title\">",
+                  "target": [
+                    ".comparison-col-highlight"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<strong data-en=\"Standardized coaches &amp; SOPs:\" data-id=\"Pelatih &amp;amp; SOP Terstandar:\">Standardized coaches &amp; SOPs:</strong>",
+          "target": [
+            "strong[data-en=\"Standardized coaches & SOPs:\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.9pt (14.5px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"comparison-col comparison-col-highlight\" aria-labelledby=\"comp-new-title\">",
+                  "target": [
+                    ".comparison-col-highlight"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-en=\"Delivery is backed by operational SOPs, coach coordination, and a consistent educational methodology.\" data-id=\"Pelaksanaan didukung standar operasional, koordinasi\n                      pelatih, dan pendekatan pembelajaran yang konsisten.\">",
+          "target": [
+            ".comparison-col-highlight > .comparison-list > li:nth-child(2) > div > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"comparison-mark comparison-mark-positive\">\n                    <span aria-hidden=\"true\">03</span>\n                  </span>",
+                  "target": [
+                    "li:nth-child(3) > .comparison-mark-positive.comparison-mark"
+                  ]
+                },
+                {
+                  "html": "<article class=\"comparison-col comparison-col-highlight\" aria-labelledby=\"comp-new-title\">",
+                  "target": [
+                    ".comparison-col-highlight"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span aria-hidden=\"true\">03</span>",
+          "target": [
+            "li:nth-child(3) > .comparison-mark-positive.comparison-mark > span[aria-hidden=\"true\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"comparison-col comparison-col-highlight\" aria-labelledby=\"comp-new-title\">",
+                  "target": [
+                    ".comparison-col-highlight"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<strong data-en=\"Organized activity documentation:\" data-id=\"Dokumentasi Kegiatan Terorganisasi:\">Organized activity documentation:</strong>",
+          "target": [
+            ".comparison-col-highlight > .comparison-list > li:nth-child(3) > div > strong"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.9pt (14.5px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"comparison-col comparison-col-highlight\" aria-labelledby=\"comp-new-title\">",
+                  "target": [
+                    ".comparison-col-highlight"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-en=\"Visuals and notes are systematically gathered and managed for school reporting and parent communications.\" data-id=\"Dokumentasi dikumpulkan dan dikelola agar lebih mudah\n                      digunakan untuk laporan kegiatan dan komunikasi sekolah.\">",
+          "target": [
+            ".comparison-col-highlight > .comparison-list > li:nth-child(3) > div > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"comparison-mark comparison-mark-positive\">\n                    <span aria-hidden=\"true\">04</span>\n                  </span>",
+                  "target": [
+                    "li:nth-child(4) > .comparison-mark-positive.comparison-mark"
+                  ]
+                },
+                {
+                  "html": "<article class=\"comparison-col comparison-col-highlight\" aria-labelledby=\"comp-new-title\">",
+                  "target": [
+                    ".comparison-col-highlight"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span aria-hidden=\"true\">04</span>",
+          "target": [
+            "li:nth-child(4) > .comparison-mark-positive.comparison-mark > span[aria-hidden=\"true\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"comparison-col comparison-col-highlight\" aria-labelledby=\"comp-new-title\">",
+                  "target": [
+                    ".comparison-col-highlight"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<strong data-en=\"Progress reports &amp; evaluation:\" data-id=\"Laporan Perkembangan &amp;amp; Evaluasi:\">Progress reports &amp; evaluation:</strong>",
+          "target": [
+            "strong[data-en=\"Progress reports & evaluation:\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.9pt (14.5px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"comparison-col comparison-col-highlight\" aria-labelledby=\"comp-new-title\">",
+                  "target": [
+                    ".comparison-col-highlight"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-en=\"Student growth is summarized through milestone indicators and periodic evaluations aligned with the service tier.\" data-id=\"Perkembangan siswa dirangkum melalui indikator capaian\n                      dan evaluasi berkala sesuai cakupan layanan.\">",
+          "target": [
+            ".comparison-col-highlight > .comparison-list > li:nth-child(4) > div > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+                  "target": [
+                    ".program-card[data-featured=\"true\"][data-category=\"sports\"]:nth-child(1) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+                  ]
+                },
+                {
+                  "html": "<span class=\"program-media-overlay\" aria-hidden=\"true\"></span>",
+                  "target": [
+                    ".program-card[data-featured=\"true\"][data-category=\"sports\"]:nth-child(1) > .program-media > .program-media-overlay[aria-hidden=\"true\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+          "target": [
+            ".program-card[data-featured=\"true\"][data-category=\"sports\"]:nth-child(1) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+                  "target": [
+                    ".program-card[data-featured=\"true\"][data-category=\"sports\"]:nth-child(2) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+                  ]
+                },
+                {
+                  "html": "<span class=\"program-media-overlay\" aria-hidden=\"true\"></span>",
+                  "target": [
+                    ".program-card[data-featured=\"true\"][data-category=\"sports\"]:nth-child(2) > .program-media > .program-media-overlay[aria-hidden=\"true\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+          "target": [
+            ".program-card[data-featured=\"true\"][data-category=\"sports\"]:nth-child(2) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+                  "target": [
+                    ".program-card[data-featured=\"true\"][data-category=\"sports\"]:nth-child(3) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+                  ]
+                },
+                {
+                  "html": "<span class=\"program-media-overlay\" aria-hidden=\"true\"></span>",
+                  "target": [
+                    ".program-card[data-featured=\"true\"][data-category=\"sports\"]:nth-child(3) > .program-media > .program-media-overlay[aria-hidden=\"true\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+          "target": [
+            ".program-card[data-featured=\"true\"][data-category=\"sports\"]:nth-child(3) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+                  "target": [
+                    ".program-card[data-featured=\"true\"][data-category=\"sports\"]:nth-child(4) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+                  ]
+                },
+                {
+                  "html": "<span class=\"program-media-overlay\" aria-hidden=\"true\"></span>",
+                  "target": [
+                    ".program-card[data-featured=\"true\"][data-category=\"sports\"]:nth-child(4) > .program-media > .program-media-overlay[aria-hidden=\"true\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+          "target": [
+            ".program-card[data-featured=\"true\"][data-category=\"sports\"]:nth-child(4) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"program-badge-glass\" data-en=\"Creative &amp; AI Media\" data-id=\"Kreatif &amp;amp; Showmanship\">Creative &amp; AI Media</span>",
+                  "target": [
+                    "span[data-en=\"Creative & AI Media\"]"
+                  ]
+                },
+                {
+                  "html": "<span class=\"program-media-overlay\" aria-hidden=\"true\"></span>",
+                  "target": [
+                    "article[data-categories=\"creative business technology\"] > .program-media > .program-media-overlay[aria-hidden=\"true\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"program-badge-glass\" data-en=\"Creative &amp; AI Media\" data-id=\"Kreatif &amp;amp; Showmanship\">Creative &amp; AI Media</span>",
+          "target": [
+            "span[data-en=\"Creative & AI Media\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"program-badge-glass\" data-en=\"STEM &amp; Future Skills\" data-id=\"STEM &amp;amp; Future Skills\">STEM &amp; Future Skills</span>",
+                  "target": [
+                    ".program-card[data-category=\"technology\"][data-featured=\"true\"] > .program-media > .program-badge-glass[data-id=\"STEM &amp; Future Skills\"][data-en=\"STEM & Future Skills\"]"
+                  ]
+                },
+                {
+                  "html": "<span class=\"program-media-overlay\" aria-hidden=\"true\"></span>",
+                  "target": [
+                    ".program-card[data-category=\"technology\"][data-featured=\"true\"] > .program-media > .program-media-overlay[aria-hidden=\"true\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"program-badge-glass\" data-en=\"STEM &amp; Future Skills\" data-id=\"STEM &amp;amp; Future Skills\">STEM &amp; Future Skills</span>",
+          "target": [
+            ".program-card[data-category=\"technology\"][data-featured=\"true\"] > .program-media > .program-badge-glass[data-id=\"STEM &amp; Future Skills\"][data-en=\"STEM & Future Skills\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"sports\"]:nth-child(7) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+                  ]
+                },
+                {
+                  "html": "<span class=\"program-media-overlay\" aria-hidden=\"true\"></span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"sports\"]:nth-child(7) > .program-media > .program-media-overlay[aria-hidden=\"true\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+          "target": [
+            ".program-extra.program-card[data-category=\"sports\"]:nth-child(7) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"sports\"]:nth-child(8) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+                  ]
+                },
+                {
+                  "html": "<span class=\"program-media-overlay\" aria-hidden=\"true\"></span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"sports\"]:nth-child(8) > .program-media > .program-media-overlay[aria-hidden=\"true\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+          "target": [
+            ".program-extra.program-card[data-category=\"sports\"]:nth-child(8) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"sports\"]:nth-child(9) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+                  ]
+                },
+                {
+                  "html": "<span class=\"program-media-overlay\" aria-hidden=\"true\"></span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"sports\"]:nth-child(9) > .program-media > .program-media-overlay[aria-hidden=\"true\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+          "target": [
+            ".program-extra.program-card[data-category=\"sports\"]:nth-child(9) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"program-badge-glass\" data-en=\"Character &amp; Leadership\" data-id=\"Karakter &amp;amp; Kepemimpinan\">Character &amp; Leadership</span>",
+                  "target": [
+                    "span[data-id=\"Karakter &amp; Kepemimpinan\"]"
+                  ]
+                },
+                {
+                  "html": "<span class=\"program-media-overlay\" aria-hidden=\"true\"></span>",
+                  "target": [
+                    "article[data-category=\"tactical\"] > .program-media > .program-media-overlay[aria-hidden=\"true\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"program-badge-glass\" data-en=\"Character &amp; Leadership\" data-id=\"Karakter &amp;amp; Kepemimpinan\">Character &amp; Leadership</span>",
+          "target": [
+            "span[data-id=\"Karakter &amp; Kepemimpinan\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"program-badge-glass\" data-en=\"Digital Business\" data-id=\"Bisnis Digital\">Digital Business</span>",
+                  "target": [
+                    ".program-badge-glass[data-id=\"Bisnis Digital\"][data-en=\"Digital Business\"]"
+                  ]
+                },
+                {
+                  "html": "<span class=\"program-media-overlay\" aria-hidden=\"true\"></span>",
+                  "target": [
+                    "article[data-category=\"business\"] > .program-media > .program-media-overlay[aria-hidden=\"true\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"program-badge-glass\" data-en=\"Digital Business\" data-id=\"Bisnis Digital\">Digital Business</span>",
+          "target": [
+            ".program-badge-glass[data-id=\"Bisnis Digital\"][data-en=\"Digital Business\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"program-badge-glass\" data-en=\"Creative &amp; Showmanship\" data-id=\"Kreatif &amp;amp; Showmanship\">Creative &amp; Showmanship</span>",
+                  "target": [
+                    ".program-badge-glass[data-id=\"Kreatif &amp; Showmanship\"][data-en=\"Creative & Showmanship\"]"
+                  ]
+                },
+                {
+                  "html": "<span class=\"program-media-overlay\" aria-hidden=\"true\"></span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"creative\"] > .program-media > .program-media-overlay[aria-hidden=\"true\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"program-badge-glass\" data-en=\"Creative &amp; Showmanship\" data-id=\"Kreatif &amp;amp; Showmanship\">Creative &amp; Showmanship</span>",
+          "target": [
+            ".program-badge-glass[data-id=\"Kreatif &amp; Showmanship\"][data-en=\"Creative & Showmanship\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"sports\"]:nth-child(13) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+                  ]
+                },
+                {
+                  "html": "<span class=\"program-media-overlay\" aria-hidden=\"true\"></span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"sports\"]:nth-child(13) > .program-media > .program-media-overlay[aria-hidden=\"true\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+          "target": [
+            ".program-extra.program-card[data-category=\"sports\"]:nth-child(13) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"sports\"]:nth-child(14) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+                  ]
+                },
+                {
+                  "html": "<span class=\"program-media-overlay\" aria-hidden=\"true\"></span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"sports\"]:nth-child(14) > .program-media > .program-media-overlay[aria-hidden=\"true\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+          "target": [
+            ".program-extra.program-card[data-category=\"sports\"]:nth-child(14) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"sports\"]:nth-child(15) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+                  ]
+                },
+                {
+                  "html": "<span class=\"program-media-overlay\" aria-hidden=\"true\"></span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"sports\"]:nth-child(15) > .program-media > .program-media-overlay[aria-hidden=\"true\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+          "target": [
+            ".program-extra.program-card[data-category=\"sports\"]:nth-child(15) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"sports\"]:nth-child(16) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+                  ]
+                },
+                {
+                  "html": "<span class=\"program-media-overlay\" aria-hidden=\"true\"></span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"sports\"]:nth-child(16) > .program-media > .program-media-overlay[aria-hidden=\"true\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+          "target": [
+            ".program-extra.program-card[data-category=\"sports\"]:nth-child(16) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"sports\"]:nth-child(17) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+                  ]
+                },
+                {
+                  "html": "<span class=\"program-media-overlay\" aria-hidden=\"true\"></span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"sports\"]:nth-child(17) > .program-media > .program-media-overlay[aria-hidden=\"true\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+          "target": [
+            ".program-extra.program-card[data-category=\"sports\"]:nth-child(17) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"sports\"]:nth-child(18) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+                  ]
+                },
+                {
+                  "html": "<span class=\"program-media-overlay\" aria-hidden=\"true\"></span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"sports\"]:nth-child(18) > .program-media > .program-media-overlay[aria-hidden=\"true\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+          "target": [
+            ".program-extra.program-card[data-category=\"sports\"]:nth-child(18) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"sports\"]:nth-child(19) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+                  ]
+                },
+                {
+                  "html": "<span class=\"program-media-overlay\" aria-hidden=\"true\"></span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"sports\"]:nth-child(19) > .program-media > .program-media-overlay[aria-hidden=\"true\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+          "target": [
+            ".program-extra.program-card[data-category=\"sports\"]:nth-child(19) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"sports\"]:nth-child(20) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+                  ]
+                },
+                {
+                  "html": "<span class=\"program-media-overlay\" aria-hidden=\"true\"></span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"sports\"]:nth-child(20) > .program-media > .program-media-overlay[aria-hidden=\"true\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+          "target": [
+            ".program-extra.program-card[data-category=\"sports\"]:nth-child(20) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"sports\"]:nth-child(21) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+                  ]
+                },
+                {
+                  "html": "<span class=\"program-media-overlay\" aria-hidden=\"true\"></span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"sports\"]:nth-child(21) > .program-media > .program-media-overlay[aria-hidden=\"true\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+          "target": [
+            ".program-extra.program-card[data-category=\"sports\"]:nth-child(21) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"sports\"]:nth-child(22) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+                  ]
+                },
+                {
+                  "html": "<span class=\"program-media-overlay\" aria-hidden=\"true\"></span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"sports\"]:nth-child(22) > .program-media > .program-media-overlay[aria-hidden=\"true\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+          "target": [
+            ".program-extra.program-card[data-category=\"sports\"]:nth-child(22) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"program-badge-glass\" data-en=\"STEM &amp; Future Skills\" data-id=\"STEM &amp;amp; Future Skills\">STEM &amp; Future Skills</span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"technology\"] > .program-media > .program-badge-glass[data-id=\"STEM &amp; Future Skills\"][data-en=\"STEM & Future Skills\"]"
+                  ]
+                },
+                {
+                  "html": "<span class=\"program-media-overlay\" aria-hidden=\"true\"></span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"technology\"] > .program-media > .program-media-overlay[aria-hidden=\"true\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"program-badge-glass\" data-en=\"STEM &amp; Future Skills\" data-id=\"STEM &amp;amp; Future Skills\">STEM &amp; Future Skills</span>",
+          "target": [
+            ".program-extra.program-card[data-category=\"technology\"] > .program-media > .program-badge-glass[data-id=\"STEM &amp; Future Skills\"][data-en=\"STEM & Future Skills\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"sports\"]:nth-child(24) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+                  ]
+                },
+                {
+                  "html": "<span class=\"program-media-overlay\" aria-hidden=\"true\"></span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"sports\"]:nth-child(24) > .program-media > .program-media-overlay[aria-hidden=\"true\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+          "target": [
+            ".program-extra.program-card[data-category=\"sports\"]:nth-child(24) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"sports\"]:nth-child(25) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+                  ]
+                },
+                {
+                  "html": "<span class=\"program-media-overlay\" aria-hidden=\"true\"></span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"sports\"]:nth-child(25) > .program-media > .program-media-overlay[aria-hidden=\"true\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+          "target": [
+            ".program-extra.program-card[data-category=\"sports\"]:nth-child(25) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"sports\"]:nth-child(26) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+                  ]
+                },
+                {
+                  "html": "<span class=\"program-media-overlay\" aria-hidden=\"true\"></span>",
+                  "target": [
+                    ".program-extra.program-card[data-category=\"sports\"]:nth-child(26) > .program-media > .program-media-overlay[aria-hidden=\"true\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"program-badge-glass\" data-en=\"Sports &amp; Agility\" data-id=\"Olahraga &amp;amp; Ketangkasan\">Sports &amp; Agility</span>",
+          "target": [
+            ".program-extra.program-card[data-category=\"sports\"]:nth-child(26) > .program-media > .program-badge-glass[data-id=\"Olahraga &amp; Ketangkasan\"][data-en=\"Sports & Agility\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"bento-card bento-card-report\">",
+                  "target": [
+                    ".bento-card-report"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"bento-eyebrow\" data-en=\"Deliverable 01 • Parent Communication\" data-id=\"Deliverable 01 • Komunikasi Orang Tua\">Deliverable 01 • Parent Communication</span>",
+          "target": [
+            ".bento-card-report > .bento-card-copy > .bento-eyebrow"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "18.8pt (25px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"bento-card bento-card-report\">",
+                  "target": [
+                    ".bento-card-report"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h3 data-en=\"Student Progress Report &amp; Parent Update Mockup\" data-id=\"\n                  Laporan Perkembangan Siswa &amp;amp; Update Orang Tua\n                \">Student Progress Report &amp; Parent Update Mockup</h3>",
+          "target": [
+            ".bento-card-report > .bento-card-copy > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "11.3pt (15px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"bento-card bento-card-report\">",
+                  "target": [
+                    ".bento-card-report"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p data-en=\"Parents no longer wo...\" data-id=\"\n                  O...\">",
+          "target": [
+            ".bento-card-report > .bento-card-copy > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"bento-card bento-card-report\">",
+                  "target": [
+                    ".bento-card-report"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-en=\"Measurable technical &amp; character indicators\" data-id=\"Indikator teknis &amp;amp; karakter terukur\">Measurable technical &amp; character indicators</span>",
+          "target": [
+            ".bento-highlights > li:nth-child(1) > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"bento-card bento-card-report\">",
+                  "target": [
+                    ".bento-card-report"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-en=\"Official school &amp; Mozaiq co-branded format\" data-id=\"Format ko-branding resmi sekolah &amp;amp; Mozaiq\">Official school &amp; Mozaiq co-branded format</span>",
+          "target": [
+            ".bento-highlights > li:nth-child(2) > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<figcaption data-en=\"Session 08 • 15m Target Drill\" data-id=\"\n                      Pertemuan 08 • Latihan Akurasi 15m\n                    \">Session 08 • 15m Target Drill</figcaption>",
+                  "target": [
+                    "figcaption[data-en=\"Session 08 • 15m Target Drill\"]"
+                  ]
+                },
+                {
+                  "html": "<img src=\"assets/images/programs/archery-001.webp\" alt=\"Dokumentasi siswa berlatih panahan\" width=\"1942\" height=\"809\" loading=\"lazy\" decoding=\"async\">",
+                  "target": [
+                    ".report-mockup-photo > img[width=\"1942\"][height=\"809\"][decoding=\"async\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because element contains an image node"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<figcaption data-en=\"Session 08 • 15m Target Drill\" data-id=\"\n                      Pertemuan 08 • Latihan Akurasi 15m\n                    \">Session 08 • 15m Target Drill</figcaption>",
+          "target": [
+            "figcaption[data-en=\"Session 08 • 15m Target Drill\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"bento-pill\" data-en=\"PPDB Feed &amp; Reels\" data-id=\"Konten PPDB &amp;amp; Reels\">PPDB Feed &amp; Reels</span>",
+                  "target": [
+                    "span[data-en=\"PPDB Feed & Reels\"]"
+                  ]
+                },
+                {
+                  "html": "<img src=\"assets/images/gallery/seragam-001.webp\" alt=\"Aset branding seragam ekskul sekolah\" width=\"1536\" height=\"1024\" loading=\"lazy\" decoding=\"async\">",
+                  "target": [
+                    ".bento-card:nth-child(2) > .bento-media-pair > .bento-thumb:nth-child(1) > img[width=\"1536\"][height=\"1024\"][decoding=\"async\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because element contains an image node"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"bento-pill\" data-en=\"PPDB Feed &amp; Reels\" data-id=\"Konten PPDB &amp;amp; Reels\">PPDB Feed &amp; Reels</span>",
+          "target": [
+            "span[data-en=\"PPDB Feed & Reels\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"bento-pill\" data-en=\"Future Skills Showcase\" data-id=\"Showcase Sekolah\">Future Skills Showcase</span>",
+                  "target": [
+                    "span[data-en=\"Future Skills Showcase\"]"
+                  ]
+                },
+                {
+                  "html": "<img src=\"assets/images/gallery/drone-fasilitas-001.webp\" alt=\"Dokumentasi aktivitas Drone Academy di sekolah\" width=\"1536\" height=\"1024\" loading=\"lazy\" decoding=\"async\">",
+                  "target": [
+                    ".bento-card:nth-child(2) > .bento-media-pair > .bento-thumb:nth-child(2) > img[width=\"1536\"][height=\"1024\"][decoding=\"async\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because element contains an image node"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"bento-pill\" data-en=\"Future Skills Showcase\" data-id=\"Showcase Sekolah\">Future Skills Showcase</span>",
+          "target": [
+            "span[data-en=\"Future Skills Showcase\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"bento-pill\" data-en=\"Standardized Gear\" data-id=\"Alat Terstandar\">Standardized Gear</span>",
+                  "target": [
+                    "span[data-en=\"Standardized Gear\"]"
+                  ]
+                },
+                {
+                  "html": "<img src=\"assets/images/gallery/badminton-alat-001.webp\" alt=\"Standar peralatan olahraga Mozaiq Future Academy\" width=\"1536\" height=\"1024\" loading=\"lazy\" decoding=\"async\">",
+                  "target": [
+                    ".bento-card:nth-child(3) > .bento-media-pair > .bento-thumb:nth-child(1) > img[width=\"1536\"][height=\"1024\"][decoding=\"async\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because element contains an image node"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"bento-pill\" data-en=\"Standardized Gear\" data-id=\"Alat Terstandar\">Standardized Gear</span>",
+          "target": [
+            "span[data-en=\"Standardized Gear\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "bold",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"bento-pill\" data-en=\"Child-Safe Kit\" data-id=\"Kit Ramah Anak\">Child-Safe Kit</span>",
+                  "target": [
+                    "span[data-en=\"Child-Safe Kit\"]"
+                  ]
+                },
+                {
+                  "html": "<img src=\"assets/images/gallery/archer-alat-001.webp\" alt=\"Kit aktivitas panahan lengkap\" width=\"1536\" height=\"1024\" loading=\"lazy\" decoding=\"async\">",
+                  "target": [
+                    "img[alt=\"Kit aktivitas panahan lengkap\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because element contains an image node"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"bento-pill\" data-en=\"Child-Safe Kit\" data-id=\"Kit Ramah Anak\">Child-Safe Kit</span>",
+          "target": [
+            "span[data-en=\"Child-Safe Kit\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div role=\"group\" class=\"safety-banner\" aria-labelledby=\"safety-banner-title\">",
+                  "target": [
+                    ".safety-banner"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"safety-eyebrow\" data-en=\"Safety &amp; School Readiness Standards\" data-id=\"Standar Keamanan &amp;amp; Kesiapan Sekolah\">Safety &amp; School Readiness Standards</span>",
+          "target": [
+            ".safety-eyebrow"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "18.0pt (24px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div role=\"group\" class=\"safety-banner\" aria-labelledby=\"safety-banner-title\">",
+                  "target": [
+                    ".safety-banner"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h3 id=\"safety-banner-title\" data-en=\"Safe for Students, Turnkey for School Management\" data-id=\"\n                  Aman untuk Siswa, Mudah bagi Manajemen Sekolah\n                \">Safe for Students, Turnkey for School Management</h3>",
+          "target": [
+            "#safety-banner-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.9pt (14.5px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div role=\"group\" class=\"safety-banner\" aria-labelledby=\"safety-banner-title\">",
+                  "target": [
+                    ".safety-banner"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p data-en=\"Every activity is pr...\" data-id=\"\n                Set...\">",
+          "target": [
+            ".safety-banner-head > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.9pt (14.5px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"safety-item\">",
+                  "target": [
+                    ".safety-item:nth-child(1)"
+                  ]
+                },
+                {
+                  "html": "<div role=\"group\" class=\"safety-banner\" aria-labelledby=\"safety-banner-title\">",
+                  "target": [
+                    ".safety-banner"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-en=\"Structured Student Supervision\" data-id=\"Pengawasan Siswa Terstruktur\">Structured Student Supervision</span>",
+          "target": [
+            "span[data-en=\"Structured Student Supervision\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.9pt (14.5px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"safety-item\">",
+                  "target": [
+                    ".safety-item:nth-child(2)"
+                  ]
+                },
+                {
+                  "html": "<div role=\"group\" class=\"safety-banner\" aria-labelledby=\"safety-banner-title\">",
+                  "target": [
+                    ".safety-banner"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-en=\"Age-Appropriate Formats (K–12)\" data-id=\"Format Kegiatan Sesuai Usia (TK–SMA)\">Age-Appropriate Formats (K–12)</span>",
+          "target": [
+            "span[data-en=\"Age-Appropriate Formats (K–12)\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.9pt (14.5px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"safety-item\">",
+                  "target": [
+                    ".safety-item:nth-child(3)"
+                  ]
+                },
+                {
+                  "html": "<div role=\"group\" class=\"safety-banner\" aria-labelledby=\"safety-banner-title\">",
+                  "target": [
+                    ".safety-banner"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-en=\"Physical Activity Safety SOP\" data-id=\"SOP Keamanan Aktivitas Fisik\">Physical Activity Safety SOP</span>",
+          "target": [
+            "span[data-en=\"Physical Activity Safety SOP\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.9pt (14.5px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"safety-item\">",
+                  "target": [
+                    ".safety-item:nth-child(4)"
+                  ]
+                },
+                {
+                  "html": "<div role=\"group\" class=\"safety-banner\" aria-labelledby=\"safety-banner-title\">",
+                  "target": [
+                    ".safety-banner"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-en=\"Privacy-Compliant Documentation\" data-id=\"Dokumentasi Sesuai Kebijakan Privasi Sekolah\">Privacy-Compliant Documentation</span>",
+          "target": [
+            ".safety-item:nth-child(4) > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.9pt (14.5px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"safety-item\">",
+                  "target": [
+                    ".safety-item:nth-child(5)"
+                  ]
+                },
+                {
+                  "html": "<div role=\"group\" class=\"safety-banner\" aria-labelledby=\"safety-banner-title\">",
+                  "target": [
+                    ".safety-banner"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-en=\"Flexible Schedule &amp; Format\" data-id=\"Jadwal &amp;amp; Format Fleksibel\">Flexible Schedule &amp; Format</span>",
+          "target": [
+            "span[data-en=\"Flexible Schedule & Format\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.9pt (14.5px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"safety-item\">",
+                  "target": [
+                    ".safety-item:nth-child(6)"
+                  ]
+                },
+                {
+                  "html": "<div role=\"group\" class=\"safety-banner\" aria-labelledby=\"safety-banner-title\">",
+                  "target": [
+                    ".safety-banner"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-en=\"Official School &amp; Parent Communication Flow\" data-id=\"Alur Komunikasi Resmi Sekolah &amp;amp; Orang Tua\">Official School &amp; Parent Communication Flow</span>",
+          "target": [
+            ".safety-item:nth-child(6) > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "18.0pt (24px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"card package-card package-elite\">",
+                  "target": [
+                    ".package-elite"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"package-tier\">Elite</span>",
+          "target": [
+            ".package-elite > .package-head > .package-tier"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.8pt (13px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"card package-card package-elite\">",
+                  "target": [
+                    ".package-elite"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"package-subtier\" data-en=\"Full School Academy Ecosystem\" data-id=\"Full School Academy Ecosystem\">Full School Academy Ecosystem</span>",
+          "target": [
+            "span[data-en=\"Full School Academy Ecosystem\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "16.5pt (22px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"card package-card package-elite\">",
+                  "target": [
+                    ".package-elite"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"package-price\">\n                Rp350.000 – Rp550.000<span data-en=\"/ student / session\" data-id=\"/ siswa / sesi\">/ student / session</span>\n              </p>",
+          "target": [
+            ".package-elite > .package-price"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.8pt (13px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"card package-card package-elite\">",
+                  "target": [
+                    ".package-elite"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-en=\"/ student / session\" data-id=\"/ siswa / sesi\">/ student / session</span>",
+          "target": [
+            ".package-elite > .package-price > span[data-en=\"/ student / session\"][data-id=\"/ siswa / sesi\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"card package-card package-elite\">",
+                  "target": [
+                    ".package-elite"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"package-for\" data-en=\"Comprehensive annual...\" data-id=\"\n                Sis...\">",
+          "target": [
+            ".package-elite > .package-for"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.9pt (14.5px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"card package-card package-elite\">",
+                  "target": [
+                    ".package-elite"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<li data-en=\"Annual Full School Academy System\" data-id=\"\n                  Sistem Akademi Ekskul Tahunan Menyeluruh\n                \">Annual Full School Academy System</li>",
+          "target": [
+            ".package-elite > .check-list > li:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.9pt (14.5px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"card package-card package-elite\">",
+                  "target": [
+                    ".package-elite"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<li data-en=\"Dedicated On-Site Program Coordinator\" data-id=\"\n                  Koordinator Khusus di Sekolah\n                \">Dedicated On-Site Program Coordinator</li>",
+          "target": [
+            ".package-elite > .check-list > li:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.9pt (14.5px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"card package-card package-elite\">",
+                  "target": [
+                    ".package-elite"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<li data-en=\"Custom School-Aligned Curriculum\" data-id=\"\n                  Kurikulum Kustom Sesuai Visi Sekolah\n                \">Custom School-Aligned Curriculum</li>",
+          "target": [
+            ".package-elite > .check-list > li:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.9pt (14.5px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"card package-card package-elite\">",
+                  "target": [
+                    ".package-elite"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<li data-en=\"Inter-School Competition Roadmap\" data-id=\"\n                  Roadmap Kompetisi Antar-Sekolah\n                \">Inter-School Competition Roadmap</li>",
+          "target": [
+            ".package-elite > .check-list > li:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.9pt (14.5px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"card package-card package-elite\">",
+                  "target": [
+                    ".package-elite"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<li data-en=\"Quarterly Student Showcase\" data-id=\"\n                  Showcase Prestasi Siswa Tiap Triwulan\n                \">Quarterly Student Showcase</li>",
+          "target": [
+            "li[data-en=\"Quarterly Student Showcase\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.9pt (14.5px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"card package-card package-elite\">",
+                  "target": [
+                    ".package-elite"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<li data-en=\"Comprehensive Parent &amp; Foundation Reporting\" data-id=\"\n                  Pelaporan Lengkap Orang Tua &amp;amp; Yayasan\n                \">Comprehensive Parent &amp; Foundation Reporting</li>",
+          "target": [
+            ".package-elite > .check-list > li:nth-child(6)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "11.6pt (15.5px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"contact-intro\">",
+                  "target": [
+                    ".contact-intro"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"section-kicker\" data-en=\"Institutional Partnership\" data-id=\"\n                Mari Terhubung\n              \">Institutional Partnership</p>",
+          "target": [
+            "p[data-en=\"Institutional Partnership\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "25.5pt (34px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"contact-intro\">",
+                  "target": [
+                    ".contact-intro"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h2 id=\"contact-title\" data-en=\"Schedule a partnership discussion and map the right programs for your school.\" data-id=\"\n                Jadwalkan diskusi kemitraan dan petakan program yang tepat.\n              \">Schedule a partnership discussion and map the right programs for your school.</h2>",
+          "target": [
+            "#contact-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "11.6pt (15.5px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"contact-intro\">",
+                  "target": [
+                    ".contact-intro"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p data-en=\"A focused 15–30 minu...\" data-id=\"\n                Dis...\">",
+          "target": [
+            ".contact-intro > p:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.1pt (13.5px)",
+                "fontWeight": "bold",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"next-num\">1</span>",
+                  "target": [
+                    "li:nth-child(1) > .next-num"
+                  ]
+                },
+                {
+                  "html": "<div class=\"contact-intro\">",
+                  "target": [
+                    ".contact-intro"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element content is too short to determine if it is actual text content"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"next-num\">1</span>",
+          "target": [
+            "li:nth-child(1) > .next-num"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.9pt (14.5px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"contact-intro\">",
+                  "target": [
+                    ".contact-intro"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-en=\"Map student levels, facilities, and schedule\" data-id=\"Mapping jenjang, fasilitas, dan jadwal\">Map student levels, facilities, and schedule</span>",
+          "target": [
+            "ol > li:nth-child(1) > span:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.1pt (13.5px)",
+                "fontWeight": "bold",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"next-num\">2</span>",
+                  "target": [
+                    "li:nth-child(2) > .next-num"
+                  ]
+                },
+                {
+                  "html": "<div class=\"contact-intro\">",
+                  "target": [
+                    ".contact-intro"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element content is too short to determine if it is actual text content"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"next-num\">2</span>",
+          "target": [
+            "li:nth-child(2) > .next-num"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.9pt (14.5px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"contact-intro\">",
+                  "target": [
+                    ".contact-intro"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-en=\"Recommend programs and package options\" data-id=\"Rekomendasi program &amp;amp; opsi paket\">Recommend programs and package options</span>",
+          "target": [
+            "ol > li:nth-child(2) > span:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.1pt (13.5px)",
+                "fontWeight": "bold",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"next-num\">3</span>",
+                  "target": [
+                    "li:nth-child(3) > .next-num"
+                  ]
+                },
+                {
+                  "html": "<div class=\"contact-intro\">",
+                  "target": [
+                    ".contact-intro"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element content is too short to determine if it is actual text content"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"next-num\">3</span>",
+          "target": [
+            "li:nth-child(3) > .next-num"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.9pt (14.5px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"contact-intro\">",
+                  "target": [
+                    ".contact-intro"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-en=\"Estimate cost, trial class, and documentation needs\" data-id=\"Estimasi biaya, trial class, dan kebutuhan\n                    dokumentasi\">Estimate cost, trial class, and documentation needs</span>",
+          "target": [
+            "ol > li:nth-child(3) > span:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.1pt (13.5px)",
+                "fontWeight": "bold",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"next-num\">4</span>",
+                  "target": [
+                    "li:nth-child(4) > .next-num"
+                  ]
+                },
+                {
+                  "html": "<div class=\"contact-intro\">",
+                  "target": [
+                    ".contact-intro"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element content is too short to determine if it is actual text content"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"next-num\">4</span>",
+          "target": [
+            "li:nth-child(4) > .next-num"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.9pt (14.5px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"contact-intro\">",
+                  "target": [
+                    ".contact-intro"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-en=\"Receive an official school partnership proposal\" data-id=\"Proposal resmi kemitraan sekolah\">Receive an official school partnership proposal</span>",
+          "target": [
+            "ol > li:nth-child(4) > span:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.9pt (14.5px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"contact-intro\">",
+                  "target": [
+                    ".contact-intro"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>\n                    <strong data-en=\"WhatsApp Business\" data-id=\"WhatsApp Bisnis\">WhatsApp Business</strong>\n                    0812-2573-4398\n                  </span>",
+          "target": [
+            ".contact-list > li:nth-child(1) > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.8pt (13px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"contact-intro\">",
+                  "target": [
+                    ".contact-intro"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<strong data-en=\"WhatsApp Business\" data-id=\"WhatsApp Bisnis\">WhatsApp Business</strong>",
+          "target": [
+            "strong[data-en=\"WhatsApp Business\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.8pt (13px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"contact-intro\">",
+                  "target": [
+                    ".contact-intro"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<strong>Email</strong>",
+          "target": [
+            "li:nth-child(2) > span > strong"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.9pt (14.5px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"contact-intro\">",
+                  "target": [
+                    ".contact-intro"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"contact-email\">mozaiqfutureacademy@gmail.com</span>",
+          "target": [
+            "li:nth-child(2) > span > .contact-email"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.8pt (13px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"contact-intro\">",
+                  "target": [
+                    ".contact-intro"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<strong data-en=\"Service Coverage\" data-id=\"Jangkauan Layanan\">Service Coverage</strong>",
+          "target": [
+            "strong[data-en=\"Service Coverage\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.9pt (14.5px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"contact-intro\">",
+                  "target": [
+                    ".contact-intro"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-en=\"Malang, Surabaya, Sidoarjo, Gresik &amp; Nationwide\" data-id=\"Malang, Surabaya, Sidoarjo, Gresik &amp;amp; Nasional\">Malang, Surabaya, Sidoarjo, Gresik &amp; Nationwide</span>",
+          "target": [
+            ".contact-list > li:nth-child(3) > span > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        }
+      ]
+    }
+  ]
+}

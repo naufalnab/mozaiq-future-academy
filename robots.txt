@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: /ai/training-planner/
+Sitemap: https://mozaiqfutureacademy.com/sitemap.xml

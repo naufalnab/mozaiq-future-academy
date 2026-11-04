@@ -17,6 +17,15 @@ var currentLang = document.documentElement.getAttribute("data-default-lang") || 
     var DEFAULT_LANG = document.documentElement.getAttribute("data-default-lang") || "id";
     var STORAGE_KEY = document.documentElement.getAttribute("data-lang-storage") || "mfa-lang";
     var translatable = document.querySelectorAll("[data-en]");
+    var labelled = document.querySelectorAll("[data-en-label]");
+    labelled.forEach(function (el) {
+        el.setAttribute("data-id-label", el.getAttribute("aria-label"));
+    });
+
+    var metadata = document.querySelectorAll("[data-en-content]");
+    metadata.forEach(function (el) {
+        el.setAttribute("data-id-content", el.getAttribute("content"));
+    });
 
     // Cache the original Indonesian markup so we can switch back losslessly.
     translatable.forEach(function (el) {
@@ -34,13 +43,21 @@ var currentLang = document.documentElement.getAttribute("data-default-lang") || 
             if (el.matches(".faq-item summary") && html.indexOf("faq-icon") === -1) {
                 html += '<i data-lucide="plus" class="icon faq-icon" aria-hidden="true"></i>';
             }
-            el.innerHTML = html;
+            // Keep the initial Indonesian DOM intact; only rebuild changed text.
+            if (el.innerHTML !== html) el.innerHTML = html;
         });
 
         document.documentElement.setAttribute("lang", toEnglish ? "en" : "id");
+        metadata.forEach(function (el) {
+            el.setAttribute("content", el.getAttribute(toEnglish ? "data-en-content" : "data-id-content"));
+        });
+        labelled.forEach(function (el) {
+            el.setAttribute("aria-label", el.getAttribute(toEnglish ? "data-en-label" : "data-id-label"));
+        });
 
         document.querySelectorAll(".lang-switch button").forEach(function (btn) {
             btn.classList.toggle("is-active", btn.getAttribute("data-lang") === lang);
+            btn.setAttribute("aria-pressed", String(btn.getAttribute("data-lang") === lang));
         });
 
         // Let dependent features refresh their own labels.
@@ -112,7 +129,7 @@ var currentLang = document.documentElement.getAttribute("data-default-lang") || 
     });
 
     window.addEventListener("resize", function () {
-        if (window.innerWidth > 860 && menu.classList.contains("is-open")) {
+        if (window.innerWidth > 1200 && menu.classList.contains("is-open")) {
             closeMenu(false);
         }
     });
@@ -156,10 +173,12 @@ var currentLang = document.documentElement.getAttribute("data-default-lang") || 
 
         chips.forEach(function (c) {
             c.classList.toggle("is-active", c.getAttribute("data-filter") === filter);
+            c.setAttribute("aria-pressed", String(c.getAttribute("data-filter") === filter));
         });
 
         divisionCards.forEach(function (d) {
             d.classList.toggle("is-active", d.getAttribute("data-division-filter") === filter);
+            d.setAttribute("aria-pressed", String(d.getAttribute("data-division-filter") === filter));
         });
 
         cards.forEach(function (card) {
@@ -182,7 +201,7 @@ var currentLang = document.documentElement.getAttribute("data-default-lang") || 
         if (scrollToFilter) {
             var filterBar = document.querySelector(".program-filter-bar");
             if (filterBar) {
-                filterBar.scrollIntoView({ behavior: "smooth", block: "nearest" });
+                filterBar.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "nearest" });
             }
         }
     }
@@ -220,6 +239,7 @@ var currentLang = document.documentElement.getAttribute("data-default-lang") || 
         document.addEventListener("langchange", updateMoreLabel);
         updateMoreLabel();
     }
+    applyFilter("all", false);
 })();
 
 // Documentation gallery "show more" expansion.
@@ -264,11 +284,12 @@ var currentLang = document.documentElement.getAttribute("data-default-lang") || 
     var mobileQuery = window.matchMedia("(max-width: 680px)");
     var hidden = {
         footer: false,
-        hero: false
+        hero: false,
+        comparison: false
     };
 
     function syncVisibility() {
-        waFloat.classList.toggle("is-hidden", hidden.footer || (hidden.hero && mobileQuery.matches));
+        waFloat.classList.toggle("is-hidden", hidden.footer || ((hidden.hero || hidden.comparison) && mobileQuery.matches));
     }
 
     var footerObserver = new IntersectionObserver(function (entries) {
@@ -279,6 +300,17 @@ var currentLang = document.documentElement.getAttribute("data-default-lang") || 
     }, { threshold: 0.05 });
 
     footerObserver.observe(footer);
+
+    var comparison = document.getElementById("why");
+    if (comparison) {
+        var comparisonObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                hidden.comparison = entry.isIntersecting;
+                syncVisibility();
+            });
+        });
+        comparisonObserver.observe(comparison);
+    }
 
     if (hero) {
         var heroObserver = new IntersectionObserver(function (entries) {
@@ -313,12 +345,18 @@ var currentLang = document.documentElement.getAttribute("data-default-lang") || 
 
     function update() {
         var pos = window.scrollY + 140;
-        var current = sections[0];
+        var current = null;
         for (var i = 0; i < sections.length; i++) {
             if (sections[i].section.offsetTop <= pos) current = sections[i];
         }
-        navLinks.forEach(function (l) { l.classList.remove("is-active"); });
-        current.link.classList.add("is-active");
+        navLinks.forEach(function (l) {
+            l.classList.remove("is-active");
+            l.removeAttribute("aria-current");
+        });
+        if (current) {
+            current.link.classList.add("is-active");
+            current.link.setAttribute("aria-current", "location");
+        }
     }
 
     window.addEventListener("scroll", update, { passive: true });
