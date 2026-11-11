@@ -17,8 +17,9 @@ BASE = "https://mozaiqfutureacademy.com/sis/"
 OUT = os.path.join(ROOT, "sis", "qr")
 os.makedirs(OUT, exist_ok=True)
 data = json.load(open(os.path.join(ROOT, "data/sis/syllabi.json"), encoding="utf-8"))
+data.update(json.load(open(os.path.join(ROOT, "data/sis/ai.json"), encoding="utf-8")))
 ORDER = ["archery", "badminton", "pickleball", "table-tennis", "padel", "floorball", "handball", "flag-football",
-         "ultimate-frisbee", "roundnet", "petanque", "swimming", "drone-racing", "magic", "affiliate-business"]
+         "ultimate-frisbee", "roundnet", "petanque", "swimming", "drone-racing", "magic", "ai", "affiliate-business"]
 items = [("all-programs", "All Programs", BASE)] + [(s, data[s]["name"], f"{BASE}{s}/") for s in ORDER]
 
 pngs = {}
@@ -54,7 +55,7 @@ for i, (slug, name, url) in enumerate(items):
     qs = 190
     c.drawImage(ImageReader(pngs[slug]), x + (cw - qs) / 2, y + ch - 112 - 14 - qs, qs, qs)
     c.setFillColor(purple); c.setFont("Helvetica-Bold", 12)
-    c.drawCentredString(x + cw / 2, y + 70, "Scan for the 10-session syllabus" if slug != "all-programs" else "Scan to see all 15 programs")
+    c.drawCentredString(x + cw / 2, y + 70, "Scan for the 10-session syllabus" if slug != "all-programs" else "Scan to see all 16 programs")
     c.setFillColor(HexColor("#475569")); c.setFont("Helvetica", 8.5)
     c.drawCentredString(x + cw / 2, y + 54, "Pindai untuk melihat silabus  |  " + url.replace("https://", ""))
     c.setFillColor(purple); c.rect(x, y, cw, 10, fill=1, stroke=0)

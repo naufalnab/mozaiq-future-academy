@@ -1,0 +1,1040 @@
+{
+ "ai": {
+  "slug": "ai",
+  "name": "AI Creative Media",
+  "cover": [],
+  "source": "authored (adapted from silabus/AI.txt)",
+  "sections": [
+   {
+    "title": "Program Overview",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "AI Creative Media Academy teaches students to direct AI instead of being replaced by it. Students turn their own idea into a short vertical video, learning how to write prompts, direct voice, create visuals, animate images, and edit, while thinking carefully about honesty, privacy, and responsible use."
+     },
+     {
+      "t": "table",
+      "rows": [
+       [
+        [
+         "Program Detail"
+        ],
+        [
+         "Description"
+        ]
+       ],
+       [
+        [
+         "Program"
+        ],
+        [
+         "AI Creative Media Academy"
+        ]
+       ],
+       [
+        [
+         "Provider"
+        ],
+        [
+         "Mozaiq Future Academy"
+        ]
+       ],
+       [
+        [
+         "School"
+        ],
+        [
+         "Surabaya Intercultural School (SIS)"
+        ]
+       ],
+       [
+        [
+         "Sessions"
+        ],
+        [
+         "10"
+        ]
+       ],
+       [
+        [
+         "Session time"
+        ],
+        [
+         "15:15–16:10 (55 minutes)"
+        ]
+       ],
+       [
+        [
+         "Level"
+        ],
+        [
+         "Beginner, no prior AI experience needed"
+        ]
+       ],
+       [
+        [
+         "Final output"
+        ],
+        [
+         "A short AI-assisted vertical video (9:16)"
+        ]
+       ]
+      ]
+     },
+     {
+      "t": "p",
+      "text": "Main learning flow: IDEA → STORY → VOICE → SCENE → IMAGE → VIDEO → EDIT → SHARE."
+     }
+    ]
+   },
+   {
+    "title": "Program Objectives",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       "Explain what AI is, what it can do, and its limits, including that AI can be wrong or biased.",
+       "Write clear prompts with context, goal, and instructions.",
+       "Write a short story script with a beginning, middle, and ending.",
+       "Direct a voice-over through character, emotion, and pacing.",
+       "Plan scenes with a storyboard and keep visuals consistent.",
+       "Turn images into short videos with motion and transitions.",
+       "Edit audio, subtitles, and thumbnail, and present the work.",
+       "Use AI honestly, safely, and with credit."
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Standard Session Structure",
+    "blocks": [
+     {
+      "t": "table",
+      "rows": [
+       [
+        [
+         "Time"
+        ],
+        [
+         "Duration"
+        ],
+        [
+         "Activity"
+        ]
+       ],
+       [
+        [
+         "15:15–15:20"
+        ],
+        [
+         "5 min"
+        ],
+        [
+         "Opening and connection"
+        ]
+       ],
+       [
+        [
+         "15:20–15:30"
+        ],
+        [
+         "10 min"
+        ],
+        [
+         "Teacher demonstration"
+        ]
+       ],
+       [
+        [
+         "15:30–15:40"
+        ],
+        [
+         "10 min"
+        ],
+        [
+         "Guided practice"
+        ]
+       ],
+       [
+        [
+         "15:40–16:05"
+        ],
+        [
+         "25 min"
+        ],
+        [
+         "Creative production"
+        ]
+       ],
+       [
+        [
+         "16:05–16:10"
+        ],
+        [
+         "5 min"
+        ],
+        [
+         "Reflection and file saving"
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Tools & Digital Safety",
+    "blocks": [
+     {
+      "t": "label",
+      "text": "Tools"
+     },
+     {
+      "t": "ul",
+      "items": [
+       "ChatGPT, Claude, or Gemini: ideas, scripts, prompts, and feedback.",
+       "Google AI Studio: voice-over (teacher-guided).",
+       "Image generator and image-to-video tools such as Dola and Dreamina (teacher-guided).",
+       "Canva: editing, subtitles, thumbnail, and presentation."
+      ]
+     },
+     {
+      "t": "label",
+      "text": "Digital safety"
+     },
+     {
+      "t": "ul",
+      "items": [
+       "Generating is done with school or teacher accounts, following each platform's age rules; students do not need personal AI accounts.",
+       "No personal data, face photos, full names, voices, or family information goes into public AI tools.",
+       "Student work is shared only after teacher and, when needed, parent approval.",
+       "Students always check AI answers and credit AI help."
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Student Assessment",
+    "blocks": [
+     {
+      "t": "table",
+      "rows": [
+       [
+        [
+         "Area"
+        ],
+        [
+         "Weight"
+        ]
+       ],
+       [
+        [
+         "Ethical and responsible AI use"
+        ],
+        [
+         "20%"
+        ]
+       ],
+       [
+        [
+         "Storytelling, script, and prompts"
+        ],
+        [
+         "20%"
+        ]
+       ],
+       [
+        [
+         "Creative visuals and audio"
+        ],
+        [
+         "20%"
+        ]
+       ],
+       [
+        [
+         "Production process and craft"
+        ],
+        [
+         "20%"
+        ]
+       ],
+       [
+        [
+         "Teamwork, reflection, and presentation"
+        ],
+        [
+         "20%"
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Final Project",
+    "blocks": [
+     {
+      "t": "ul",
+      "items": [
+       "One vertical 9:16 video of about 20–40 seconds with 4–6 short scenes.",
+       "A narrator or two characters, consistent visuals, simple transitions, and subtitles.",
+       "A thumbnail, a caption, and the statement: “Made with AI assistance and the student's creative decisions.”"
+      ]
+     }
+    ]
+   }
+  ],
+  "sessions": [
+   {
+    "n": 1,
+    "title": "What Is AI? & Responsible Use",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "Learning outcome: Students explain what AI can and cannot do, and agree on rules for using it honestly and safely."
+     },
+     {
+      "t": "label",
+      "text": "Session flow"
+     },
+     {
+      "t": "table",
+      "rows": [
+       [
+        [
+         "Time"
+        ],
+        [
+         "Activity"
+        ]
+       ],
+       [
+        [
+         "15:15–15:20"
+        ],
+        [
+         "Opening: AI Detective Quiz warm-up (Kahoot)."
+        ]
+       ],
+       [
+        [
+         "15:20–15:30"
+        ],
+        [
+         "Teacher demo: How AI works in simple terms, with examples of good and wrong AI answers."
+        ]
+       ],
+       [
+        [
+         "15:30–15:40"
+        ],
+        [
+         "Guided practice: Sort examples into human idea, human decision, and AI help."
+        ]
+       ],
+       [
+        [
+         "15:40–16:05"
+        ],
+        [
+         "Creative production: Write a personal AI Promise: safe, honest, responsible."
+        ]
+       ],
+       [
+        [
+         "16:05–16:10"
+        ],
+        [
+         "Reflection & saving files: Share one rule; create a personal project folder."
+        ]
+       ]
+      ]
+     },
+     {
+      "t": "label",
+      "text": "Output"
+     },
+     {
+      "t": "p",
+      "text": "AI Promise card and project folder."
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title": "Story Idea & Script with AI",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "Learning outcome: Students choose a useful story idea and write a short script with a hook, middle, and closing."
+     },
+     {
+      "t": "label",
+      "text": "Session flow"
+     },
+     {
+      "t": "table",
+      "rows": [
+       [
+        [
+         "Time"
+        ],
+        [
+         "Activity"
+        ]
+       ],
+       [
+        [
+         "15:15–15:20"
+        ],
+        [
+         "Opening: Spark ideas from safe themes: kindness, environment, school life, local culture."
+        ]
+       ],
+       [
+        [
+         "15:20–15:30"
+        ],
+        [
+         "Teacher demo: Turn one broad topic into a short video idea and a 5–7 sentence script."
+        ]
+       ],
+       [
+        [
+         "15:30–15:40"
+        ],
+        [
+         "Guided practice: Co-write a sample script with an AI assistant and edit it together."
+        ]
+       ],
+       [
+        [
+         "15:40–16:05"
+        ],
+        [
+         "Creative production: Write and improve a personal script for a 20–40 second video."
+        ]
+       ],
+       [
+        [
+         "16:05–16:10"
+        ],
+        [
+         "Reflection & saving files: Read the script aloud; mark parts that are too long or unclear."
+        ]
+       ]
+      ]
+     },
+     {
+      "t": "label",
+      "text": "Output"
+     },
+     {
+      "t": "p",
+      "text": "Final script for the student's own video."
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title": "Voice Direction & AI Voice-over",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "Learning outcome: Students direct a voice through character, emotion, and pacing, and compare two voice-over takes."
+     },
+     {
+      "t": "label",
+      "text": "Session flow"
+     },
+     {
+      "t": "table",
+      "rows": [
+       [
+        [
+         "Time"
+        ],
+        [
+         "Activity"
+        ]
+       ],
+       [
+        [
+         "15:15–15:20"
+        ],
+        [
+         "Opening: Listen to two voices reading the same line; discuss the difference."
+        ]
+       ],
+       [
+        [
+         "15:20–15:30"
+        ],
+        [
+         "Teacher demo: Voice Card: character, emotion, speed, pauses."
+        ]
+       ],
+       [
+        [
+         "15:30–15:40"
+        ],
+        [
+         "Guided practice: Write a Voice Card for the sample script."
+        ]
+       ],
+       [
+        [
+         "15:40–16:05"
+        ],
+        [
+         "Creative production: Create a Voice Card for the own script; teacher generates two takes to compare."
+        ]
+       ],
+       [
+        [
+         "16:05–16:10"
+        ],
+        [
+         "Reflection & saving files: Choose the best take and save the audio file."
+        ]
+       ]
+      ]
+     },
+     {
+      "t": "label",
+      "text": "Output"
+     },
+     {
+      "t": "p",
+      "text": "Voice Card and selected voice-over."
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "title": "Scene Breakdown & Storyboard",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "Learning outcome: Students split a script into 4–6 scenes, each with a visual world and an emotional meaning."
+     },
+     {
+      "t": "label",
+      "text": "Session flow"
+     },
+     {
+      "t": "table",
+      "rows": [
+       [
+        [
+         "Time"
+        ],
+        [
+         "Activity"
+        ]
+       ],
+       [
+        [
+         "15:15–15:20"
+        ],
+        [
+         "Opening: Watch a short clip and count its scenes."
+        ]
+       ],
+       [
+        [
+         "15:20–15:30"
+        ],
+        [
+         "Teacher demo: How a storyboard plans scenes before any visuals are made."
+        ]
+       ],
+       [
+        [
+         "15:30–15:40"
+        ],
+        [
+         "Guided practice: Break the sample script into scenes together."
+        ]
+       ],
+       [
+        [
+         "15:40–16:05"
+        ],
+        [
+         "Creative production: Build a storyboard: dialogue, visual world, and feeling for every scene."
+        ]
+       ],
+       [
+        [
+         "16:05–16:10"
+        ],
+        [
+         "Reflection & saving files: Check that the story is simple enough to produce."
+        ]
+       ]
+      ]
+     },
+     {
+      "t": "label",
+      "text": "Output"
+     },
+     {
+      "t": "p",
+      "text": "Completed storyboard."
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "title": "Visual Prompt Formula & Style Bible",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "Learning outcome: Students write clear image prompts and keep characters and style consistent across scenes."
+     },
+     {
+      "t": "label",
+      "text": "Session flow"
+     },
+     {
+      "t": "table",
+      "rows": [
+       [
+        [
+         "Time"
+        ],
+        [
+         "Activity"
+        ]
+       ],
+       [
+        [
+         "15:15–15:20"
+        ],
+        [
+         "Opening: Guess what prompt created a shown image."
+        ]
+       ],
+       [
+        [
+         "15:20–15:30"
+        ],
+        [
+         "Teacher demo: Prompt formula: subject, setting, lighting, composition, style."
+        ]
+       ],
+       [
+        [
+         "15:30–15:40"
+        ],
+        [
+         "Guided practice: Improve a weak prompt step by step."
+        ]
+       ],
+       [
+        [
+         "15:40–16:05"
+        ],
+        [
+         "Creative production: Create a Style Bible and prompts for every scene."
+        ]
+       ],
+       [
+        [
+         "16:05–16:10"
+        ],
+        [
+         "Reflection & saving files: Peer check: are the prompts clear and consistent?"
+        ]
+       ]
+      ]
+     },
+     {
+      "t": "label",
+      "text": "Output"
+     },
+     {
+      "t": "p",
+      "text": "Style Bible and scene prompts."
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "title": "AI Image Generation (Teacher-Guided)",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "Learning outcome: Students generate scene visuals, choose the best results, and revise prompts when output is off."
+     },
+     {
+      "t": "label",
+      "text": "Session flow"
+     },
+     {
+      "t": "table",
+      "rows": [
+       [
+        [
+         "Time"
+        ],
+        [
+         "Activity"
+        ]
+       ],
+       [
+        [
+         "15:15–15:20"
+        ],
+        [
+         "Opening: Recap the Style Bible; safety check on topics and content."
+        ]
+       ],
+       [
+        [
+         "15:20–15:30"
+        ],
+        [
+         "Teacher demo: Teacher generates one scene live and explains choosing and rejecting results."
+        ]
+       ],
+       [
+        [
+         "15:30–15:40"
+        ],
+        [
+         "Guided practice: Revise one prompt together after a poor result."
+        ]
+       ],
+       [
+        [
+         "15:40–16:05"
+        ],
+        [
+         "Creative production: Generate and select the main image for each scene with teacher help."
+        ]
+       ],
+       [
+        [
+         "16:05–16:10"
+        ],
+        [
+         "Reflection & saving files: Rename and organise image files."
+        ]
+       ]
+      ]
+     },
+     {
+      "t": "label",
+      "text": "Output"
+     },
+     {
+      "t": "p",
+      "text": "One selected visual for every scene."
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "title": "Image to Video & Transitions (Teacher-Guided)",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "Learning outcome: Students bring still images to life with motion, camera movement, and transitions between scenes."
+     },
+     {
+      "t": "label",
+      "text": "Session flow"
+     },
+     {
+      "t": "table",
+      "rows": [
+       [
+        [
+         "Time"
+        ],
+        [
+         "Activity"
+        ]
+       ],
+       [
+        [
+         "15:15–15:20"
+        ],
+        [
+         "Opening: Compare a still image with the same image animated."
+        ]
+       ],
+       [
+        [
+         "15:20–15:30"
+        ],
+        [
+         "Teacher demo: Motion prompts, camera moves, and transition styles."
+        ]
+       ],
+       [
+        [
+         "15:30–15:40"
+        ],
+        [
+         "Guided practice: Animate one sample scene together."
+        ]
+       ],
+       [
+        [
+         "15:40–16:05"
+        ],
+        [
+         "Creative production: Create motion clips for the scenes with teacher help; check characters, text, and symbols first."
+        ]
+       ],
+       [
+        [
+         "16:05–16:10"
+        ],
+        [
+         "Reflection & saving files: Save clips and note which ones need revision."
+        ]
+       ]
+      ]
+     },
+     {
+      "t": "label",
+      "text": "Output"
+     },
+     {
+      "t": "p",
+      "text": "Animated clip for every scene."
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "title": "Sound, Music & Editing in Canva",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "Learning outcome: Students edit a vertical 9:16 video with the voice-over as the backbone, plus sound effects and subtitles."
+     },
+     {
+      "t": "label",
+      "text": "Session flow"
+     },
+     {
+      "t": "table",
+      "rows": [
+       [
+        [
+         "Time"
+        ],
+        [
+         "Activity"
+        ]
+       ],
+       [
+        [
+         "15:15–15:20"
+        ],
+        [
+         "Opening: Watch a silent video, then the same video with sound."
+        ]
+       ],
+       [
+        [
+         "15:20–15:30"
+        ],
+        [
+         "Teacher demo: Canva basics: timeline, voice-over backbone, subtitles, ambience."
+        ]
+       ],
+       [
+        [
+         "15:30–15:40"
+        ],
+        [
+         "Guided practice: Import scenes and place the voice-over together."
+        ]
+       ],
+       [
+        [
+         "15:40–16:05"
+        ],
+        [
+         "Creative production: Edit the full video with subtitles and sound effects."
+        ]
+       ],
+       [
+        [
+         "16:05–16:10"
+        ],
+        [
+         "Reflection & saving files: Export a draft and save the project."
+        ]
+       ]
+      ]
+     },
+     {
+      "t": "label",
+      "text": "Output"
+     },
+     {
+      "t": "p",
+      "text": "Draft edited video."
+     }
+    ]
+   },
+   {
+    "n": 9,
+    "title": "Thumbnail, Caption & Peer Review",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "Learning outcome: Students give and use feedback with a simple rubric, and plan safe, honest sharing of their work."
+     },
+     {
+      "t": "label",
+      "text": "Session flow"
+     },
+     {
+      "t": "table",
+      "rows": [
+       [
+        [
+         "Time"
+        ],
+        [
+         "Activity"
+        ]
+       ],
+       [
+        [
+         "15:15–15:20"
+        ],
+        [
+         "Opening: Quick review of rules from the AI Promise."
+        ]
+       ],
+       [
+        [
+         "15:20–15:30"
+        ],
+        [
+         "Teacher demo: Feedback rubric; how to write a thumbnail and caption; crediting AI help."
+        ]
+       ],
+       [
+        [
+         "15:30–15:40"
+        ],
+        [
+         "Guided practice: Review a sample video with the rubric."
+        ]
+       ],
+       [
+        [
+         "15:40–16:05"
+        ],
+        [
+         "Creative production: Revise the video from peer feedback; make a thumbnail and caption."
+        ]
+       ],
+       [
+        [
+         "16:05–16:10"
+        ],
+        [
+         "Reflection & saving files: Teacher checkpoint: subtitles, audio, AI credit, file name."
+        ]
+       ]
+      ]
+     },
+     {
+      "t": "label",
+      "text": "Output"
+     },
+     {
+      "t": "p",
+      "text": "Final video, thumbnail, and caption."
+     }
+    ]
+   },
+   {
+    "n": 10,
+    "title": "AI Expo Showcase & Graduation",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "Learning outcome: Students present their video, explain their workflow and creative decisions, and reflect on responsible AI use."
+     },
+     {
+      "t": "label",
+      "text": "Session flow"
+     },
+     {
+      "t": "table",
+      "rows": [
+       [
+        [
+         "Time"
+        ],
+        [
+         "Activity"
+        ]
+       ],
+       [
+        [
+         "15:15–15:20"
+        ],
+        [
+         "Opening: Set up the exhibition and rehearse the presentation."
+        ]
+       ],
+       [
+        [
+         "15:20–15:30"
+        ],
+        [
+         "Teacher demo: Presentation tips: workflow, tools, decisions, and ethics."
+        ]
+       ],
+       [
+        [
+         "15:30–15:40"
+        ],
+        [
+         "Guided practice: Practise a 1-minute explanation with a partner."
+        ]
+       ],
+       [
+        [
+         "15:40–16:05"
+        ],
+        [
+         "Creative production: Showcase videos to classmates, with parents where invited; explain the process."
+        ]
+       ],
+       [
+        [
+         "16:05–16:10"
+        ],
+        [
+         "Reflection & saving files: Reflection and certificate ceremony."
+        ]
+       ]
+      ]
+     },
+     {
+      "t": "label",
+      "text": "Output"
+     },
+     {
+      "t": "p",
+      "text": "Presented final video and certificate."
+     }
+    ]
+   }
+  ]
+ }
+}

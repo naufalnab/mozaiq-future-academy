@@ -12,10 +12,10 @@ IMG = {
     "archery": "archery-001", "petanque": "petanque-001", "handball": "handball-001",
     "affiliate-business": "affiliate-001", "swimming": "renang-001", "roundnet": "roundnet-001",
     "flag-football": "flag-football-001", "padel": "padel-001", "magic": "sulap-001",
-    "drone-racing": "drone-001", "ultimate-frisbee": "ultimate-frisbee-001", "floorball": "floor-ball-001",
+    "drone-racing": "drone-001", "ai": "AI-001", "ultimate-frisbee": "ultimate-frisbee-001", "floorball": "floor-ball-001",
 }
 ORDER = ["archery", "badminton", "pickleball", "table-tennis", "padel", "floorball", "handball", "flag-football",
-         "ultimate-frisbee", "roundnet", "petanque", "swimming", "drone-racing", "magic", "affiliate-business"]
+         "ultimate-frisbee", "roundnet", "petanque", "swimming", "drone-racing", "magic", "ai", "affiliate-business"]
 SMALL = {"and", "of", "to", "the", "in", "a", "for", "on", "with", "vs"}
 LATE = re.compile(r"equipment|learning outcome|safety|assessment|required|expected|learning target|digital ethics|milestone|summary|final", re.I)
 
@@ -154,7 +154,7 @@ def build_hub(data):
 <p class="eyebrow">Surabaya Intercultural School</p>
 <h1>{bi("Choose your extracurricular", "Pilih ekstrakurikuler")}</h1>
 <p class="lead">{bi("Tap a program to read its full 10-session syllabus, what students learn, equipment and safety.", "Ketuk program untuk membaca silabus 10 sesi, apa yang dipelajari siswa, perlengkapan, dan keselamatan.")}</p>
-<div class="chips"><span>{bi("15 programs", "15 program")}</span><span>{bi("10 sessions each", "10 sesi per program")}</span><span>15:15&ndash;16:10</span></div>
+<div class="chips"><span>{bi("16 programs", "16 program")}</span><span>{bi("10 sessions each", "10 sesi per program")}</span><span>15:15&ndash;16:10</span></div>
 </div></section>
 <div class="wrap content"><div class="grid">{''.join(cards)}</div></div></main>
 """ + FOOT
@@ -163,6 +163,7 @@ def build_hub(data):
 
 def main():
     data = json.load(open(os.path.join(ROOT, "data/sis/syllabi.json"), encoding="utf-8"))
+    data.update(json.load(open(os.path.join(ROOT, "data/sis/ai.json"), encoding="utf-8")))
     assert set(data) == set(ORDER), set(data) ^ set(ORDER)
     for i, slug in enumerate(ORDER):
         prev, nxt = data[ORDER[i - 1]], data[ORDER[(i + 1) % len(ORDER)]]
